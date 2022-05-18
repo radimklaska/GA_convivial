@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: node_list
+label: 'Node List'
+icon_uuid: 364b9f37-3f48-4d4d-9981-d0f81375b6ba
+icon_default: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAW0lEQVR4AWNgKD7gCcSPGYr2/wdhEBssBgTIciRihDkgBlZJIECWI9sSnJJAAGdXHBZkIAU0HBOC6aWJBSD1ML00DyLaRzIhMAqGREYbzWijGW00o41mtNGMBgBhtNkTDrJ3FwAAAABJRU5ErkJggg=='
+description: 'Node List are similar to Item Lists in structure with the difference that they reference Nodes in the site. Node Lists are simple to use and are used way to display content in varying displays and layouts across all content types. They are often used on landing pages where attactive content is needed.'
+behavior_plugins: {  }

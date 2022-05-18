@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: half_wide_sm_hi
+label: 'Half (wide) small high resolution'
+effects:
+  af08cf03-3f97-4346-941c-de975de21770:
+    uuid: af08cf03-3f97-4346-941c-de975de21770
+    id: image_scale
+    weight: 1
+    data:
+      width: 768
+      height: null
+      upscale: false

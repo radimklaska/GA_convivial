@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pb_definition
+    - paragraphs.paragraphs_type.plugin_block
+id: paragraph.plugin_block.field_pb_definition
+field_name: field_pb_definition
+entity_type: paragraph
+bundle: plugin_block
+label: 'Plugin Block Definition'
+description: 'The ID of the plugin block to display. The block can be placed in the Hidden region of the Block layout. (e.g.: convivial_bootstrap_breadcrumbs)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

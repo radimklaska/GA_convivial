@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: image_bg_modifier
+label: 'Image Background Modifier'
+icon_uuid: null
+description: 'Modify the content to have a background image.'
+behavior_plugins: {  }

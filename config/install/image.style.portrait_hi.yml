@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: portrait_hi
+label: 'Portrait high resolution'
+effects:
+  d1094f9d-c037-4ef8-96e0-f0f8499f6782:
+    uuid: d1094f9d-c037-4ef8-96e0-f0f8499f6782
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 566
+      height: 800
+      crop_type: focal_point

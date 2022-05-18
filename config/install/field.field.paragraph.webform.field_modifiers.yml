@@ -1,0 +1,152 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_modifiers
+    - paragraphs.paragraphs_type.adaptive_height_modifier
+    - paragraphs.paragraphs_type.clip_path_modifier
+    - paragraphs.paragraphs_type.color_background_modifier
+    - paragraphs.paragraphs_type.custom_linear_gradient_modifier
+    - paragraphs.paragraphs_type.custom_radial_gradient_modifier
+    - paragraphs.paragraphs_type.datatables_modifier
+    - paragraphs.paragraphs_type.fonts_modifier
+    - paragraphs.paragraphs_type.hide_modifier
+    - paragraphs.paragraphs_type.image_bg_modifier
+    - paragraphs.paragraphs_type.padding_modifier
+    - paragraphs.paragraphs_type.parallax_bg_modifier
+    - paragraphs.paragraphs_type.relative_height_modifier
+    - paragraphs.paragraphs_type.scroll_reveal_modifier
+    - paragraphs.paragraphs_type.video_bg_modifier
+    - paragraphs.paragraphs_type.webform
+  module:
+    - entity_reference_revisions
+id: paragraph.webform.field_modifiers
+field_name: field_modifiers
+entity_type: paragraph
+bundle: webform
+label: Modifiers
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      adaptive_height_modifier: adaptive_height_modifier
+      clip_path_modifier: clip_path_modifier
+      color_background_modifier: color_background_modifier
+      custom_linear_gradient_modifier: custom_linear_gradient_modifier
+      custom_radial_gradient_modifier: custom_radial_gradient_modifier
+      fonts_modifier: fonts_modifier
+      hide_modifier: hide_modifier
+      image_bg_modifier: image_bg_modifier
+      datatables_modifier: datatables_modifier
+      padding_modifier: padding_modifier
+      parallax_bg_modifier: parallax_bg_modifier
+      relative_height_modifier: relative_height_modifier
+      scroll_reveal_modifier: scroll_reveal_modifier
+      video_bg_modifier: video_bg_modifier
+    target_bundles_drag_drop:
+      webform:
+        weight: 32
+        enabled: false
+      accordion:
+        weight: 33
+        enabled: false
+      accordion_group:
+        weight: 34
+        enabled: false
+      adaptive_height_modifier:
+        enabled: true
+        weight: 35
+      app:
+        weight: 36
+        enabled: false
+      charts:
+        weight: 37
+        enabled: false
+      clip_path_modifier:
+        enabled: true
+        weight: 39
+      color_background_modifier:
+        enabled: true
+        weight: 40
+      content:
+        weight: 41
+        enabled: false
+      content_block:
+        weight: 42
+        enabled: false
+      custom_linear_gradient_modifier:
+        enabled: true
+        weight: 43
+      custom_radial_gradient_modifier:
+        enabled: true
+        weight: 44
+      fonts_modifier:
+        enabled: true
+        weight: 45
+      hide_modifier:
+        enabled: true
+        weight: 46
+      image_bg_modifier:
+        enabled: true
+        weight: 48
+      item:
+        weight: 49
+        enabled: false
+      datatables_modifier:
+        enabled: true
+        weight: 49
+      item_list:
+        weight: 50
+        enabled: false
+      map:
+        weight: 51
+        enabled: false
+      node_list:
+        weight: 52
+        enabled: false
+      padding_modifier:
+        enabled: true
+        weight: 53
+      parallax_bg_modifier:
+        enabled: true
+        weight: 54
+      plugin_block:
+        weight: 55
+        enabled: false
+      relative_height_modifier:
+        enabled: true
+        weight: 56
+      scroll_reveal_modifier:
+        enabled: true
+        weight: 57
+      national_map:
+        weight: 58
+        enabled: false
+      section:
+        weight: 58
+        enabled: false
+      national_map_catalog:
+        weight: 59
+        enabled: false
+      slide:
+        weight: 59
+        enabled: false
+      national_map_catalog_item:
+        weight: 60
+        enabled: false
+      slideshow:
+        weight: 60
+        enabled: false
+      video_bg_modifier:
+        enabled: true
+        weight: 61
+      view:
+        weight: 62
+        enabled: false
+field_type: entity_reference_revisions

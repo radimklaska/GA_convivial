@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: full_md_hi
+label: 'Full medium high resolution'
+effects:
+  d35272ea-f9db-4163-8957-bf4ac99fc83c:
+    uuid: d35272ea-f9db-4163-8957-bf4ac99fc83c
+    id: image_scale
+    weight: 1
+    data:
+      width: 1323
+      height: null
+      upscale: false

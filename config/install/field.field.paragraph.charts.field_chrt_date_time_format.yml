@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_chrt_date_time_format
+    - paragraphs.paragraphs_type.charts
+id: paragraph.charts.field_chrt_date_time_format
+field_name: field_chrt_date_time_format
+entity_type: paragraph
+bundle: charts
+label: 'Input date and time format'
+description: 'Input date format (see <a href="https://c3js.org/samples/timeseries.html">https://c3js.org/samples/timeseries.html</a> for example and <a href="https://github.com/d3/d3-time-format/blob/master/README.md#locale_format">https://github.com/d3/d3-time-format/blob/master/README.md#locale_format</a> for reference). '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

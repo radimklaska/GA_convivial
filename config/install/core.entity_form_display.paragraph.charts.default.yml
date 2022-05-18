@@ -1,0 +1,277 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.charts.field_body
+    - field.field.paragraph.charts.field_chrt_colors
+    - field.field.paragraph.charts.field_chrt_colour_classes
+    - field.field.paragraph.charts.field_chrt_csv
+    - field.field.paragraph.charts.field_chrt_csv_url
+    - field.field.paragraph.charts.field_chrt_date_time_format
+    - field.field.paragraph.charts.field_chrt_grid
+    - field.field.paragraph.charts.field_chrt_height
+    - field.field.paragraph.charts.field_chrt_legend
+    - field.field.paragraph.charts.field_chrt_stack_order
+    - field.field.paragraph.charts.field_chrt_stacking
+    - field.field.paragraph.charts.field_chrt_tick_date_time_format
+    - field.field.paragraph.charts.field_chrt_title
+    - field.field.paragraph.charts.field_chrt_type
+    - field.field.paragraph.charts.field_chrt_x_axis_label
+    - field.field.paragraph.charts.field_chrt_x_axis_type
+    - field.field.paragraph.charts.field_chrt_x_y_axis_switch
+    - field.field.paragraph.charts.field_chrt_y_axis
+    - field.field.paragraph.charts.field_heading
+    - field.field.paragraph.charts.field_hide_heading
+    - paragraphs.paragraphs_type.charts
+  module:
+    - field_group
+    - link
+    - text
+third_party_settings:
+  field_group:
+    group_general:
+      children:
+        - field_heading
+        - field_hide_heading
+        - field_title
+        - field_body
+        - field_chrt_title
+        - group_data_source
+        - field_chrt_colors
+      parent_name: ''
+      weight: 0
+      format_type: fieldset
+      format_settings:
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+      label: General
+      region: content
+    group_data_source:
+      children:
+        - field_chrt_csv
+        - field_chrt_csv_url
+      parent_name: group_general
+      weight: 6
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: ''
+        element: div
+        show_label: true
+        label_element: h3
+        required_fields: true
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Data source'
+      region: content
+    group_timeseries_chart:
+      children:
+        - field_chrt_date_time_format
+        - field_chrt_tick_date_time_format
+      parent_name: group_chart
+      weight: 10
+      format_type: fieldset
+      format_settings:
+        description: 'These settings are used only if the <em>X Axis type</em> field is set to <em>Timeseries</em>.'
+        required_fields: true
+        id: ''
+        classes: ''
+      label: 'Timeseries chart'
+      region: content
+    group_chart:
+      children:
+        - field_chrt_type
+        - field_chrt_height
+        - field_chrt_stacking
+        - field_chrt_stack_order
+        - field_chrt_grid
+        - group_axes
+        - field_chrt_legend
+        - group_timeseries_chart
+      parent_name: ''
+      weight: 1
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Chart
+      region: content
+    group_axes:
+      children:
+        - field_chrt_x_axis_type
+        - field_chrt_x_axis_label
+        - field_chrt_y_axis
+        - field_chrt_x_y_axis_switch
+      parent_name: group_chart
+      weight: 8
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: ''
+        element: div
+        show_label: true
+        label_element: h3
+        required_fields: true
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Axes
+      region: content
+id: paragraph.charts.default
+targetEntityType: paragraph
+bundle: charts
+mode: default
+content:
+  field_body:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_chrt_colors:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_chrt_colour_classes:
+    weight: 11
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_chrt_csv:
+    weight: 8
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_chrt_csv_url:
+    weight: 9
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_chrt_date_time_format:
+    weight: 9
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_chrt_grid:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_chrt_height:
+    weight: 4
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_chrt_legend:
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_chrt_stack_order:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_chrt_stacking:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_chrt_tick_date_time_format:
+    weight: 10
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_chrt_title:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_chrt_type:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_chrt_x_axis_label:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_chrt_x_axis_type:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_chrt_x_y_axis_switch:
+    weight: 9
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_chrt_y_axis:
+    weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_heading:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_hide_heading:
+    weight: 2
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+hidden:
+  created: true
+  moderation_state: true
+  status: true
+  uid: true

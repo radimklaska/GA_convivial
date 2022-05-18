@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_chrt_x_y_axis_switch
+    - paragraphs.paragraphs_type.charts
+id: paragraph.charts.field_chrt_x_y_axis_switch
+field_name: field_chrt_x_y_axis_switch
+entity_type: paragraph
+bundle: charts
+label: 'Switch x and y axis position'
+description: 'If checked X axis will be vertical a Y axis horizontal. See <a href="https://naver.github.io/billboard.js/demo/#Axis.RotatedAxis">https://naver.github.io/billboard.js/demo/#Axis.RotatedAxis</a> for example.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

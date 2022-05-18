@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.social_share
+    - field.storage.block_content.field_social_share_colour
+  module:
+    - options
+id: block_content.social_share.field_social_share_colour
+field_name: field_social_share_colour
+entity_type: block_content
+bundle: social_share
+label: Colour
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: social-share--branded
+default_value_callback: ''
+settings: {  }
+field_type: list_string

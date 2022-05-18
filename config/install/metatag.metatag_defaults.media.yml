@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: media
+label: Media
+tags:
+  description: '[media:field_body:summary]'
+  og_description: '[media:field_body:summary]'

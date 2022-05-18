@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: half_wide_sm
+label: 'Half (wide) small'
+effects:
+  7404c395-c547-421d-8f67-ffffdb94044b:
+    uuid: 7404c395-c547-421d-8f67-ffffdb94044b
+    id: image_scale
+    weight: 1
+    data:
+      width: 384
+      height: null
+      upscale: false

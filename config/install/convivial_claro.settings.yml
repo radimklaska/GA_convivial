@@ -1,0 +1,14 @@
+features:
+  node_user_picture: true
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: 1
+logo:
+  use_default: 1
+favicon:
+  use_default: 1
+  path: ''
+  mimetype: image/vnd.microsoft.icon
+custom_css: 0
+content_groups: ''
+sidebar_groups: "Presentation|field_body_classes, field_hide, panelizer\r\nFunctionality|field_glossary_exclude, field_read_speaker, field_search_exclude, field_toc, field_webform"

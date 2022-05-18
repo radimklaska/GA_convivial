@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.square
+    - image.style.square_hi
+  module:
+    - convivial_breakpoints
+id: square
+label: Square
+image_style_mappings:
+  -
+    breakpoint_id: convivial_breakpoints.mobile
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: square
+  -
+    breakpoint_id: convivial_breakpoints.mobile
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: square_hi
+breakpoint_group: convivial_breakpoints
+fallback_image_style: square

@@ -1,0 +1,86 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.social_share
+    - field.field.block_content.social_share.field_social_share_alignment
+    - field.field.block_content.social_share.field_social_share_colour
+    - field.field.block_content.social_share.field_social_share_email
+    - field.field.block_content.social_share.field_social_share_facebook
+    - field.field.block_content.social_share.field_social_share_linkedin
+    - field.field.block_content.social_share.field_social_share_size
+    - field.field.block_content.social_share.field_social_share_style
+    - field.field.block_content.social_share.field_social_share_twitter
+    - field.field.block_content.social_share.field_social_share_type
+id: block_content.social_share.default
+targetEntityType: block_content
+bundle: social_share
+mode: default
+content:
+  field_social_share_alignment:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_social_share_colour:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_social_share_email:
+    weight: 5
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_social_share_facebook:
+    weight: 2
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_social_share_linkedin:
+    weight: 4
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_social_share_size:
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_social_share_style:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_social_share_twitter:
+    weight: 3
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_social_share_type:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

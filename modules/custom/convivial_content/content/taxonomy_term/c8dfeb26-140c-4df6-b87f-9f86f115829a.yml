@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: c8dfeb26-140c-4df6-b87f-9f86f115829a
+  bundle: attribute
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: 'Experience: High'
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_attribute_key:
+    -
+      value: experience
+  field_attribute_value:
+    -
+      value: 'experience:high'

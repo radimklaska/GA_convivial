@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies: {  }
+id: manager
+label: Manager
+weight: -6
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access contextual links'
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'administer redirects'
+  - 'administer users'
+  - 'assign approver role'
+  - 'assign editor role'
+  - 'assign layout_customizer role'
+  - 'assign manager role'
+  - 'assign submission_viewer role'
+  - 'assign webform_manager role'
+  - 'use text format rich_text'
+  - 'view the administration theme'

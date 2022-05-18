@@ -1,0 +1,176 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_modifiers
+    - paragraphs.paragraphs_type.adaptive_height_modifier
+    - paragraphs.paragraphs_type.clip_path_modifier
+    - paragraphs.paragraphs_type.color_background_modifier
+    - paragraphs.paragraphs_type.custom_linear_gradient_modifier
+    - paragraphs.paragraphs_type.custom_radial_gradient_modifier
+    - paragraphs.paragraphs_type.datatables_modifier
+    - paragraphs.paragraphs_type.fonts_modifier
+    - paragraphs.paragraphs_type.hide_modifier
+    - paragraphs.paragraphs_type.image_bg_modifier
+    - paragraphs.paragraphs_type.padding_modifier
+    - paragraphs.paragraphs_type.parallax_bg_modifier
+    - paragraphs.paragraphs_type.relative_height_modifier
+    - paragraphs.paragraphs_type.scroll_reveal_modifier
+    - paragraphs.paragraphs_type.snippet
+    - paragraphs.paragraphs_type.video_bg_modifier
+  module:
+    - entity_reference_revisions
+id: paragraph.snippet.field_modifiers
+field_name: field_modifiers
+entity_type: paragraph
+bundle: snippet
+label: Modifiers
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      adaptive_height_modifier: adaptive_height_modifier
+      clip_path_modifier: clip_path_modifier
+      color_background_modifier: color_background_modifier
+      custom_linear_gradient_modifier: custom_linear_gradient_modifier
+      custom_radial_gradient_modifier: custom_radial_gradient_modifier
+      datatables_modifier: datatables_modifier
+      fonts_modifier: fonts_modifier
+      hide_modifier: hide_modifier
+      image_bg_modifier: image_bg_modifier
+      padding_modifier: padding_modifier
+      parallax_bg_modifier: parallax_bg_modifier
+      relative_height_modifier: relative_height_modifier
+      scroll_reveal_modifier: scroll_reveal_modifier
+      video_bg_modifier: video_bg_modifier
+    target_bundles_drag_drop:
+      accordion:
+        weight: 43
+        enabled: false
+      accordion_group:
+        weight: 44
+        enabled: false
+      adaptive_height_modifier:
+        enabled: true
+        weight: 45
+      charts:
+        weight: 46
+        enabled: false
+      clip_path_modifier:
+        enabled: true
+        weight: 47
+      color_background_modifier:
+        enabled: true
+        weight: 48
+      content:
+        weight: 49
+        enabled: false
+      content_block:
+        weight: 50
+        enabled: false
+      content_tab:
+        weight: 51
+        enabled: false
+      content_tabs:
+        weight: 52
+        enabled: false
+      convivial_profiler:
+        weight: 53
+        enabled: false
+      custom_linear_gradient_modifier:
+        enabled: true
+        weight: 54
+      custom_radial_gradient_modifier:
+        enabled: true
+        weight: 55
+      datatables_modifier:
+        enabled: true
+        weight: 56
+      fastfact:
+        weight: 57
+        enabled: false
+      fastfacts:
+        weight: 58
+        enabled: false
+      fonts_modifier:
+        enabled: true
+        weight: 59
+      hide_modifier:
+        enabled: true
+        weight: 60
+      image_bg_modifier:
+        enabled: true
+        weight: 61
+      item:
+        weight: 62
+        enabled: false
+      item_list:
+        weight: 63
+        enabled: false
+      layout:
+        weight: 64
+        enabled: false
+      map:
+        weight: 65
+        enabled: false
+      media_list:
+        weight: 66
+        enabled: false
+      node_list:
+        weight: 67
+        enabled: false
+      padding_modifier:
+        enabled: true
+        weight: 68
+      parallax_bg_modifier:
+        enabled: true
+        weight: 69
+      plugin_block:
+        weight: 70
+        enabled: false
+      relative_height_modifier:
+        enabled: true
+        weight: 71
+      scroll_reveal_modifier:
+        enabled: true
+        weight: 72
+      section:
+        weight: 73
+        enabled: false
+      slide:
+        weight: 74
+        enabled: false
+      slideshow:
+        weight: 75
+        enabled: false
+      snippet:
+        weight: 76
+        enabled: false
+      tiles:
+        weight: 77
+        enabled: false
+      timeline:
+        weight: 78
+        enabled: false
+      timeline_item:
+        weight: 79
+        enabled: false
+      video_bg_modifier:
+        enabled: true
+        weight: 81
+      view:
+        weight: 82
+        enabled: false
+      webform:
+        weight: 83
+        enabled: false
+      widget:
+        weight: 84
+        enabled: false
+field_type: entity_reference_revisions

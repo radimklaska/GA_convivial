@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_hero_banner_link
+    - paragraphs.paragraphs_type.hero_banner
+  module:
+    - link
+id: paragraph.hero_banner.field_hero_banner_link
+field_name: field_hero_banner_link
+entity_type: paragraph
+bundle: hero_banner
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

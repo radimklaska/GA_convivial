@@ -1,0 +1,318 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.casestudy.body
+    - field.field.node.casestudy.field_about
+    - field.field.node.casestudy.field_authored_by
+    - field.field.node.casestudy.field_components
+    - field.field.node.casestudy.field_header_colour_classes
+    - field.field.node.casestudy.field_header_modifiers
+    - field.field.node.casestudy.field_hero_darkness
+    - field.field.node.casestudy.field_introduction
+    - field.field.node.casestudy.field_keywords
+    - field.field.node.casestudy.field_published
+    - field.field.node.casestudy.field_search_exclude
+    - field.field.node.casestudy.field_suitable_for
+    - field.field.node.casestudy.field_thumbnail
+    - field.field.node.casestudy.field_toc
+    - field.field.node.casestudy.layout_builder__layout
+    - field.field.node.casestudy.layout_selection
+    - node.type.casestudy
+  module:
+    - convivial_layouts
+    - entity_reference_revisions
+    - layout_builder
+    - layout_library
+    - options
+    - system
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: true
+    enabled: true
+    sections:
+      -
+        layout_id: convivial_header
+        layout_settings:
+          label: ''
+        components:
+          f58aee53-0659-4291-8775-40924bd4aee7:
+            uuid: f58aee53-0659-4291-8775-40924bd4aee7
+            region: content
+            configuration:
+              id: system_breadcrumb_block
+              label: Breadcrumbs
+              provider: system
+              label_display: '0'
+              context_mapping: {  }
+            additional: {  }
+            weight: 2
+          2bc8a3b9-aa86-45ce-bf08-b0f281d6c64b:
+            uuid: 2bc8a3b9-aa86-45ce-bf08-b0f281d6c64b
+            region: content
+            configuration:
+              id: 'field_block:node:casestudy:title'
+              label: Title
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 3
+          def2fc8b-46f1-4213-aed0-1be46dd98650:
+            uuid: def2fc8b-46f1-4213-aed0-1be46dd98650
+            region: content
+            configuration:
+              id: 'field_block:node:casestudy:field_introduction'
+              label: Introduction
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 4
+          a12a0c71-e491-46e6-9b15-0513b907becf:
+            uuid: a12a0c71-e491-46e6-9b15-0513b907becf
+            region: content
+            configuration:
+              id: 'field_block:node:casestudy:field_published'
+              label: 'Published date'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: datetime_default
+                settings:
+                  timezone_override: ''
+                  format_type: standard
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 5
+        third_party_settings: {  }
+      -
+        layout_id: convivial_content_sidebar
+        layout_settings:
+          label: ''
+        components:
+          12370bd4-f609-4c74-b58d-c84048b32584:
+            uuid: 12370bd4-f609-4c74-b58d-c84048b32584
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:casestudy:body'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 1
+          29978c56-8220-4412-a799-e3856369d303:
+            uuid: 29978c56-8220-4412-a799-e3856369d303
+            region: content
+            configuration:
+              id: 'field_block:node:casestudy:field_components'
+              label: Components
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_revisions_entity_view
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 2
+          79f95351-d387-487f-ae30-3af07cca304e:
+            uuid: 79f95351-d387-487f-ae30-3af07cca304e
+            region: content
+            configuration:
+              id: 'field_block:node:casestudy:field_toc'
+              label: TOC
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: list_default
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          e40226c5-18c1-4563-b8d2-c14c5532851d:
+            uuid: e40226c5-18c1-4563-b8d2-c14c5532851d
+            region: content
+            configuration:
+              id: 'field_block:node:casestudy:field_about'
+              label: About
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: entity_reference_label
+                settings:
+                  link: true
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 3
+          a37d6006-0495-4ded-8a14-36c2ea95dead:
+            uuid: a37d6006-0495-4ded-8a14-36c2ea95dead
+            region: content
+            configuration:
+              id: 'field_block:node:casestudy:field_suitable_for'
+              label: 'Suitable for'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: entity_reference_label
+                settings:
+                  link: true
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 4
+          adff20d6-5d5d-4ffb-9bfc-4082802782c5:
+            uuid: adff20d6-5d5d-4ffb-9bfc-4082802782c5
+            region: sidebar
+            configuration:
+              id: 'field_block:node:casestudy:field_authored_by'
+              label: 'Authored by'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: stack_detail
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+  layout_library:
+    enable: true
+id: node.casestudy.full
+targetEntityType: node
+bundle: casestudy
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  content_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_components:
+    type: entity_reference_revisions_entity_view
+    weight: 104
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_introduction:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_keywords:
+    weight: 108
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_search_exclude:
+    weight: 106
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_thumbnail:
+    type: entity_reference_entity_view
+    weight: 102
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_toc:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_updated:
+    weight: 107
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_about: true
+  field_authored_by: true
+  field_header_colour_classes: true
+  field_header_modifiers: true
+  field_hero_darkness: true
+  field_published: true
+  field_suitable_for: true
+  layout_builder__layout: true
+  layout_selection: true
+  search_api_excerpt: true

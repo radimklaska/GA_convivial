@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pb_style_classes
+    - paragraphs.paragraphs_type.plugin_block
+  module:
+    - options
+id: paragraph.plugin_block.field_pb_style_classes
+field_name: field_pb_style_classes
+entity_type: paragraph
+bundle: plugin_block
+label: Style
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

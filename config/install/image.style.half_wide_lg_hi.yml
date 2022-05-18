@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: half_wide_lg_hi
+label: 'Half (wide) large high resolution'
+effects:
+  a06b2b33-a702-4a3c-b7cc-41cb16f3fedb:
+    uuid: a06b2b33-a702-4a3c-b7cc-41cb16f3fedb
+    id: image_scale
+    weight: 1
+    data:
+      width: 1200
+      height: null
+      upscale: false

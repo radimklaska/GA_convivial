@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: landscape_half_md
+label: 'Landscape half medium'
+effects:
+  8c890320-6b8a-4cff-9d15-182f439032c3:
+    uuid: 8c890320-6b8a-4cff-9d15-182f439032c3
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 579
+      height: 326
+      crop_type: focal_point

@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_promotion_type_value
+    - taxonomy.vocabulary.promotion_type
+  module:
+    - unique_content_field_validation
+third_party_settings:
+  unique_content_field_validation:
+    unique: false
+    unique_text: ''
+id: taxonomy_term.promotion_type.field_promotion_type_value
+field_name: field_promotion_type_value
+entity_type: taxonomy_term
+bundle: promotion_type
+label: Value
+description: 'A unique value for this promotion type: eg. audience-banner.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

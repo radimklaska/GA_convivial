@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: efa5f5d0-229b-45e0-bc73-ec35b14b2346
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: season-none-bg.jpg
+  uri:
+    -
+      value: 'public://2021-04/season-none-bg.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 4701000
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1619773863

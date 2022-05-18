@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: hero_banner_hi
+label: 'Hero banner high resolution'
+effects:
+  9a1e5734-45d0-4b65-9c11-e81d0914891a:
+    uuid: 9a1e5734-45d0-4b65-9c11-e81d0914891a
+    id: image_scale
+    weight: 1
+    data:
+      width: 4000
+      height: 2500
+      upscale: false

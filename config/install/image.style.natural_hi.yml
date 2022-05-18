@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: natural_hi
+label: 'Natural high resolution'
+effects:
+  4739f5fa-246c-46e6-a059-bc428e25426b:
+    uuid: 4739f5fa-246c-46e6-a059-bc428e25426b
+    id: image_scale
+    weight: 1
+    data:
+      width: 800
+      height: null
+      upscale: false

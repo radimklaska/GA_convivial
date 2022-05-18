@@ -1,0 +1,43 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 183c6dcf-7b0a-40a1-a2c2-01c4a17dd21a
+  bundle: menu_link_content
+  default_langcode: en
+  depends:
+    e85e60d5-6d50-4624-af77-8bb70f124514: node
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: Books
+  menu_name:
+    -
+      value: main
+  link:
+    -
+      target_uuid: e85e60d5-6d50-4624-af77-8bb70f124514
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: 0
+  expanded:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

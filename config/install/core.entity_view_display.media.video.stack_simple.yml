@@ -1,0 +1,92 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.stack_simple
+    - field.field.media.video.field_body
+    - field.field.media.video.field_media_video_file
+    - field.field.media.video.field_search_exclude
+    - field.field.media.video.field_tags
+    - field.field.media.video.field_transcript
+    - media.type.video
+  module:
+    - convivial_layouts
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: stack_simple
+        layout_settings:
+          label: ''
+        components:
+          be4853f5-a9ce-4e07-a4bf-a913978062d8:
+            uuid: be4853f5-a9ce-4e07-a4bf-a913978062d8
+            region: title
+            configuration:
+              id: 'field_block:media:video:name'
+              label: Name
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: string
+                settings:
+                  link_to_entity: true
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+          dcf5eeef-23b1-4c24-8177-bc114be4e477:
+            uuid: dcf5eeef-23b1-4c24-8177-bc114be4e477
+            region: summary
+            configuration:
+              id: 'field_block:media:video:field_body'
+              label: Body
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: text_summary_or_trimmed
+                settings:
+                  trim_length: 160
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+id: media.video.stack_simple
+targetEntityType: media
+bundle: video
+mode: stack_simple
+content:
+  field_body:
+    type: text_summary_or_trimmed
+    weight: 0
+    region: summary
+    label: hidden
+    settings:
+      trim_length: 160
+    third_party_settings: {  }
+  name:
+    type: string
+    weight: 0
+    region: title
+    label: hidden
+    settings:
+      link_to_entity: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_media_video_file: true
+  field_search_exclude: true
+  field_tags: true
+  field_transcript: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

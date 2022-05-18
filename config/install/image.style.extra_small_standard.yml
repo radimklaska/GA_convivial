@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: extra_small_standard
+label: 'Extra small'
+effects:
+  00ac889d-08ba-4c3c-9cdd-b175c3956a5f:
+    uuid: 00ac889d-08ba-4c3c-9cdd-b175c3956a5f
+    id: image_scale
+    weight: 1
+    data:
+      width: 200
+      height: null
+      upscale: false

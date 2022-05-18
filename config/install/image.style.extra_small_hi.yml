@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: extra_small_hi
+label: 'Extra small high resolution'
+effects:
+  30e08534-a110-4280-86ca-e23c41f847eb:
+    uuid: 30e08534-a110-4280-86ca-e23c41f847eb
+    id: image_scale
+    weight: 1
+    data:
+      width: 400
+      height: null
+      upscale: false

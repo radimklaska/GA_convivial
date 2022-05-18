@@ -1,0 +1,93 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.geochart.field_body
+    - field.field.paragraph.geochart.field_colour_classes
+    - field.field.paragraph.geochart.field_geochart_api_key
+    - field.field.paragraph.geochart.field_geochart_background_color
+    - field.field.paragraph.geochart.field_geochart_color_axis
+    - field.field.paragraph.geochart.field_geochart_csv
+    - field.field.paragraph.geochart.field_geochart_dataless_color
+    - field.field.paragraph.geochart.field_geochart_default_color
+    - field.field.paragraph.geochart.field_geochart_display_mode
+    - field.field.paragraph.geochart.field_geochart_hide_legend
+    - field.field.paragraph.geochart.field_geochart_region
+    - field.field.paragraph.geochart.field_geochart_resolution
+    - field.field.paragraph.geochart.field_geochart_url
+    - field.field.paragraph.geochart.field_heading
+    - field.field.paragraph.geochart.field_hide_heading
+    - field.field.paragraph.geochart.field_modifiers
+    - field.field.paragraph.geochart.field_position
+    - field.field.paragraph.geochart.field_style_classes
+    - field.field.paragraph.geochart.field_title
+    - paragraphs.paragraphs_type.geochart
+  module:
+    - entity_class_formatter
+    - text
+id: paragraph.geochart.default
+targetEntityType: paragraph
+bundle: geochart
+mode: default
+content:
+  field_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_colour_classes:
+    type: entity_class_formatter
+    label: hidden
+    settings:
+      prefix: ''
+      suffix: ''
+      attr: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_heading:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_position:
+    type: entity_class_formatter
+    label: hidden
+    settings:
+      prefix: ''
+      suffix: ''
+      attr: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_style_classes:
+    type: entity_class_formatter
+    label: hidden
+    settings:
+      prefix: ''
+      suffix: ''
+      attr: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  field_geochart_api_key: true
+  field_geochart_background_color: true
+  field_geochart_color_axis: true
+  field_geochart_csv: true
+  field_geochart_dataless_color: true
+  field_geochart_default_color: true
+  field_geochart_display_mode: true
+  field_geochart_hide_legend: true
+  field_geochart_region: true
+  field_geochart_resolution: true
+  field_geochart_url: true
+  field_hide_heading: true
+  field_modifiers: true
+  field_title: true
+  search_api_excerpt: true

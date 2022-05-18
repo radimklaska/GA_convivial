@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.natural
+    - image.style.natural_hi
+  module:
+    - convivial_breakpoints
+id: natural
+label: Natural
+image_style_mappings:
+  -
+    breakpoint_id: convivial_breakpoints.mobile
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: natural
+  -
+    breakpoint_id: convivial_breakpoints.mobile
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: natural_hi
+breakpoint_group: convivial_breakpoints
+fallback_image_style: natural

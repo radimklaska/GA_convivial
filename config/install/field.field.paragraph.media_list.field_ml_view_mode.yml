@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_ml_view_mode
+    - paragraphs.paragraphs_type.media_list
+  module:
+    - entity_reference_display
+id: paragraph.media_list.field_ml_view_mode
+field_name: field_ml_view_mode
+entity_type: paragraph
+bundle: media_list
+label: 'View Mode'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  exclude:
+    stack_simple: stack_simple
+    search: search
+    summary: summary
+    title: title
+  negate: 1
+field_type: entity_reference_display

@@ -1,0 +1,40 @@
+<?php
+
+/**
+ * @file
+ * Convivial Layout module.
+ */
+
+use Drupal\node\NodeInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use Drupal\Core\Render\Element;
+
+/**
+ * Implements template_preprocess_layout().
+ */
+function convivial_layouts_preprocess_layout(&$variables) {
+  $route_match = \Drupal::routeMatch();
+  /** @var \Drupal\node\Entity\Node $parameter */
+  $parameter = $route_match->getParameter('node');
+
+  // Only on node entity.
+  if ($parameter instanceof NodeInterface) {
+    // Only if the field_header_colour_classes exists.
+    if ($parameter->hasField('field_header_colour_classes')) {
+      $variables['header_colour_classes'] = $parameter->get('field_header_colour_classes')->value;
+    }
+  }
+}
+
+/**
+ * Implements hook_entity_view_alter().
+ */
+function convivial_layouts_entity_view_alter(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display) {
+  if (isset($build['_layout_builder'])) {
+    foreach (Element::children($build['_layout_builder']) as $child) {
+      $build['_layout_builder'][$child]['#entity'] = $entity;
+    }
+  }
+
+}

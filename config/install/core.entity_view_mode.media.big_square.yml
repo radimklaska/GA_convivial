@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.big_square
+label: 'Big Square'
+targetEntityType: media
+cache: true

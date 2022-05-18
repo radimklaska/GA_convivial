@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_s_styles
+    - paragraphs.paragraphs_type.section
+  module:
+    - options
+id: paragraph.section.field_s_styles
+field_name: field_s_styles
+entity_type: paragraph
+bundle: section
+label: 'Section styles'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

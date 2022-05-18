@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: half_lg_hi
+label: 'Half large high resolution'
+effects:
+  1a1e090c-cd09-4e9c-acb2-455ceb28cfeb:
+    uuid: 1a1e090c-cd09-4e9c-acb2-455ceb28cfeb
+    id: image_scale
+    weight: 1
+    data:
+      width: 800
+      height: null
+      upscale: false

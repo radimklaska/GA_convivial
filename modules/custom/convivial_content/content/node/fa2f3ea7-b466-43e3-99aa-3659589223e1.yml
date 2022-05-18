@@ -1,0 +1,57 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: fa2f3ea7-b466-43e3-99aa-3659589223e1
+  bundle: person
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Terry Pratchett'
+  created:
+    -
+      value: 1611315007
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /about/terry-pratchett
+      langcode: en
+      pathauto: 1
+  morpht_computed_field_type_label:
+    -
+      value: Person
+  field_key:
+    -
+      value: 'person:terry-pratchett'
+  body:
+    -
+      value: "<p>Pratchett's first novel,&nbsp;The Carpet People, was published in 1971. The first&nbsp;Discworld&nbsp;novel,&nbsp;The Colour of Magic, was published in 1983, after which Pratchett wrote an average of two books a year. The final&nbsp;Discworld&nbsp;novel,&nbsp;The Shepherd's Crown, was published in August 2015, five months after his death.</p>\r\n\r\n<p>Pratchett, with more than 85&nbsp;million books sold worldwide in 37&nbsp;languages, was the UK's best-selling author of the 1990s. He was appointed&nbsp;Officer of the Order of the British Empire&nbsp;(OBE) in 1998 and was&nbsp;knighted&nbsp;for services to literature in the&nbsp;2009 New Year Honours.&nbsp;In 2001 he won the annual&nbsp;Carnegie Medal&nbsp;for&nbsp;The Amazing Maurice and his Educated Rodents, the first&nbsp;Discworld&nbsp;book marketed for children. He received the&nbsp;World Fantasy Award for Life Achievement&nbsp;in 2010</p>\r\n\r\n<p>In December 2007, Pratchett announced that he had been diagnosed with&nbsp;early-onset Alzheimer's disease. He later made a substantial public donation to the&nbsp;Alzheimer's Research Trust, filmed a television programme chronicling his experiences with the condition for the&nbsp;BBC, and became a patron for Alzheimer's Research UK. Pratchett died on 12 March 2015, aged 66.</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+      format: rich_text
+      summary: "Sir Terence David John Pratchett\_OBE\_(28 April 1948 – 12 March 2015) was an English\_humorist,\_satirist, and author of\_fantasy novels, especially\_comical works. He is best known for his\_Discworld\_series of 41 novels."
+  field_introduction:
+    -
+      value: "<p class=\"introduction\">Sir Terence David John Pratchett&nbsp;OBE&nbsp;(28 April 1948 – 12 March 2015) was an English&nbsp;humorist,&nbsp;satirist, and author of&nbsp;fantasy novels, especially&nbsp;comical works. He is best known for his&nbsp;Discworld&nbsp;series of 41 novels.</p>\r\n"
+      format: rich_text
+  field_search_exclude:
+    -
+      value: false

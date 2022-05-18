@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: charts
+label: Charts
+icon_uuid: ddc4d6d2-51ab-4c5a-b233-479d35b418d8
+icon_default: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAYAAAAVibZIAAAASklEQVR4AWMgGRQd2MpQtP8/mKYWABkIw0PY0FFDRw3FzCGUG4qpaOANxeljyg3FFKeLoaOGYsYmtQwlX3zUUESEFO/fgqSEInEAGPpq/L85D5gAAAAASUVORK5CYII='
+description: 'Display CSV data in a variety of chart types.'
+behavior_plugins: {  }

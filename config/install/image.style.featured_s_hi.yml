@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: featured_s_hi
+label: 'Featured small high resolution'
+effects:
+  124772c3-6fcb-4000-84e4-46026936ca97:
+    uuid: 124772c3-6fcb-4000-84e4-46026936ca97
+    id: image_scale
+    weight: 1
+    data:
+      width: 1536
+      height: null
+      upscale: false

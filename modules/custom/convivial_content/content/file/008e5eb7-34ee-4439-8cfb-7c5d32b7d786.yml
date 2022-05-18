@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 008e5eb7-34ee-4439-8cfb-7c5d32b7d786
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: experience-low-bg.jpg
+  uri:
+    -
+      value: 'public://2021-05/experience-low-bg.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 6815677
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1620000049

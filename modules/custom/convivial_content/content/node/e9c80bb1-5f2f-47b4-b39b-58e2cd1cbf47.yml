@@ -1,0 +1,135 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: e9c80bb1-5f2f-47b4-b39b-58e2cd1cbf47
+  bundle: page
+  default_langcode: en
+  depends:
+    d7e283c5-88a3-461e-a9a1-a99f5252b769: media
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: Typography
+  created:
+    -
+      value: 1596206683
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /test/typography
+      langcode: en
+      pathauto: 1
+  morpht_computed_field_type_label:
+    -
+      value: Page
+  body:
+    -
+      value: ''
+      format: rich_text
+      summary: 'Demonstration of the various typographical features.'
+  field_components:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 0190edb0-69d1-4497-be85-d0d20359cce0
+          bundle: content
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1619003637
+          behavior_settings:
+            -
+              value:
+                layout_paragraphs:
+                  region: ''
+                  parent_uuid: ''
+                  layout: ''
+                  config: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_body:
+            -
+              value: "<h1>Heading 1 &lt;h1&gt;</h1>\r\n\r\n<p>Many say exploration is part of our destiny, but it’s actually our duty to future generations and their quest to ensure the survival of the human species.</p>\r\n\r\n<h2>Heading 2 &lt;h2&gt;</h2>\r\n\r\n<p>It suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth. I didn”t feel like a giant. I felt very, very small.</p>\r\n\r\n<h3>Heading 3 &lt;h3&gt;</h3>\r\n\r\n<p>The Earth was small, light blue, and so touchingly alone, our home that must be defended like a holy relic. The Earth was absolutely round. I believe I never knew what the word round meant until I saw Earth from space.</p>\r\n\r\n<h4>Heading 4 &lt;h4&gt;</h4>\r\n\r\n<p>To be the first to enter the cosmos, to engage, single-handed, in an unprecedented duel with nature—could one dream of anything more?</p>\r\n\r\n<h5>Heading 5 &lt;h5&gt;</h5>\r\n\r\n<p>What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.</p>\r\n\r\n<h6>Heading 6 &lt;h6&gt;</h6>\r\n\r\n<p>Many say exploration is part of our destiny, but it’s actually our duty to future generations and their quest to ensure the survival of the human species.</p>\r\n\r\n<h2>Block-level elements</h2>\r\n\r\n<p>Here’s a paragraph &lt;p&gt; filled with some <a href=\"http://spaceipsum.com/\">Space Ipsum</a>. Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman’s earth, if free men make it, will be truly round: a globe in practice, not in theory.</p>\r\n\r\n<p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>\r\n\r\n<div>Here’s a div &lt;div&gt;. A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That’s how I felt seeing the Earth for the first time. I could not help but love and cherish her</div>\r\n\r\n<blockquote>\r\n<p>Let’s light this fire one more time, Mike, and witness this great nation at its best. &lt;blockquote&gt; via <a href=\"http://spaceipsum.com/\">Space Ipsum</a></p>\r\n</blockquote>\r\n\r\n<p>We choose to go to the moon in this decade and do the other things, not because they are easy, but because they are hard, because that goal will serve to organize and measure the best of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to postpone, and one which we intend to win.</p>\r\n\r\n<p>Many say exploration is part of our destiny, but it’s actually our duty to future generations and their quest to ensure the survival of the human species.</p>\r\n\r\n<h2>Lists &lt;li&gt;</h2>\r\n\r\n<p>The regret on our side is, they used to say years ago, we are reading about you in science class. Now they say, we are reading about you in history class.</p>\r\n\r\n<ul>\r\n\t<li>Unordered list &lt;ul&gt;</li>\r\n\t<li>List element</li>\r\n\t<li>Across the sea of space, the stars are other suns.</li>\r\n\t<li>Science cuts two ways, of course; its products can be used for both good and evil. But there’s no turning back from science. The early warnings about technological dangers also come from science.</li>\r\n</ul>\r\n\r\n<p>It suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth. I didn”t feel like a giant. I felt very, very small.</p>\r\n\r\n<ol>\r\n\t<li>Ordered list &lt;ol&gt;</li>\r\n\t<li>List element</li>\r\n\t<li>The dreams of yesterday are the hopes of today and the reality of tomorrow.</li>\r\n\t<li>Curious that we spend more time congratulating people who have succeeded than encouraging people who have not.</li>\r\n</ol>\r\n\r\n<p>For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.</p>\r\n\r\n<dl>\r\n\t<dt>Definition term &lt;dt&gt;</dt>\r\n\t<dd>Definition &lt;dd&gt;</dd>\r\n\t<dt>Earth</dt>\r\n\t<dd>A kick-ass planet.</dd>\r\n\t<dt>Pluto</dt>\r\n\t<dd>A kick-ass former planet.</dd>\r\n\t<dt>Space Ipsum</dt>\r\n\t<dd>NASA is not about the ‘Adventure of Human Space Exploration’…We won’t be doing it just to get out there in space – we’ll be doing it because the things we learn out there will be making life better for a lot of people who won’t be able to go.</dd>\r\n</dl>\r\n\r\n<p>Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.</p>\r\n\r\n<h2>Text-level elements</h2>\r\n\r\n<ul>\r\n\t<li><a href=\"#\">anchor link</a> &lt;a&gt;</li>\r\n\t<li>citation: <cite>A Study in Scarlet</cite> &lt;cite&gt;</li>\r\n\t<li>Here’s the <code>&lt;code&gt;</code> element</li>\r\n\t<li><em>emphasis</em> &lt;em&gt;</li>\r\n\t<li>strikethough: <s>Lance Armstrong remains steroid-free.</s> &lt;s&gt;</li>\r\n\t<li>strong: <strong>The Hammer</strong> &lt;strong&gt;</li>\r\n\t<li>subscript: <sub>Lower</sub> 0<sub>1<sub>2<sub>3</sub></sub></sub> &lt;sub&gt;</li>\r\n\t<li>superscript: I need a good <sup>superman</sup> joke to go here. 0<sup>1<sup>2<sup>3</sup></sup></sup> &lt;sup&gt;</li>\r\n\t<li>underline: Never underline <u>anything</u>. &lt;u&gt;</li>\r\n</ul>\r\n"
+              format: rich_text
+          field_c_colour_classes:
+            -
+              value: 'cp cp--standard'
+          field_hide_heading:
+            -
+              value: false
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: a7854163-6f0a-4f11-b6bf-8dc72c5118fb
+          bundle: content
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1619003657
+          behavior_settings:
+            -
+              value:
+                layout_paragraphs:
+                  region: ''
+                  parent_uuid: ''
+                  layout: ''
+                  config: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_body:
+            -
+              value: "<h1>Heading 1 &lt;h1&gt;</h1>\r\n\r\n<p>Many say exploration is part of our destiny, but it’s actually our duty to future generations and their quest to ensure the survival of the human species.</p>\r\n\r\n<h2>Heading 2 &lt;h2&gt;</h2>\r\n\r\n<p>It suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth. I didn”t feel like a giant. I felt very, very small.</p>\r\n\r\n<h3>Heading 3 &lt;h3&gt;</h3>\r\n\r\n<p>The Earth was small, light blue, and so touchingly alone, our home that must be defended like a holy relic. The Earth was absolutely round. I believe I never knew what the word round meant until I saw Earth from space.</p>\r\n\r\n<h4>Heading 4 &lt;h4&gt;</h4>\r\n\r\n<p>To be the first to enter the cosmos, to engage, single-handed, in an unprecedented duel with nature—could one dream of anything more?</p>\r\n\r\n<h5>Heading 5 &lt;h5&gt;</h5>\r\n\r\n<p>What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.</p>\r\n\r\n<h6>Heading 6 &lt;h6&gt;</h6>\r\n\r\n<p>Many say exploration is part of our destiny, but it’s actually our duty to future generations and their quest to ensure the survival of the human species.</p>\r\n\r\n<h2>Block-level elements</h2>\r\n\r\n<p>Here’s a paragraph &lt;p&gt; filled with some <a href=\"http://spaceipsum.com/\">Space Ipsum</a>. Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman’s earth, if free men make it, will be truly round: a globe in practice, not in theory.</p>\r\n\r\n<p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>\r\n\r\n<div>Here’s a div &lt;div&gt;. A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That’s how I felt seeing the Earth for the first time. I could not help but love and cherish her</div>\r\n\r\n<blockquote>\r\n<p>Let’s light this fire one more time, Mike, and witness this great nation at its best. &lt;blockquote&gt; via <a href=\"http://spaceipsum.com/\">Space Ipsum</a></p>\r\n</blockquote>\r\n\r\n<p>We choose to go to the moon in this decade and do the other things, not because they are easy, but because they are hard, because that goal will serve to organize and measure the best of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to postpone, and one which we intend to win.</p>\r\n\r\n<p>Many say exploration is part of our destiny, but it’s actually our duty to future generations and their quest to ensure the survival of the human species.</p>\r\n\r\n<h2>Lists &lt;li&gt;</h2>\r\n\r\n<p>The regret on our side is, they used to say years ago, we are reading about you in science class. Now they say, we are reading about you in history class.</p>\r\n\r\n<ul>\r\n\t<li>Unordered list &lt;ul&gt;</li>\r\n\t<li>List element</li>\r\n\t<li>Across the sea of space, the stars are other suns.</li>\r\n\t<li>Science cuts two ways, of course; its products can be used for both good and evil. But there’s no turning back from science. The early warnings about technological dangers also come from science.</li>\r\n</ul>\r\n\r\n<p>It suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth. I didn”t feel like a giant. I felt very, very small.</p>\r\n\r\n<ol>\r\n\t<li>Ordered list &lt;ol&gt;</li>\r\n\t<li>List element</li>\r\n\t<li>The dreams of yesterday are the hopes of today and the reality of tomorrow.</li>\r\n\t<li>Curious that we spend more time congratulating people who have succeeded than encouraging people who have not.</li>\r\n</ol>\r\n\r\n<p>For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.</p>\r\n\r\n<dl>\r\n\t<dt>Definition term &lt;dt&gt;</dt>\r\n\t<dd>Definition &lt;dd&gt;</dd>\r\n\t<dt>Earth</dt>\r\n\t<dd>A kick-ass planet.</dd>\r\n\t<dt>Pluto</dt>\r\n\t<dd>A kick-ass former planet.</dd>\r\n\t<dt>Space Ipsum</dt>\r\n\t<dd>NASA is not about the ‘Adventure of Human Space Exploration’…We won’t be doing it just to get out there in space – we’ll be doing it because the things we learn out there will be making life better for a lot of people who won’t be able to go.</dd>\r\n</dl>\r\n\r\n<p>Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.</p>\r\n\r\n<h2>Text-level elements</h2>\r\n\r\n<ul>\r\n\t<li><a href=\"#\">anchor link</a> &lt;a&gt;</li>\r\n\t<li>citation: <cite>A Study in Scarlet</cite> &lt;cite&gt;</li>\r\n\t<li>Here’s the <code>&lt;code&gt;</code> element</li>\r\n\t<li><em>emphasis</em> &lt;em&gt;</li>\r\n\t<li>strikethough: <s>Lance Armstrong remains steroid-free.</s> &lt;s&gt;</li>\r\n\t<li>strong: <strong>The Hammer</strong> &lt;strong&gt;</li>\r\n\t<li>subscript: <sub>Lower</sub> 0<sub>1<sub>2<sub>3</sub></sub></sub> &lt;sub&gt;</li>\r\n\t<li>superscript: I need a good <sup>superman</sup> joke to go here. 0<sup>1<sup>2<sup>3</sup></sup></sup> &lt;sup&gt;</li>\r\n\t<li>underline: Never underline <u>anything</u>. &lt;u&gt;</li>\r\n</ul>\r\n"
+              format: rich_text
+          field_c_colour_classes:
+            -
+              value: 'cp cp--primary-dark'
+          field_hide_heading:
+            -
+              value: false
+  field_introduction:
+    -
+      value: "<p class=\"introduction\">Demonstration of the various typographical features.</p>\r\n"
+      format: rich_text
+  field_search_exclude:
+    -
+      value: false
+  field_thumbnail:
+    -
+      entity: d7e283c5-88a3-461e-a9a1-a99f5252b769
+  field_updated:
+    -
+      value: '2020-07-31'

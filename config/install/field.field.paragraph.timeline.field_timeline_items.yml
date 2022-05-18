@@ -1,0 +1,150 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_timeline_items
+    - paragraphs.paragraphs_type.timeline
+    - paragraphs.paragraphs_type.timeline_item
+  module:
+    - entity_reference_revisions
+id: paragraph.timeline.field_timeline_items
+field_name: field_timeline_items
+entity_type: paragraph
+bundle: timeline
+label: items
+description: 'The items to display in the timeline'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      timeline_item: timeline_item
+    target_bundles_drag_drop:
+      accordion:
+        weight: 41
+        enabled: false
+      accordion_group:
+        weight: 42
+        enabled: false
+      adaptive_height_modifier:
+        weight: 43
+        enabled: false
+      app:
+        weight: 44
+        enabled: false
+      charts:
+        weight: 45
+        enabled: false
+      clip_path_modifier:
+        weight: 46
+        enabled: false
+      color_background_modifier:
+        weight: 47
+        enabled: false
+      content:
+        weight: 48
+        enabled: false
+      content_block:
+        weight: 49
+        enabled: false
+      custom_linear_gradient_modifier:
+        weight: 50
+        enabled: false
+      custom_radial_gradient_modifier:
+        weight: 51
+        enabled: false
+      datatables_modifier:
+        weight: 52
+        enabled: false
+      dsac_modifier:
+        weight: 53
+        enabled: false
+      dssc_modifier:
+        weight: 54
+        enabled: false
+      fastfact:
+        weight: 55
+        enabled: false
+      fastfacts:
+        weight: 56
+        enabled: false
+      fonts_modifier:
+        weight: 57
+        enabled: false
+      hide_modifier:
+        weight: 58
+        enabled: false
+      image_bg_modifier:
+        weight: 59
+        enabled: false
+      item:
+        weight: 60
+        enabled: false
+      item_list:
+        weight: 61
+        enabled: false
+      map:
+        weight: 62
+        enabled: false
+      media_list:
+        weight: 63
+        enabled: false
+      national_map:
+        weight: 64
+        enabled: false
+      national_map_catalog:
+        weight: 65
+        enabled: false
+      national_map_catalog_item:
+        weight: 66
+        enabled: false
+      node_list:
+        weight: 67
+        enabled: false
+      padding_modifier:
+        weight: 68
+        enabled: false
+      parallax_bg_modifier:
+        weight: 69
+        enabled: false
+      plugin_block:
+        weight: 70
+        enabled: false
+      readspeaker:
+        weight: 71
+        enabled: false
+      relative_height_modifier:
+        weight: 72
+        enabled: false
+      scroll_reveal_modifier:
+        weight: 73
+        enabled: false
+      section:
+        weight: 74
+        enabled: false
+      slide:
+        weight: 75
+        enabled: false
+      slideshow:
+        weight: 76
+        enabled: false
+      timeline:
+        weight: 77
+        enabled: false
+      video_bg_modifier:
+        weight: 78
+        enabled: false
+      timeline_item:
+        enabled: true
+        weight: 79
+      view:
+        weight: 79
+        enabled: false
+      webform:
+        weight: 80
+        enabled: false
+field_type: entity_reference_revisions

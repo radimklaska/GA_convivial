@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: medium_hi
+label: 'Medium high resolution'
+effects:
+  4f4764ff-4286-4060-8cf5-cb7a98fd97fe:
+    uuid: 4f4764ff-4286-4060-8cf5-cb7a98fd97fe
+    id: image_scale
+    weight: 1
+    data:
+      width: 800
+      height: null
+      upscale: false

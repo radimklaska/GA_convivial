@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 562b2cea-9db1-4276-abbb-d28570e7b9b2
+  bundle: content_tab
+  default_langcode: en
+default:
+  revision_user:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Tab 1'
+  reusable:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  field_ct_body:
+    -
+      value: "<p>Lorem ipsum dolor sit amet. Test</p>\r\n"
+      format: rich_text
+  field_ct_default:
+    -
+      value: true
+  field_ct_id:
+    -
+      value: tab-1
+  field_ct_label:
+    -
+      value: 'Tab 1'

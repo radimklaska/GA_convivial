@@ -1,0 +1,12 @@
+services:
+  convivial.theme_manager:
+    class: Drupal\convivial_theme_default_render\ThemeManager
+    decorates: theme.manager
+    decoration_priority: 10
+    arguments: ['@convivial.theme_manager.inner', '@theme.initialization', '@config.factory']
+    calls:
+      - [ setThemeRegistry, [ '@theme.registry' ] ]
+    properties:
+      # Without this property for decorated services, serialization will fail.
+      # https://www.drupal.org/project/drupal/issues/2531564
+      _serviceId: convivial.theme_manager

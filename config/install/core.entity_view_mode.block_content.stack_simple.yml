@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.stack_simple
+label: 'Basic card'
+targetEntityType: block_content
+cache: true

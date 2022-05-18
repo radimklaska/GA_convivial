@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 4bdffadc-f879-4065-a47f-98775e79cc9a
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: logo_0.svg
+  uri:
+    -
+      value: 'public://2021-05/logo_0.svg'
+  filemime:
+    -
+      value: image/svg+xml
+  filesize:
+    -
+      value: 13202
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1620217762

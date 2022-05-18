@@ -1,0 +1,12 @@
+langcode: en
+status: true
+dependencies: {  }
+id: submission_viewer
+label: 'Submission viewer'
+weight: -3
+is_admin: null
+permissions:
+  - 'access toolbar'
+  - 'access webform overview'
+  - 'view any webform submission'
+  - 'view the administration theme'

@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies: {  }
+id: webform_manager
+label: 'Webform manager'
+weight: -4
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access any webform configuration'
+  - 'access toolbar'
+  - 'access webform overview'
+  - 'access webform submission user'
+  - 'administer webform'
+  - 'administer webform element access'
+  - 'administer webform submission'
+  - 'create webform'
+  - 'delete any webform'
+  - 'delete any webform submission'
+  - 'edit any webform'
+  - 'edit webform assets'
+  - 'edit webform variants'
+  - 'view any webform submission'
+  - 'view the administration theme'

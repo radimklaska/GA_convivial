@@ -1,0 +1,66 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: e49fab16-9c68-4aa4-955f-60145e4066ad
+  bundle: article
+  default_langcode: en
+  depends:
+    a5a73656-ec34-4210-a3f3-ef5384879fad: node
+    ba42d131-53ac-48b9-8657-aa987a093fdd: node
+    4942adbd-40e1-4c76-acf3-d4c25e73fd38: node
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: '2001: A Space Odyssey'
+  created:
+    -
+      value: 1611316459
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /news/2001-space-odyssey
+      langcode: en
+      pathauto: 1
+  morpht_computed_field_type_label:
+    -
+      value: Article
+  body:
+    -
+      value: "<p>2001: A Space Odyssey is the 1968 science fiction novel written by Arthur C. Clarke and the 1968 film directed by Stanley Kubrick. It is a part of Clarke's Space Odyssey series, the first of four novels and two films. Both the novel and the film are partially based on Clarke's 1948 short story \"The Sentinel\", an entry in a BBC short story competition, and \"Encounter in the Dawn\", published in 1953 in the magazine Amazing Stories.</p>\r\n"
+      format: rich_text
+      summary: "2001: A Space Odyssey\_is the 1968 science fiction\_novel\_written by\_Arthur\_C. Clarke\_and the\_1968 film\_directed by\_Stanley Kubrick."
+  field_about:
+    -
+      entity: a5a73656-ec34-4210-a3f3-ef5384879fad
+  field_authored_by:
+    -
+      entity: ba42d131-53ac-48b9-8657-aa987a093fdd
+  field_published:
+    -
+      value: '2021-01-22'
+  field_search_exclude:
+    -
+      value: false
+  field_suitable_for:
+    -
+      entity: 4942adbd-40e1-4c76-acf3-d4c25e73fd38

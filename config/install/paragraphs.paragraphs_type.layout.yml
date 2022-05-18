@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: layout
+label: Layout
+icon_uuid: 997c4e34-f86a-42b3-8f92-c067ccd2f9c0
+icon_default: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAGKADAAQAAAABAAAAGAAAAADB/VeXAAAA8UlEQVRIDWNkKD7gycDAMIvh/38ZIE09wMj4BGhYGhOQoL7hIGdCHDyLBe5yPnZhhgardyA5ikHDMSGGTz/fgswG+QACqGU4yDQksxAWQO2hNjX0LWCBB8nMM6xwNjUYNz+DTUFYcPPzL2qYi24GwgIGxt/oksDEDPUVNjlM1agiEL0IC/oc2FAVAHlF+/+DxbDJYShGE4DqHfqpiOY+QMQBWhCicMlJwhjJFMVENA4FSZg4H2BNwmiOwOCiJ1MMBUgCo8kUKTCozkTkA1A1Ry2AZBYjsFXxGF4vU8sCmDnAlgXIB2kMkCYGTJg6NLTZAgANHz4LNAmjGAAAAABJRU5ErkJggg=='
+description: 'Layout Paragraphs provides an intuitive drag-and-drop experience for building flexible layouts with paragraphs. '
+behavior_plugins:
+  layout_paragraphs:
+    enabled: true
+    available_layouts:
+      paragraph_layout_3_3_3_3: 'Four columns (3|3|3|3)'
+      paragraph_layout_12: 'Single column (12)'
+      paragraph_layout_3_6_3: 'Three columns (3|6|3)'
+      paragraph_layout_4_4_4: 'Three columns (4|4|4)'
+      paragraph_layout_3_9: 'Two columns (3|9)'
+      paragraph_layout_4_8: 'Two columns (4|8)'
+      paragraph_layout_5_7: 'Two columns (5|7)'
+      paragraph_layout_6_6: 'Two columns (6|6)'
+      paragraph_layout_7_5: 'Two columns (7|5)'
+      paragraph_layout_8_4: 'Two columns (8|4)'
+      paragraph_layout_9_3: 'Two columns (9|3)'

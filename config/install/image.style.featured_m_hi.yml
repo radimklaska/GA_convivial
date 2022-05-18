@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: featured_m_hi
+label: 'Featured medium high resolution'
+effects:
+  49f5a584-ced1-40c5-9ecc-980a0404f088:
+    uuid: 49f5a584-ced1-40c5-9ecc-980a0404f088
+    id: image_scale
+    weight: 1
+    data:
+      width: 1984
+      height: null
+      upscale: false

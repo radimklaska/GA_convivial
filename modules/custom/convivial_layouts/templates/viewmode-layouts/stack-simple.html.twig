@@ -1,0 +1,60 @@
+{#
+/**
+* Stack simple. Regions are in layers on top of each other.
+*
+* List of regions: title, info, summary, date.
+*/
+#}
+
+{%
+  set classes = [
+    'stack',
+    'stack--simple',
+    'card',
+  ]
+%}
+
+<div {{ attributes.addClass(classes) }}>
+  {{ title_suffix.contextual_links }}
+
+  {% block content %}
+    {% if content %}
+      <div class="stack__content card-body">
+
+        {% block info %}
+          {% if content.info|render|striptags|trim %}
+            <div{{ region_attributes.info.addClass('layout__region', 'layout__region--info', 'stack__info', 'card-subtitle') }}>
+              {{ content.info }}
+            </div>
+          {% endif %}
+        {% endblock %}
+
+        {% block title %}
+          {% if content.title|render|striptags|trim %}
+            <h3{{ region_attributes.title.addClass('layout__region', 'layout__region--title', 'stack__title', 'card-title') }}>
+              {{ content.title }}
+            </h3>
+          {% endif %}
+        {% endblock %}
+
+        {% block summary %}
+          {% if content.summary|render|striptags|trim %}
+            <div{{ region_attributes.summary.addClass('layout__region', 'layout__region--summary', 'stack__summary') }}>
+              {{ content.summary }}
+            </div>
+          {% endif %}
+        {% endblock %}
+
+        {% block date %}
+          {% if content.date|render|striptags|trim %}
+            <small{{ region_attributes.date.addClass('layout__region', 'layout__region--date', 'stack__date') }}>
+              {{ content.date|render|striptags('<time>')|raw }}
+            </small>
+          {% endif %}
+        {% endblock %}
+
+      </div>
+    {% endif %}
+  {% endblock %}
+
+</div>

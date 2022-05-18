@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style_classes
+    - paragraphs.paragraphs_type.geochart
+  module:
+    - options
+id: paragraph.geochart.field_style_classes
+field_name: field_style_classes
+entity_type: paragraph
+bundle: geochart
+label: Style
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

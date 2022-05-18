@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.content
+    - field.storage.block_content.field_position
+  module:
+    - options
+id: block_content.content.field_position
+field_name: field_position
+entity_type: block_content
+bundle: content
+label: Position
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

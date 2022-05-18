@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fastfact_prefix
+    - paragraphs.paragraphs_type.fastfact
+id: paragraph.fastfact.field_fastfact_prefix
+field_name: field_fastfact_prefix
+entity_type: paragraph
+bundle: fastfact
+label: Prefix
+description: 'Label displayed before the value. E.g. $ or €'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

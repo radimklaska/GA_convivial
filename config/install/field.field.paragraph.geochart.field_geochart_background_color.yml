@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_geochart_background_color
+    - paragraphs.paragraphs_type.geochart
+  module:
+    - unique_content_field_validation
+third_party_settings:
+  unique_content_field_validation:
+    unique: false
+    unique_text: ''
+id: paragraph.geochart.field_geochart_background_color
+field_name: field_geochart_background_color
+entity_type: paragraph
+bundle: geochart
+label: 'Background color'
+description: 'The background color for the main area of the chart.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

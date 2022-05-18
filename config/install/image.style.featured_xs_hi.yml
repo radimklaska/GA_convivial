@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: featured_xs_hi
+label: 'Featured extra small high resolution'
+effects:
+  30d4ce3c-18e4-4d2b-bb7f-a07777387747:
+    uuid: 30d4ce3c-18e4-4d2b-bb7f-a07777387747
+    id: image_scale
+    weight: 1
+    data:
+      width: 1152
+      height: null
+      upscale: false

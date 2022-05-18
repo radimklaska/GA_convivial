@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: square_hi
+label: 'Square high resolution'
+effects:
+  8a7f0cbb-95d9-4458-beb3-a666bdac7b85:
+    uuid: 8a7f0cbb-95d9-4458-beb3-a666bdac7b85
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 368
+      height: 368
+      crop_type: focal_point

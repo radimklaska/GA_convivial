@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: half_wide_xs
+label: 'Half (wide) extra small'
+effects:
+  ac00958b-d716-4252-a910-db2f92eb1618:
+    uuid: ac00958b-d716-4252-a910-db2f92eb1618
+    id: image_scale
+    weight: 1
+    data:
+      width: 768
+      height: null
+      upscale: false

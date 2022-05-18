@@ -1,0 +1,166 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.components
+    - field.storage.block_content.field_components
+    - paragraphs.paragraphs_type.accordion
+    - paragraphs.paragraphs_type.accordion_group
+    - paragraphs.paragraphs_type.charts
+    - paragraphs.paragraphs_type.content
+    - paragraphs.paragraphs_type.content_block
+    - paragraphs.paragraphs_type.content_tabs
+    - paragraphs.paragraphs_type.fastfacts
+    - paragraphs.paragraphs_type.geochart
+    - paragraphs.paragraphs_type.item_list
+    - paragraphs.paragraphs_type.map
+    - paragraphs.paragraphs_type.media_list
+    - paragraphs.paragraphs_type.node_list
+    - paragraphs.paragraphs_type.personified_content
+    - paragraphs.paragraphs_type.plugin_block
+    - paragraphs.paragraphs_type.section
+    - paragraphs.paragraphs_type.slideshow
+    - paragraphs.paragraphs_type.view
+    - paragraphs.paragraphs_type.webform
+  module:
+    - entity_reference_revisions
+id: block_content.components.field_components
+field_name: field_components
+entity_type: block_content
+bundle: components
+label: Components
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      accordion: accordion
+      accordion_group: accordion_group
+      content_block: content_block
+      plugin_block: plugin_block
+      content: content
+      charts: charts
+      item_list: item_list
+      map: map
+      node_list: node_list
+      section: section
+      slideshow: slideshow
+      view: view
+      webform: webform
+      geochart: geochart
+      content_tabs: content_tabs
+      fastfacts: fastfacts
+      personified_content: personified_content
+      media_list: media_list
+    negate: 0
+    target_bundles_drag_drop:
+      accordion:
+        weight: -63
+        enabled: true
+      accordion_group:
+        weight: -62
+        enabled: true
+      adaptive_height_modifier:
+        weight: -40
+        enabled: false
+      answer:
+        weight: 38
+        enabled: false
+      charts:
+        weight: -56
+        enabled: true
+      content:
+        weight: -57
+        enabled: true
+      content_block:
+        weight: -60
+        enabled: true
+      content_tab:
+        weight: 51
+        enabled: false
+      content_tabs:
+        weight: 52
+        enabled: true
+      fastfact:
+        weight: 40
+        enabled: false
+      fastfacts:
+        weight: 55
+        enabled: true
+      geochart:
+        weight: 44
+        enabled: true
+      hero_banner:
+        weight: 46
+        enabled: false
+      hide_modifier:
+        weight: -43
+        enabled: false
+      image_bg_modifier:
+        weight: -42
+        enabled: false
+      item:
+        weight: -41
+        enabled: false
+      item_list:
+        weight: -54
+        enabled: true
+      layout:
+        weight: 51
+        enabled: false
+      map:
+        weight: -53
+        enabled: true
+      media_list:
+        weight: 74
+        enabled: true
+      node_list:
+        weight: -52
+        enabled: true
+      parallax_bg_modifier:
+        weight: -38
+        enabled: false
+      personified_content:
+        weight: 56
+        enabled: true
+      plugin_block:
+        weight: -59
+        enabled: true
+      scroll_reveal_modifier:
+        weight: -35
+        enabled: false
+      section:
+        weight: -51
+        enabled: true
+      slide:
+        weight: -33
+        enabled: false
+      slideshow:
+        weight: -50
+        enabled: true
+      snippet:
+        weight: 62
+        enabled: false
+      tiles:
+        weight: 63
+        enabled: false
+      timeline:
+        weight: 64
+        enabled: false
+      timeline_item:
+        weight: 65
+        enabled: false
+      video_bg_modifier:
+        weight: -34
+        enabled: false
+      view:
+        weight: -49
+        enabled: true
+      webform:
+        weight: -48
+        enabled: true
+field_type: entity_reference_revisions

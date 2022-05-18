@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_item_icon_bg_colour
+    - paragraphs.paragraphs_type.item
+id: paragraph.item.field_item_icon_bg_colour
+field_name: field_item_icon_bg_colour
+entity_type: paragraph
+bundle: item
+label: 'Icon background colour'
+description: 'Every valid CSS colour format is possible. E.g. #FFFFFF, or RGBA(255,255,255,1).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

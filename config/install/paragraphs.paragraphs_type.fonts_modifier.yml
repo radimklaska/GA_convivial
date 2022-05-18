@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: fonts_modifier
+label: 'Fonts Modifier'
+icon_uuid: null
+description: 'Modify various aspect of the font across base elements.'
+behavior_plugins: {  }

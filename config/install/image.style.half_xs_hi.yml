@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: half_xs_hi
+label: 'Half extra small high resolution'
+effects:
+  5c958d33-d8dc-4dd2-881d-c0af9c5d61b6:
+    uuid: 5c958d33-d8dc-4dd2-881d-c0af9c5d61b6
+    id: image_scale
+    weight: 1
+    data:
+      width: 1536
+      height: null
+      upscale: false

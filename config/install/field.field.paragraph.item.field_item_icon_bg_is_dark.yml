@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_item_icon_bg_is_dark
+    - paragraphs.paragraphs_type.item
+id: paragraph.item.field_item_icon_bg_is_dark
+field_name: field_item_icon_bg_is_dark
+entity_type: paragraph
+bundle: item
+label: 'Icon background is dark'
+description: 'Defines whether the title will be light or not.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

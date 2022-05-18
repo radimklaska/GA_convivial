@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: hide_modifier
+label: 'Hide Modifier'
+icon_uuid: null
+description: 'Modify the content so that it is hidden.'
+behavior_plugins: {  }

@@ -1,0 +1,99 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.fastfacts.field_body
+    - field.field.paragraph.fastfacts.field_heading
+    - field.field.paragraph.fastfacts.field_il_colour_classes
+    - field.field.paragraph.fastfacts.field_il_items
+    - field.field.paragraph.fastfacts.field_il_layout_classes
+    - field.field.paragraph.fastfacts.field_il_style_classes
+    - field.field.paragraph.fastfacts.field_modifiers
+    - field.field.paragraph.fastfacts.field_position
+    - field.field.paragraph.fastfacts.field_read_more
+    - paragraphs.paragraphs_type.fastfacts
+  module:
+    - entity_class_formatter
+    - entity_reference_revisions
+    - link
+    - text
+id: paragraph.fastfacts.default
+targetEntityType: paragraph
+bundle: fastfacts
+mode: default
+content:
+  field_body:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_heading:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_il_colour_classes:
+    weight: 6
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: entity_class_formatter
+    region: content
+  field_il_items:
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_il_layout_classes:
+    weight: 5
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: entity_class_formatter
+    region: content
+  field_il_style_classes:
+    weight: 8
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: entity_class_formatter
+    region: content
+  field_modifiers:
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_position:
+    weight: 7
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: entity_class_formatter
+    region: content
+  field_read_more:
+    weight: 4
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden:
+  search_api_excerpt: true

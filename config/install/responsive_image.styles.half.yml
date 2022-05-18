@@ -1,0 +1,59 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.half_lg
+    - image.style.half_lg_hi
+    - image.style.half_md
+    - image.style.half_md_hi
+    - image.style.half_sm
+    - image.style.half_sm_hi
+    - image.style.half_xs
+    - image.style.half_xs_hi
+  module:
+    - convivial_breakpoints
+id: half
+label: Half
+image_style_mappings:
+  -
+    breakpoint_id: convivial_breakpoints.large
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: half_lg
+  -
+    breakpoint_id: convivial_breakpoints.large
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: half_lg_hi
+  -
+    breakpoint_id: convivial_breakpoints.medium
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: half_md
+  -
+    breakpoint_id: convivial_breakpoints.medium
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: half_md_hi
+  -
+    breakpoint_id: convivial_breakpoints.small
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: half_sm
+  -
+    breakpoint_id: convivial_breakpoints.small
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: half_sm_hi
+  -
+    breakpoint_id: convivial_breakpoints.mobile
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: half_xs
+  -
+    breakpoint_id: convivial_breakpoints.mobile
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: half_xs_hi
+breakpoint_group: convivial_breakpoints
+fallback_image_style: half_xs

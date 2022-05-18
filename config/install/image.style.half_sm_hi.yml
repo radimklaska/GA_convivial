@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: half_sm_hi
+label: 'Half small high resolution'
+effects:
+  e1f86b9b-ae69-45e8-9108-3662a850322e:
+    uuid: e1f86b9b-ae69-45e8-9108-3662a850322e
+    id: image_scale
+    weight: 1
+    data:
+      width: 512
+      height: null
+      upscale: false

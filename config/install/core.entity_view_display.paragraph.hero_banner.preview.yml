@@ -1,0 +1,35 @@
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.hero_banner.field_body
+    - field.field.paragraph.hero_banner.field_heading
+    - field.field.paragraph.hero_banner.field_hero_banner_background
+    - field.field.paragraph.hero_banner.field_hero_banner_bg_color
+    - field.field.paragraph.hero_banner.field_hero_banner_link
+    - field.field.paragraph.hero_banner.field_hero_banner_position
+    - field.field.paragraph.hero_banner.field_hero_banner_style_classes
+    - field.field.paragraph.hero_banner.field_hero_banner_variant
+    - paragraphs.paragraphs_type.hero_banner
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: paragraph.hero_banner.preview
+targetEntityType: paragraph
+bundle: hero_banner
+mode: preview
+content: {  }
+hidden:
+  field_body: true
+  field_heading: true
+  field_hero_banner_background: true
+  field_hero_banner_bg_color: true
+  field_hero_banner_link: true
+  field_hero_banner_position: true
+  field_hero_banner_style_classes: true
+  field_hero_banner_variant: true
+  search_api_excerpt: true

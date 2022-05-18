@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_chrt_stack_order
+    - paragraphs.paragraphs_type.charts
+  module:
+    - options
+id: paragraph.charts.field_chrt_stack_order
+field_name: field_chrt_stack_order
+entity_type: paragraph
+bundle: charts
+label: 'Stacking order'
+description: 'Order of data rows used when stacking is enabled.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

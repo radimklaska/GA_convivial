@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: featured_xs
+label: 'Featured extra small'
+effects:
+  ce21c0ef-2cd2-4f81-8b7e-04973041aeab:
+    uuid: ce21c0ef-2cd2-4f81-8b7e-04973041aeab
+    id: image_scale
+    weight: 1
+    data:
+      width: 576
+      height: null
+      upscale: false

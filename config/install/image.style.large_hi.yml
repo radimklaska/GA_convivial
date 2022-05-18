@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: large_hi
+label: 'Large high resolution'
+effects:
+  162225e4-67ae-4153-87ff-fb8e5365dd37:
+    uuid: 162225e4-67ae-4153-87ff-fb8e5365dd37
+    id: image_scale
+    weight: 1
+    data:
+      width: 1200
+      height: null
+      upscale: false

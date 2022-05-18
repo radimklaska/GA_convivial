@@ -1,0 +1,59 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.featured_l
+    - image.style.featured_l_hi
+    - image.style.featured_m
+    - image.style.featured_m_hi
+    - image.style.featured_s
+    - image.style.featured_s_hi
+    - image.style.featured_xs
+    - image.style.featured_xs_hi
+  module:
+    - convivial_breakpoints
+id: featured
+label: Featured
+image_style_mappings:
+  -
+    breakpoint_id: convivial_breakpoints.large
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: featured_l
+  -
+    breakpoint_id: convivial_breakpoints.large
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: featured_l_hi
+  -
+    breakpoint_id: convivial_breakpoints.medium
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: featured_m
+  -
+    breakpoint_id: convivial_breakpoints.medium
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: featured_m_hi
+  -
+    breakpoint_id: convivial_breakpoints.small
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: featured_s
+  -
+    breakpoint_id: convivial_breakpoints.small
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: featured_s_hi
+  -
+    breakpoint_id: convivial_breakpoints.mobile
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: featured_xs
+  -
+    breakpoint_id: convivial_breakpoints.mobile
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: featured_xs_hi
+breakpoint_group: convivial_breakpoints
+fallback_image_style: featured_xs

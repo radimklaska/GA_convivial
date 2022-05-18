@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_view_definition
+    - paragraphs.paragraphs_type.view
+id: paragraph.view.field_view_definition
+field_name: field_view_definition
+entity_type: paragraph
+bundle: view
+label: 'View Definition'
+description: 'Use the machine name, display and arguments of the view to display it in paragraph. (e.g.: articles block 56,57)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

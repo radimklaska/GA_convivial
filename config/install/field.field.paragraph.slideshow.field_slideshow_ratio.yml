@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_slideshow_ratio
+    - paragraphs.paragraphs_type.slideshow
+id: paragraph.slideshow.field_slideshow_ratio
+field_name: field_slideshow_ratio
+entity_type: paragraph
+bundle: slideshow
+label: Ratio
+description: 'Set the ratio of the slideshow (default is 16:9).'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1.7777
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

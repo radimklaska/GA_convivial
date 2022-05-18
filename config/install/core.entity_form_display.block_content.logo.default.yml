@@ -1,0 +1,87 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.logo
+    - field.field.block_content.logo.field_logo_breakpoint
+    - field.field.block_content.logo.field_logo_large_default
+    - field.field.block_content.logo.field_logo_large_inverse
+    - field.field.block_content.logo.field_logo_large_width
+    - field.field.block_content.logo.field_logo_link
+    - field.field.block_content.logo.field_logo_small_default
+    - field.field.block_content.logo.field_logo_small_inverse
+    - field.field.block_content.logo.field_logo_small_width
+  module:
+    - file
+    - link
+id: block_content.logo.default
+targetEntityType: block_content
+bundle: logo
+mode: default
+content:
+  field_logo_breakpoint:
+    weight: 9
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_logo_large_default:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_logo_large_inverse:
+    weight: 3
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_logo_large_width:
+    weight: 7
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_logo_link:
+    weight: 6
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_logo_small_default:
+    weight: 4
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_logo_small_inverse:
+    weight: 5
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_logo_small_width:
+    weight: 8
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

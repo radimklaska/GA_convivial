@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.logo
+    - field.storage.block_content.field_logo_breakpoint
+id: block_content.logo.field_logo_breakpoint
+field_name: field_logo_breakpoint
+entity_type: block_content
+bundle: logo
+label: Breakpoint
+description: 'The breakpoint (px) at which the logo will change from large to small.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

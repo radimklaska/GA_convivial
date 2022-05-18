@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_chrt_legend
+    - paragraphs.paragraphs_type.charts
+  module:
+    - options
+id: paragraph.charts.field_chrt_legend
+field_name: field_chrt_legend
+entity_type: paragraph
+bundle: charts
+label: Legend
+description: 'Select position of the chart legend or <em>hidden</em> if you don''t want to display it. Please see <a href="https://naver.github.io/billboard.js/demo/#Legend.LegendPosition">https://naver.github.io/billboard.js/demo/#Legend.LegendPosition</a> for example.'
+required: true
+translatable: false
+default_value:
+  -
+    value: bottom
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,7 @@
+definitions:
+  govcms__front_page:
+    parent: 'menu_link_content:36e17727-5b52-45fa-9ba7-2f4089f1268d'
+    menu_name: main
+    enabled: true
+    expanded: false
+    weight: -50

@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: tiny_hi
+label: 'Tiny high resolution'
+effects:
+  87ebcf12-9941-4435-9fc7-644c962a9b2e:
+    uuid: 87ebcf12-9941-4435-9fc7-644c962a9b2e
+    id: image_scale
+    weight: 1
+    data:
+      width: 200
+      height: null
+      upscale: false

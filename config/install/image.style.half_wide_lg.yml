@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: half_wide_lg
+label: 'Half (wide) large'
+effects:
+  de32467f-f692-402c-8f2d-bd8a48855c98:
+    uuid: de32467f-f692-402c-8f2d-bd8a48855c98
+    id: image_scale
+    weight: 1
+    data:
+      width: 600
+      height: null
+      upscale: false

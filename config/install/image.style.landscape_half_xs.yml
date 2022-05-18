@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: landscape_half_xs
+label: 'Landscape half extra small'
+effects:
+  c7b3136c-058e-4f28-a414-fd19c678282d:
+    uuid: c7b3136c-058e-4f28-a414-fd19c678282d
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 768
+      height: 432
+      crop_type: focal_point

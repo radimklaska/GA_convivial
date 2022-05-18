@@ -1,0 +1,59 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.content_tab.field_ct_body
+    - field.field.paragraph.content_tab.field_ct_default
+    - field.field.paragraph.content_tab.field_ct_id
+    - field.field.paragraph.content_tab.field_ct_label
+    - field.field.paragraph.content_tab.field_title
+    - paragraphs.paragraphs_type.content_tab
+  module:
+    - text
+id: paragraph.content_tab.default
+targetEntityType: paragraph
+bundle: content_tab
+mode: default
+content:
+  field_ct_body:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_ct_default:
+    weight: 3
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_ct_id:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_ct_label:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

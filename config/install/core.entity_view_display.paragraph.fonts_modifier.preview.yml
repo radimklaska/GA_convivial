@@ -1,0 +1,55 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.fonts_modifier.field_mod_fonts_base
+    - field.field.paragraph.fonts_modifier.field_mod_fonts_em
+    - field.field.paragraph.fonts_modifier.field_mod_fonts_h1
+    - field.field.paragraph.fonts_modifier.field_mod_fonts_h1_transform
+    - field.field.paragraph.fonts_modifier.field_mod_fonts_h2
+    - field.field.paragraph.fonts_modifier.field_mod_fonts_h2_transform
+    - field.field.paragraph.fonts_modifier.field_mod_fonts_h3
+    - field.field.paragraph.fonts_modifier.field_mod_fonts_h3_transform
+    - field.field.paragraph.fonts_modifier.field_mod_fonts_h4
+    - field.field.paragraph.fonts_modifier.field_mod_fonts_h4_transform
+    - field.field.paragraph.fonts_modifier.field_mod_fonts_h5
+    - field.field.paragraph.fonts_modifier.field_mod_fonts_h5_transform
+    - field.field.paragraph.fonts_modifier.field_mod_fonts_h6
+    - field.field.paragraph.fonts_modifier.field_mod_fonts_h6_transform
+    - field.field.paragraph.fonts_modifier.field_mod_fonts_strong
+    - field.field.paragraph.fonts_modifier.field_mod_fonts_stylesheets
+    - field.field.paragraph.fonts_modifier.field_mod_media_query
+    - paragraphs.paragraphs_type.fonts_modifier
+id: paragraph.fonts_modifier.preview
+targetEntityType: paragraph
+bundle: fonts_modifier
+mode: preview
+content:
+  field_mod_media_query:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_mod_fonts_base: true
+  field_mod_fonts_em: true
+  field_mod_fonts_h1: true
+  field_mod_fonts_h1_transform: true
+  field_mod_fonts_h2: true
+  field_mod_fonts_h2_transform: true
+  field_mod_fonts_h3: true
+  field_mod_fonts_h3_transform: true
+  field_mod_fonts_h4: true
+  field_mod_fonts_h4_transform: true
+  field_mod_fonts_h5: true
+  field_mod_fonts_h5_transform: true
+  field_mod_fonts_h6: true
+  field_mod_fonts_h6_transform: true
+  field_mod_fonts_strong: true
+  field_mod_fonts_stylesheets: true
+  uid: true

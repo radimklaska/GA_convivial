@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: f9e815aa-a633-4e85-b80d-bc944f6c6758
+  bundle: image
+  default_langcode: en
+  depends:
+    3dad4957-d0dd-4be4-a6a0-2a6e7081064a: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Butterfly on blooming blossom'
+  created:
+    -
+      value: 1557659998
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: 3dad4957-d0dd-4be4-a6a0-2a6e7081064a
+      alt: 'Butterfly on blooming blossom'
+      title: ''
+      width: 5184
+      height: 3456

@@ -1,0 +1,234 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.decision_tree.body
+    - field.field.node.decision_tree.field_components
+    - field.field.node.decision_tree.field_decision_tree_first_step
+    - field.field.node.decision_tree.field_decision_tree_info_heading
+    - field.field.node.decision_tree.field_goal
+    - field.field.node.decision_tree.field_header_colour_classes
+    - field.field.node.decision_tree.field_header_modifiers
+    - field.field.node.decision_tree.field_hero_darkness
+    - field.field.node.decision_tree.field_hide
+    - field.field.node.decision_tree.field_introduction
+    - field.field.node.decision_tree.field_keywords
+    - field.field.node.decision_tree.field_meta_tags
+    - field.field.node.decision_tree.field_search_exclude
+    - field.field.node.decision_tree.field_thumbnail
+    - field.field.node.decision_tree.field_toc
+    - field.field.node.decision_tree.field_updated
+    - field.field.node.decision_tree.layout_builder__layout
+    - field.field.node.decision_tree.layout_selection
+    - node.type.decision_tree
+  module:
+    - convivial_layouts
+    - datetime
+    - entity_reference_revisions
+    - layout_builder
+    - layout_library
+    - options
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: convivial_onecol
+        layout_settings:
+          context_mapping: {  }
+          arrangement: null
+          containment: container
+          color: ''
+          styles: null
+        components:
+          dbe16da6-f590-4376-83c1-68451e8dc46c:
+            uuid: dbe16da6-f590-4376-83c1-68451e8dc46c
+            region: content
+            configuration:
+              id: 'field_block:node:decision_tree:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          1ee002e8-206a-4291-9cad-bd78d57836f3:
+            uuid: 1ee002e8-206a-4291-9cad-bd78d57836f3
+            region: content
+            configuration:
+              id: 'field_block:node:decision_tree:field_introduction'
+              label: Introduction
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          db35e0d2-561d-4e20-acfd-000c1e9a51a8:
+            uuid: db35e0d2-561d-4e20-acfd-000c1e9a51a8
+            region: content
+            configuration:
+              id: 'field_block:node:decision_tree:body'
+              label: Body
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          47e9c7a8-47d7-45a3-bd39-fb1291447efa:
+            uuid: 47e9c7a8-47d7-45a3-bd39-fb1291447efa
+            region: content
+            configuration:
+              id: 'field_block:node:decision_tree:field_components'
+              label: Components
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+          9b7bf011-d4b8-402b-ba4c-a3cf043de43d:
+            uuid: 9b7bf011-d4b8-402b-ba4c-a3cf043de43d
+            region: content
+            configuration:
+              id: 'field_block:node:decision_tree:field_keywords'
+              label: Keywords
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: basic_string
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 8
+            additional: {  }
+        third_party_settings: {  }
+  layout_library:
+    enable: false
+id: node.decision_tree.search_index
+targetEntityType: node
+bundle: decision_tree
+mode: search_index
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
+  field_components:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_introduction:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_keywords:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_search_exclude:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_thumbnail:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_toc:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_updated:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_decision_tree_first_step: true
+  field_decision_tree_info_heading: true
+  field_goal: true
+  field_header_colour_classes: true
+  field_header_modifiers: true
+  field_hero_darkness: true
+  field_hide: true
+  field_meta_tags: true
+  layout_builder__layout: true
+  layout_selection: true
+  search_api_excerpt: true

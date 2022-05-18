@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: landscape_half_lg_hi
+label: 'Landscape half large high resolution'
+effects:
+  609762dd-eef2-4b79-81e7-a4bc65a74df5:
+    uuid: 609762dd-eef2-4b79-81e7-a4bc65a74df5
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1920
+      height: 1080
+      crop_type: focal_point

@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies: {  }
+id: layout_customizer
+label: 'Layout customizer'
+weight: -2
+is_admin: null
+permissions:
+  - 'access toolbar'
+  - 'configure all article node layout overrides'
+  - 'configure all audience node layout overrides'
+  - 'configure all decision_tree node layout overrides'
+  - 'configure all page node layout overrides'
+  - 'configure all person node layout overrides'
+  - 'configure all topic node layout overrides'
+  - 'configure any layout'
+  - 'configure editable article node layout overrides'
+  - 'configure editable audience node layout overrides'
+  - 'configure editable decision_tree node layout overrides'
+  - 'configure editable page node layout overrides'
+  - 'configure editable person node layout overrides'
+  - 'configure editable topic node layout overrides'
+  - 'create and edit custom blocks'
+  - 'view the administration theme'

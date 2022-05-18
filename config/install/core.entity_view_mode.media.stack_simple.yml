@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.stack_simple
+label: 'Basic Card'
+targetEntityType: media
+cache: true

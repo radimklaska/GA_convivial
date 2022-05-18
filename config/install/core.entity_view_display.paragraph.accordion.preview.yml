@@ -1,0 +1,34 @@
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.accordion.field_accordion_body
+    - field.field.paragraph.accordion.field_accordion_colour_classes
+    - field.field.paragraph.accordion.field_accordion_make_faq
+    - field.field.paragraph.accordion.field_accordion_orientation
+    - field.field.paragraph.accordion.field_accordion_speed
+    - field.field.paragraph.accordion.field_heading
+    - field.field.paragraph.accordion.field_hide_heading
+    - paragraphs.paragraphs_type.accordion
+id: paragraph.accordion.preview
+targetEntityType: paragraph
+bundle: accordion
+mode: preview
+content:
+  field_heading:
+    type: string
+    weight: 1
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  field_accordion_body: true
+  field_accordion_colour_classes: true
+  field_accordion_make_faq: true
+  field_accordion_orientation: true
+  field_accordion_speed: true
+  field_hide_heading: true
+  search_api_excerpt: true

@@ -1,0 +1,117 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.media_list.field_body
+    - field.field.paragraph.media_list.field_heading
+    - field.field.paragraph.media_list.field_hide_heading
+    - field.field.paragraph.media_list.field_ml_colour_classes
+    - field.field.paragraph.media_list.field_ml_layout_classes
+    - field.field.paragraph.media_list.field_ml_media
+    - field.field.paragraph.media_list.field_ml_style_classes
+    - field.field.paragraph.media_list.field_ml_view_mode
+    - field.field.paragraph.media_list.field_modifiers
+    - field.field.paragraph.media_list.field_position
+    - field.field.paragraph.media_list.field_read_more
+    - paragraphs.paragraphs_type.media_list
+  module:
+    - link
+    - media_library
+    - paragraphs
+    - text
+id: paragraph.media_list.default
+targetEntityType: paragraph
+bundle: media_list
+mode: default
+content:
+  field_body:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_heading:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_hide_heading:
+    weight: 2
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_ml_colour_classes:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_ml_layout_classes:
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_ml_media:
+    weight: 4
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    type: media_library_widget
+    region: content
+  field_ml_style_classes:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_ml_view_mode:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_modifiers:
+    weight: 11
+    settings:
+      title: Modifier
+      title_plural: Modifiers
+      edit_mode: closed
+      closed_mode: preview
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+      features:
+        add_above: '0'
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+    type: paragraphs
+    region: content
+  field_position:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_read_more:
+    weight: 5
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

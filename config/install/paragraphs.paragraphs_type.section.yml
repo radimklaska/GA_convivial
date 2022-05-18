@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: section
+label: Section
+icon_uuid: 1e4b2328-0aa8-4ce6-a2ed-e8e2a21c0a6f
+icon_default: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAg0lEQVR4AWNgKD3oxVB84DFD0f7/1MQgM4HYkwHZcJpYAuc07BdgoBZoOCYENxfOAAKQl0C24vQuEBCrDpcFj/F6FwwIq8NlAYJdcVgQq3fBgLA6whagAZwWoAHyLBi1YNSCUQtGLSBc2IHYyGqIUUeX4ppuFQ6Vq0zM4KJ5pU/zZgsAVFAHEDXF5CcAAAAASUVORK5CYII='
+description: 'Define a section which other components and modifiers can be added.'
+behavior_plugins: {  }

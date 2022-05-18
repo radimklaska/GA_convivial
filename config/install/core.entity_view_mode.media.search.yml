@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.search
+label: Search
+targetEntityType: media
+cache: true

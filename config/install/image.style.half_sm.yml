@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: half_sm
+label: 'Half small'
+effects:
+  563a831a-ec22-413e-93d4-adfe2a7a8516:
+    uuid: 563a831a-ec22-413e-93d4-adfe2a7a8516
+    id: image_scale
+    weight: 1
+    data:
+      width: 256
+      height: null
+      upscale: false

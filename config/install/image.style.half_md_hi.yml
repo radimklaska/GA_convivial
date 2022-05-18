@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: half_md_hi
+label: 'Half medium high resolution'
+effects:
+  14a61134-595c-44fc-a18a-f7d46f3a101b:
+    uuid: 14a61134-595c-44fc-a18a-f7d46f3a101b
+    id: image_scale
+    weight: 1
+    data:
+      width: 661
+      height: null
+      upscale: false

@@ -1,0 +1,108 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.tile
+    - field.field.paragraph.item.field_cta
+    - field.field.paragraph.item.field_heading
+    - field.field.paragraph.item.field_hide_heading
+    - field.field.paragraph.item.field_item_icon_bg_colour
+    - field.field.paragraph.item.field_item_icon_bg_is_dark
+    - field.field.paragraph.item.field_item_icon_image
+    - field.field.paragraph.item.field_item_image
+    - field.field.paragraph.item.field_item_info
+    - field.field.paragraph.item.field_item_summary
+    - field.field.paragraph.item.field_item_url
+    - field.field.paragraph.item.field_title
+    - paragraphs.paragraphs_type.item
+  module:
+    - convivial_layouts
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: tile
+        layout_settings:
+          label: ''
+        components:
+          a0f5306d-ea27-42c3-afbf-6cca337291e3:
+            uuid: a0f5306d-ea27-42c3-afbf-6cca337291e3
+            region: title
+            configuration:
+              id: 'field_block:paragraph:item:field_heading'
+              label: Heading
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+          999df3a7-b82d-4e8e-8604-20efa48f680a:
+            uuid: 999df3a7-b82d-4e8e-8604-20efa48f680a
+            region: image
+            configuration:
+              id: 'field_block:paragraph:item:field_item_image'
+              label: Image
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: landscape
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+id: paragraph.item.tile
+targetEntityType: paragraph
+bundle: item
+mode: tile
+content:
+  field_heading:
+    type: string
+    weight: 0
+    region: title
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_item_image:
+    type: entity_reference_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: landscape
+      link: false
+    third_party_settings: {  }
+    region: image
+  field_item_summary:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 160
+    third_party_settings: {  }
+    type: text_trimmed
+    region: summary
+hidden:
+  field_cta: true
+  field_hide_heading: true
+  field_item_icon_bg_colour: true
+  field_item_icon_bg_is_dark: true
+  field_item_icon_image: true
+  field_item_info: true
+  field_item_url: true
+  field_title: true
+  search_api_excerpt: true

@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.social_share
+    - field.storage.block_content.field_social_share_size
+  module:
+    - options
+id: block_content.social_share.field_social_share_size
+field_name: field_social_share_size
+entity_type: block_content
+bundle: social_share
+label: Size
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

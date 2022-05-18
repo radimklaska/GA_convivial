@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_chrt_csv
+    - paragraphs.paragraphs_type.charts
+id: paragraph.charts.field_chrt_csv
+field_name: field_chrt_csv
+entity_type: paragraph
+bundle: charts
+label: CSV
+description: "CSV data in the right format for specific chart type.\r\n<p>See:</p>\r\n<ul>\r\n<li><a href=\"https://naver.github.io/billboard.js/demo/#Data.CategoryData\">https://naver.github.io/billboard.js/demo/#Data.CategoryData</a> for structure expected by all chart types, except <em>pie</em> and <em>donut</em>.\r\n<li><a href=\"https://naver.github.io/billboard.js/demo/#PieChartOptions.LabelRatio\">https://naver.github.io/billboard.js/demo/#PieChartOptions.LabelRatio</a> for structure expected by <em>pie</em> and <em>donut</em> charts.\r\n</ul>\r\n<p><strong><em>If there is value in CSV URL field, value of this field is ignored!</em></strong>"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

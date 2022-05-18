@@ -1,0 +1,57 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 01883ec5-1942-4889-b975-49fbff46a861
+  bundle: person
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'J K Rowling'
+  created:
+    -
+      value: 1611315033
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /about/j-k-rowling
+      langcode: en
+      pathauto: 1
+  morpht_computed_field_type_label:
+    -
+      value: Person
+  field_key:
+    -
+      value: 'person:j-k-rowling'
+  body:
+    -
+      value: "<p>She is best known for writing the&nbsp;Harry Potter&nbsp;fantasy series, which has won multiple awards and sold more than 500&nbsp;million copies, becoming the&nbsp;best-selling book series in history. The books are the basis of a&nbsp;popular film series, over which Rowling had overall approval on the scripts&nbsp;and was a producer on the final films. She also writes&nbsp;crime fiction&nbsp;under the pen name&nbsp;Robert Galbraith.</p>\r\n\r\n<p>Born in&nbsp;Yate, Gloucestershire, Rowling was working as a researcher and bilingual secretary for&nbsp;Amnesty International&nbsp;when she conceived the idea for the&nbsp;Harry Potter&nbsp;series while on a delayed train from&nbsp;Manchester&nbsp;to&nbsp;London&nbsp;in 1990. The seven-year period that followed saw the death of her mother, birth of her first child, divorce from her first husband, and relative poverty until the first novel in the series,&nbsp;Harry Potter and the Philosopher's Stone, was published in 1997. There were six sequels, of which the last was released in 2007. Since then, Rowling has written several books for adult readers:&nbsp;The Casual Vacancy&nbsp;(2012) and—under the pseudonym Robert Galbraith—the crime fiction&nbsp;Cormoran Strike&nbsp;series. In 2020, her \"political fairytale\" for children,&nbsp;The Ickabog, was released in instalments in an online version.</p>\r\n\r\n<p>Rowling has lived a \"rags to riches\" life in which she progressed from living on&nbsp;benefits&nbsp;to being named the world's first billionaire author by&nbsp;Forbes.&nbsp;However, Rowling disputed the assertion, saying she was not a billionaire. Forbes&nbsp;reported that she lost her billionaire status after giving away much of her earnings to charity. Her UK sales total in excess of £238&nbsp;million, making her the best-selling living author in Britain. The&nbsp;2020&nbsp;Sunday Times&nbsp;Rich List&nbsp;estimated Rowling's fortune at £795&nbsp;million, ranking her as the 178th richest person in the UK. Time&nbsp;named her a runner-up for its 2007&nbsp;Person of the Year, noting the social, moral, and&nbsp;political&nbsp;inspiration she has given&nbsp;her fans. Rowling was appointed a&nbsp;Member of the Order of the Companions of Honour&nbsp;(CH) in the&nbsp;2017 Birthday Honours&nbsp;for services to literature and philanthropy. In October 2010, she was named the \"Most Influential Woman in Britain\" by leading magazine editors. Rowling has supported multiple charities, including&nbsp;Comic Relief,&nbsp;One Parent Families, and&nbsp;Multiple Sclerosis Society of Great Britain, as well as launching her own charity,&nbsp;Lumos.</p>\r\n"
+      format: rich_text
+      summary: "Joanne Rowling\_CH,\_OBE,\_HonFRSE,\_FRCPE,\_FRSL\_(/ˈroʊlɪŋ/\_ROH-ling;\_born 31 July 1965), better known by her\_pen name\_J.\_K. Rowling, is a British author and philanthropist."
+  field_introduction:
+    -
+      value: "<p class=\"introduction\">Joanne Rowling&nbsp;CH,&nbsp;OBE,&nbsp;HonFRSE,&nbsp;FRCPE,&nbsp;FRSL&nbsp;(/ˈroʊlɪŋ/&nbsp;ROH-ling; born 31 July 1965), better known by her&nbsp;pen name&nbsp;J.&nbsp;K. Rowling, is a British author and philanthropist.</p>\r\n"
+      format: rich_text
+  field_search_exclude:
+    -
+      value: false

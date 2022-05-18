@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: half_md
+label: 'Half medium'
+effects:
+  f4564a1b-5488-4d0e-ab88-a64106833cfc:
+    uuid: f4564a1b-5488-4d0e-ab88-a64106833cfc
+    id: image_scale
+    weight: 1
+    data:
+      width: 331
+      height: null
+      upscale: false

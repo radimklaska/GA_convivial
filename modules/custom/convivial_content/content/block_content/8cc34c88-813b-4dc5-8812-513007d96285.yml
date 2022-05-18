@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 8cc34c88-813b-4dc5-8812-513007d96285
+  bundle: content
+  default_langcode: en
+default:
+  revision_user:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Social icons'
+  reusable:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  body:
+    -
+      value: "<div class=\"social-share social-share--row social-share--branded social-share--large social-share--pill social-share--icon-only\"><a class=\"social-share__service social-share__service--facebook\" href=\"https://www.facebook.com/morpht\" title=\"Morpht's Facebook\">Facebook</a> <a class=\"social-share__service social-share__service--twitter\" href=\"https://twitter.com/morphtmedia\" title=\"Morpht's Twitter\">Twitter</a> <a class=\"social-share__service social-share__service--linkedin\" href=\"https://www.linkedin.com/company/morpht/\" title=\"Morpht's LinkedIn\">LinkedIn</a></div>\r\n"
+      format: unrestricted_text
+      summary: ''
+  field_hide_heading:
+    -
+      value: false
+  field_position:
+    -
+      value: 'position position--right-66'

@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: small_hi
+label: 'Small high resolution'
+effects:
+  bfc973e6-4c0e-44e6-bdda-5c088532f6b0:
+    uuid: bfc973e6-4c0e-44e6-bdda-5c088532f6b0
+    id: image_scale
+    weight: 1
+    data:
+      width: 600
+      height: null
+      upscale: false

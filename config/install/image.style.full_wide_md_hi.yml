@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: full_wide_md_hi
+label: 'Full (wide) medium high resolution'
+effects:
+  b28234c3-0c8d-4f57-8f62-24adc0c82c40:
+    uuid: b28234c3-0c8d-4f57-8f62-24adc0c82c40
+    id: image_scale
+    weight: 1
+    data:
+      width: 1984
+      height: null
+      upscale: false

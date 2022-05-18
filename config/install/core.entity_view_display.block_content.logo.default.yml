@@ -1,0 +1,93 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.logo
+    - field.field.block_content.logo.field_logo_breakpoint
+    - field.field.block_content.logo.field_logo_large_default
+    - field.field.block_content.logo.field_logo_large_inverse
+    - field.field.block_content.logo.field_logo_large_width
+    - field.field.block_content.logo.field_logo_link
+    - field.field.block_content.logo.field_logo_small_default
+    - field.field.block_content.logo.field_logo_small_inverse
+    - field.field.block_content.logo.field_logo_small_width
+  module:
+    - file
+    - link
+id: block_content.logo.default
+targetEntityType: block_content
+bundle: logo
+mode: default
+content:
+  field_logo_breakpoint:
+    weight: 6
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_logo_large_default:
+    weight: 1
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_logo_large_inverse:
+    weight: 2
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_logo_large_width:
+    weight: 4
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_logo_link:
+    weight: 3
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_logo_small_default:
+    weight: 0
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_logo_small_inverse:
+    weight: 7
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_logo_small_width:
+    weight: 5
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+hidden: {  }

@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.portrait
+    - image.style.portrait_hi
+  module:
+    - convivial_breakpoints
+id: portrait
+label: Portrait
+image_style_mappings:
+  -
+    breakpoint_id: convivial_breakpoints.mobile
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: portrait
+  -
+    breakpoint_id: convivial_breakpoints.mobile
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: portrait_hi
+breakpoint_group: convivial_breakpoints
+fallback_image_style: portrait

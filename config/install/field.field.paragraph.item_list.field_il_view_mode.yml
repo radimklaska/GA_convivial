@@ -1,0 +1,33 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_il_view_mode
+    - paragraphs.paragraphs_type.item_list
+  module:
+    - entity_reference_display
+id: paragraph.item_list.field_il_view_mode
+field_name: field_il_view_mode
+entity_type: paragraph
+bundle: item_list
+label: 'View Mode'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  exclude:
+    stack_simple: stack_simple
+    calendar_item: calendar_item
+    icon: icon
+    image: image
+    stack_detail: stack_detail
+    summary: summary
+    teaser: teaser
+    teaser_big: teaser_big
+    teaser_small: teaser_small
+    tile: tile
+    title: title
+  negate: 1
+field_type: entity_reference_display

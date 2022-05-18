@@ -1,0 +1,84 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_il_items
+    - paragraphs.paragraphs_type.item
+    - paragraphs.paragraphs_type.item_list
+  module:
+    - entity_reference_revisions
+id: paragraph.item_list.field_il_items
+field_name: field_il_items
+entity_type: paragraph
+bundle: item_list
+label: Items
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      item: item
+    target_bundles_drag_drop:
+      content:
+        weight: 5
+        enabled: false
+      item:
+        enabled: true
+        weight: 6
+      item_list:
+        weight: 7
+        enabled: false
+      node_list:
+        weight: 8
+        enabled: false
+      accordion:
+        weight: 21
+        enabled: false
+      accordion_group:
+        weight: 22
+        enabled: false
+      color_background_modifier:
+        weight: 24
+        enabled: false
+      custom_linear_gradient_modifier:
+        weight: 26
+        enabled: false
+      custom_radial_gradient_modifier:
+        weight: 27
+        enabled: false
+      fonts_modifier:
+        weight: 28
+        enabled: false
+      hide_modifier:
+        weight: 29
+        enabled: false
+      highcharts:
+        weight: 30
+        enabled: false
+      image_bg_modifier:
+        weight: 31
+        enabled: false
+      padding_modifier:
+        weight: 35
+        enabled: false
+      parallax_bg_modifier:
+        weight: 36
+        enabled: false
+      relative_height_modifier:
+        weight: 37
+        enabled: false
+      scroll_reveal_modifier:
+        weight: 38
+        enabled: false
+      section:
+        weight: 39
+        enabled: false
+      video_bg_modifier:
+        weight: 40
+        enabled: false
+field_type: entity_reference_revisions

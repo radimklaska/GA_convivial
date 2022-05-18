@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: slide
+label: Slide
+icon_uuid: null
+description: 'Define the content of a Slide. Used in Slideshow.'
+behavior_plugins: {  }

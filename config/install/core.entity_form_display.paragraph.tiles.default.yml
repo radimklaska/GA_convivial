@@ -1,0 +1,90 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.tiles.field_heading
+    - field.field.paragraph.tiles.field_modifiers
+    - field.field.paragraph.tiles.field_position
+    - field.field.paragraph.tiles.field_tiles_arrangement
+    - field.field.paragraph.tiles.field_tiles_colour_classes
+    - field.field.paragraph.tiles.field_tiles_gap
+    - field.field.paragraph.tiles.field_tiles_node
+    - field.field.paragraph.tiles.field_tiles_styles
+    - field.field.paragraph.tiles.field_tiles_view_mode
+    - paragraphs.paragraphs_type.tiles
+  module:
+    - paragraphs
+id: paragraph.tiles.default
+targetEntityType: paragraph
+bundle: tiles
+mode: default
+content:
+  field_heading:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_modifiers:
+    weight: 8
+    settings:
+      title: Modifier
+      title_plural: Modifiers
+      edit_mode: preview
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    type: entity_reference_paragraphs
+    region: content
+  field_position:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_tiles_arrangement:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_tiles_colour_classes:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_tiles_gap:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_tiles_node:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_tiles_styles:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_tiles_view_mode:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true

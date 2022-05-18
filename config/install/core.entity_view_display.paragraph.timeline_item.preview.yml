@@ -1,0 +1,33 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.timeline_item.field_timeline_item_body
+    - field.field.paragraph.timeline_item.field_timeline_item_date
+    - field.field.paragraph.timeline_item.field_timeline_item_image
+    - field.field.paragraph.timeline_item.field_title
+    - paragraphs.paragraphs_type.timeline_item
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: paragraph.timeline_item.preview
+targetEntityType: paragraph
+bundle: timeline_item
+mode: preview
+content:
+  field_title:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  field_timeline_item_body: true
+  field_timeline_item_date: true
+  field_timeline_item_image: true

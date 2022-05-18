@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Convivial Theme Default Render module file.
+ */
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function convivial_theme_default_render_preprocess_paragraph(&$variables) {
+  // Very general solution is too cumbersome here. We need to run
+  // hook_preprocess() and find the element name with which variables were
+  // supplied.
+  // @see Drupal\Core\Theme\ThemeManager::render()
+  if (!empty($variables['elements']['#overloaded'])) {
+    $active_theme = \Drupal::theme()->getActiveTheme();
+    foreach ($active_theme->getLibraries() as $library) {
+      if (strpos($library, '/base') === FALSE) {
+        $variables['#attached']['library'][] = $library;
+      }
+    }
+  }
+}

@@ -1,0 +1,447 @@
+####
+# Page layouts
+####
+convivial_header:
+  label: 'Header section'
+  category: 'Convivial: Sections'
+  path: templates/section-layouts
+  template: section-layout--header-section
+  default_region: content
+  icon_map:
+    - [content]
+  regions:
+    banner_title:
+      label: Banner title
+    title:
+      label: Title
+    content:
+      label: Content
+    image:
+      label: Image
+    links_title:
+      label: Links Title
+    links:
+      label: Links
+convivial_content_edgy:
+  label: 'Content - Edgy'
+  category: 'Convivial: Sections'
+  path: templates/section-layouts
+  template: section-layout--content-edgy
+  default_region: content
+  icon_map:
+    - [content]
+  regions:
+    content:
+      label: Content
+convivial_content_sidebar:
+  label: 'Content - Sidebar'
+  category: 'Convivial: Sections'
+  path: templates/section-layouts
+  template: section-layout--content-sidebar
+  default_region: content
+  icon_map:
+    - [content, sidebar]
+  regions:
+    content:
+      label: Content
+    sidebar:
+      label: Sidebar
+convivial_onecol:
+  label: 'One column'
+  category: 'Convivial: Sections'
+  class: '\Drupal\convivial_layouts\Plugin\Layout\OneColumnLayout'
+  path: templates/section-layouts
+  template: section-layout--onecol
+  default_region: content
+  icon_map:
+    - [content]
+  regions:
+    content:
+      label: Content
+convivial_twocol:
+  label: 'Two column'
+  category: 'Convivial: Sections'
+  class: '\Drupal\convivial_layouts\Plugin\Layout\TwoColumnLayout'
+  path: templates/section-layouts
+  template: section-layout--twocol
+  default_region: first
+  icon_map:
+    - [first, second]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+convivial_threecol:
+  label: 'Three column'
+  category: 'Convivial: Sections'
+  class: '\Drupal\convivial_layouts\Plugin\Layout\ThreeColumnLayout'
+  path: templates/section-layouts
+  template: section-layout--threecol
+  default_region: second
+  icon_map:
+    - [first, second, third]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+    third:
+      label: Third
+convivial_fourcol:
+  label: 'Four column'
+  category: 'Convivial: Sections'
+  class: '\Drupal\convivial_layouts\Plugin\Layout\FourColumnLayout'
+  path: templates/section-layouts
+  template: section-layout--fourcol
+  default_region: first
+  icon_map:
+    - [first, second, third, fourth]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+    third:
+      label: Third
+    fourth:
+      label: Fourth
+####
+# Viewmode layouts
+####
+calendar_item:
+  label: Calendar Item
+  category: 'Convivial: Viewmode'
+  path: templates/viewmode-layouts
+  template: calendar-item
+  regions:
+    info:
+      label: Info
+    date:
+      label: Date
+    title:
+      label: Title
+    summary:
+      label: Summary
+    tags:
+      label: Tags
+icon:
+  label: Icon
+  category: 'Convivial: Viewmode'
+  path: templates/viewmode-layouts
+  template: icon
+  regions:
+    title:
+      label: Title
+    summary:
+      label: Summary
+    image:
+      label: Image
+img:
+  label: Image
+  category: 'Convivial: Viewmode'
+  path: templates/viewmode-layouts
+  template: img
+  icon: images/img.png
+  regions:
+    image:
+      label: Image
+search:
+  label: Search
+  category: 'Convivial: Viewmode'
+  path: templates/viewmode-layouts
+  template: search
+  icon: images/search.png
+  regions:
+    info:
+      label: Info
+    date:
+      label: Date
+    title:
+      label: Title
+    summary:
+      label: Summary
+    tags:
+      label: Tags
+stack_detail:
+  label: Stack detail
+  category: 'Convivial: Viewmode'
+  path: templates/viewmode-layouts
+  template: stack-detail
+  icon: images/stack-detail.png
+  regions:
+    info:
+      label: Info
+    date:
+      label: Date
+    title:
+      label: Title
+    summary:
+      label: Summary
+    tags:
+      label: Tags
+    image:
+      label: Image
+stack_simple:
+  label: Stack simple
+  category: 'Convivial: Viewmode'
+  path: templates/viewmode-layouts
+  template: stack-simple
+  icon: images/stack-simple.png
+  regions:
+    info:
+      label: Info
+    date:
+      label: Date
+    title:
+      label: Title
+    summary:
+      label: Summary
+summary:
+  label: Summary
+  category: 'Convivial: Viewmode'
+  path: templates/viewmode-layouts
+  template: summary
+  icon: images/summary.png
+  regions:
+    info:
+      label: Info
+    date:
+      label: Date
+    title:
+      label: Title
+    summary:
+      label: Summary
+    tags:
+      label: Tags
+teaser:
+  label: Teaser
+  category: 'Convivial: Viewmode'
+  path: templates/viewmode-layouts
+  template: teaser
+  icon: images/teaser.png
+  regions:
+    info:
+      label: Info
+    date:
+      label: Date
+    title:
+      label: Title
+    summary:
+      label: Summary
+    tags:
+      label: Tags
+    image:
+      label: Image
+teaser_big:
+  label: Teaser big
+  category: 'Convivial: Viewmode'
+  path: templates/viewmode-layouts
+  template: teaser-big
+  icon: images/teaser-big.png
+  regions:
+    info:
+      label: Info
+    date:
+      label: Date
+    title:
+      label: Title
+    summary:
+      label: Summary
+    tags:
+      label: Tags
+    image:
+      label: Image
+teaser_small:
+  label: Teaser small
+  category: 'Convivial: Viewmode'
+  path: templates/viewmode-layouts
+  template: teaser-small
+  icon: images/teaser-small.png
+  regions:
+    info:
+      label: Info
+    date:
+      label: Date
+    title:
+      label: Title
+    summary:
+      label: Summary
+    tags:
+      label: Tags
+    image:
+      label: Image
+tile:
+  label: Tile
+  category: 'Convivial: Viewmode'
+  path: templates/viewmode-layouts
+  template: tile
+  icon: images/tile.png
+  regions:
+    title:
+      label: Title
+    summary:
+      label: Summary
+    image:
+      label: Image
+title:
+  label: Title
+  category: 'Convivial: Viewmode'
+  path: templates/viewmode-layouts
+  template: title
+  icon: images/title.png
+  regions:
+    title:
+      label: Title
+####
+# Paragraph layouts
+####
+paragraph_layout_12:
+  label: Single column (12)
+  category: "Paragraph Layouts"
+  path: templates/paragraph-layouts
+  template: paragraph-layout-12
+  default_region: region1
+  icon_map:
+    - [first]
+  regions:
+    region1:
+      label: Region 1
+paragraph_layout_3_9:
+  label: Two columns (3|9)
+  category: "Paragraph Layouts"
+  path: templates/paragraph-layouts
+  template: paragraph-layout-3-9
+  default_region: region1
+  icon_map:
+    - [first, second]
+  regions:
+    region1:
+      label: Region 1
+    region2:
+      label: Region 2
+paragraph_layout_4_8:
+  label: Two columns (4|8)
+  category: "Paragraph Layouts"
+  path: templates/paragraph-layouts
+  template: paragraph-layout-4-8
+  default_region: region1
+  icon_map:
+    - [first, second]
+  regions:
+    region1:
+      label: Region 1
+    region2:
+      label: Region 2
+paragraph_layout_5_7:
+  label: Two columns (5|7)
+  category: "Paragraph Layouts"
+  path: templates/paragraph-layouts
+  template: paragraph-layout-5-7
+  default_region: region1
+  icon_map:
+    - [first, second]
+  regions:
+    region1:
+      label: Region 1
+    region2:
+      label: Region 2
+paragraph_layout_6_6:
+  label: Two columns (6|6)
+  category: "Paragraph Layouts"
+  path: templates/paragraph-layouts
+  template: paragraph-layout-6-6
+  default_region: region1
+  icon_map:
+    - [first, second]
+  regions:
+    region1:
+      label: Region 1
+    region2:
+      label: Region 2
+paragraph_layout_7_5:
+  label: Two columns (7|5)
+  category: "Paragraph Layouts"
+  path: templates/paragraph-layouts
+  template: paragraph-layout-7-5
+  default_region: region1
+  icon_map:
+    - [first, second]
+  regions:
+    region1:
+      label: Region 1
+    region2:
+      label: Region 2
+paragraph_layout_8_4:
+  label: Two columns (8|4)
+  category: "Paragraph Layouts"
+  path: templates/paragraph-layouts
+  template: paragraph-layout-8-4
+  default_region: region1
+  icon_map:
+    - [first, second]
+  regions:
+    region1:
+      label: Region 1
+    region2:
+      label: Region 2
+paragraph_layout_9_3:
+  label: Two columns (9|3)
+  category: "Paragraph Layouts"
+  path: templates/paragraph-layouts
+  template: paragraph-layout-9-3
+  default_region: region1
+  icon_map:
+    - [first, second]
+  regions:
+    region1:
+      label: Region 1
+    region2:
+      label: Region 2
+paragraph_layout_4_4_4:
+  label: Three columns (4|4|4)
+  category: "Paragraph Layouts"
+  path: templates/paragraph-layouts
+  template: paragraph-layout-4-4-4
+  default_region: region1
+  icon_map:
+    - [first, second, third]
+  regions:
+    region1:
+      label: Region 1
+    region2:
+      label: Region 2
+    region3:
+      label: Region 3
+paragraph_layout_3_6_3:
+  label: Three columns (3|6|3)
+  category: "Paragraph Layouts"
+  path: templates/paragraph-layouts
+  template: paragraph-layout-3-6-3
+  default_region: region1
+  icon_map:
+    - [first, second, third]
+  regions:
+    region1:
+      label: Region 1
+    region2:
+      label: Region 2
+    region3:
+      label: Region 3
+paragraph_layout_3_3_3_3:
+  label: Four columns (3|3|3|3)
+  category: "Paragraph Layouts"
+  path: templates/paragraph-layouts
+  template: paragraph-layout-3-3-3-3
+  default_region: region1
+  icon_map:
+    - [first, second, third, fourth]
+  regions:
+    region1:
+      label: Region 1
+    region2:
+      label: Region 2
+    region3:
+      label: Region 3
+    region4:
+      label: Region 4

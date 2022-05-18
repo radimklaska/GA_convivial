@@ -1,0 +1,71 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.content
+    - field.field.block_content.content.body
+    - field.field.block_content.content.field_c_colour_classes
+    - field.field.block_content.content.field_c_style_classes
+    - field.field.block_content.content.field_heading
+    - field.field.block_content.content.field_hide_heading
+    - field.field.block_content.content.field_position
+    - field.field.block_content.content.field_read_more
+  module:
+    - entity_class_formatter
+    - link
+    - text
+id: block_content.content.default
+targetEntityType: block_content
+bundle: content
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_c_colour_classes:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: entity_class_formatter
+    region: content
+  field_c_style_classes:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: entity_class_formatter
+    region: content
+  field_heading:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_position:
+    weight: 5
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: entity_class_formatter
+    region: content
+  field_read_more:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden:
+  field_hide_heading: true

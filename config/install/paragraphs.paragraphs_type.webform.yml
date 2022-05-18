@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: webform
+label: 'Embedded Webform'
+icon_uuid: 8db90dec-a7f5-46c7-9861-92cce418df08
+icon_default: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAoElEQVR4AWNgKD7gCcSPGYr2/6cUg8wBm4cCMA2n3BJkAJeoOCzIQAloOCYEMwu7BRQBTLNgwYVpQdGBNqDETyKD4ycQt2KzABFcmBZ8JiXMQepxWQDCGBaAXESODwhbQAEYeB+MxsGgtwBngYjIrZRb8Bhf4UZ7C+gfRPSPZMrrA5B+bBbQrEaD8WlVJ+MPemrGB80aALgs8KSuJQd2AgDDvuQaaEldoAAAAABJRU5ErkJggg=='
+description: 'Embed a webform into the page.'
+behavior_plugins: {  }

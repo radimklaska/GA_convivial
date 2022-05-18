@@ -1,0 +1,38 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_hero_banner_variant
+field_name: field_hero_banner_variant
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: hero-banner--plain-light
+      label: 'Plain light'
+    -
+      value: hero-banner--plain-dark
+      label: 'Plain dark'
+    -
+      value: hero-banner--box-light
+      label: 'Box light'
+    -
+      value: hero-banner--box-dark
+      label: 'Box dark'
+    -
+      value: hero-banner--glass-light
+      label: 'Glass light'
+    -
+      value: hero-banner--glass-dark
+      label: 'Glass dark'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

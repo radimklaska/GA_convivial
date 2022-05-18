@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: featured_s
+label: 'Featured small'
+effects:
+  c62a87c6-1ff4-4b60-827f-c8e35ab3127f:
+    uuid: c62a87c6-1ff4-4b60-827f-c8e35ab3127f
+    id: image_scale
+    weight: 1
+    data:
+      width: 768
+      height: null
+      upscale: false

@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: large_standard
+label: Large
+effects:
+  ddd73aa7-4bd6-4c85-b600-bdf2b1628d1a:
+    uuid: ddd73aa7-4bd6-4c85-b600-bdf2b1628d1a
+    id: image_scale
+    weight: 0
+    data:
+      width: 600
+      height: null
+      upscale: false

@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: item
+label: Item
+icon_uuid: null
+description: 'Defines an Item as a title, image and summary. Used in Item Lists.'
+behavior_plugins: {  }

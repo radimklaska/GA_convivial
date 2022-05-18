@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_chrt_height
+    - paragraphs.paragraphs_type.charts
+id: paragraph.charts.field_chrt_height
+field_name: field_chrt_height
+entity_type: paragraph
+bundle: charts
+label: 'Chart Height'
+description: 'Set the Chart Size Height. See <a href="https://naver.github.io/billboard.js/demo/#ChartOptions.ChartSize" _target="_blank">https://naver.github.io/billboard.js/demo/#ChartOptions.ChartSize</a>'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: px
+field_type: integer

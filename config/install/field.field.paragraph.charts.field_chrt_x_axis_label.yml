@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_chrt_x_axis_label
+    - paragraphs.paragraphs_type.charts
+id: paragraph.charts.field_chrt_x_axis_label
+field_name: field_chrt_x_axis_label
+entity_type: paragraph
+bundle: charts
+label: 'X axis label'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

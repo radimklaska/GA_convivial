@@ -1,0 +1,86 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.plugin_block.field_body
+    - field.field.paragraph.plugin_block.field_heading
+    - field.field.paragraph.plugin_block.field_hide_heading
+    - field.field.paragraph.plugin_block.field_modifiers
+    - field.field.paragraph.plugin_block.field_pb_colour_classes
+    - field.field.paragraph.plugin_block.field_pb_definition
+    - field.field.paragraph.plugin_block.field_pb_style_classes
+    - field.field.paragraph.plugin_block.field_position
+    - paragraphs.paragraphs_type.plugin_block
+  module:
+    - paragraphs
+    - text
+id: paragraph.plugin_block.default
+targetEntityType: paragraph
+bundle: plugin_block
+mode: default
+content:
+  field_body:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_heading:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_hide_heading:
+    weight: 2
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_modifiers:
+    weight: 8
+    settings:
+      title: Modifier
+      title_plural: Modifiers
+      edit_mode: preview
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    type: entity_reference_paragraphs
+    region: content
+  field_pb_colour_classes:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_pb_definition:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_pb_style_classes:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_position:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

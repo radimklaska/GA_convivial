@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_chrt_x_axis_type
+    - paragraphs.paragraphs_type.charts
+  module:
+    - options
+id: paragraph.charts.field_chrt_x_axis_type
+field_name: field_chrt_x_axis_type
+entity_type: paragraph
+bundle: charts
+label: 'X Axis type'
+description: 'Type of values used for X axis. Please look at <a href="https://c3js.org/samples/categorized.html">https://c3js.org/samples/categorized.html</a> and <a href="https://c3js.org/samples/timeseries.html">https://c3js.org/samples/timeseries.html</a> for examples. If you don''t select any value (<em>- None -</em>), simple indexed numbering will be used (1,2,3...)'
+required: true
+translatable: false
+default_value:
+  -
+    value: indexed
+default_value_callback: ''
+settings: {  }
+field_type: list_string

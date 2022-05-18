@@ -1,0 +1,65 @@
+header_style: theme__header--light
+footer_style: theme__footer--dark
+local_task_style: ''
+logo_width: '300'
+features:
+  node_user_picture: true
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: 1
+logo:
+  use_default: 0
+  path: ''
+favicon:
+  use_default: 1
+  path: ''
+  mimetype: image/vnd.microsoft.icon
+theme__highlighted_layouts: 0
+top_bar_style: ''
+mark_external_links: 0
+default_colors: "#135e70 #70132f\t #137026 #541370 #5d7013 #132f70 #702613 #137054 #70135d #2f7013 #261370 #705413"
+header_stickiness: theme__header--sticky
+appearance: theme__header--transparent
+header_width: theme__header--contained
+menu_style: theme__menu-style--simple
+megamenu_columns: null
+search_form_display: theme__search-form--inline-reveal
+laf_enable: 1
+laf_selectors: "field_header_modifiers|.header\r\nfield_primary_modifiers|.color--primary\r\nfield_primary_dark_modifiers|.color--primary-dark\r\nfield_secondary_modifiers|.color--secondary\r\nfield_secondary_dark_modifiers|.color--secondary-dark"
+laf_completes: 'apply|taxonomy_term,standard'
+laf_partials: entity|node
+chart_colors: ''
+glossary_enable: 0
+glossary_bundles:
+  article: 0
+  audience: 0
+  casestudy: 0
+  page: 0
+  person: 0
+  topic: 0
+glossary_bundles_tooltip_sources:
+  article: 0
+  audience: 0
+  casestudy: 0
+  page: 0
+  person: 0
+  topic: 0
+glossary_bundles_link_sources:
+  article: 0
+  audience: 0
+  casestudy: 0
+  page: 0
+  person: 0
+  topic: 0
+glossary_tags_blacklist: ''
+icon_aspect_ratio: '1.414'
+header_layout: theme__inline_menu
+header_section_style: ''
+back_to_top_style: theme__back-to-top--square
+main_nav_style: theme__main_nav--light
+csv: ''
+postscript_style: theme__postscript--light
+meta:
+  meta_enable: 0
+  meta_strategies_name: "constant,sitename,Convivial\r\ntoken,nid,[node:nid]\r\ntoken,type,[node:content-type:machine-name]\r\ntoken,thumbnail,[node:field_thumbnail:entity:field_media_image:landscape:url]\r\nreferences,audience,field_suitable_for|field_key\r\nreferences,author,field_authored_by|field_key\r\nreferences,topic,field_about|field_key\r\ntoken,audience,[node:field_key],,audience\r\ntoken,author,[node:field_key],,person\r\ntoken,topic,[node:field_key],,topic\r\nreferences,goal,field_goal|field_key\r\nreferences,stage,field_stage|field_key"
+  meta_strategies_property: ''

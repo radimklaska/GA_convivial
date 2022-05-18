@@ -1,0 +1,116 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.stack_simple
+    - field.field.paragraph.item.field_cta
+    - field.field.paragraph.item.field_heading
+    - field.field.paragraph.item.field_hide_heading
+    - field.field.paragraph.item.field_item_icon_bg_colour
+    - field.field.paragraph.item.field_item_icon_bg_is_dark
+    - field.field.paragraph.item.field_item_icon_image
+    - field.field.paragraph.item.field_item_image
+    - field.field.paragraph.item.field_item_info
+    - field.field.paragraph.item.field_item_summary
+    - field.field.paragraph.item.field_item_url
+    - field.field.paragraph.item.field_title
+    - paragraphs.paragraphs_type.item
+  module:
+    - convivial_layouts
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: stack_simple
+        layout_settings:
+          label: ''
+        components:
+          bfd79965-f4b2-475e-8db9-3dd9229160cb:
+            uuid: bfd79965-f4b2-475e-8db9-3dd9229160cb
+            region: info
+            configuration:
+              id: 'field_block:paragraph:item:field_item_info'
+              label: Info
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+          b17a5adc-6199-4309-97d4-5d7203313d27:
+            uuid: b17a5adc-6199-4309-97d4-5d7203313d27
+            region: title
+            configuration:
+              id: 'field_block:paragraph:item:field_heading'
+              label: Heading
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+          7588d1b3-3466-4ff6-89f5-41690e4cdebf:
+            uuid: 7588d1b3-3466-4ff6-89f5-41690e4cdebf
+            region: summary
+            configuration:
+              id: 'field_block:paragraph:item:field_item_summary'
+              label: Summary
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+id: paragraph.item.stack_simple
+targetEntityType: paragraph
+bundle: item
+mode: stack_simple
+content:
+  field_heading:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: title
+  field_item_summary:
+    type: text_default
+    weight: 1
+    region: summary
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_cta: true
+  field_hide_heading: true
+  field_item_icon_bg_colour: true
+  field_item_icon_bg_is_dark: true
+  field_item_icon_image: true
+  field_item_image: true
+  field_item_info: true
+  field_item_url: true
+  field_title: true
+  search_api_excerpt: true

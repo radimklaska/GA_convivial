@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: relative_height_modifier
+label: 'Relative Height Modifier'
+icon_uuid: null
+description: 'Modify a the relative height of content. The ratio is retained at all viewport sizes.'
+behavior_plugins: {  }

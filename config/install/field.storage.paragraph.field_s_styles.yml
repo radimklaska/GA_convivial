@@ -1,0 +1,53 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_s_styles
+field_name: field_s_styles
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: breakout
+      label: Breakout
+    -
+      value: equal-height
+      label: 'Equal height'
+    -
+      value: style--hero
+      label: Hero
+    -
+      value: no-background-padding
+      label: 'No background padding'
+    -
+      value: section--no-column-gaps
+      label: 'No column gaps'
+    -
+      value: section--no-row-gaps
+      label: 'No row gaps'
+    -
+      value: section--no-side-gaps
+      label: 'No side gaps'
+    -
+      value: text-start
+      label: 'Text left'
+    -
+      value: text-center
+      label: 'Text center'
+    -
+      value: text-end
+      label: 'Text right'
+    -
+      value: text-shadow
+      label: 'Text shadow'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

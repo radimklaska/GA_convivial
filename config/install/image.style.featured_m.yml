@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: featured_m
+label: 'Featured medium'
+effects:
+  1fdfe228-ff70-42af-9914-65d5039389a5:
+    uuid: 1fdfe228-ff70-42af-9914-65d5039389a5
+    id: image_scale
+    weight: 1
+    data:
+      width: 992
+      height: null
+      upscale: false

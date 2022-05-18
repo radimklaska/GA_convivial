@@ -1,0 +1,67 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.snippet.field_colour_classes
+    - field.field.paragraph.snippet.field_heading
+    - field.field.paragraph.snippet.field_modifiers
+    - field.field.paragraph.snippet.field_position
+    - field.field.paragraph.snippet.field_snippet
+    - field.field.paragraph.snippet.field_style_classes
+    - paragraphs.paragraphs_type.snippet
+  module:
+    - paragraphs
+id: paragraph.snippet.default
+targetEntityType: paragraph
+bundle: snippet
+mode: default
+content:
+  field_colour_classes:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_heading:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_modifiers:
+    weight: 5
+    settings:
+      title: Modifiers
+      title_plural: Modifier
+      edit_mode: preview
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    type: entity_reference_paragraphs
+    region: content
+  field_position:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_snippet:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_style_classes:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true

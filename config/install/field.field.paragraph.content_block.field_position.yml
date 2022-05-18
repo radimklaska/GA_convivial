@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_position
+    - paragraphs.paragraphs_type.content_block
+  module:
+    - options
+id: paragraph.content_block.field_position
+field_name: field_position
+entity_type: paragraph
+bundle: content_block
+label: Position
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

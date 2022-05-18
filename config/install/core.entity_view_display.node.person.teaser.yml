@@ -1,0 +1,156 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.person.body
+    - field.field.node.person.field_components
+    - field.field.node.person.field_header_colour_classes
+    - field.field.node.person.field_header_modifiers
+    - field.field.node.person.field_hero_darkness
+    - field.field.node.person.field_introduction
+    - field.field.node.person.field_key
+    - field.field.node.person.field_keywords
+    - field.field.node.person.field_meta_tags
+    - field.field.node.person.field_person_position
+    - field.field.node.person.field_search_exclude
+    - field.field.node.person.field_thumbnail
+    - field.field.node.person.field_toc
+    - field.field.node.person.layout_builder__layout
+    - field.field.node.person.layout_selection
+    - node.type.person
+  module:
+    - convivial_layouts
+    - layout_builder
+    - layout_library
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: teaser
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          ee9fd687-e21c-4886-8408-26e9048af593:
+            uuid: ee9fd687-e21c-4886-8408-26e9048af593
+            region: image
+            configuration:
+              id: 'field_block:node:person:field_thumbnail'
+              label: Thumbnail
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: square
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          d1b110a0-428f-4cd3-b5f8-21922cf74f6f:
+            uuid: d1b110a0-428f-4cd3-b5f8-21922cf74f6f
+            region: info
+            configuration:
+              id: 'field_block:node:person:type'
+              label: 'Content type'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_label
+                settings:
+                  link: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          2a95bdc8-6838-4c01-894b-8bcf87657c76:
+            uuid: 2a95bdc8-6838-4c01-894b-8bcf87657c76
+            region: title
+            configuration:
+              id: 'field_block:node:person:title'
+              label: Title
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: string
+                settings:
+                  link_to_entity: true
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          11a81788-1b72-40d4-8aeb-1a78e9c8c908:
+            uuid: 11a81788-1b72-40d4-8aeb-1a78e9c8c908
+            region: summary
+            configuration:
+              id: 'field_block:node:person:body'
+              label: Body
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: text_summary_or_trimmed
+                settings:
+                  trim_length: 160
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+  layout_library:
+    enable: false
+id: node.person.teaser
+targetEntityType: node
+bundle: person
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  content_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: info
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_components: true
+  field_header_colour_classes: true
+  field_header_modifiers: true
+  field_hero_darkness: true
+  field_introduction: true
+  field_key: true
+  field_keywords: true
+  field_meta_tags: true
+  field_person_position: true
+  field_search_exclude: true
+  field_thumbnail: true
+  field_toc: true
+  layout_builder__layout: true
+  layout_selection: true
+  search_api_excerpt: true

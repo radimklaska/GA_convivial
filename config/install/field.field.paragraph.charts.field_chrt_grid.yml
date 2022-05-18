@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_chrt_grid
+    - paragraphs.paragraphs_type.charts
+  module:
+    - options
+id: paragraph.charts.field_chrt_grid
+field_name: field_chrt_grid
+entity_type: paragraph
+bundle: charts
+label: Grid
+description: 'If checked, lines parallel to the axis will be displayed. See <a href="https://naver.github.io/billboard.js/demo/#Grid.GridLines">https://naver.github.io/billboard.js/demo/#Grid.GridLines</a> for example.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

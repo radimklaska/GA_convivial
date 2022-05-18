@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: half_xs
+label: 'Half extra small'
+effects:
+  e397e5df-33fb-4632-876e-e96b677d4c03:
+    uuid: e397e5df-33fb-4632-876e-e96b677d4c03
+    id: image_scale
+    weight: 1
+    data:
+      width: 768
+      height: null
+      upscale: false

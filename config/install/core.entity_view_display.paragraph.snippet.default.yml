@@ -1,0 +1,66 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.snippet.field_colour_classes
+    - field.field.paragraph.snippet.field_heading
+    - field.field.paragraph.snippet.field_modifiers
+    - field.field.paragraph.snippet.field_position
+    - field.field.paragraph.snippet.field_snippet
+    - field.field.paragraph.snippet.field_style_classes
+    - paragraphs.paragraphs_type.snippet
+  module:
+    - entity_class_formatter
+id: paragraph.snippet.default
+targetEntityType: paragraph
+bundle: snippet
+mode: default
+content:
+  field_colour_classes:
+    weight: 2
+    label: hidden
+    settings:
+      prefix: ''
+      suffix: ''
+      attr: ''
+    third_party_settings: {  }
+    type: entity_class_formatter
+    region: content
+  field_heading:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_position:
+    weight: 4
+    label: hidden
+    settings:
+      prefix: ''
+      suffix: ''
+      attr: ''
+    third_party_settings: {  }
+    type: entity_class_formatter
+    region: content
+  field_snippet:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_style_classes:
+    weight: 3
+    label: hidden
+    settings:
+      prefix: ''
+      suffix: ''
+      attr: ''
+    third_party_settings: {  }
+    type: entity_class_formatter
+    region: content
+hidden:
+  field_modifiers: true
+  search_api_excerpt: true

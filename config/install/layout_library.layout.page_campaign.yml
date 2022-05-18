@@ -1,0 +1,65 @@
+langcode: en
+status: true
+dependencies: {  }
+id: page_campaign
+label: 'Page: Campaign'
+targetEntityType: node
+targetBundle: page
+layout:
+  -
+    layout_id: convivial_onecol
+    layout_settings:
+      arrangement: null
+      containment: 'edgy edgy--contained'
+      color: ''
+      styles:
+        visually-hidden: visually-hidden
+    components:
+      9e13dc14-f959-45ba-9d1f-d08fe7d76bc6:
+        uuid: 9e13dc14-f959-45ba-9d1f-d08fe7d76bc6
+        region: content
+        configuration:
+          id: 'field_block:node:page:title'
+          label: Title
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: string
+            settings:
+              link_to_entity: false
+            third_party_settings: {  }
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional: {  }
+        weight: 0
+    third_party_settings: {  }
+  -
+    layout_id: convivial_onecol
+    layout_settings:
+      arrangement: null
+      containment: edgy
+      color: ''
+      styles: null
+    components:
+      b51fe97e-298e-4823-9c1d-53053b121b1d:
+        uuid: b51fe97e-298e-4823-9c1d-53053b121b1d
+        region: content
+        configuration:
+          id: 'field_block:node:page:field_components'
+          label: Components
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: layout_paragraphs
+            settings:
+              view_mode: default
+            third_party_settings: {  }
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional: {  }
+        weight: 1
+    third_party_settings: {  }

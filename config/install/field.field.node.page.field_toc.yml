@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_toc
+    - node.type.page
+  module:
+    - options
+id: node.page.field_toc
+field_name: field_toc
+entity_type: node
+bundle: page
+label: TOC
+description: 'Display a table of contents (TOC) at the top of the content.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

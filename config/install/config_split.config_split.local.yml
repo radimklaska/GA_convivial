@@ -1,0 +1,14 @@
+langcode: en
+status: false
+dependencies: {  }
+id: local
+label: Local
+description: 'Settings for local environment, adding to or overriding general development settings.'
+folder: ../config/local
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 5

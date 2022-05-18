@@ -1,0 +1,87 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.content.field_body
+    - field.field.paragraph.content.field_c_colour_classes
+    - field.field.paragraph.content.field_c_style_classes
+    - field.field.paragraph.content.field_heading
+    - field.field.paragraph.content.field_hide_heading
+    - field.field.paragraph.content.field_modifiers
+    - field.field.paragraph.content.field_position
+    - field.field.paragraph.content.field_read_more
+    - paragraphs.paragraphs_type.content
+  module:
+    - link
+    - paragraphs
+    - text
+id: paragraph.content.default
+targetEntityType: paragraph
+bundle: content
+mode: default
+content:
+  field_body:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_c_colour_classes:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_c_style_classes:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_heading:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_hide_heading:
+    weight: 2
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_modifiers:
+    type: entity_reference_paragraphs
+    weight: 8
+    region: content
+    settings:
+      title: Modifiers
+      title_plural: Modifier
+      edit_mode: preview
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+  field_position:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_read_more:
+    weight: 4
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

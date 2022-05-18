@@ -1,0 +1,70 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.accordion.field_accordion_body
+    - field.field.paragraph.accordion.field_accordion_colour_classes
+    - field.field.paragraph.accordion.field_accordion_make_faq
+    - field.field.paragraph.accordion.field_accordion_orientation
+    - field.field.paragraph.accordion.field_accordion_speed
+    - field.field.paragraph.accordion.field_heading
+    - field.field.paragraph.accordion.field_hide_heading
+    - paragraphs.paragraphs_type.accordion
+  module:
+    - entity_class_formatter
+    - options
+    - text
+id: paragraph.accordion.default
+targetEntityType: paragraph
+bundle: accordion
+mode: default
+content:
+  field_accordion_body:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_accordion_colour_classes:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: entity_class_formatter
+    region: content
+  field_accordion_make_faq:
+    type: boolean
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+  field_accordion_orientation:
+    type: list_key
+    weight: 2
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_accordion_speed:
+    type: list_key
+    weight: 3
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_heading:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_hide_heading: true
+  search_api_excerpt: true

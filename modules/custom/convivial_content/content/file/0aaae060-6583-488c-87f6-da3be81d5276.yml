@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 0aaae060-6583-488c-87f6-da3be81d5276
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: bee-bloom-blossom.jpg
+  uri:
+    -
+      value: 'public://2019-05/bee-bloom-blossom.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 129106
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1557659945

@@ -1,0 +1,29 @@
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.slideshow.field_body
+    - field.field.paragraph.slideshow.field_heading
+    - field.field.paragraph.slideshow.field_hide_heading
+    - field.field.paragraph.slideshow.field_slides
+    - field.field.paragraph.slideshow.field_slideshow_colour_classes
+    - field.field.paragraph.slideshow.field_slideshow_position
+    - field.field.paragraph.slideshow.field_slideshow_ratio
+    - field.field.paragraph.slideshow.field_slideshow_style_classes
+    - paragraphs.paragraphs_type.slideshow
+id: paragraph.slideshow.preview
+targetEntityType: paragraph
+bundle: slideshow
+mode: preview
+content: {  }
+hidden:
+  field_body: true
+  field_heading: true
+  field_hide_heading: true
+  field_slides: true
+  field_slideshow_colour_classes: true
+  field_slideshow_position: true
+  field_slideshow_ratio: true
+  field_slideshow_style_classes: true
+  search_api_excerpt: true

@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: featured_l_hi
+label: 'Featured large high resolution'
+effects:
+  ffab0222-a9dd-4a11-8654-1a3802fee2f3:
+    uuid: ffab0222-a9dd-4a11-8654-1a3802fee2f3
+    id: image_scale
+    weight: 1
+    data:
+      width: 2400
+      height: null
+      upscale: false

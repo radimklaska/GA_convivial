@@ -1,0 +1,66 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 4fe99a57-5d4a-49b6-8092-d18c1381b291
+  bundle: article
+  default_langcode: en
+  depends:
+    dd9c54ba-97fa-4a4f-8a89-9f8ab7236d10: node
+    a8648976-4962-47ce-98dc-9c61cf109638: node
+    a9c8ecfb-42da-4f05-8532-9a0d47963203: node
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Dragon Rider'
+  created:
+    -
+      value: 1611316353
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /news/dragon-rider
+      langcode: en
+      pathauto: 1
+  morpht_computed_field_type_label:
+    -
+      value: Article
+  body:
+    -
+      value: "<p>Dragon Rider&nbsp;(original title:&nbsp;Drachenreiter) is a 1997&nbsp;German&nbsp;children's novel&nbsp;by&nbsp;Cornelia Funke. Originally translated by Oliver Latsch,&nbsp;Dragon Rider&nbsp;was published in English in 2004 by&nbsp;The Chicken House&nbsp;in the UK and&nbsp;Scholastic Inc.&nbsp;in the US, using a translation by Anthea Bell. Dragon Rider&nbsp;follows the exploits of a silver&nbsp;dragon&nbsp;named Firedrake, a&nbsp;brownie&nbsp;named Sorrel, and Ben, a human boy, in their search for the mythical part of the&nbsp;Himalayas&nbsp;mountain range called the Rim of Heaven to find a safe place for Firedrake's kin to live when the dragon finds out that humans intend to flood the valley where he and his fellow dragons live.</p>\r\n\r\n<p>The novel became a massive success following its English-language release and remained on&nbsp;The New York Times&nbsp;Best Seller list&nbsp;for 78 weeks reaching number one on the Children's Best-Seller list.</p>\r\n\r\n<p>A sequel,&nbsp;Dragon Rider: The Griffin's Feather, was published over a decade later, in 2017, and a&nbsp;feature film adaptation of the same name&nbsp;was released in 2020.</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+      format: rich_text
+      summary: "Dragon Rider\_(original title:\_Drachenreiter) is a 1997\_German\_children's novel\_by\_Cornelia Funke. "
+  field_about:
+    -
+      entity: dd9c54ba-97fa-4a4f-8a89-9f8ab7236d10
+  field_authored_by:
+    -
+      entity: a8648976-4962-47ce-98dc-9c61cf109638
+  field_published:
+    -
+      value: '2021-01-22'
+  field_search_exclude:
+    -
+      value: false
+  field_suitable_for:
+    -
+      entity: a9c8ecfb-42da-4f05-8532-9a0d47963203

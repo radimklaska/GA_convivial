@@ -1,0 +1,108 @@
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.stack_simple
+    - field.field.paragraph.timeline_item.field_timeline_item_body
+    - field.field.paragraph.timeline_item.field_timeline_item_date
+    - field.field.paragraph.timeline_item.field_timeline_item_image
+    - field.field.paragraph.timeline_item.field_title
+    - paragraphs.paragraphs_type.timeline_item
+  module:
+    - datetime
+    - layout_builder
+    - layout_discovery
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          c809f44e-f3b4-4595-b1dd-77cd758d7744:
+            uuid: c809f44e-f3b4-4595-b1dd-77cd758d7744
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:timeline_item:field_timeline_item_image'
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                  link: false
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          cf59c7ca-f585-4397-83b1-5cba161601ad:
+            uuid: cf59c7ca-f585-4397-83b1-5cba161601ad
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:timeline_item:field_timeline_item_body'
+              formatter:
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 1
+          a177f0f8-986f-45ae-8da2-9fa2150dc570:
+            uuid: a177f0f8-986f-45ae-8da2-9fa2150dc570
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:timeline_item:field_timeline_item_date'
+              formatter:
+                label: hidden
+                settings:
+                  timezone_override: ''
+                  format_type: standard
+                third_party_settings: {  }
+                type: datetime_default
+            additional: {  }
+            weight: 2
+        third_party_settings: {  }
+id: paragraph.timeline_item.stack_simple
+targetEntityType: paragraph
+bundle: timeline_item
+mode: stack_simple
+content:
+  field_timeline_item_body:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_timeline_item_date:
+    weight: 3
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: standard
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_timeline_item_image:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_title: true
+  search_api_excerpt: true

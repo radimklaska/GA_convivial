@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: components
+label: Components
+revision: 1
+description: 'Components block contains multiple paragraph components.'

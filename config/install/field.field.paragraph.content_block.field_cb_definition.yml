@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cb_definition
+    - paragraphs.paragraphs_type.content_block
+id: paragraph.content_block.field_cb_definition
+field_name: field_cb_definition
+entity_type: paragraph
+bundle: content_block
+label: 'Content Block Definition'
+description: 'The ID of the content block to display. (e.g.: 16)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

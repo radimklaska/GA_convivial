@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.type
+  module:
+    - facets
+    - system
+  theme:
+    - convivial_bootstrap
+id: convivial_bootstrap_type
+theme: convivial_bootstrap
+region: sidebar
+weight: -16
+provider: null
+plugin: 'facet_block:type'
+settings:
+  id: 'facet_block:type'
+  label: Type
+  provider: facets
+  label_display: '0'
+  block_id: convivial_bootstrap_type
+visibility:
+  request_path:
+    id: request_path
+    pages: "/search\r\n/search/*"
+    negate: false

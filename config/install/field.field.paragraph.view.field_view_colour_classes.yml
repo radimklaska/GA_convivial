@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_view_colour_classes
+    - paragraphs.paragraphs_type.view
+  module:
+    - options
+id: paragraph.view.field_view_colour_classes
+field_name: field_view_colour_classes
+entity_type: paragraph
+bundle: view
+label: 'Colour Palette'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

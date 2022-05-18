@@ -1,0 +1,149 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.stack_detail
+    - field.field.paragraph.item.field_cta
+    - field.field.paragraph.item.field_heading
+    - field.field.paragraph.item.field_hide_heading
+    - field.field.paragraph.item.field_item_icon_bg_colour
+    - field.field.paragraph.item.field_item_icon_bg_is_dark
+    - field.field.paragraph.item.field_item_icon_image
+    - field.field.paragraph.item.field_item_image
+    - field.field.paragraph.item.field_item_info
+    - field.field.paragraph.item.field_item_summary
+    - field.field.paragraph.item.field_item_url
+    - field.field.paragraph.item.field_title
+    - paragraphs.paragraphs_type.item
+  module:
+    - convivial_layouts
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: stack_detail
+        layout_settings:
+          label: ''
+        components:
+          29973dbf-edb5-4679-8fa8-d04114046bde:
+            uuid: 29973dbf-edb5-4679-8fa8-d04114046bde
+            region: image
+            configuration:
+              id: 'field_block:paragraph:item:field_item_image'
+              label: Image
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: landscape
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+          bc492376-ccce-4366-afd5-bcf14040fb37:
+            uuid: bc492376-ccce-4366-afd5-bcf14040fb37
+            region: info
+            configuration:
+              id: 'field_block:paragraph:item:field_item_info'
+              label: Info
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+          38b219c8-3a12-408d-a55e-540c927f7d42:
+            uuid: 38b219c8-3a12-408d-a55e-540c927f7d42
+            region: title
+            configuration:
+              id: 'field_block:paragraph:item:field_heading'
+              label: Heading
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+          ee7044d0-9b05-4285-be66-f1b8bbee93a0:
+            uuid: ee7044d0-9b05-4285-be66-f1b8bbee93a0
+            region: summary
+            configuration:
+              id: 'field_block:paragraph:item:field_item_summary'
+              label: Summary
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+id: paragraph.item.stack_detail
+targetEntityType: paragraph
+bundle: item
+mode: stack_detail
+content:
+  field_heading:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: title
+  field_item_image:
+    type: entity_reference_entity_view
+    weight: 0
+    region: image
+    label: hidden
+    settings:
+      view_mode: landscape
+      link: false
+    third_party_settings: {  }
+  field_item_info:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: info
+  field_item_summary:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: summary
+hidden:
+  field_cta: true
+  field_hide_heading: true
+  field_item_icon_bg_colour: true
+  field_item_icon_bg_is_dark: true
+  field_item_icon_image: true
+  field_item_url: true
+  field_title: true
+  search_api_excerpt: true

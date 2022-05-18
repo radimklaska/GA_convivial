@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.tiny_hi
+    - image.style.tiny_standard
+  module:
+    - convivial_breakpoints
+id: tiny
+label: Tiny
+image_style_mappings:
+  -
+    breakpoint_id: convivial_breakpoints.mobile
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: tiny_standard
+  -
+    breakpoint_id: convivial_breakpoints.mobile
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: tiny_hi
+breakpoint_group: convivial_breakpoints
+fallback_image_style: tiny_standard

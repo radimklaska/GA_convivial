@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_geochart_region
+    - paragraphs.paragraphs_type.geochart
+  module:
+    - unique_content_field_validation
+third_party_settings:
+  unique_content_field_validation:
+    unique: false
+    unique_text: ''
+id: paragraph.geochart.field_geochart_region
+field_name: field_geochart_region
+entity_type: paragraph
+bundle: geochart
+label: Region
+description: "The area to display on the GeoChart. E.g. AU<br>\r\nSee: <a href=\"https://developers.google.com/chart/interactive/docs/gallery/geochart?hl=en#region-geocharts\">https://developers.google.com/chart/interactive/docs/gallery/geochart?hl=en#region-geocharts</a>"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

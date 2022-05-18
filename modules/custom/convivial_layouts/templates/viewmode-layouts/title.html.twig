@@ -1,0 +1,8 @@
+<div {{ attributes.addClass('title') }}>
+  {{ title_suffix.contextual_links }}
+  {% if content.title|render|trim %}
+    <h3{{ region_attributes.title.addClass('layout__region', 'layout__region--title', 'title__title') }}>
+      {{ content.title }}
+    </h3>
+  {% endif %}
+</div>

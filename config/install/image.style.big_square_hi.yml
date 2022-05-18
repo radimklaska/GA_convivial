@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: big_square_hi
+label: 'Big square high resolution'
+effects:
+  f0277c28-e297-4ed7-8d57-7a0cb88a7721:
+    uuid: f0277c28-e297-4ed7-8d57-7a0cb88a7721
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1200
+      height: 1200
+      crop_type: focal_point

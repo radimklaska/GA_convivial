@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: content
+label: Content
+type: 'canonical_entities:node'
+pattern: '[node:menu-link:parents:join-path]/[node:title]'
+selection_criteria:
+  dfc1d3c2-0f0e-4f36-91bb-2c971e2439bc:
+    id: node_type
+    bundles:
+      audience: audience
+      page: page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: dfc1d3c2-0f0e-4f36-91bb-2c971e2439bc
+selection_logic: and
+weight: 0
+relationships: {  }

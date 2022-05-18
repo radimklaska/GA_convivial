@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: full_wide_lg_hi
+label: 'Full (wide) large high resolution'
+effects:
+  5dd577ed-0604-45a5-8bc4-662246c1e259:
+    uuid: 5dd577ed-0604-45a5-8bc4-662246c1e259
+    id: image_scale
+    weight: 1
+    data:
+      width: 2400
+      height: null
+      upscale: false

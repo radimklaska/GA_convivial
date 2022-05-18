@@ -1,0 +1,7 @@
+name: Convivial Breakpoints
+description: Breakpoint declarations for Convivial project.
+type: module
+package: Convivial
+core_version_requirement: ^8.9 || ^9.0
+dependencies:
+  - drupal:breakpoint

@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: hero_banner
+label: 'Hero Banner'
+icon_uuid: b37c8279-dc86-4ce2-8a8a-5f92d955ca29
+icon_default: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAXklEQVR4AWMgDEZB8QFPIH7MULT/PzUxyEyw2ciG08QSOKfhmBC1AgVkFtxcOIPKYLhaUHRgKzGRB1JHWwuK928ZjQPC4U65BZjhPpoPaGIBzQs7mhfXtK9wCIFRAADJu58mxaWEHwAAAABJRU5ErkJggg=='
+description: 'The hero pattern allows you to use a simple tagline and description, as well as imagery to call out specific information, or promote an area of the site. '
+behavior_plugins: {  }

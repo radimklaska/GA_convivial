@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: full_wide_sm_hi
+label: 'Full (wide) small high resolution'
+effects:
+  e9dd7826-8dd1-4d9e-bce2-f8964b3457e0:
+    uuid: e9dd7826-8dd1-4d9e-bce2-f8964b3457e0
+    id: image_scale
+    weight: 1
+    data:
+      width: 1536
+      height: null
+      upscale: false

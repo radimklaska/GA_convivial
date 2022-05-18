@@ -1,0 +1,124 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.icon
+    - field.field.paragraph.item.field_cta
+    - field.field.paragraph.item.field_heading
+    - field.field.paragraph.item.field_hide_heading
+    - field.field.paragraph.item.field_item_icon_bg_colour
+    - field.field.paragraph.item.field_item_icon_bg_is_dark
+    - field.field.paragraph.item.field_item_icon_image
+    - field.field.paragraph.item.field_item_image
+    - field.field.paragraph.item.field_item_info
+    - field.field.paragraph.item.field_item_summary
+    - field.field.paragraph.item.field_item_url
+    - field.field.paragraph.item.field_title
+    - paragraphs.paragraphs_type.item
+  module:
+    - convivial_layouts
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: icon
+        layout_settings:
+          label: ''
+        components:
+          45220586-1b2f-411b-862b-81fd61673468:
+            uuid: 45220586-1b2f-411b-862b-81fd61673468
+            region: image
+            configuration:
+              id: 'field_block:paragraph:item:field_item_icon_image'
+              label: 'Icon image'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: small
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+          573769de-2972-4654-ae13-cd81a5ec9ac3:
+            uuid: 573769de-2972-4654-ae13-cd81a5ec9ac3
+            region: title
+            configuration:
+              id: 'field_block:paragraph:item:field_heading'
+              label: Heading
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+          36ef9e26-f2d0-45cb-8302-c19d5993f504:
+            uuid: 36ef9e26-f2d0-45cb-8302-c19d5993f504
+            region: summary
+            configuration:
+              id: 'field_block:paragraph:item:field_item_summary'
+              label: Summary
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+id: paragraph.item.icon
+targetEntityType: paragraph
+bundle: item
+mode: icon
+content:
+  field_heading:
+    type: string
+    weight: 1
+    region: title
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_item_icon_image:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: small
+      link: false
+    third_party_settings: {  }
+    region: image
+  field_item_summary:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: summary
+hidden:
+  field_cta: true
+  field_hide_heading: true
+  field_item_icon_bg_colour: true
+  field_item_icon_bg_is_dark: true
+  field_item_image: true
+  field_item_info: true
+  field_item_url: true
+  field_title: true
+  search_api_excerpt: true

@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: half_lg
+label: 'Half large'
+effects:
+  b739c5b1-89ee-488c-b940-c67080aae113:
+    uuid: b739c5b1-89ee-488c-b940-c67080aae113
+    id: image_scale
+    weight: 1
+    data:
+      width: 400
+      height: null
+      upscale: false

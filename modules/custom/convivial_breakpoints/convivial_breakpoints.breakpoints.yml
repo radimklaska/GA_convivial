@@ -1,0 +1,42 @@
+convivial_breakpoints.mobile:
+  label: mobile
+  mediaQuery: ''
+  weight: 0
+  multipliers:
+    - 1x
+    - 2x
+convivial_breakpoints.small:
+  label: small
+  mediaQuery: '(min-width: 576px)'
+  weight: 1
+  multipliers:
+    - 1x
+    - 2x
+convivial_breakpoints.medium:
+  label: medium
+  mediaQuery: '(min-width: 768px)'
+  weight: 2
+  multipliers:
+    - 1x
+    - 2x
+convivial_breakpoints.large:
+  label: large
+  mediaQuery: '(min-width: 992px)'
+  weight: 3
+  multipliers:
+    - 1x
+    - 2x
+convivial_breakpoints.extra_large:
+  label: extra large
+  mediaQuery: '(min-width: 1200px)'
+  weight: 4
+  multipliers:
+    - 1x
+    - 2x
+convivial_breakpoints.extra_extra_large:
+  label: extra extra large
+  mediaQuery: '(min-width: 1400px)'
+  weight: 5
+  multipliers:
+    - 1x
+    - 2x

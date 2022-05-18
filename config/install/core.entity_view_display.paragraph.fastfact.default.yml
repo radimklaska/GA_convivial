@@ -1,0 +1,53 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.fastfact.field_fastfact_prefix
+    - field.field.paragraph.fastfact.field_fastfact_suffix
+    - field.field.paragraph.fastfact.field_fastfact_value
+    - field.field.paragraph.fastfact.field_heading
+    - field.field.paragraph.fastfact.field_hide_heading
+    - field.field.paragraph.fastfact.field_title
+    - paragraphs.paragraphs_type.fastfact
+id: paragraph.fastfact.default
+targetEntityType: paragraph
+bundle: fastfact
+mode: default
+content:
+  field_fastfact_prefix:
+    type: string
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_fastfact_suffix:
+    type: string
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_fastfact_value:
+    type: number_integer
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+  field_heading:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  field_hide_heading: true
+  field_title: true
+  search_api_excerpt: true

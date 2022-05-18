@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: tiny_standard
+label: Tiny
+effects:
+  de0a460d-d83d-428b-97f3-0752f837c871:
+    uuid: de0a460d-d83d-428b-97f3-0752f837c871
+    id: image_scale
+    weight: 1
+    data:
+      width: 100
+      height: null
+      upscale: false

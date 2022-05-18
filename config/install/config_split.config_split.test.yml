@@ -1,0 +1,18 @@
+langcode: en
+status: false
+dependencies: {  }
+id: test
+label: Test
+description: ''
+folder: ../config/test
+module:
+  devel: 0
+  environment_indicator: 0
+theme: {  }
+blacklist: {  }
+graylist:
+  - system.logging
+  - system.mail
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

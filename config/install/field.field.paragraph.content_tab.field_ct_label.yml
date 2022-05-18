@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_ct_label
+    - paragraphs.paragraphs_type.content_tab
+id: paragraph.content_tab.field_ct_label
+field_name: field_ct_label
+entity_type: paragraph
+bundle: content_tab
+label: Label
+description: 'The label of the tab.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: custom_radial_gradient_modifier
+label: 'Custom Radial Gradient Modifier'
+icon_uuid: null
+description: 'Modify the radial gradient to have multiple colours.'
+behavior_plugins: {  }

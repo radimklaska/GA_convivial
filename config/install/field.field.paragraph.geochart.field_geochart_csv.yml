@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_geochart_csv
+    - paragraphs.paragraphs_type.geochart
+  module:
+    - unique_content_field_validation
+third_party_settings:
+  unique_content_field_validation:
+    unique: false
+    unique_text: ''
+id: paragraph.geochart.field_geochart_csv
+field_name: field_geochart_csv
+entity_type: paragraph
+bundle: geochart
+label: CSV
+description: "CSV data (region, value) used to initialize the GeoChart.<br>\r\nSee: <a href=\"https://developers.google.com/chart/interactive/docs/datatables_dataviews#arraytodatatable\">https://developers.google.com/chart/interactive/docs/datatables_dataviews#arraytodatatable</a>"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

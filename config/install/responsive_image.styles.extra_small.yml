@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.extra_small_hi
+    - image.style.extra_small_standard
+  module:
+    - convivial_breakpoints
+id: extra_small
+label: 'Extra small'
+image_style_mappings:
+  -
+    breakpoint_id: convivial_breakpoints.mobile
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: extra_small_standard
+  -
+    breakpoint_id: convivial_breakpoints.mobile
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: extra_small_hi
+breakpoint_group: convivial_breakpoints
+fallback_image_style: extra_small_standard

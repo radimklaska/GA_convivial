@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: content_tabs
+label: 'Content Tabs'
+icon_uuid: 8222fa6e-0c19-400a-9fb5-1a01e021c7a3
+icon_default: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAaUlEQVR4AWNgKD7gCcSPGYr2/6cEg8wAm4UO0Ayn3BJ0AJdsOCYEEwKx4eLIoOKwICFxnBZQWZywBLXihFYWICyBc6gDMOMQzqAyGGkWjFowasGoBaMWIKpMWhTXBCp9yiscAs0WyqtMAJc6y9hjPKMTAAAAAElFTkSuQmCC'
+description: 'Use Content Tabs to display content in a tabbed format.'
+behavior_plugins: {  }

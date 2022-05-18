@@ -1,0 +1,59 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.layout.field_heading
+    - field.field.paragraph.layout.field_hide_heading
+    - field.field.paragraph.layout.field_layout_colour_palette
+    - field.field.paragraph.layout.field_layout_styles
+    - field.field.paragraph.layout.field_modifiers
+    - paragraphs.paragraphs_type.layout
+  module:
+    - paragraphs
+id: paragraph.layout.default
+targetEntityType: paragraph
+bundle: layout
+mode: default
+content:
+  field_heading:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_hide_heading:
+    weight: 1
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_layout_colour_palette:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_layout_styles:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_modifiers:
+    weight: 4
+    settings:
+      title: Modifier
+      title_plural: Modifiers
+      edit_mode: preview
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    type: entity_reference_paragraphs
+    region: content
+hidden:
+  created: true
+  status: true

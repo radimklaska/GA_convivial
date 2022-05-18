@@ -1,0 +1,36 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.content_tab.field_ct_body
+    - field.field.paragraph.content_tab.field_ct_default
+    - field.field.paragraph.content_tab.field_ct_id
+    - field.field.paragraph.content_tab.field_ct_label
+    - field.field.paragraph.content_tab.field_title
+    - paragraphs.paragraphs_type.content_tab
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: paragraph.content_tab.preview
+targetEntityType: paragraph
+bundle: content_tab
+mode: preview
+content:
+  field_title:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  field_ct_body: true
+  field_ct_default: true
+  field_ct_id: true
+  field_ct_label: true
+  search_api_excerpt: true

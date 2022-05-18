@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 5314f2cf-1873-44df-a4c3-789b0da99663
+  bundle: image
+  default_langcode: en
+  depends:
+    c9e54bea-8792-4eda-b56b-fca65d14ea0c: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Bee bloom'
+  created:
+    -
+      value: 1557659482
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: c9e54bea-8792-4eda-b56b-fca65d14ea0c
+      alt: 'Bee bloom'
+      title: ''
+      width: 5841
+      height: 3710

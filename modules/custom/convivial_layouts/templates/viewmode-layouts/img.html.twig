@@ -1,0 +1,34 @@
+{#
+/**
+* Image view mode.
+*
+* List of regions: image.
+*/
+#}
+
+{%
+  set classes = [
+  'image',
+]
+%}
+
+<div {{ attributes.addClass(classes) }}>
+  {{ title_suffix.contextual_links }}
+
+  {% if item_url %}
+  <a href="{{ item_url }}" class="image__link">
+    {% endif %}
+
+    {% block image %}
+      {% if content.image|render|striptags('<img>')|trim %}
+        <div{{ region_attributes.image.addClass('layout__region', 'layout__region--image', 'image__image') }}>
+          {{ content.image }}
+        </div>
+      {% endif %}
+    {% endblock %}
+
+    {% if item_url %}
+  </a>
+  {% endif %}
+
+</div>

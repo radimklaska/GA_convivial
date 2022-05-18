@@ -1,0 +1,57 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: c9fbcf54-5c61-4a57-8cb6-57b8ce79bddf
+  bundle: person
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Susanna Clarke'
+  created:
+    -
+      value: 1611314994
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /about/susanna-clarke
+      langcode: en
+      pathauto: 1
+  morpht_computed_field_type_label:
+    -
+      value: Person
+  field_key:
+    -
+      value: 'person:susanna-clarke'
+  body:
+    -
+      value: "<p>Clarke began&nbsp;Jonathan Strange&nbsp;in 1993 and worked on it during her spare time. For the next decade, she published short stories from the&nbsp;Strange&nbsp;universe, but it was not until 2003 that&nbsp;Bloomsbury&nbsp;bought her manuscript and began work on its publication. The novel became a best-seller.</p>\r\n\r\n<p>Two years later, she published a collection of her short stories,&nbsp;The Ladies of Grace Adieu and Other Stories&nbsp;(2006). Both Clarke's debut novel and her short stories are&nbsp;set&nbsp;in a magical England and written in a&nbsp;pastiche&nbsp;of the styles of 19th-century writers such as&nbsp;Jane Austen&nbsp;and&nbsp;Charles Dickens. While&nbsp;Strange&nbsp;focuses on the relationship of two men, Jonathan Strange and Gilbert Norrell, the stories in&nbsp;Ladies&nbsp;focus on the power women gain through magic.</p>\r\n\r\n<p>Clarke's second novel,&nbsp;Piranesi, was published in September 2020.</p>\r\n"
+      format: rich_text
+      summary: "Susanna Mary Clarke\_(born 1 November 1959) is an English author best known for her\_debut novel\_Jonathan Strange & Mr Norrell\_(2004), a\_Hugo Award-winning\_alternative history."
+  field_introduction:
+    -
+      value: "<p class=\"introduction\">Susanna Mary Clarke&nbsp;(born 1 November 1959) is an English author best known for her&nbsp;debut novel&nbsp;Jonathan Strange &amp; Mr Norrell&nbsp;(2004), a&nbsp;Hugo Award-winning&nbsp;alternative history.</p>\r\n"
+      format: rich_text
+  field_search_exclude:
+    -
+      value: false

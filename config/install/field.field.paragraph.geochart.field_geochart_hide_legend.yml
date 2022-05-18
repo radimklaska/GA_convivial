@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_geochart_hide_legend
+    - paragraphs.paragraphs_type.geochart
+id: paragraph.geochart.field_geochart_hide_legend
+field_name: field_geochart_hide_legend
+entity_type: paragraph
+bundle: geochart
+label: 'Hide legend'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

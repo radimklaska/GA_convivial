@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: full_wide_lg
+label: 'Full (wide) large'
+effects:
+  aaa4e2ae-1369-4688-a3e5-1362041fbcc6:
+    uuid: aaa4e2ae-1369-4688-a3e5-1362041fbcc6
+    id: image_scale
+    weight: 1
+    data:
+      width: 1200
+      height: null
+      upscale: false

@@ -1,0 +1,38 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.thumbnail
+    - field.field.media.video.field_body
+    - field.field.media.video.field_media_video_file
+    - field.field.media.video.field_search_exclude
+    - field.field.media.video.field_tags
+    - field.field.media.video.field_transcript
+    - image.style.thumbnail
+    - media.type.video
+  module:
+    - image
+id: media.video.thumbnail
+targetEntityType: media
+bundle: video
+mode: thumbnail
+content:
+  thumbnail:
+    type: image
+    weight: 0
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: content
+    region: content
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_body: true
+  field_media_video_file: true
+  field_search_exclude: true
+  field_tags: true
+  field_transcript: true
+  name: true
+  search_api_excerpt: true
+  uid: true

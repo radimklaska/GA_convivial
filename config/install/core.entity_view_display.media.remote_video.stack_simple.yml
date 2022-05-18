@@ -1,0 +1,92 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.stack_simple
+    - field.field.media.remote_video.field_body
+    - field.field.media.remote_video.field_media_oembed_video
+    - field.field.media.remote_video.field_search_exclude
+    - field.field.media.remote_video.field_tags
+    - field.field.media.remote_video.field_transcript
+    - media.type.remote_video
+  module:
+    - convivial_layouts
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: stack_simple
+        layout_settings:
+          label: ''
+        components:
+          65d8ec0d-c9bd-4105-b654-98b393c6f7ac:
+            uuid: 65d8ec0d-c9bd-4105-b654-98b393c6f7ac
+            region: title
+            configuration:
+              id: 'field_block:media:remote_video:name'
+              label: Name
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: string
+                settings:
+                  link_to_entity: true
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+          bcd895f0-d07c-4001-80a2-3e50d4444365:
+            uuid: bcd895f0-d07c-4001-80a2-3e50d4444365
+            region: summary
+            configuration:
+              id: 'field_block:media:remote_video:field_body'
+              label: Body
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: text_summary_or_trimmed
+                settings:
+                  trim_length: 160
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+id: media.remote_video.stack_simple
+targetEntityType: media
+bundle: remote_video
+mode: stack_simple
+content:
+  field_body:
+    type: text_summary_or_trimmed
+    weight: 1
+    region: summary
+    label: hidden
+    settings:
+      trim_length: 160
+    third_party_settings: {  }
+  name:
+    type: string
+    weight: 0
+    region: title
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_media_oembed_video: true
+  field_search_exclude: true
+  field_tags: true
+  field_transcript: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

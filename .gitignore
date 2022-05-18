@@ -1,0 +1,14 @@
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+.phpcs-cache
+
+# Theme artefacts in root themes folder.
+themes/custom/**/config-local.json
+themes/custom/**/css/**/*.map
+themes/custom/**/js/**/*.map
+themes/custom/**/components/**/*.map
+themes/custom/**/libraries/**/*.map
+themes/custom/**/assets/bootstrap

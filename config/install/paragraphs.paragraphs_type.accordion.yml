@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: accordion
+label: Accordion
+icon_uuid: c459a43b-46a9-4359-98df-036a6c928a39
+icon_default: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAX0lEQVR4AWNgKD7gCcSPGYr2/6cKhoGiA1sZivdvYYAZTjMLQIJUxRWHlRiQAVyi4ZgQA/UBwgJamTtqAQiMWjBqwagFoxaMWkCTGg1kFsxceKVPCwwyG95soYXhILMBxYqYdxrN9jgAAAAASUVORK5CYII='
+description: 'Display a content item (title and body) in an accordion.'
+behavior_plugins: {  }

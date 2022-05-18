@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_accordion_make_faq
+    - paragraphs.paragraphs_type.accordion
+id: paragraph.accordion.field_accordion_make_faq
+field_name: field_accordion_make_faq
+entity_type: paragraph
+bundle: accordion
+label: 'Make FAQ'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

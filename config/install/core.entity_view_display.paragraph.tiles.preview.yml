@@ -1,0 +1,37 @@
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.tiles.field_heading
+    - field.field.paragraph.tiles.field_modifiers
+    - field.field.paragraph.tiles.field_position
+    - field.field.paragraph.tiles.field_tiles_arrangement
+    - field.field.paragraph.tiles.field_tiles_colour_classes
+    - field.field.paragraph.tiles.field_tiles_gap
+    - field.field.paragraph.tiles.field_tiles_node
+    - field.field.paragraph.tiles.field_tiles_styles
+    - field.field.paragraph.tiles.field_tiles_view_mode
+    - paragraphs.paragraphs_type.tiles
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: paragraph.tiles.preview
+targetEntityType: paragraph
+bundle: tiles
+mode: preview
+content: {  }
+hidden:
+  field_heading: true
+  field_modifiers: true
+  field_position: true
+  field_tiles_arrangement: true
+  field_tiles_colour_classes: true
+  field_tiles_gap: true
+  field_tiles_node: true
+  field_tiles_styles: true
+  field_tiles_view_mode: true
+  search_api_excerpt: true

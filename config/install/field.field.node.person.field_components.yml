@@ -1,0 +1,176 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_components
+    - node.type.person
+    - paragraphs.paragraphs_type.accordion
+    - paragraphs.paragraphs_type.accordion_group
+    - paragraphs.paragraphs_type.charts
+    - paragraphs.paragraphs_type.content
+    - paragraphs.paragraphs_type.content_block
+    - paragraphs.paragraphs_type.content_tabs
+    - paragraphs.paragraphs_type.fastfacts
+    - paragraphs.paragraphs_type.geochart
+    - paragraphs.paragraphs_type.hero_banner
+    - paragraphs.paragraphs_type.item_list
+    - paragraphs.paragraphs_type.layout
+    - paragraphs.paragraphs_type.map
+    - paragraphs.paragraphs_type.media_list
+    - paragraphs.paragraphs_type.node_list
+    - paragraphs.paragraphs_type.personified_content
+    - paragraphs.paragraphs_type.plugin_block
+    - paragraphs.paragraphs_type.section
+    - paragraphs.paragraphs_type.slideshow
+    - paragraphs.paragraphs_type.snippet
+    - paragraphs.paragraphs_type.tiles
+    - paragraphs.paragraphs_type.timeline
+    - paragraphs.paragraphs_type.view
+    - paragraphs.paragraphs_type.webform
+  module:
+    - entity_reference_revisions
+id: node.person.field_components
+field_name: field_components
+entity_type: node
+bundle: person
+label: Components
+description: 'Use the dropdown menu to add components. Components are used to create sections of content on the page (e.g. a paragraph of text or an embedded map).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      accordion: accordion
+      accordion_group: accordion_group
+      charts: charts
+      content: content
+      content_tabs: content_tabs
+      plugin_block: plugin_block
+      content_block: content_block
+      view: view
+      webform: webform
+      fastfacts: fastfacts
+      hero_banner: hero_banner
+      item_list: item_list
+      map: map
+      media_list: media_list
+      node_list: node_list
+      section: section
+      slideshow: slideshow
+      timeline: timeline
+      geochart: geochart
+      personified_content: personified_content
+      layout: layout
+      tiles: tiles
+      snippet: snippet
+    negate: 0
+    target_bundles_drag_drop:
+      accordion:
+        weight: -75
+        enabled: true
+      accordion_group:
+        weight: -74
+        enabled: true
+      adaptive_height_modifier:
+        weight: -57
+        enabled: false
+      answer:
+        weight: 38
+        enabled: false
+      charts:
+        weight: -73
+        enabled: true
+      content:
+        weight: -72
+        enabled: true
+      content_block:
+        weight: -69
+        enabled: true
+      content_tab:
+        weight: -54
+        enabled: false
+      content_tabs:
+        weight: -71
+        enabled: true
+      fastfact:
+        weight: -50
+        enabled: false
+      fastfacts:
+        weight: -66
+        enabled: true
+      geochart:
+        weight: 44
+        enabled: true
+      hero_banner:
+        weight: -65
+        enabled: true
+      hide_modifier:
+        weight: -48
+        enabled: false
+      image_bg_modifier:
+        weight: -47
+        enabled: false
+      item:
+        weight: -46
+        enabled: false
+      item_list:
+        weight: -64
+        enabled: true
+      layout:
+        weight: 61
+        enabled: true
+      map:
+        weight: -63
+        enabled: true
+      media_list:
+        weight: -62
+        enabled: true
+      node_list:
+        weight: -61
+        enabled: true
+      parallax_bg_modifier:
+        weight: -44
+        enabled: false
+      personified_content:
+        weight: 56
+        enabled: true
+      plugin_block:
+        weight: -70
+        enabled: true
+      scroll_reveal_modifier:
+        weight: -42
+        enabled: false
+      section:
+        weight: -60
+        enabled: true
+      slide:
+        weight: -41
+        enabled: false
+      slideshow:
+        weight: -59
+        enabled: true
+      snippet:
+        weight: 74
+        enabled: true
+      tiles:
+        weight: 71
+        enabled: true
+      timeline:
+        weight: -58
+        enabled: true
+      timeline_item:
+        weight: -40
+        enabled: false
+      video_bg_modifier:
+        weight: -39
+        enabled: false
+      view:
+        weight: -68
+        enabled: true
+      webform:
+        weight: -67
+        enabled: true
+field_type: entity_reference_revisions

@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_chrt_stacking
+    - paragraphs.paragraphs_type.charts
+  module:
+    - options
+id: paragraph.charts.field_chrt_stacking
+field_name: field_chrt_stacking
+entity_type: paragraph
+bundle: charts
+label: Stacking
+description: 'Set to <em>Absolute values</a> if you want values to stack (add to the whole, instead of being displayed next to each other). See <a href="https://naver.github.io/billboard.js/demo/#Chart.StackedBarChart">https://naver.github.io/billboard.js/demo/#Chart.StackedBarChart</a> for example.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

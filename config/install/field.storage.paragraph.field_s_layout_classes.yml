@@ -1,0 +1,59 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_s_layout_classes
+field_name: field_s_layout_classes
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'section-layout section-layout--12'
+      label: 'Full width'
+    -
+      value: 'section-layout section-layout--equal section-layout--row'
+      label: 'Equal (dynamic up to 6 item)'
+    -
+      value: 'section-layout section-layout--6-6 section-layout--row'
+      label: Halves
+    -
+      value: 'section-layout section-layout--4-4-4 section-layout--row'
+      label: Thirds
+    -
+      value: 'section-layout section-layout--3-3-3-3 section-layout--row'
+      label: Quarters
+    -
+      value: 'section-layout section-layout--2-2-2-2-2-2 section-layout--row'
+      label: Sixths
+    -
+      value: 'section-layout section-layout--6-3-3 section-layout--row'
+      label: 6-3-3
+    -
+      value: 'section-layout section-layout--3-6-3 section-layout--row'
+      label: 3-6-3
+    -
+      value: 'section-layout section-layout--3-3-6 section-layout--row'
+      label: 3-3-6
+    -
+      value: 'section-layout section-layout--3-9 section-layout--row'
+      label: 3-9
+    -
+      value: 'section-layout section-layout--9-3 section-layout--row'
+      label: 9-3
+    -
+      value: 'section-layout section-layout--4-8 section-layout--row'
+      label: 4-8
+    -
+      value: 'section-layout section-layout--8-4 section-layout--row'
+      label: 8-4
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

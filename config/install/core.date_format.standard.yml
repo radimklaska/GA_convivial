@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: standard
+label: Standard
+locked: false
+pattern: 'j F Y'

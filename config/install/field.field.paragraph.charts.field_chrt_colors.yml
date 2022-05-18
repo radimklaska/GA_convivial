@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_chrt_colors
+    - paragraphs.paragraphs_type.charts
+id: paragraph.charts.field_chrt_colors
+field_name: field_chrt_colors
+entity_type: paragraph
+bundle: charts
+label: Colors
+description: 'The colours to be used for the data. You can use any value accepted in the CSS, e.g. <code>#ff0000</code>, <code>red</code>, <code>rgba(255,0,0,0.8)</code>. The hexadecimal format should start with a <code>#</code>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

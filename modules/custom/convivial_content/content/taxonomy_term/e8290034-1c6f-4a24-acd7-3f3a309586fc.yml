@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: e8290034-1c6f-4a24-acd7-3f3a309586fc
+  bundle: attribute
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: 'Daytime: Morning'
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_attribute_key:
+    -
+      value: daytime
+  field_attribute_value:
+    -
+      value: 'daytime:morning'

@@ -1,0 +1,20 @@
+langcode: en
+status: false
+dependencies: {  }
+id: prod
+label: Production
+description: ''
+folder: ../config/prod
+module:
+  encrypt: 0
+  environment_indicator: 0
+  ga_login: 0
+  key: 0
+  real_aes: 0
+  tfa: 0
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

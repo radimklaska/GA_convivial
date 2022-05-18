@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: full_md
+label: 'Full medium'
+effects:
+  47d483cf-72d9-41a8-b1b7-4e40ae25bab4:
+    uuid: 47d483cf-72d9-41a8-b1b7-4e40ae25bab4
+    id: image_scale
+    weight: 1
+    data:
+      width: 661
+      height: null
+      upscale: false

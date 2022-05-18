@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: landscape_hi
+label: 'Landscape high resolution'
+effects:
+  2c44506c-0dd7-4bb1-be07-de3470dd670f:
+    uuid: 2c44506c-0dd7-4bb1-be07-de3470dd670f
+    id: focal_point_scale_and_crop
+    weight: 2
+    data:
+      width: 1200
+      height: 848
+      crop_type: focal_point

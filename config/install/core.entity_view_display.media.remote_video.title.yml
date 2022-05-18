@@ -1,0 +1,74 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.title
+    - field.field.media.remote_video.field_body
+    - field.field.media.remote_video.field_media_oembed_video
+    - field.field.media.remote_video.field_search_exclude
+    - field.field.media.remote_video.field_tags
+    - field.field.media.remote_video.field_transcript
+    - media.type.remote_video
+  module:
+    - convivial_layouts
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: title
+        layout_settings:
+          label: ''
+        components:
+          e8619a5c-6322-4a7b-8844-207c0863a143:
+            uuid: e8619a5c-6322-4a7b-8844-207c0863a143
+            region: title
+            configuration:
+              id: 'field_block:media:remote_video:name'
+              label: Name
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: string
+                settings:
+                  link_to_entity: true
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+id: media.remote_video.title
+targetEntityType: media
+bundle: remote_video
+mode: title
+content:
+  field_body:
+    type: text_summary_or_trimmed
+    weight: 1
+    region: summary
+    label: hidden
+    settings:
+      trim_length: 160
+    third_party_settings: {  }
+  name:
+    type: string
+    weight: 0
+    region: title
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_media_oembed_video: true
+  field_search_exclude: true
+  field_tags: true
+  field_transcript: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

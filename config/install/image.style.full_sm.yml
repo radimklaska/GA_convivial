@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: full_sm
+label: 'Full small'
+effects:
+  41dba970-a999-48cd-b9e5-eccdaafd556d:
+    uuid: 41dba970-a999-48cd-b9e5-eccdaafd556d
+    id: image_scale
+    weight: 1
+    data:
+      width: 768
+      height: null
+      upscale: false

@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_search_exclude
+    - media.type.video
+id: media.video.field_search_exclude
+field_name: field_search_exclude
+entity_type: media
+bundle: video
+label: 'Search exclude'
+description: 'Exclude the media from search and listings.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

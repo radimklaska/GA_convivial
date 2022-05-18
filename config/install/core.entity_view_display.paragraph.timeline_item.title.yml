@@ -1,0 +1,36 @@
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.title
+    - field.field.paragraph.timeline_item.field_timeline_item_body
+    - field.field.paragraph.timeline_item.field_timeline_item_date
+    - field.field.paragraph.timeline_item.field_timeline_item_image
+    - field.field.paragraph.timeline_item.field_title
+    - paragraphs.paragraphs_type.timeline_item
+  module:
+    - datetime
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: paragraph.timeline_item.title
+targetEntityType: paragraph
+bundle: timeline_item
+mode: title
+content:
+  field_timeline_item_date:
+    weight: 0
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: standard
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+hidden:
+  field_timeline_item_body: true
+  field_timeline_item_image: true
+  field_title: true
+  search_api_excerpt: true
