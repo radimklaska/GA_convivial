@@ -160,6 +160,6 @@ dependencies:
 themes:
   - stable
   - classy
-  - convivial_bs5
-  - convivial_admin
   - claro
+  - convivial_bootstrap
+  - convivial_claro
