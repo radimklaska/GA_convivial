@@ -4,7 +4,7 @@
   "minimum-stability": "dev",
   "license": "proprietary",
   "type": "drupal-profile",
-  "version": "",
+  "version": "v1",
   "authors": [
     {
       "name": "Morpht",
@@ -145,7 +145,6 @@
     "npm-asset/datatables": "^1.10.19",
     "npm-asset/handlebars": "^4.7",
     "npm-asset/jarallax": "^1.12.4",
-    "npm-asset/jquery-ui-touch-punch": "^0.2.3",
     "npm-asset/react": "^16.13",
     "npm-asset/react-dom": "^16.13",
     "npm-asset/scrollreveal": "^4.0.7",
@@ -179,6 +178,9 @@
       },
       "drupal/redirect": {
         "3037259 - Endless Redirection loop when using Domain access": "https://git.drupalcode.org/project/redirect/-/merge_requests/31.patch"
+      },
+      "drupal/jquery_ui_touch_punch": {
+        "3159222 - jQuery UI Touch Punch library": "https://www.drupal.org/files/issues/2022-05-26/3159222-98.patch"
       }
     },
     "drupal-scaffold": {
