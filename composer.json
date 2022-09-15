@@ -22,7 +22,7 @@
     "drupal/admin_toolbar": "^3.1",
     "drupal/antibot": "^2.0",
     "drupal/autologout": "^1.4",
-    "drupal/ayrshare": "^1.0@alpha",
+    "drupal/ayrshare": "^1.0",
     "drupal/better_exposed_filters": "^6.0",
     "drupal/chosen": "^3.0",
     "drupal/ckeditor_a11ychecker": "^2.0",
