@@ -4,5 +4,6 @@ dependencies: {  }
 id: item
 label: Item
 icon_uuid: null
-description: 'Defines an Item as a title, image and summary. Used in Item Lists.'
+icon_default: null
+description: 'An individual item (title, image and summary) for use in Item lists.'
 behavior_plugins: {  }

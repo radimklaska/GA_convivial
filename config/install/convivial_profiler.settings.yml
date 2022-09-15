@@ -1,5 +1,5 @@
-site_id: ''
-license_key: ''
+site_id: convivial-demo
+license_key: community
 client_cleanup: true
 event_tracking: true
 profilers:
@@ -13,17 +13,16 @@ profilers:
     sources:
       -
         type: query
-        key: set
+        param: set
     processors:
       -
         type: temp
-        key: set
+        storage_key: set
     destinations:
       -
         type: set
-        paths:
-          - temp.set.value
-        storage_location:
+        storage_key: temp.set.value
+        target_location:
           localstorage: localstorage
           cookie: '0'
   unset:
@@ -36,17 +35,16 @@ profilers:
     sources:
       -
         type: query
-        key: unset
+        param: unset
     processors:
       -
         type: temp
-        key: unset
+        storage_key: unset
     destinations:
       -
         type: unset
-        paths:
-          - temp.unset.value
-        storage_location:
+        storage_key: temp.unset.value
+        target_location:
           localstorage: localstorage
           cookie: '0'
   remove:
@@ -59,21 +57,21 @@ profilers:
     sources:
       -
         type: query
-        key: remove
+        param: remove
     processors:
       -
         type: temp
-        key: remove
+        storage_key: remove
     destinations:
       -
         type: remove
-        paths:
+        storage_keys:
           - temp.remove.value
-        storage_location:
-          localstorage: localstorage
-          cookie: '0'
         static_values:
           - ''
+        target_location:
+          localstorage: localstorage
+          cookie: '0'
   utm_campaign:
     name: utm_campaign
     label: 'UTM campaign'
@@ -84,11 +82,11 @@ profilers:
     sources:
       -
         type: query
-        key: utm_campaign
+        param: utm_campaign
     processors:
       -
         type: store
-        key: utm_campaign
+        storage_key: utm_campaign
         ttl: 300
     destinations:
       -
@@ -97,12 +95,12 @@ profilers:
         action: view
         normalize: true
       -
-        key: campaign_utm
         type: copy
+        target_key: campaign_utm
         remove_empty: true
-        paths:
-          - store.utm_campaign.value
-        storage_location:
+        storage_key: store.utm_campaign.value
+        stringify: false
+        target_location:
           localstorage: localstorage
           cookie: '0'
   utm_source:
@@ -115,20 +113,19 @@ profilers:
     sources:
       -
         type: query
-        key: utm_source
+        param: utm_source
     processors:
       -
         type: store
-        key: utm_source
+        storage_key: utm_source
         ttl: 300
     destinations:
       -
-        key: utm_source
         type: copy
+        target_key: utm_source
         remove_empty: true
-        paths:
-          - store.utm_source.value
-        storage_location:
+        storage_key: store.utm_source.value
+        target_location:
           localstorage: localstorage
           cookie: '0'
   utm_medium:
@@ -141,20 +138,19 @@ profilers:
     sources:
       -
         type: query
-        key: utm_medium
+        param: utm_medium
     processors:
       -
         type: store
-        key: utm_medium
+        storage_key: utm_medium
         ttl: 300
     destinations:
       -
-        key: utm_medium
         type: copy
+        target_key: utm_medium
         remove_empty: true
-        paths:
-          - store.utm_medium.value
-        storage_location:
+        storage_key: store.utm_medium.value
+        target_location:
           localstorage: localstorage
           cookie: '0'
   hour:
@@ -167,22 +163,18 @@ profilers:
     sources:
       -
         type: time
-        key: hour
+        part: hour
     processors:
       -
         type: store
-        key: hour
+        storage_key: hour
         ttl: 3600
     destinations:
       -
-        key: daytime
         type: range
+        target_key: daytime
         remove_empty: false
-        paths:
-          - store.hour.value
-        storage_location:
-          localstorage: localstorage
-          cookie: '0'
+        storage_key: store.hour.value
         ranges:
           -
             key: 'daytime:morning'
@@ -204,6 +196,18 @@ profilers:
             key: 'daytime:night'
             min: 21
             max: 24
+        target_location:
+          localstorage: localstorage
+          cookie: '0'
+      -
+        type: copy
+        target_key: hour
+        remove_empty: true
+        storage_key: store.hour.value
+        stringify: false
+        target_location:
+          localstorage: localstorage
+          cookie: '0'
   author:
     name: author
     label: Author
@@ -214,11 +218,11 @@ profilers:
     sources:
       -
         type: meta
-        key: author
+        attribute_name: author
     processors:
       -
         type: dimension
-        key: author
+        storage_key: author
         normalize: true
     destinations:
       -
@@ -236,11 +240,11 @@ profilers:
     sources:
       -
         type: meta
-        key: type
+        attribute_name: type
     processors:
       -
         type: dimension
-        key: type
+        storage_key: type
         normalize: true
     destinations:
       -
@@ -249,12 +253,11 @@ profilers:
         action: view
         normalize: true
       -
-        key: type_top
         type: top
+        target_key: type_top
         remove_empty: false
-        paths:
-          - dimensions.type
-        storage_location:
+        dimension_key: dimensions.type
+        target_location:
           localstorage: localstorage
           cookie: '0'
   audience:
@@ -267,11 +270,11 @@ profilers:
     sources:
       -
         type: meta
-        key: audience
+        attribute_name: audience
     processors:
       -
         type: dimension
-        key: audience
+        storage_key: audience
         normalize: true
     destinations:
       -
@@ -280,12 +283,11 @@ profilers:
         action: view
         normalize: true
       -
-        key: audience_top
         type: top
+        target_key: audience_top
         remove_empty: false
-        paths:
-          - dimensions.audience
-        storage_location:
+        dimension_key: dimensions.audience
+        target_location:
           localstorage: localstorage
           cookie: '0'
   audience_crm:
@@ -298,20 +300,19 @@ profilers:
     sources:
       -
         type: cookie
-        key: convivial_enricher_convivial_demo_audience
+        name: convivial_enricher_convivial_demo_audience
     processors:
       -
         type: store
-        key: audience_crm
+        storage_key: audience_crm
         ttl: 300
     destinations:
       -
-        key: audience_crm
         type: copy
+        target_key: audience_crm
         remove_empty: true
-        paths:
-          - store.audience_crm.value
-        storage_location:
+        storage_key: store.audience_crm.value
+        target_location:
           localstorage: localstorage
           cookie: '0'
   audience_affinity:
@@ -325,15 +326,14 @@ profilers:
     processors: {  }
     destinations:
       -
-        default_value: 'audience:general'
-        key: audience_affinity
         type: bestpick
-        global_storage: true
+        target_key: audience_affinity
         remove_empty: true
-        paths:
+        storage_keys:
           - audience_crm
           - audience_top
-        storage_location:
+        default_value: 'audience:general'
+        target_location:
           localstorage: localstorage
           cookie: '0'
   campaign_crm:
@@ -346,20 +346,19 @@ profilers:
     sources:
       -
         type: cookie
-        key: convivial_enricher_convivial_demo_campaign
+        name: convivial_enricher_convivial_demo_campaign
     processors:
       -
         type: store
-        key: campaign_crm
+        storage_key: campaign_crm
         ttl: 300
     destinations:
       -
-        key: campaign_crm
         type: copy
+        target_key: campaign_crm
         remove_empty: true
-        paths:
-          - store.campaign_crm.value
-        storage_location:
+        storage_key: store.campaign_crm.value
+        target_location:
           localstorage: localstorage
           cookie: '0'
   campaign_affinity:
@@ -373,15 +372,14 @@ profilers:
     processors: {  }
     destinations:
       -
-        default_value: ''
-        key: campaign_affinity
         type: bestpick
-        global_storage: true
+        target_key: campaign_affinity
         remove_empty: true
-        paths:
+        storage_keys:
           - campaign_crm
           - campaign_utm
-        storage_location:
+        default_value: ''
+        target_location:
           localstorage: localstorage
           cookie: '0'
   topic:
@@ -394,11 +392,11 @@ profilers:
     sources:
       -
         type: meta
-        key: topic
+        attribute_name: topic
     processors:
       -
         type: dimension
-        key: topic
+        storage_key: topic
         normalize: true
     destinations:
       -
@@ -407,12 +405,11 @@ profilers:
         action: view
         normalize: true
       -
-        key: topic_top
         type: top
+        target_key: topic_top
         remove_empty: false
-        paths:
-          - dimensions.topic
-        storage_location:
+        dimension_key: dimensions.topic
+        target_location:
           localstorage: localstorage
           cookie: '0'
   topic_crm:
@@ -425,20 +422,19 @@ profilers:
     sources:
       -
         type: cookie
-        key: convivial_enricher_convivial_demo_topic
+        name: convivial_enricher_convivial_demo_topic
     processors:
       -
         type: store
-        key: topic_crm
+        storage_key: topic_crm
         ttl: 300
     destinations:
       -
-        key: topic_crm
         type: copy
+        target_key: topic_crm
         remove_empty: true
-        paths:
-          - store.topic_crm.value
-        storage_location:
+        storage_key: store.topic_crm.value
+        target_location:
           localstorage: localstorage
           cookie: '0'
   topic_decision_tree:
@@ -451,31 +447,30 @@ profilers:
     sources:
       -
         type: cookie
-        key: decision_tree_outcome_84
+        name: decision_tree_outcome_84
     processors:
       -
         type: store
-        key: topic_decision_tree
+        storage_key: topic_decision_tree
         ttl: 300
     destinations:
       -
-        key: topic_decision_tree
         type: copy
+        target_key: topic_decision_tree
         remove_empty: true
-        paths:
-          - store.topic_decision_tree.value
-        storage_location:
+        storage_key: store.topic_decision_tree.value
+        target_location:
           localstorage: localstorage
           cookie: '0'
       -
         type: remove
-        paths:
+        storage_keys:
           - store.topic_decision_tree.value
-        storage_location:
-          localstorage: '0'
-          cookie: cookie
         static_values:
           - decision_tree_outcome_84
+        target_location:
+          localstorage: '0'
+          cookie: cookie
   topic_affinity:
     name: topic_affinity
     label: 'Topic affinity'
@@ -487,16 +482,15 @@ profilers:
     processors: {  }
     destinations:
       -
-        default_value: 'topic:general'
-        key: topic_affinity
         type: bestpick
-        global_storage: true
+        target_key: topic_affinity
         remove_empty: true
-        paths:
+        storage_keys:
           - topic_crm
           - topic_decision_tree
           - topic_top
-        storage_location:
+        default_value: 'topic:general'
+        target_location:
           localstorage: localstorage
           cookie: '0'
   lifetime_value:
@@ -509,19 +503,18 @@ profilers:
     sources:
       -
         type: meta
-        key: price
+        attribute_name: price
     processors:
       -
         type: accumulation
-        key: lifetime_value
+        storage_key: lifetime_value
     destinations:
       -
-        key: lifetime_value
         type: copy
+        target_key: lifetime_value
         remove_empty: false
-        paths:
-          - accumulators.lifetime_value
-        storage_location:
+        storage_key: accumulators.lifetime_value
+        target_location:
           localstorage: localstorage
           cookie: '0'
   goal:
@@ -534,18 +527,17 @@ profilers:
     sources:
       -
         type: meta
-        key: goal
+        attribute_name: goal
     processors:
       -
         type: store
-        key: goal
+        storage_key: goal
         ttl: -1
     destinations:
       -
         type: set
-        paths:
-          - store.goal.value
-        storage_location:
+        storage_key: store.goal.value
+        target_location:
           localstorage: localstorage
           cookie: '0'
   device_type:
@@ -562,16 +554,15 @@ profilers:
     processors:
       -
         type: store
-        key: device_type
+        storage_key: device_type
         ttl: -1
     destinations:
       -
-        key: device_type
         type: copy
+        target_key: device_type
         remove_empty: false
-        paths:
-          - store.device_type.value
-        storage_location:
+        storage_key: store.device_type.value
+        target_location:
           localstorage: localstorage
           cookie: '0'
   location_country:
@@ -584,15 +575,15 @@ profilers:
     sources:
       -
         type: cookie
-        key: cp_country
+        name: cp_country
     processors:
       -
         type: store
-        key: location_country
+        storage_key: location_country
         ttl: 0
       -
         type: map
-        key: location_zone
+        storage_key: location_zone
         default_value: 'zone:australia'
         fallback_value: 'zone:international'
         mappings:
@@ -600,21 +591,19 @@ profilers:
           - 'AU|zone:australia'
     destinations:
       -
-        key: location_country
         type: copy
+        target_key: location_country
         remove_empty: false
-        paths:
-          - store.location_country.value
-        storage_location:
+        storage_key: store.location_country.value
+        target_location:
           localstorage: localstorage
           cookie: '0'
       -
-        key: location_zone
         type: copy
+        target_key: location_zone
         remove_empty: true
-        paths:
-          - store.location_zone.value
-        storage_location:
+        storage_key: store.location_zone.value
+        target_location:
           localstorage: localstorage
           cookie: '0'
   location_lat:
@@ -627,29 +616,27 @@ profilers:
     sources:
       -
         type: cookie
-        key: cp_latitude
+        name: cp_latitude
     processors:
       -
         type: store
-        key: location_lat
+        storage_key: location_lat
         ttl: 0
     destinations:
       -
-        key: season
         type: season
+        target_key: season
         remove_empty: false
-        paths:
-          - store.location_lat.value
-        storage_location:
+        storage_key: store.location_lat.value
+        target_location:
           localstorage: localstorage
           cookie: '0'
       -
-        key: location_lat
         type: copy
+        target_key: location_lat
         remove_empty: false
-        paths:
-          - store.location_lat.value
-        storage_location:
+        storage_key: store.location_lat.value
+        target_location:
           localstorage: localstorage
           cookie: '0'
   location_lon:
@@ -662,20 +649,19 @@ profilers:
     sources:
       -
         type: cookie
-        key: cp_longitude
+        name: cp_longitude
     processors:
       -
         type: store
-        key: location_lon
+        storage_key: location_lon
         ttl: 0
     destinations:
       -
-        key: location_lon
         type: copy
+        target_key: location_lon
         remove_empty: false
-        paths:
-          - store.location_lon.value
-        storage_location:
+        storage_key: store.location_lon.value
+        target_location:
           localstorage: localstorage
           cookie: '0'
   location_city:
@@ -688,20 +674,19 @@ profilers:
     sources:
       -
         type: cookie
-        key: cp_city
+        name: cp_city
     processors:
       -
         type: store
-        key: location_city
+        storage_key: location_city
         ttl: 0
     destinations:
       -
-        key: location_city
         type: copy
+        target_key: location_city
         remove_empty: false
-        paths:
-          - store.location_city.value
-        storage_location:
+        storage_key: store.location_city.value
+        target_location:
           localstorage: localstorage
           cookie: '0'
   pageview:
@@ -715,28 +700,23 @@ profilers:
     processors:
       -
         type: pageview
-        key: pageview
+        storage_key: pageview
         track: true
         log: false
     destinations:
       -
-        key: visits
         type: copy
+        target_key: visits
         remove_empty: false
-        paths:
-          - counters.pageview
-        storage_location:
+        storage_key: counters.pageview
+        target_location:
           localstorage: localstorage
           cookie: '0'
       -
-        key: experience
         type: range
+        target_key: experience
         remove_empty: false
-        paths:
-          - counters.pageview
-        storage_location:
-          localstorage: localstorage
-          cookie: '0'
+        storage_key: counters.pageview
         ranges:
           -
             key: 'experience:none'
@@ -754,6 +734,9 @@ profilers:
             key: 'experience:high'
             min: 100
             max: 1000000
+        target_location:
+          localstorage: localstorage
+          cookie: '0'
   searchquery:
     name: searchquery
     label: Searchquery
@@ -765,7 +748,7 @@ profilers:
     processors:
       -
         type: searchquery
-        key: searchquery
+        storage_key: searchquery
         search_path: /search
         query_param: keys
         exclude_param: page
@@ -774,13 +757,12 @@ profilers:
         log: true
     destinations:
       -
-        key: cp_search_log
         type: copy
+        target_key: cp_search_log
         remove_empty: false
-        json_stringify: true
-        paths:
-          - log.searchquery
-        storage_location:
+        storage_key: log.searchquery
+        stringify: true
+        target_location:
           localstorage: localstorage
           cookie: '0'
   language:
@@ -797,20 +779,19 @@ profilers:
     processors:
       -
         type: language_simple
-        key: language-simple
+        storage_key: language-simple
         ttl: 0
       -
         type: language_full
-        key: language-full
+        storage_key: language-full
         ttl: 0
     destinations:
       -
-        key: language
         type: copy
+        target_key: language
         remove_empty: false
-        paths:
-          - store.language-full.value
-        storage_location:
+        storage_key: store.language-full.value
+        target_location:
           localstorage: localstorage
           cookie: '0'
   stage:
@@ -823,11 +804,11 @@ profilers:
     sources:
       -
         type: meta
-        key: stage
+        attribute_name: stage
     processors:
       -
         type: dimension
-        key: stage
+        storage_key: stage
         normalize: false
     destinations:
       -
@@ -837,54 +818,49 @@ profilers:
         normalize: true
       -
         type: threshold
-        paths:
-          - 'dimensions.stage.stage:orientation'
-        storage_location:
+        target_key: stage
+        target_value: 'stage:discovery'
+        storage_key: 'dimensions.stage.stage:orientation'
+        threshold_number: 1
+        target_location:
           localstorage: localstorage
           cookie: '0'
-        threshold_number: 1
-        storage_key: stage
-        storage_value: 'stage:discovery'
       -
         type: threshold
-        paths:
-          - 'dimensions.stage.stage:discovery'
-        storage_location:
-          localstorage: localstorage
-          cookie: '0'
+        target_key: stage
+        target_value: 'stage:validation'
+        storage_key: 'dimensions.stage.stage:discovery'
         threshold_number: 2
-        storage_key: stage
-        storage_value: 'stage:validation'
-      -
-        type: threshold
-        paths:
-          - 'dimensions.stage.stage:validation'
-        storage_location:
+        target_location:
           localstorage: localstorage
           cookie: '0'
+      -
+        type: threshold
+        target_key: stage
+        target_value: 'stage:conversion'
+        storage_key: 'dimensions.stage.stage:validation'
         threshold_number: 1
-        storage_key: stage
-        storage_value: 'stage:conversion'
-      -
-        type: threshold
-        paths:
-          - 'dimensions.stage.stage:conversion'
-        storage_location:
+        target_location:
           localstorage: localstorage
           cookie: '0'
+      -
+        type: threshold
+        target_key: stage
+        target_value: 'stage:continue'
+        storage_key: 'dimensions.stage.stage:conversion'
         threshold_number: 2
-        storage_key: stage
-        storage_value: 'stage:continue'
-      -
-        type: threshold
-        paths:
-          - 'dimensions.stage.stage:converted'
-        storage_location:
+        target_location:
           localstorage: localstorage
           cookie: '0'
+      -
+        type: threshold
+        target_key: stage
+        target_value: 'stage:continue'
+        storage_key: 'dimensions.stage.stage:converted'
         threshold_number: 1
-        storage_key: stage
-        storage_value: 'stage:continue'
+        target_location:
+          localstorage: localstorage
+          cookie: '0'
   styxkey_recombee_userid:
     name: styxkey_recombee_userid
     label: 'STYXKEY Recombee UserId'
@@ -895,21 +871,20 @@ profilers:
     sources:
       -
         type: cookie
-        key: RecombeeUserId
+        name: RecombeeUserId
     processors:
       -
         type: store
-        key: RecombeeUserId
+        storage_key: RecombeeUserId
         ttl: 0
     destinations:
       -
-        key: STYXKEY_RecombeeUserId
         type: copy
+        target_key: STYXKEY_RecombeeUserId
         remove_empty: true
-        json_stringify: false
-        paths:
-          - store.RecombeeUserId.value
-        storage_location:
+        storage_key: store.RecombeeUserId.value
+        stringify: false
+        target_location:
           localstorage: '0'
           cookie: cookie
   convivial_enricher_clientid:
@@ -922,29 +897,27 @@ profilers:
     sources:
       -
         type: cookie
-        key: convivial_enricher_ConvivialEnricherClientId
+        name: convivial_enricher_ConvivialEnricherClientId
     processors:
       -
         type: store
-        key: convivial_enricher_clientid
+        storage_key: convivial_enricher_clientid
         ttl: 0
     destinations:
       -
-        key: ConvivialProfilerClientId
         type: copy
+        target_key: ConvivialProfilerClientId
         remove_empty: false
-        paths:
-          - store.convivial_enricher_clientid.value
-        storage_location:
+        storage_key: store.convivial_enricher_clientid.value
+        target_location:
           localstorage: '0'
           cookie: cookie
       -
-        key: RecombeeUserId
         type: copy
+        target_key: RecombeeUserId
         remove_empty: false
-        paths:
-          - store.convivial_enricher_clientid.value
-        storage_location:
+        storage_key: store.convivial_enricher_clientid.value
+        target_location:
           localstorage: '0'
           cookie: cookie
   newsletter_signup_form:
@@ -959,9 +932,6 @@ profilers:
     destinations:
       -
         type: formfiller
-        storage_location:
-          localstorage: localstorage
-          cookie: '0'
         form_selector: .newsletter-signup-form
         fields_selector:
           - crm_signup_topic|topic_affinity
@@ -969,12 +939,9 @@ profilers:
           - crm_signup_visits|visits
           - crm_signup_country|location_country
           - crm_signup_city|location_city
-      -
-        type: formtracker
-        form_selector: .newsletter-signup-form
-        field_name: email
-        event_action: formsubmit
-        event_category: formtracker
+        storage_source:
+          localstorage: localstorage
+          cookie: '0'
   convivial_enricher_cookies_remove:
     name: convivial_enricher_cookies_remove
     label: 'Convivial enricher cookies remove'
@@ -987,17 +954,17 @@ profilers:
     destinations:
       -
         type: remove
-        paths:
+        storage_keys:
           - store.topic_crm.value
           - store.audience_crm.value
           - store.campaign_crm.value
-        storage_location:
-          localstorage: '0'
-          cookie: cookie
         static_values:
           - convivial_enricher_convivial_demo_topic
           - convivial_enricher_convivial_demo_audience
           - convivial_enricher_convivial_demo_campaign
+        target_location:
+          localstorage: '0'
+          cookie: cookie
   office_hours:
     name: office_hours
     label: 'Office hours'
@@ -1009,19 +976,62 @@ profilers:
     processors: {  }
     destinations:
       -
-        key: office_open
         type: officehours
-        storage_location:
-          localstorage: localstorage
-          cookie: '0'
+        target_key: office_open
         normal_start: '2022-04-03'
         normal_end: '2022-10-01'
         normal_offset: '+10'
         daylight_saving_start: '2022-10-02'
         daylight_saving_end: '2023-04-02'
         daylight_saving_offset: '+11'
-        office_start: '09'
-        office_close: '17'
+        office_times:
+          -
+            day: 0
+            start: 0
+            close: 0
+          -
+            day: 1
+            start: 9
+            close: 17
+          -
+            day: 2
+            start: 9
+            close: 17
+          -
+            day: 3
+            start: 9
+            close: 17
+          -
+            day: 4
+            start: 9
+            close: 17
+          -
+            day: 5
+            start: 9
+            close: 17
+          -
+            day: 6
+            start: 0
+            close: 0
+        target_location:
+          localstorage: localstorage
+          cookie: '0'
+  page_helpful:
+    name: page_helpful
+    label: 'Page helpful'
+    weight: 0
+    status: true
+    description: ''
+    deferred: false
+    sources: {  }
+    processors: {  }
+    destinations:
+      -
+        type: formtracker
+        form_selector: .webform-submission-is-helpful-form
+        field_name: is_helpful
+        event_action: formsubmit
+        event_category: page_helpful
 visibility:
   'entity_bundle:node':
     id: 'entity_bundle:node'

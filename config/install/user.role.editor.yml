@@ -1,6 +1,40 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.rich_text
+    - media.type.audio
+    - media.type.file
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+    - node.type.article
+    - node.type.audience
+    - node.type.decision_tree
+    - node.type.event
+    - node.type.page
+    - node.type.person
+    - node.type.place
+    - node.type.step
+    - node.type.topic
+    - taxonomy.vocabulary.goal
+    - taxonomy.vocabulary.media_tags
+    - workflows.workflow.editorial
+  module:
+    - content_moderation
+    - contextual
+    - eu_cookie_compliance
+    - filter
+    - media
+    - microcontent
+    - node
+    - paragraphs
+    - path
+    - redirect
+    - replicate_ui
+    - system
+    - taxonomy
+    - toolbar
 id: editor
 label: Editor
 weight: -8
@@ -10,6 +44,7 @@ permissions:
   - 'access content overview'
   - 'access contextual links'
   - 'access media overview'
+  - 'access microcontent overview'
   - 'access taxonomy overview'
   - 'access toolbar'
   - 'administer menu'
@@ -25,10 +60,10 @@ permissions:
   - 'create page content'
   - 'create person content'
   - 'create place content'
+  - 'create promotion microcontent'
   - 'create remote_video media'
   - 'create step content'
   - 'create terms in goal'
-  - 'create terms in laf'
   - 'create terms in media_tags'
   - 'create topic content'
   - 'create url aliases'
@@ -37,17 +72,19 @@ permissions:
   - 'delete any file media'
   - 'delete any image media'
   - 'delete any media'
+  - 'delete any promotion microcontent'
   - 'delete any remote_video media'
   - 'delete any video media'
   - 'delete media'
   - 'delete own audio media'
   - 'delete own file media'
   - 'delete own image media'
+  - 'delete own promotion microcontent'
   - 'delete own remote_video media'
   - 'delete own video media'
   - 'delete terms in goal'
-  - 'delete terms in laf'
   - 'delete terms in media_tags'
+  - 'display eu cookie compliance popup'
   - 'edit any article content'
   - 'edit any audience content'
   - 'edit any audio media'
@@ -68,11 +105,12 @@ permissions:
   - 'edit own remote_video media'
   - 'edit own video media'
   - 'edit terms in goal'
-  - 'edit terms in laf'
   - 'edit terms in media_tags'
   - 'replicate entities'
   - 'update any media'
+  - 'update any promotion microcontent'
   - 'update media'
+  - 'update own promotion microcontent'
   - 'use editorial transition create_new_draft'
   - 'use editorial transition needs_review'
   - 'use text format rich_text'
@@ -82,4 +120,5 @@ permissions:
   - 'view latest version'
   - 'view own unpublished content'
   - 'view the administration theme'
+  - 'view unpublished microcontent'
   - 'view unpublished paragraphs'

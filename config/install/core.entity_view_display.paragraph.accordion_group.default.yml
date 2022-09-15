@@ -9,9 +9,6 @@ dependencies:
     - field.field.paragraph.accordion_group.field_heading
     - field.field.paragraph.accordion_group.field_hide_heading
     - field.field.paragraph.accordion_group.field_position
-    - field.field.paragraph.accordion_group.field_show_close_all
-    - field.field.paragraph.accordion_group.field_show_open_all
-    - field.field.paragraph.accordion_group.field_show_toggle_all
     - paragraphs.paragraphs_type.accordion_group
   module:
     - entity_class_formatter
@@ -24,79 +21,49 @@ mode: default
 content:
   field_accordions:
     type: entity_reference_revisions_entity_view
-    weight: 5
     label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    weight: 5
     region: content
   field_ag_colour_classes:
     type: entity_class_formatter
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
     weight: 6
     region: content
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
   field_ag_style_classes:
     type: entity_class_formatter
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
     weight: 7
     region: content
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
   field_body:
-    weight: 1
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 1
     region: content
   field_heading:
-    weight: 0
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 0
     region: content
   field_position:
-    weight: 8
+    type: entity_class_formatter
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: entity_class_formatter
+    weight: 8
     region: content
-  field_show_close_all:
-    type: boolean
-    weight: 3
-    region: content
-    label: hidden
-    settings:
-      format: custom
-      format_custom_true: 'Close All'
-      format_custom_false: ''
-    third_party_settings: {  }
-  field_show_open_all:
-    type: boolean
-    weight: 2
-    region: content
-    label: hidden
-    settings:
-      format: custom
-      format_custom_true: 'Open All'
-      format_custom_false: ''
-    third_party_settings: {  }
-  field_show_toggle_all:
-    type: boolean
-    weight: 4
-    region: content
-    label: hidden
-    settings:
-      format: custom
-      format_custom_true: 'Toggle All'
-      format_custom_false: ''
-    third_party_settings: {  }
 hidden:
   field_hide_heading: true
   search_api_excerpt: true

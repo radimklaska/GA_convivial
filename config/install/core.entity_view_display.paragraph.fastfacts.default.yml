@@ -23,68 +23,71 @@ bundle: fastfacts
 mode: default
 content:
   field_body:
-    weight: 1
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 1
     region: content
   field_heading:
-    weight: 0
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 0
     region: content
   field_il_colour_classes:
-    weight: 6
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
     type: entity_class_formatter
+    label: hidden
+    settings:
+      prefix: ''
+      suffix: ''
+      attr: ''
+    third_party_settings: {  }
+    weight: 5
     region: content
   field_il_items:
-    weight: 2
+    type: entity_reference_revisions_entity_view
     label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    type: entity_reference_revisions_entity_view
+    weight: 2
     region: content
   field_il_layout_classes:
-    weight: 5
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
     type: entity_class_formatter
-    region: content
-  field_il_style_classes:
-    weight: 8
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: entity_class_formatter
-    region: content
-  field_modifiers:
-    weight: 3
     label: hidden
     settings:
-      view_mode: default
-      link: ''
+      prefix: ''
+      suffix: ''
+      attr: ''
     third_party_settings: {  }
-    type: entity_reference_revisions_entity_view
+    weight: 4
+    region: content
+  field_il_style_classes:
+    type: entity_class_formatter
+    label: hidden
+    settings:
+      prefix: ''
+      suffix: ''
+      attr: ''
+    third_party_settings: {  }
+    weight: 7
     region: content
   field_position:
-    weight: 7
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
     type: entity_class_formatter
+    label: hidden
+    settings:
+      prefix: ''
+      suffix: ''
+      attr: ''
+    third_party_settings: {  }
+    weight: 6
     region: content
   field_read_more:
-    weight: 4
+    type: link
     label: hidden
     settings:
       trim_length: 80
@@ -93,7 +96,8 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 3
     region: content
 hidden:
+  field_modifiers: true
   search_api_excerpt: true

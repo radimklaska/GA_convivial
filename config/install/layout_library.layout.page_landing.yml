@@ -17,74 +17,184 @@ layout:
         configuration:
           id: system_breadcrumb_block
           label: Breadcrumbs
-          provider: system
           label_display: '0'
+          provider: system
           context_mapping: {  }
+        weight: 3
         additional: {  }
-        weight: 1
       9c79d543-0aa0-403a-9c26-5ded66e39d64:
         uuid: 9c79d543-0aa0-403a-9c26-5ded66e39d64
         region: content
         configuration:
           id: 'field_block:node:page:field_introduction'
           label: Introduction
-          provider: layout_builder
           label_display: '0'
-          formatter:
-            label: hidden
-            type: text_default
-            settings: {  }
-            third_party_settings: {  }
+          provider: layout_builder
           context_mapping:
             entity: layout_builder.entity
             view_mode: view_mode
-        additional: {  }
-        weight: 3
-      453e92dc-d2d9-4f9f-87e5-4890fc169fb0:
-        uuid: 453e92dc-d2d9-4f9f-87e5-4890fc169fb0
-        region: content
-        configuration:
-          id: 'field_block:node:page:title'
-          label: Title
-          provider: layout_builder
-          label_display: '0'
           formatter:
+            type: text_default
             label: hidden
+            settings: {  }
+            third_party_settings: {  }
+        weight: 4
+        additional: {  }
+      4c292c4f-db71-4c9d-a0af-abc0827c7047:
+        uuid: 4c292c4f-db71-4c9d-a0af-abc0827c7047
+        region: links_title
+        configuration:
+          id: 'field_block:node:page:field_featured_title'
+          label: 'Featured title'
+          label_display: '0'
+          provider: layout_builder
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+          formatter:
             type: string
+            label: hidden
             settings:
               link_to_entity: false
             third_party_settings: {  }
+        weight: 0
+        additional: {  }
+      589c6dd5-e49f-4021-aa36-edd7a31ccd2d:
+        uuid: 589c6dd5-e49f-4021-aa36-edd7a31ccd2d
+        region: links
+        configuration:
+          id: 'field_block:node:page:field_featured_links'
+          label: 'Featured links'
+          label_display: '0'
+          provider: layout_builder
           context_mapping:
             entity: layout_builder.entity
             view_mode: view_mode
+          formatter:
+            type: entity_reference_label
+            label: hidden
+            settings:
+              link: true
+            third_party_settings: {  }
+        weight: 0
         additional: {  }
-        weight: 2
+      3526dbfa-d279-4ebc-b4dd-c99650c2f129:
+        uuid: 3526dbfa-d279-4ebc-b4dd-c99650c2f129
+        region: image
+        configuration:
+          id: 'field_block:node:page:field_banner_image'
+          label: 'Banner image'
+          label_display: '0'
+          provider: layout_builder
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+          formatter:
+            type: entity_reference_entity_view
+            label: hidden
+            settings:
+              view_mode: hero_banner
+            third_party_settings: {  }
+        weight: 0
+        additional: {  }
+      453e92dc-d2d9-4f9f-87e5-4890fc169fb0:
+        uuid: 453e92dc-d2d9-4f9f-87e5-4890fc169fb0
+        region: title
+        configuration:
+          id: 'field_block:node:page:title'
+          label: Title
+          label_display: '0'
+          provider: layout_builder
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+          formatter:
+            type: string
+            label: hidden
+            settings:
+              link_to_entity: false
+            third_party_settings: {  }
+        weight: 4
+        additional: {  }
+      9d92d22f-be63-4491-a826-3bcbe613029c:
+        uuid: 9d92d22f-be63-4491-a826-3bcbe613029c
+        region: banner_title
+        configuration:
+          id: 'field_block:node:page:field_banner_title'
+          label: 'Banner title'
+          label_display: '0'
+          provider: layout_builder
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+          formatter:
+            type: string
+            label: hidden
+            settings:
+              link_to_entity: false
+            third_party_settings: {  }
+        weight: 0
+        additional: {  }
     third_party_settings: {  }
   -
-    layout_id: convivial_onecol
+    layout_id: convivial_content_edgy
     layout_settings:
-      arrangement: null
-      containment: edgy
-      color: ''
-      styles: null
+      label: ''
+      context_mapping: {  }
     components:
+      348fd2b3-fd50-48f0-86cc-1de4dd869b0a:
+        uuid: 348fd2b3-fd50-48f0-86cc-1de4dd869b0a
+        region: content
+        configuration:
+          id: 'field_block:node:page:field_toc'
+          label: 'On this page'
+          label_display: '0'
+          provider: layout_builder
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+          formatter:
+            type: list_default
+            label: above
+            settings: {  }
+            third_party_settings: {  }
+        weight: 2
+        additional: {  }
+      b324affb-3b50-4c45-aa4e-53ce115c3493:
+        uuid: b324affb-3b50-4c45-aa4e-53ce115c3493
+        region: content
+        configuration:
+          id: 'field_block:node:page:body'
+          label: Body
+          label_display: '0'
+          provider: layout_builder
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+          formatter:
+            type: text_default
+            label: hidden
+            settings: {  }
+            third_party_settings: {  }
+        weight: 4
+        additional: {  }
       7c1784e7-875c-4647-b493-487c72606d05:
         uuid: 7c1784e7-875c-4647-b493-487c72606d05
         region: content
         configuration:
           id: 'field_block:node:page:field_components'
           label: Components
-          provider: layout_builder
           label_display: '0'
-          formatter:
-            label: hidden
-            type: layout_paragraphs
-            settings:
-              view_mode: default
-            third_party_settings: {  }
+          provider: layout_builder
           context_mapping:
             entity: layout_builder.entity
             view_mode: view_mode
+          formatter:
+            type: layout_paragraphs
+            label: hidden
+            settings:
+              view_mode: default
+            third_party_settings: {  }
+        weight: 5
         additional: {  }
-        weight: 2
     third_party_settings: {  }

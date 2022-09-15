@@ -19,6 +19,6 @@ default_value:
     value: ''
 default_value_callback: ''
 settings:
-  field_value: '[node:field_social_message:value]  [node:url:absolute]'
+  field_value: '[node:field_social_message:value] [node:url:absolute]'
   remove_empty: 1
 field_type: field_token_value

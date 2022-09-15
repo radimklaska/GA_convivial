@@ -9,5 +9,5 @@ third_party_settings:
     unique_text: ''
 name: 'Promotion type'
 vid: promotion_type
-description: ''
+description: 'Classifies Promotions so that they can be filtered by Views for use with personified.'
 weight: 0

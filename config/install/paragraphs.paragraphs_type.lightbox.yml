@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'file:file:88d5007c-b04c-46b0-91f8-4729fd5a5772'
+id: lightbox
+label: Lightbox
+icon_uuid: 88d5007c-b04c-46b0-91f8-4729fd5a5772
+icon_default: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iIzAwNzJCRiIgY2xhc3M9ImJpIGJpLWNhcmQtaW1hZ2UiIHZpZXdCb3g9IjAgMCAxNiAxNiI+CiAgPHBhdGggZD0iTTYuMDAyIDUuNWExLjUgMS41IDAgMSAxLTMgMCAxLjUgMS41IDAgMCAxIDMgMHoiLz4KICA8cGF0aCBkPSJNMS41IDJBMS41IDEuNSAwIDAgMCAwIDMuNXY5QTEuNSAxLjUgMCAwIDAgMS41IDE0aDEzYTEuNSAxLjUgMCAwIDAgMS41LTEuNXYtOUExLjUgMS41IDAgMCAwIDE0LjUgMmgtMTN6bTEzIDFhLjUuNSAwIDAgMSAuNS41djZsLTMuNzc1LTEuOTQ3YS41LjUgMCAwIDAtLjU3Ny4wOTNsLTMuNzEgMy43MS0yLjY2LTEuNzcyYS41LjUgMCAwIDAtLjYzLjA2MkwxLjAwMiAxMnYuNTRBLjUwNS41MDUgMCAwIDEgMSAxMi41di05YS41LjUgMCAwIDEgLjUtLjVoMTN6Ii8+Cjwvc3ZnPg=='
+description: 'An image which launches a lightbox with an associated image or video.'
+behavior_plugins: {  }

@@ -1,6 +1,85 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - core.entity_view_display.node.article.full
+    - core.entity_view_display.node.audience.full
+    - core.entity_view_display.node.decision_tree.full
+    - core.entity_view_display.node.event.full
+    - core.entity_view_display.node.page.full
+    - core.entity_view_display.node.person.full
+    - core.entity_view_display.node.place.full
+    - core.entity_view_display.node.topic.full
+    - filter.format.rich_text
+    - filter.format.unrestricted_text
+    - media.type.audio
+    - media.type.file
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+    - node.type.article
+    - node.type.audience
+    - node.type.decision_tree
+    - node.type.event
+    - node.type.page
+    - node.type.person
+    - node.type.place
+    - node.type.step
+    - node.type.topic
+    - taxonomy.vocabulary.goal
+    - taxonomy.vocabulary.media_tags
+    - workflows.workflow.editorial
+  module:
+    - admin_toolbar_search
+    - ban
+    - block
+    - block_content
+    - config
+    - config_split
+    - content_moderation
+    - contextual
+    - convivial_core
+    - convivial_profiler
+    - crop
+    - easy_breadcrumb
+    - entity_reference_revisions
+    - environment_indicator
+    - eu_cookie_compliance
+    - facets
+    - field_ui
+    - file
+    - filter
+    - image
+    - layout_builder
+    - layout_builder_modal
+    - layout_paragraphs
+    - linkit
+    - media
+    - metatag
+    - microcontent
+    - module_filter
+    - node
+    - panels
+    - paragraphs
+    - paragraphs_type_permissions
+    - password_policy
+    - path
+    - pathauto
+    - redirect
+    - replicate_ui
+    - responsive_image
+    - rest
+    - role_delegation
+    - search_api
+    - simple_sitemap
+    - sitemap
+    - smart_content
+    - system
+    - taxonomy
+    - toolbar
+    - views_ui
+    - webform
+    - workflows
 id: site_administrator
 label: 'Site Administrator'
 weight: -5
@@ -15,6 +94,7 @@ permissions:
   - 'access environment indicator'
   - 'access files overview'
   - 'access media overview'
+  - 'access microcontent overview'
   - 'access own webform configuration'
   - 'access shortcuts'
   - 'access site in maintenance mode'
@@ -34,11 +114,14 @@ permissions:
   - 'administer blocks'
   - 'administer configuration split'
   - 'administer content types'
+  - 'administer convivial profiler'
   - 'administer crop'
   - 'administer crop types'
   - 'administer display modes'
   - 'administer easy breadcrumb'
   - 'administer environment indicator settings'
+  - 'administer eu cookie compliance categories'
+  - 'administer eu cookie compliance popup'
   - 'administer facets'
   - 'administer filters'
   - 'administer image styles'
@@ -51,6 +134,11 @@ permissions:
   - 'administer media types'
   - 'administer menu'
   - 'administer meta tags'
+  - 'administer microcontent'
+  - 'administer microcontent display'
+  - 'administer microcontent fields'
+  - 'administer microcontent form display'
+  - 'administer microcontent types'
   - 'administer module_filter'
   - 'administer modules'
   - 'administer node display'
@@ -110,31 +198,37 @@ permissions:
   - 'configure all article node layout overrides'
   - 'configure all audience node layout overrides'
   - 'configure all decision_tree node layout overrides'
+  - 'configure all event node layout overrides'
   - 'configure all page node layout overrides'
   - 'configure all person node layout overrides'
+  - 'configure all place node layout overrides'
   - 'configure all topic node layout overrides'
   - 'configure any layout'
   - 'configure editable article node layout overrides'
   - 'configure editable audience node layout overrides'
   - 'configure editable decision_tree node layout overrides'
+  - 'configure editable event node layout overrides'
   - 'configure editable page node layout overrides'
   - 'configure editable person node layout overrides'
+  - 'configure editable place node layout overrides'
   - 'configure editable topic node layout overrides'
   - 'create and edit custom blocks'
   - 'create article content'
   - 'create audience content'
   - 'create audio media'
   - 'create decision_tree content'
+  - 'create event content'
   - 'create file media'
   - 'create image media'
   - 'create media'
   - 'create page content'
   - 'create paragraph content snippet'
   - 'create person content'
+  - 'create place content'
+  - 'create promotion microcontent'
   - 'create remote_video media'
   - 'create step content'
   - 'create terms in goal'
-  - 'create terms in laf'
   - 'create terms in media_tags'
   - 'create topic content'
   - 'create url aliases'
@@ -146,11 +240,14 @@ permissions:
   - 'delete any audience content'
   - 'delete any audio media'
   - 'delete any decision_tree content'
+  - 'delete any event content'
   - 'delete any file media'
   - 'delete any image media'
   - 'delete any media'
   - 'delete any page content'
   - 'delete any person content'
+  - 'delete any place content'
+  - 'delete any promotion microcontent'
   - 'delete any remote_video media'
   - 'delete any step content'
   - 'delete any topic content'
@@ -160,16 +257,20 @@ permissions:
   - 'delete article revisions'
   - 'delete audience revisions'
   - 'delete decision_tree revisions'
+  - 'delete event revisions'
   - 'delete media'
   - 'delete orphan revisions'
   - 'delete own article content'
   - 'delete own audience content'
   - 'delete own audio media'
   - 'delete own decision_tree content'
+  - 'delete own event content'
   - 'delete own file media'
   - 'delete own image media'
   - 'delete own page content'
   - 'delete own person content'
+  - 'delete own place content'
+  - 'delete own promotion microcontent'
   - 'delete own remote_video media'
   - 'delete own step content'
   - 'delete own topic content'
@@ -179,19 +280,22 @@ permissions:
   - 'delete page revisions'
   - 'delete paragraph content snippet'
   - 'delete person revisions'
+  - 'delete place revisions'
   - 'delete step revisions'
   - 'delete terms in goal'
-  - 'delete terms in laf'
   - 'delete terms in media_tags'
   - 'delete topic revisions'
+  - 'display eu cookie compliance popup'
   - 'edit any article content'
   - 'edit any audience content'
   - 'edit any audio media'
   - 'edit any decision_tree content'
+  - 'edit any event content'
   - 'edit any file media'
   - 'edit any image media'
   - 'edit any page content'
   - 'edit any person content'
+  - 'edit any place content'
   - 'edit any remote_video media'
   - 'edit any step content'
   - 'edit any topic content'
@@ -204,10 +308,12 @@ permissions:
   - 'edit own audience content'
   - 'edit own audio media'
   - 'edit own decision_tree content'
+  - 'edit own event content'
   - 'edit own file media'
   - 'edit own image media'
   - 'edit own page content'
   - 'edit own person content'
+  - 'edit own place content'
   - 'edit own remote_video media'
   - 'edit own step content'
   - 'edit own topic content'
@@ -215,7 +321,6 @@ permissions:
   - 'edit own webform'
   - 'edit own webform submission'
   - 'edit terms in goal'
-  - 'edit terms in laf'
   - 'edit terms in media_tags'
   - 'edit webform assets'
   - 'edit webform source'
@@ -232,8 +337,10 @@ permissions:
   - 'revert article revisions'
   - 'revert audience revisions'
   - 'revert decision_tree revisions'
+  - 'revert event revisions'
   - 'revert page revisions'
   - 'revert person revisions'
+  - 'revert place revisions'
   - 'revert step revisions'
   - 'revert topic revisions'
   - 'select account cancellation method'
@@ -241,7 +348,9 @@ permissions:
   - 'switch users'
   - 'synchronize configuration'
   - 'update any media'
+  - 'update any promotion microcontent'
   - 'update media'
+  - 'update own promotion microcontent'
   - 'update paragraph content snippet'
   - 'use admin toolbar search'
   - 'use editorial transition archive'
@@ -264,6 +373,7 @@ permissions:
   - 'view article revisions'
   - 'view audience revisions'
   - 'view decision_tree revisions'
+  - 'view event revisions'
   - 'view latest version'
   - 'view media'
   - 'view own unpublished content'
@@ -272,7 +382,9 @@ permissions:
   - 'view page revisions'
   - 'view pane admin links'
   - 'view person revisions'
+  - 'view place revisions'
   - 'view step revisions'
   - 'view the administration theme'
   - 'view topic revisions'
+  - 'view unpublished microcontent'
   - 'view unpublished paragraphs'

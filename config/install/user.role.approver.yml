@@ -1,7 +1,29 @@
-uuid: 393e8941-3fa7-41e8-882d-2b10d0f8ec53
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.rich_text
+    - node.type.article
+    - node.type.audience
+    - node.type.decision_tree
+    - node.type.event
+    - node.type.page
+    - node.type.person
+    - node.type.place
+    - node.type.step
+    - node.type.topic
+    - workflows.workflow.editorial
+  module:
+    - content_moderation
+    - contextual
+    - eu_cookie_compliance
+    - filter
+    - media
+    - node
+    - paragraphs
+    - redirect
+    - system
+    - toolbar
 id: approver
 label: Approver
 weight: -7
@@ -17,23 +39,30 @@ permissions:
   - 'delete any article content'
   - 'delete any audience content'
   - 'delete any decision_tree content'
+  - 'delete any event content'
   - 'delete any page content'
   - 'delete any person content'
+  - 'delete any place content'
   - 'delete any step content'
   - 'delete any topic content'
+  - 'display eu cookie compliance popup'
   - 'edit any article content'
   - 'edit any audience content'
   - 'edit any decision_tree content'
+  - 'edit any event content'
   - 'edit any page content'
   - 'edit any person content'
+  - 'edit any place content'
   - 'edit any step content'
   - 'edit any topic content'
   - 'revert all revisions'
   - 'revert article revisions'
   - 'revert audience revisions'
   - 'revert decision_tree revisions'
+  - 'revert event revisions'
   - 'revert page revisions'
   - 'revert person revisions'
+  - 'revert place revisions'
   - 'revert step revisions'
   - 'revert topic revisions'
   - 'use editorial transition archive'
@@ -48,9 +77,11 @@ permissions:
   - 'view article revisions'
   - 'view audience revisions'
   - 'view decision_tree revisions'
+  - 'view event revisions'
   - 'view latest version'
   - 'view page revisions'
   - 'view person revisions'
+  - 'view place revisions'
   - 'view step revisions'
   - 'view the administration theme'
   - 'view topic revisions'

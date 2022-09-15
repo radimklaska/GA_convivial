@@ -17,19 +17,19 @@ bundle: file
 mode: full
 content:
   field_body:
-    weight: 1
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 1
     region: content
   field_media_file:
-    weight: 2
+    type: file_default
     label: hidden
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    type: file_default
+    weight: 2
     region: content
 hidden:
   created: true

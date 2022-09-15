@@ -7,41 +7,10 @@ targetEntityType: node
 targetBundle: page
 layout:
   -
-    layout_id: convivial_onecol
+    layout_id: convivial_content_edgy
     layout_settings:
-      arrangement: null
-      containment: 'edgy edgy--contained'
-      color: ''
-      styles:
-        visually-hidden: visually-hidden
-    components:
-      9e13dc14-f959-45ba-9d1f-d08fe7d76bc6:
-        uuid: 9e13dc14-f959-45ba-9d1f-d08fe7d76bc6
-        region: content
-        configuration:
-          id: 'field_block:node:page:title'
-          label: Title
-          provider: layout_builder
-          label_display: '0'
-          formatter:
-            label: hidden
-            type: string
-            settings:
-              link_to_entity: false
-            third_party_settings: {  }
-          context_mapping:
-            entity: layout_builder.entity
-            view_mode: view_mode
-        additional: {  }
-        weight: 0
-    third_party_settings: {  }
-  -
-    layout_id: convivial_onecol
-    layout_settings:
-      arrangement: null
-      containment: edgy
-      color: ''
-      styles: null
+      label: ''
+      context_mapping: {  }
     components:
       b51fe97e-298e-4823-9c1d-53053b121b1d:
         uuid: b51fe97e-298e-4823-9c1d-53053b121b1d
@@ -49,17 +18,53 @@ layout:
         configuration:
           id: 'field_block:node:page:field_components'
           label: Components
-          provider: layout_builder
           label_display: '0'
-          formatter:
-            label: hidden
-            type: layout_paragraphs
-            settings:
-              view_mode: default
-            third_party_settings: {  }
+          provider: layout_builder
           context_mapping:
             entity: layout_builder.entity
             view_mode: view_mode
+          formatter:
+            type: layout_paragraphs
+            label: hidden
+            settings:
+              view_mode: default
+            third_party_settings: {  }
+        weight: 2
         additional: {  }
+      e4227578-fc4c-48d6-959a-7313bef46a35:
+        uuid: e4227578-fc4c-48d6-959a-7313bef46a35
+        region: content
+        configuration:
+          id: 'field_block:node:page:field_toc'
+          label: 'On this page'
+          label_display: '0'
+          provider: layout_builder
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+          formatter:
+            type: list_default
+            label: above
+            settings: {  }
+            third_party_settings: {  }
+        weight: 0
+        additional: {  }
+      c5526fa9-8821-45a7-8807-60fedda32ee3:
+        uuid: c5526fa9-8821-45a7-8807-60fedda32ee3
+        region: content
+        configuration:
+          id: 'field_block:node:page:body'
+          label: Body
+          label_display: '0'
+          provider: layout_builder
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+          formatter:
+            type: text_default
+            label: hidden
+            settings: {  }
+            third_party_settings: {  }
         weight: 1
+        additional: {  }
     third_party_settings: {  }

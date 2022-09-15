@@ -18,27 +18,27 @@ bundle: remote_video
 mode: full
 content:
   field_body:
-    weight: 1
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 1
     region: content
   field_media_oembed_video:
     type: oembed
-    weight: 2
     label: hidden
     settings:
       max_width: 0
       max_height: 0
     third_party_settings: {  }
+    weight: 2
     region: content
   field_transcript:
-    weight: 3
+    type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 3
     region: content
 hidden:
   created: true

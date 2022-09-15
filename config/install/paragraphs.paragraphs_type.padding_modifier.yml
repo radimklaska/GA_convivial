@@ -1,8 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-id: padding_modifier
-label: 'Padding Modifier'
-icon_uuid: null
-description: 'Modify content so that it has extra padding.'
-behavior_plugins: {  }

@@ -4,17 +4,23 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.audience.body
+    - field.field.node.audience.field_banner_image
+    - field.field.node.audience.field_banner_title
     - field.field.node.audience.field_components
+    - field.field.node.audience.field_featured_links
+    - field.field.node.audience.field_featured_title
+    - field.field.node.audience.field_goal
     - field.field.node.audience.field_header_colour_classes
-    - field.field.node.audience.field_header_modifiers
     - field.field.node.audience.field_hero_darkness
     - field.field.node.audience.field_introduction
     - field.field.node.audience.field_key
     - field.field.node.audience.field_keywords
     - field.field.node.audience.field_meta_tags
     - field.field.node.audience.field_search_exclude
+    - field.field.node.audience.field_stage
     - field.field.node.audience.field_thumbnail
     - field.field.node.audience.field_toc
+    - field.field.node.audience.field_updated_date
     - field.field.node.audience.layout_builder__layout
     - field.field.node.audience.layout_selection
     - node.type.audience
@@ -22,12 +28,11 @@ dependencies:
     - convivial_layouts
     - layout_builder
     - layout_library
-    - text
     - user
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: true
+    allow_custom: false
     sections:
       -
         layout_id: teaser
@@ -41,76 +46,76 @@ third_party_settings:
             configuration:
               id: 'field_block:node:audience:field_thumbnail'
               label: Thumbnail
-              provider: layout_builder
               label_display: '0'
-              formatter:
-                label: hidden
-                type: entity_reference_entity_view
-                settings:
-                  view_mode: square
-                third_party_settings: {  }
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
-            additional: {  }
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: square
+                third_party_settings: {  }
             weight: 0
+            additional: {  }
           79f8b5e5-d3f5-4186-b371-76d6185ed360:
             uuid: 79f8b5e5-d3f5-4186-b371-76d6185ed360
             region: info
             configuration:
               id: 'field_block:node:audience:type'
               label: 'Content type'
-              provider: layout_builder
               label_display: '0'
-              formatter:
-                label: hidden
-                type: entity_reference_label
-                settings:
-                  link: false
-                third_party_settings: {  }
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
-            additional: {  }
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: false
+                third_party_settings: {  }
             weight: 0
+            additional: {  }
           2c188de7-17e6-43ab-aae5-522523ef2233:
             uuid: 2c188de7-17e6-43ab-aae5-522523ef2233
             region: title
             configuration:
               id: 'field_block:node:audience:title'
               label: Title
-              provider: layout_builder
               label_display: '0'
-              formatter:
-                label: hidden
-                type: string
-                settings:
-                  link_to_entity: true
-                third_party_settings: {  }
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
-            additional: {  }
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: true
+                third_party_settings: {  }
             weight: 0
+            additional: {  }
           46b59331-4574-4a72-8ac0-6a8cdfa35e69:
             uuid: 46b59331-4574-4a72-8ac0-6a8cdfa35e69
             region: summary
             configuration:
               id: 'field_block:node:audience:body'
               label: Body
-              provider: layout_builder
               label_display: '0'
-              formatter:
-                label: hidden
-                type: text_summary_or_trimmed
-                settings:
-                  trim_length: 160
-                third_party_settings: {  }
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
-            additional: {  }
+              formatter:
+                type: text_summary_or_trimmed
+                label: hidden
+                settings:
+                  trim_length: 160
+                third_party_settings: {  }
             weight: 0
+            additional: {  }
         third_party_settings: {  }
   layout_library:
     enable: false
@@ -118,37 +123,28 @@ id: node.audience.teaser
 targetEntityType: node
 bundle: audience
 mode: teaser
-content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-    region: content
-  content_moderation_control:
-    weight: -20
-    settings: {  }
-    third_party_settings: {  }
-    region: info
-  links:
-    weight: 100
-    settings: {  }
-    third_party_settings: {  }
-    region: content
+content: {  }
 hidden:
+  body: true
+  content_moderation_control: true
+  field_banner_image: true
+  field_banner_title: true
   field_components: true
+  field_featured_links: true
+  field_featured_title: true
+  field_goal: true
   field_header_colour_classes: true
-  field_header_modifiers: true
   field_hero_darkness: true
   field_introduction: true
   field_key: true
   field_keywords: true
   field_meta_tags: true
   field_search_exclude: true
+  field_stage: true
   field_thumbnail: true
   field_toc: true
+  field_updated_date: true
   layout_builder__layout: true
   layout_selection: true
+  links: true
   search_api_excerpt: true

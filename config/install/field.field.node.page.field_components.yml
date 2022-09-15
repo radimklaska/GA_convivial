@@ -11,17 +11,18 @@ dependencies:
     - paragraphs.paragraphs_type.content_block
     - paragraphs.paragraphs_type.content_tabs
     - paragraphs.paragraphs_type.fastfacts
+    - paragraphs.paragraphs_type.gallery
     - paragraphs.paragraphs_type.geochart
     - paragraphs.paragraphs_type.hero_banner
     - paragraphs.paragraphs_type.item_list
     - paragraphs.paragraphs_type.layout
+    - paragraphs.paragraphs_type.lightbox
     - paragraphs.paragraphs_type.map
     - paragraphs.paragraphs_type.media_list
     - paragraphs.paragraphs_type.node_list
     - paragraphs.paragraphs_type.personified_content
     - paragraphs.paragraphs_type.plugin_block
     - paragraphs.paragraphs_type.section
-    - paragraphs.paragraphs_type.slideshow
     - paragraphs.paragraphs_type.snippet
     - paragraphs.paragraphs_type.tiles
     - paragraphs.paragraphs_type.timeline
@@ -59,11 +60,12 @@ settings:
       media_list: media_list
       node_list: node_list
       section: section
-      slideshow: slideshow
       tiles: tiles
       timeline: timeline
       geochart: geochart
+      gallery: gallery
       personified_content: personified_content
+      lightbox: lightbox
       layout: layout
       snippet: snippet
     negate: 0
@@ -101,6 +103,9 @@ settings:
       fastfacts:
         weight: -68
         enabled: true
+      gallery:
+        weight: 49
+        enabled: true
       geochart:
         weight: 44
         enabled: true
@@ -121,6 +126,9 @@ settings:
         enabled: true
       layout:
         weight: 61
+        enabled: true
+      lightbox:
+        weight: 57
         enabled: true
       map:
         weight: -65

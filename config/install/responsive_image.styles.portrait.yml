@@ -10,14 +10,14 @@ id: portrait
 label: Portrait
 image_style_mappings:
   -
-    breakpoint_id: convivial_breakpoints.mobile
-    multiplier: 1x
     image_mapping_type: image_style
     image_mapping: portrait
-  -
     breakpoint_id: convivial_breakpoints.mobile
-    multiplier: 2x
+    multiplier: 1x
+  -
     image_mapping_type: image_style
     image_mapping: portrait_hi
+    breakpoint_id: convivial_breakpoints.mobile
+    multiplier: 2x
 breakpoint_group: convivial_breakpoints
 fallback_image_style: portrait

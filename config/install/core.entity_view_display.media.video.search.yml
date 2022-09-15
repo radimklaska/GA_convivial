@@ -15,13 +15,14 @@ dependencies:
     - text
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: true
+    allow_custom: false
     sections:
       -
         layout_id: search
         layout_settings:
           label: ''
+          context_mapping: {  }
         components:
           5026771e-1a94-4aa4-96b5-e3854498d412:
             uuid: 5026771e-1a94-4aa4-96b5-e3854498d412
@@ -29,36 +30,36 @@ third_party_settings:
             configuration:
               id: 'field_block:media:video:name'
               label: Name
-              provider: layout_builder
               label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
               formatter:
-                label: hidden
                 type: string
+                label: hidden
                 settings:
                   link_to_entity: true
                 third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-            additional: {  }
             weight: 0
+            additional: {  }
           b34d8fdd-cb60-4e3c-8361-c72e7b2352d9:
             uuid: b34d8fdd-cb60-4e3c-8361-c72e7b2352d9
             region: summary
             configuration:
               id: 'field_block:media:video:field_body'
               label: Body
-              provider: layout_builder
               label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
               formatter:
-                label: hidden
                 type: text_summary_or_trimmed
+                label: hidden
                 settings:
                   trim_length: 160
                 third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-            additional: {  }
             weight: 0
+            additional: {  }
         third_party_settings: {  }
 id: media.video.search
 targetEntityType: media
@@ -67,20 +68,20 @@ mode: search
 content:
   field_body:
     type: text_summary_or_trimmed
-    weight: 1
-    region: summary
     label: hidden
     settings:
       trim_length: 160
     third_party_settings: {  }
+    weight: 1
+    region: summary
   name:
     type: string
-    weight: 0
-    region: title
     label: hidden
     settings:
       link_to_entity: true
     third_party_settings: {  }
+    weight: 0
+    region: title
 hidden:
   created: true
   field_media_video_field: true

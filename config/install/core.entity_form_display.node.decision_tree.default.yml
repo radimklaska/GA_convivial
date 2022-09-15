@@ -3,24 +3,29 @@ status: true
 dependencies:
   config:
     - field.field.node.decision_tree.body
+    - field.field.node.decision_tree.field_banner_image
+    - field.field.node.decision_tree.field_banner_title
     - field.field.node.decision_tree.field_components
     - field.field.node.decision_tree.field_decision_tree_first_step
     - field.field.node.decision_tree.field_decision_tree_info_heading
+    - field.field.node.decision_tree.field_featured_links
+    - field.field.node.decision_tree.field_featured_title
     - field.field.node.decision_tree.field_goal
     - field.field.node.decision_tree.field_header_colour_classes
-    - field.field.node.decision_tree.field_header_modifiers
     - field.field.node.decision_tree.field_hero_darkness
     - field.field.node.decision_tree.field_hide
     - field.field.node.decision_tree.field_introduction
     - field.field.node.decision_tree.field_keywords
     - field.field.node.decision_tree.field_meta_tags
     - field.field.node.decision_tree.field_search_exclude
+    - field.field.node.decision_tree.field_stage
     - field.field.node.decision_tree.field_thumbnail
     - field.field.node.decision_tree.field_toc
-    - field.field.node.decision_tree.field_updated
+    - field.field.node.decision_tree.field_updated_date
     - field.field.node.decision_tree.layout_builder__layout
     - field.field.node.decision_tree.layout_selection
     - node.type.decision_tree
+    - workflows.workflow.editorial
   module:
     - content_moderation
     - datetime
@@ -29,14 +34,17 @@ dependencies:
     - maxlength
     - media_library
     - metatag
-    - paragraphs
     - path
     - text
 third_party_settings:
   field_group:
     group_header:
       children:
-        - field_header_modifiers
+        - field_introduction
+        - field_banner_title
+        - field_banner_image
+        - field_featured_title
+        - field_featured_links
         - field_header_colour_classes
         - field_hero_darkness
       label: Header
@@ -81,21 +89,6 @@ third_party_settings:
         description: ''
         required_fields: true
         weight: 0
-    group_dates:
-      children:
-        - field_updated
-      label: Dates
-      region: content
-      parent_name: ''
-      weight: 11
-      format_type: details_sidebar
-      format_settings:
-        classes: ''
-        id: ''
-        open: false
-        description: ''
-        required_fields: true
-        weight: 0
 id: node.decision_tree.default
 targetEntityType: node
 bundle: decision_tree
@@ -126,6 +119,21 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_banner_image:
+    type: media_library_widget
+    weight: 4
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_banner_title:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_components:
     type: layout_paragraphs
     weight: 5
@@ -149,6 +157,24 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_featured_links:
+    type: entity_reference_autocomplete
+    weight: 6
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_featured_title:
+    type: string_textfield
+    weight: 5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_goal:
     type: options_select
     weight: 9
@@ -157,25 +183,13 @@ content:
     third_party_settings: {  }
   field_header_colour_classes:
     type: options_select
-    weight: 5
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_header_modifiers:
-    type: entity_reference_paragraphs
-    weight: 4
-    region: content
-    settings:
-      title: Modifier
-      title_plural: Modifiers
-      edit_mode: preview
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: _none
-    third_party_settings: {  }
   field_hero_darkness:
     type: options_select
-    weight: 6
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -215,6 +229,12 @@ content:
     settings:
       display_label: true
     third_party_settings: {  }
+  field_stage:
+    type: options_select
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_thumbnail:
     type: media_library_widget
     weight: 1
@@ -228,9 +248,9 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_updated:
+  field_updated_date:
     type: datetime_default
-    weight: 11
+    weight: 24
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -242,7 +262,7 @@ content:
     third_party_settings: {  }
   moderation_state:
     type: moderation_state_default
-    weight: 10
+    weight: 11
     region: content
     settings: {  }
     third_party_settings: {  }

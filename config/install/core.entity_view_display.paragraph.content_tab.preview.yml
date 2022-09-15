@@ -13,8 +13,8 @@ dependencies:
     - layout_builder
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: false
+    allow_custom: false
 id: paragraph.content_tab.preview
 targetEntityType: paragraph
 bundle: content_tab
@@ -22,12 +22,12 @@ mode: preview
 content:
   field_title:
     type: string
-    weight: 0
-    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   field_ct_body: true
   field_ct_default: true

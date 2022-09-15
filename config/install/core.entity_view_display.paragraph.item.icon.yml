@@ -21,13 +21,14 @@ dependencies:
     - text
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: true
+    allow_custom: false
     sections:
       -
         layout_id: icon
         layout_settings:
           label: ''
+          context_mapping: {  }
         components:
           45220586-1b2f-411b-862b-81fd61673468:
             uuid: 45220586-1b2f-411b-862b-81fd61673468
@@ -35,53 +36,53 @@ third_party_settings:
             configuration:
               id: 'field_block:paragraph:item:field_item_icon_image'
               label: 'Icon image'
-              provider: layout_builder
               label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
               formatter:
-                label: hidden
                 type: entity_reference_entity_view
+                label: hidden
                 settings:
                   view_mode: small
                 third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-            additional: {  }
             weight: 0
+            additional: {  }
           573769de-2972-4654-ae13-cd81a5ec9ac3:
             uuid: 573769de-2972-4654-ae13-cd81a5ec9ac3
             region: title
             configuration:
               id: 'field_block:paragraph:item:field_heading'
               label: Heading
-              provider: layout_builder
               label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
               formatter:
-                label: hidden
                 type: string
+                label: hidden
                 settings:
                   link_to_entity: false
                 third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-            additional: {  }
             weight: 0
+            additional: {  }
           36ef9e26-f2d0-45cb-8302-c19d5993f504:
             uuid: 36ef9e26-f2d0-45cb-8302-c19d5993f504
             region: summary
             configuration:
               id: 'field_block:paragraph:item:field_item_summary'
               label: Summary
-              provider: layout_builder
               label_display: '0'
-              formatter:
-                label: hidden
-                type: text_default
-                settings: {  }
-                third_party_settings: {  }
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
-            additional: {  }
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
             weight: 0
+            additional: {  }
         third_party_settings: {  }
 id: paragraph.item.icon
 targetEntityType: paragraph
@@ -90,27 +91,27 @@ mode: icon
 content:
   field_heading:
     type: string
-    weight: 1
-    region: title
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 1
+    region: title
   field_item_icon_image:
     type: entity_reference_entity_view
-    weight: 0
     label: hidden
     settings:
       view_mode: small
       link: false
     third_party_settings: {  }
+    weight: 0
     region: image
   field_item_summary:
-    weight: 2
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 2
     region: summary
 hidden:
   field_cta: true

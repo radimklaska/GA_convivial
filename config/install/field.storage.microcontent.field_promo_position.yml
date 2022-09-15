@@ -11,13 +11,13 @@ type: list_string
 settings:
   allowed_values:
     -
-      value: hero-banner--content-left
+      value: banner--content-left
       label: Left
     -
-      value: hero-banner--content-center
+      value: banner--content-center
       label: Center
     -
-      value: hero-banner--content-right
+      value: banner--content-right
       label: Right
   allowed_values_function: ''
 module: options

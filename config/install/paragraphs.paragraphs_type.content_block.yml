@@ -1,8 +1,10 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  content:
+    - 'file:file:cf6237f2-5481-47f4-aae3-ebc5b5d6ef0f'
 id: content_block
-label: 'Embedded Custom Block'
+label: 'Embedded custom block'
 icon_uuid: cf6237f2-5481-47f4-aae3-ebc5b5d6ef0f
 icon_default: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABA0lEQVR4AcWVAaYDMRCG5+E9eM/Du8o7xfYEvUQh2VJATlBAKYA9QBcWBZkqtShV9ASF3qHY7g8xCE26szrEyD/T/+tOQogsF/26kvHd4AUf+MmQ5moQGaHgDn80IPD74BUFaITwCuNKBnTdRw4gjCsZUPIqF4CVBpjvJuhBHgdgfYseZB2Aa3/J7v+p9FOyvJTXEHvoqKMvH+AuX2S4Sbv33KA/AyAhvn4CqNH3+hmsj59keRM1h4764EO2fhEFQFe5RYYr8a/vYvaVDsDyqa/d+jwj53+QsYeu9QWGyvO3lLCHrgDIjPcDNN8DARjvRRMA/TdZAsaKOEB1XHFAoQvh7QN9n44WeGDFKwAAAABJRU5ErkJggg=='
 description: 'Embed a custom block into the page.'

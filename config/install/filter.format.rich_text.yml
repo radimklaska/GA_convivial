@@ -44,7 +44,7 @@ filters:
     status: true
     weight: -50
     settings:
-      allowed_html: '<a href hreflang class> <em> <strong> <cite> <blockquote cite> <code> <ul type class> <ol start type class> <li> <dl> <dt> <dd> <h1 class id> <h2 class id> <h3 class id> <h4 class id> <h5 class id> <h6 class id> <img src alt data-entity-type data-entity-uuid class> <u> <s> <sup> <sub> <table class> <caption class> <tbody class> <thead class> <tfoot class> <th class colspan rowspan scope> <td class colspan rowspan> <tr class> <colgroup span> <col span> <p class> <div class id> <i class> <form accept-charset action class method> <input aria-label autocomplete class maxlength name placeholder size type> <button class type value> <be> <drupal-media data-entity-type data-entity-uuid data-view-mode data-align data-caption> <svg width height viewBox class fill xmlns> <path fill-rule d>'
+      allowed_html: '<em> <strong> <cite> <blockquote cite> <code> <li> <dl> <dt> <dd> <h1 id class=""> <h2 id class=""> <h3 id class=""> <h4 id class=""> <h5 id class=""> <h6 id class=""> <u> <s> <sup> <sub> <caption class=""> <tbody class=""> <thead class=""> <tfoot class=""> <th colspan rowspan scope class=""> <td colspan rowspan class=""> <tr class=""> <colgroup span> <col span> <i class=""> <form accept-charset action method class=""> <input aria-label autocomplete maxlength name placeholder size type class=""> <button type value data-bs-toggle data-bs-placement title class=""> <be> <svg width height viewBox fill xmlns class=""> <path fill-rule d> <ol type start class=" list--bulletless list--inline"> <a href hreflang data-bs-toggle title class=" cta-link btn btn-primary btn-secondary btn-link step__button step__button--back step__button--restart"> <table class=" table table-bordered table-alt-heading table-dark-heading table-dark-alt-heading table-striped table-sm"> <img src alt data-entity-type data-entity-uuid data-align data-caption class=""> <drupal-media data-entity-type data-entity-uuid data-view-mode data-align data-caption alt title> <p class=" introduction alert alert-primary alert-secondary alert-success alert-danger alert-warning alert-info alert-light alert-dark callout callout--dark callout--light"> <ul type class=" list--bulletless list--inline callout callout--dark callout--light"> <div id class=" callout callout--dark callout--light">'
       filter_html_help: true
       filter_html_nofollow: false
   editor_file_reference:
@@ -91,12 +91,6 @@ filters:
     weight: 100
     settings:
       default_view_mode: default
-      allowed_media_types:
-        audio: audio
-        file: file
-        image: image
-        remote_video: remote_video
-        video: video
       allowed_view_modes:
         extra_small: extra_small
         half: half
@@ -107,3 +101,9 @@ filters:
         tiny: tiny
         whole: whole
         whole_wide: whole_wide
+      allowed_media_types:
+        audio: audio
+        file: file
+        image: image
+        remote_video: remote_video
+        video: video

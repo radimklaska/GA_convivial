@@ -10,9 +10,6 @@ dependencies:
     - field.field.paragraph.accordion_group.field_heading
     - field.field.paragraph.accordion_group.field_hide_heading
     - field.field.paragraph.accordion_group.field_position
-    - field.field.paragraph.accordion_group.field_show_close_all
-    - field.field.paragraph.accordion_group.field_show_open_all
-    - field.field.paragraph.accordion_group.field_show_toggle_all
     - paragraphs.paragraphs_type.accordion_group
 id: paragraph.accordion_group.preview
 targetEntityType: paragraph
@@ -27,7 +24,4 @@ hidden:
   field_heading: true
   field_hide_heading: true
   field_position: true
-  field_show_close_all: true
-  field_show_open_all: true
-  field_show_toggle_all: true
   search_api_excerpt: true

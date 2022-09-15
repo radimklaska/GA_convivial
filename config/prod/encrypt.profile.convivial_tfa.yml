@@ -8,5 +8,5 @@ dependencies:
 id: convivial_tfa
 label: 'Convivial TFA'
 encryption_method: real_aes
-encryption_key: convivial_tfa
 encryption_method_configuration: {  }
+encryption_key: convivial_tfa

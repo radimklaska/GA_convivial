@@ -4,15 +4,15 @@ dependencies: {  }
 id: test
 label: Test
 description: ''
+weight: 0
 folder: ../config/test
 module:
-  devel: 0
-  environment_indicator: 0
+  autologout: 0
 theme: {  }
 blacklist: {  }
 graylist:
-  - system.logging
+  - environment_indicator.indicator
+  - recombee.settings
   - system.mail
 graylist_dependents: true
 graylist_skip_equal: true
-weight: 0

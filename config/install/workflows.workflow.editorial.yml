@@ -4,9 +4,12 @@ dependencies:
   config:
     - node.type.article
     - node.type.audience
-    - node.type.casestudy
+    - node.type.decision_tree
+    - node.type.event
     - node.type.page
     - node.type.person
+    - node.type.place
+    - node.type.step
     - node.type.topic
   module:
     - content_moderation
@@ -22,19 +25,19 @@ type_settings:
       default_revision: true
     draft:
       label: Draft
-      published: false
-      default_revision: false
       weight: -10
-    needs_review:
       published: false
       default_revision: false
+    needs_review:
       label: 'Needs Review'
       weight: -9
+      published: false
+      default_revision: false
     published:
       label: Published
+      weight: -8
       published: true
       default_revision: true
-      weight: -8
   transitions:
     archive:
       label: Archive
@@ -56,11 +59,11 @@ type_settings:
       weight: 2
     create_new_draft:
       label: 'Create New Draft'
-      to: draft
-      weight: -4
       from:
         - draft
         - published
+      to: draft
+      weight: -4
     needs_review:
       label: 'Needs review'
       from:
@@ -69,12 +72,12 @@ type_settings:
       weight: -3
     publish:
       label: Publish
-      to: published
-      weight: -1
       from:
         - draft
         - needs_review
         - published
+      to: published
+      weight: -1
     send_back_to_draft:
       label: 'Send back to draft'
       from:
@@ -85,8 +88,11 @@ type_settings:
     node:
       - article
       - audience
-      - casestudy
+      - decision_tree
+      - event
       - page
       - person
+      - place
+      - step
       - topic
   default_moderation_state: draft

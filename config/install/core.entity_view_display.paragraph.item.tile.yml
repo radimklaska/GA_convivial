@@ -21,13 +21,14 @@ dependencies:
     - text
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: true
+    allow_custom: false
     sections:
       -
         layout_id: tile
         layout_settings:
           label: ''
+          context_mapping: {  }
         components:
           a0f5306d-ea27-42c3-afbf-6cca337291e3:
             uuid: a0f5306d-ea27-42c3-afbf-6cca337291e3
@@ -35,36 +36,36 @@ third_party_settings:
             configuration:
               id: 'field_block:paragraph:item:field_heading'
               label: Heading
-              provider: layout_builder
               label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
               formatter:
-                label: hidden
                 type: string
+                label: hidden
                 settings:
                   link_to_entity: false
                 third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-            additional: {  }
             weight: 0
+            additional: {  }
           999df3a7-b82d-4e8e-8604-20efa48f680a:
             uuid: 999df3a7-b82d-4e8e-8604-20efa48f680a
             region: image
             configuration:
               id: 'field_block:paragraph:item:field_item_image'
               label: Image
-              provider: layout_builder
               label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
               formatter:
-                label: hidden
                 type: entity_reference_entity_view
+                label: hidden
                 settings:
                   view_mode: landscape
                 third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-            additional: {  }
             weight: 0
+            additional: {  }
         third_party_settings: {  }
 id: paragraph.item.tile
 targetEntityType: paragraph
@@ -73,28 +74,28 @@ mode: tile
 content:
   field_heading:
     type: string
-    weight: 0
-    region: title
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 0
+    region: title
   field_item_image:
     type: entity_reference_entity_view
-    weight: 2
     label: hidden
     settings:
       view_mode: landscape
       link: false
     third_party_settings: {  }
+    weight: 2
     region: image
   field_item_summary:
-    weight: 1
+    type: text_trimmed
     label: hidden
     settings:
       trim_length: 160
     third_party_settings: {  }
-    type: text_trimmed
+    weight: 1
     region: summary
 hidden:
   field_cta: true

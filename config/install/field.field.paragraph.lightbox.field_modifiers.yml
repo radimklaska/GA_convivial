@@ -1,0 +1,127 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_modifiers
+    - paragraphs.paragraphs_type.adaptive_height_modifier
+    - paragraphs.paragraphs_type.hide_modifier
+    - paragraphs.paragraphs_type.image_bg_modifier
+    - paragraphs.paragraphs_type.lightbox
+    - paragraphs.paragraphs_type.parallax_bg_modifier
+    - paragraphs.paragraphs_type.scroll_reveal_modifier
+    - paragraphs.paragraphs_type.video_bg_modifier
+  module:
+    - entity_reference_revisions
+id: paragraph.lightbox.field_modifiers
+field_name: field_modifiers
+entity_type: paragraph
+bundle: lightbox
+label: Modifiers
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      adaptive_height_modifier: adaptive_height_modifier
+      hide_modifier: hide_modifier
+      image_bg_modifier: image_bg_modifier
+      parallax_bg_modifier: parallax_bg_modifier
+      scroll_reveal_modifier: scroll_reveal_modifier
+      video_bg_modifier: video_bg_modifier
+    negate: 0
+    target_bundles_drag_drop:
+      accordion:
+        weight: 38
+        enabled: false
+      accordion_group:
+        weight: 39
+        enabled: false
+      adaptive_height_modifier:
+        weight: 40
+        enabled: true
+      answer:
+        weight: 41
+        enabled: false
+      charts:
+        weight: 42
+        enabled: false
+      content:
+        weight: 45
+        enabled: false
+      content_block:
+        weight: 46
+        enabled: false
+      content_tab:
+        weight: 47
+        enabled: false
+      content_tabs:
+        weight: 48
+        enabled: false
+      fastfact:
+        weight: 52
+        enabled: false
+      fastfacts:
+        weight: 53
+        enabled: false
+      gallery:
+        weight: 55
+        enabled: false
+      hide_modifier:
+        weight: 56
+        enabled: true
+      image_bg_modifier:
+        weight: 57
+        enabled: true
+      item:
+        weight: 58
+        enabled: false
+      item_list:
+        weight: 59
+        enabled: false
+      lightbox:
+        weight: 60
+        enabled: false
+      map:
+        weight: 61
+        enabled: false
+      media_list:
+        weight: 62
+        enabled: false
+      node_list:
+        weight: 63
+        enabled: false
+      parallax_bg_modifier:
+        weight: 65
+        enabled: true
+      parameter:
+        weight: 66
+        enabled: false
+      plugin_block:
+        weight: 67
+        enabled: false
+      scroll_reveal_modifier:
+        weight: 68
+        enabled: true
+      section:
+        weight: 69
+        enabled: false
+      timeline:
+        weight: 70
+        enabled: false
+      timeline_item:
+        weight: 71
+        enabled: false
+      video_bg_modifier:
+        weight: 72
+        enabled: true
+      view:
+        weight: 73
+        enabled: false
+      webform:
+        weight: 74
+        enabled: false
+field_type: entity_reference_revisions

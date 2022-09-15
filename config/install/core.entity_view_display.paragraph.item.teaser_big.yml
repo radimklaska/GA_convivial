@@ -21,13 +21,14 @@ dependencies:
     - text
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: true
+    allow_custom: false
     sections:
       -
         layout_id: teaser_big
         layout_settings:
           label: ''
+          context_mapping: {  }
         components:
           54065a05-1140-4531-a33c-56e19d404c4f:
             uuid: 54065a05-1140-4531-a33c-56e19d404c4f
@@ -35,71 +36,71 @@ third_party_settings:
             configuration:
               id: 'field_block:paragraph:item:field_item_image'
               label: Image
-              provider: layout_builder
               label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
               formatter:
-                label: hidden
                 type: entity_reference_entity_view
+                label: hidden
                 settings:
                   view_mode: landscape_half
                 third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-            additional: {  }
             weight: 0
+            additional: {  }
           60f92579-64ae-41f5-bf86-6c0c9d5c31c5:
             uuid: 60f92579-64ae-41f5-bf86-6c0c9d5c31c5
             region: info
             configuration:
               id: 'field_block:paragraph:item:field_item_info'
               label: Info
-              provider: layout_builder
               label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
               formatter:
-                label: hidden
                 type: string
+                label: hidden
                 settings:
                   link_to_entity: false
                 third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-            additional: {  }
             weight: 0
+            additional: {  }
           fc08e0dd-6339-4bcd-9ebf-d2ed48363d15:
             uuid: fc08e0dd-6339-4bcd-9ebf-d2ed48363d15
             region: title
             configuration:
               id: 'field_block:paragraph:item:field_heading'
               label: Heading
-              provider: layout_builder
               label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
               formatter:
-                label: hidden
                 type: string
+                label: hidden
                 settings:
                   link_to_entity: false
                 third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-            additional: {  }
             weight: 0
+            additional: {  }
           df4aed80-2728-404a-a0b5-79415bd12c79:
             uuid: df4aed80-2728-404a-a0b5-79415bd12c79
             region: summary
             configuration:
               id: 'field_block:paragraph:item:field_item_summary'
               label: Summary
-              provider: layout_builder
               label_display: '0'
-              formatter:
-                label: hidden
-                type: text_default
-                settings: {  }
-                third_party_settings: {  }
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
-            additional: {  }
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
             weight: 0
+            additional: {  }
         third_party_settings: {  }
 id: paragraph.item.teaser_big
 targetEntityType: paragraph
@@ -108,43 +109,43 @@ mode: teaser_big
 content:
   field_cta:
     type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
     weight: 3
     region: summary
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
   field_heading:
-    weight: 0
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 0
     region: title
   field_item_image:
     type: entity_reference_entity_view
-    weight: 4
     label: hidden
     settings:
       view_mode: landscape_half
       link: false
     third_party_settings: {  }
+    weight: 4
     region: image
   field_item_info:
-    weight: 1
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 1
     region: info
   field_item_summary:
-    weight: 2
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 2
     region: summary
 hidden:
   field_hide_heading: true

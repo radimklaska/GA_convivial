@@ -19,7 +19,6 @@ dependencies:
     - paragraphs.paragraphs_type.personified_content
     - paragraphs.paragraphs_type.plugin_block
     - paragraphs.paragraphs_type.section
-    - paragraphs.paragraphs_type.slideshow
     - paragraphs.paragraphs_type.view
     - paragraphs.paragraphs_type.webform
   module:
@@ -48,7 +47,6 @@ settings:
       map: map
       node_list: node_list
       section: section
-      slideshow: slideshow
       view: view
       webform: webform
       geochart: geochart

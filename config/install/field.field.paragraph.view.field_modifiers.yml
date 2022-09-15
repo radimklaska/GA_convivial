@@ -4,17 +4,9 @@ dependencies:
   config:
     - field.storage.paragraph.field_modifiers
     - paragraphs.paragraphs_type.adaptive_height_modifier
-    - paragraphs.paragraphs_type.clip_path_modifier
-    - paragraphs.paragraphs_type.color_background_modifier
-    - paragraphs.paragraphs_type.custom_linear_gradient_modifier
-    - paragraphs.paragraphs_type.custom_radial_gradient_modifier
-    - paragraphs.paragraphs_type.datatables_modifier
-    - paragraphs.paragraphs_type.fonts_modifier
     - paragraphs.paragraphs_type.hide_modifier
     - paragraphs.paragraphs_type.image_bg_modifier
-    - paragraphs.paragraphs_type.padding_modifier
     - paragraphs.paragraphs_type.parallax_bg_modifier
-    - paragraphs.paragraphs_type.relative_height_modifier
     - paragraphs.paragraphs_type.scroll_reveal_modifier
     - paragraphs.paragraphs_type.video_bg_modifier
     - paragraphs.paragraphs_type.view
@@ -33,22 +25,14 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
-      color_background_modifier: color_background_modifier
-      custom_linear_gradient_modifier: custom_linear_gradient_modifier
-      custom_radial_gradient_modifier: custom_radial_gradient_modifier
-      fonts_modifier: fonts_modifier
       hide_modifier: hide_modifier
       adaptive_height_modifier: adaptive_height_modifier
       image_bg_modifier: image_bg_modifier
-      clip_path_modifier: clip_path_modifier
-      padding_modifier: padding_modifier
       parallax_bg_modifier: parallax_bg_modifier
-      relative_height_modifier: relative_height_modifier
       scroll_reveal_modifier: scroll_reveal_modifier
-      datatables_modifier: datatables_modifier
       video_bg_modifier: video_bg_modifier
+    negate: 0
     target_bundles_drag_drop:
       accordion:
         weight: 24
@@ -56,9 +40,21 @@ settings:
       accordion_group:
         weight: 25
         enabled: false
-      color_background_modifier:
+      adaptive_height_modifier:
+        weight: 34
         enabled: true
+      app:
+        weight: 35
+        enabled: false
+      charts:
+        weight: 36
+        enabled: false
+      clip_path_modifier:
+        weight: 38
+        enabled: true
+      color_background_modifier:
         weight: 27
+        enabled: true
       content:
         weight: 28
         enabled: false
@@ -66,67 +62,28 @@ settings:
         weight: 29
         enabled: false
       custom_linear_gradient_modifier:
-        enabled: true
         weight: 30
+        enabled: true
       custom_radial_gradient_modifier:
-        enabled: true
         weight: 31
+        enabled: true
+      datatables_modifier:
+        weight: 44
+        enabled: true
       fonts_modifier:
-        enabled: true
         weight: 32
+        enabled: true
       hide_modifier:
-        enabled: true
         weight: 33
-      adaptive_height_modifier:
         enabled: true
-        weight: 34
-      app:
-        weight: 35
-        enabled: false
       image_bg_modifier:
-        enabled: true
         weight: 35
+        enabled: true
       item:
-        weight: 36
-        enabled: false
-      charts:
         weight: 36
         enabled: false
       item_list:
         weight: 37
-        enabled: false
-      clip_path_modifier:
-        enabled: true
-        weight: 38
-      node_list:
-        weight: 38
-        enabled: false
-      padding_modifier:
-        enabled: true
-        weight: 39
-      parallax_bg_modifier:
-        enabled: true
-        weight: 40
-      plugin_block:
-        weight: 41
-        enabled: false
-      relative_height_modifier:
-        enabled: true
-        weight: 42
-      scroll_reveal_modifier:
-        enabled: true
-        weight: 43
-      datatables_modifier:
-        enabled: true
-        weight: 44
-      section:
-        weight: 44
-        enabled: false
-      video_bg_modifier:
-        enabled: true
-        weight: 45
-      view:
-        weight: 46
         enabled: false
       map:
         weight: 51
@@ -137,14 +94,41 @@ settings:
       national_map_catalog:
         weight: 59
         enabled: false
-      slide:
-        weight: 59
-        enabled: false
       national_map_catalog_item:
         weight: 60
         enabled: false
+      node_list:
+        weight: 38
+        enabled: false
+      padding_modifier:
+        weight: 39
+        enabled: true
+      parallax_bg_modifier:
+        weight: 40
+        enabled: true
+      plugin_block:
+        weight: 41
+        enabled: false
+      relative_height_modifier:
+        weight: 42
+        enabled: true
+      scroll_reveal_modifier:
+        weight: 43
+        enabled: true
+      section:
+        weight: 44
+        enabled: false
+      slide:
+        weight: 59
+        enabled: false
       slideshow:
         weight: 60
+        enabled: false
+      video_bg_modifier:
+        weight: 45
+        enabled: true
+      view:
+        weight: 46
         enabled: false
       webform:
         weight: 72

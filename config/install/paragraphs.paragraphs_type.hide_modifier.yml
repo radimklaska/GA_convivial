@@ -2,7 +2,8 @@ langcode: en
 status: true
 dependencies: {  }
 id: hide_modifier
-label: 'Hide Modifier'
+label: Hide
 icon_uuid: null
+icon_default: null
 description: 'Modify the content so that it is hidden.'
 behavior_plugins: {  }

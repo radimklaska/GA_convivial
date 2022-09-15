@@ -419,7 +419,7 @@ display:
       access:
         type: perm
         options:
-          perm: 'administer microcontent'
+          perm: 'access microcontent overview'
       cache:
         type: tag
         options: {  }
@@ -706,7 +706,9 @@ display:
         - url
         - url.query_args
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:core.entity_view_display.microcontent.promotion.default'
+        - 'config:core.entity_view_display.microcontent.promotion.preview'
   page_1:
     id: page_1
     display_title: Page
@@ -723,4 +725,6 @@ display:
         - url
         - url.query_args
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:core.entity_view_display.microcontent.promotion.default'
+        - 'config:core.entity_view_display.microcontent.promotion.preview'

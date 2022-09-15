@@ -14,13 +14,14 @@ dependencies:
     - layout_builder
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: true
+    allow_custom: false
     sections:
       -
         layout_id: title
         layout_settings:
           label: ''
+          context_mapping: {  }
         components:
           a931516b-9243-4771-8d2c-3eee5a4a816f:
             uuid: a931516b-9243-4771-8d2c-3eee5a4a816f
@@ -28,18 +29,18 @@ third_party_settings:
             configuration:
               id: 'field_block:media:video:name'
               label: Name
-              provider: layout_builder
               label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
               formatter:
-                label: hidden
                 type: string
+                label: hidden
                 settings:
                   link_to_entity: true
                 third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-            additional: {  }
             weight: 0
+            additional: {  }
         third_party_settings: {  }
 id: media.video.title
 targetEntityType: media
@@ -48,12 +49,12 @@ mode: title
 content:
   name:
     type: string
-    weight: 0
-    region: title
     label: hidden
     settings:
       link_to_entity: true
     third_party_settings: {  }
+    weight: 0
+    region: title
 hidden:
   created: true
   field_body: true

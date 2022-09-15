@@ -1,8 +1,10 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  content:
+    - 'file:file:4115e615-58d1-46b3-b2d0-4291f755cbe9'
 id: view
-label: 'Embedded View'
+label: 'Embedded view'
 icon_uuid: 4115e615-58d1-46b3-b2d0-4291f755cbe9
 icon_default: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAe0lEQVR4AWNgKD7gCcSPGYr2/6cUg8wBm4cCMA2n3BJkAJdoOCbEQAEA6YeZhd0CigCmWbDgopkFsOCiqQUgTHMLaBbJMDbNkimMT7OMBhejBaC5D+gaBwhGxWFBWqSigclooxbQJJJB+keLCrLig2YNAFwWeFLXkgM7AdroiOaoAbo0AAAAAElFTkSuQmCC'
 description: 'Embed a view into the page.'

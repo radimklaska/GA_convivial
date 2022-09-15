@@ -25,60 +25,60 @@ bundle: node_list
 mode: default
 content:
   field_body:
-    weight: 1
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 1
     region: content
   field_heading:
-    weight: 0
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 0
     region: content
   field_nl_colour_classes:
     type: entity_class_formatter
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
     weight: 4
     region: content
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
   field_nl_layout_classes:
     type: entity_class_formatter
-    weight: 6
-    region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 6
+    region: content
   field_nl_nodes:
-    weight: 2
+    type: entity_reference_display_default
     label: hidden
     settings:
       view_mode: default
       link: false
       display_field: null
     third_party_settings: {  }
-    type: entity_reference_display_default
+    weight: 2
     region: content
   field_nl_style_classes:
     type: entity_class_formatter
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
     weight: 5
     region: content
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
   field_position:
-    weight: 7
+    type: entity_class_formatter
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: entity_class_formatter
+    weight: 7
     region: content
   field_read_more:
-    weight: 3
+    type: link
     label: hidden
     settings:
       trim_length: 80
@@ -87,7 +87,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 3
     region: content
 hidden:
   field_hide_heading: true

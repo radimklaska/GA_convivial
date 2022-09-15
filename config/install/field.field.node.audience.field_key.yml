@@ -15,7 +15,7 @@ field_name: field_key
 entity_type: node
 bundle: audience
 label: Key
-description: ' Use this to specify the unique identifier for this content. This is used to specify the meta tag for personalization. '
+description: 'Use this to specify the unique identifier for this content. This is used to specify the meta tag for personalization. <em>The key should be in right format e.g. <strong>audience:test<strong><em>'
 required: false
 translatable: true
 default_value: {  }

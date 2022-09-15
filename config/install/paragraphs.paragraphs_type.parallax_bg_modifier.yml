@@ -2,7 +2,8 @@ langcode: en
 status: true
 dependencies: {  }
 id: parallax_bg_modifier
-label: 'Parallax Background Modifier'
+label: 'Parallax background'
 icon_uuid: null
+icon_default: null
 description: 'Modify content by adding a parallax image.'
 behavior_plugins: {  }

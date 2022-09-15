@@ -1,0 +1,42 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.components
+    - block_content.type.content
+    - block_content.type.logo
+    - block_content.type.search
+    - block_content.type.social_share
+    - field.storage.paragraph.field_cb_block
+    - paragraphs.paragraphs_type.content_block
+  module:
+    - unique_content_field_validation
+third_party_settings:
+  unique_content_field_validation:
+    unique: false
+    unique_text: ''
+id: paragraph.content_block.field_cb_block
+field_name: field_cb_block
+entity_type: paragraph
+bundle: content_block
+label: 'Custom Block'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      components: components
+      content: content
+      logo: logo
+      search: search
+      social_share: social_share
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: components
+field_type: entity_reference

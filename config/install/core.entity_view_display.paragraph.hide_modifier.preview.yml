@@ -12,12 +12,12 @@ bundle: hide_modifier
 mode: preview
 content:
   field_mod_media_query:
-    weight: 0
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 0
     region: content
 hidden:
   created: true

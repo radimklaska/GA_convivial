@@ -4,15 +4,10 @@ dependencies:
   config:
     - field.storage.paragraph.field_modifiers
     - paragraphs.paragraphs_type.adaptive_height_modifier
-    - paragraphs.paragraphs_type.color_background_modifier
-    - paragraphs.paragraphs_type.custom_linear_gradient_modifier
-    - paragraphs.paragraphs_type.custom_radial_gradient_modifier
     - paragraphs.paragraphs_type.fastfacts
     - paragraphs.paragraphs_type.hide_modifier
     - paragraphs.paragraphs_type.image_bg_modifier
-    - paragraphs.paragraphs_type.padding_modifier
     - paragraphs.paragraphs_type.parallax_bg_modifier
-    - paragraphs.paragraphs_type.relative_height_modifier
   module:
     - entity_reference_revisions
 id: paragraph.fastfacts.field_modifiers
@@ -28,24 +23,13 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
       adaptive_height_modifier: adaptive_height_modifier
-      color_background_modifier: color_background_modifier
-      custom_linear_gradient_modifier: custom_linear_gradient_modifier
-      custom_radial_gradient_modifier: custom_radial_gradient_modifier
       hide_modifier: hide_modifier
       image_bg_modifier: image_bg_modifier
-      padding_modifier: padding_modifier
       parallax_bg_modifier: parallax_bg_modifier
-      relative_height_modifier: relative_height_modifier
+    negate: 0
     target_bundles_drag_drop:
-      fastfacts:
-        weight: 39
-        enabled: false
-      fastfact:
-        weight: 40
-        enabled: false
       accordion:
         weight: 40
         enabled: false
@@ -53,8 +37,8 @@ settings:
         weight: 41
         enabled: false
       adaptive_height_modifier:
-        enabled: true
         weight: 42
+        enabled: true
       app:
         weight: 43
         enabled: false
@@ -65,8 +49,8 @@ settings:
         weight: 45
         enabled: false
       color_background_modifier:
-        enabled: true
         weight: 46
+        enabled: true
       content:
         weight: 47
         enabled: false
@@ -74,11 +58,11 @@ settings:
         weight: 48
         enabled: false
       custom_linear_gradient_modifier:
-        enabled: true
         weight: 49
-      custom_radial_gradient_modifier:
         enabled: true
+      custom_radial_gradient_modifier:
         weight: 50
+        enabled: true
       datatables_modifier:
         weight: 51
         enabled: false
@@ -88,15 +72,21 @@ settings:
       dssc_modifier:
         weight: 53
         enabled: false
+      fastfact:
+        weight: 40
+        enabled: false
+      fastfacts:
+        weight: 39
+        enabled: false
       fonts_modifier:
         weight: 54
         enabled: false
       hide_modifier:
-        enabled: true
         weight: 55
-      image_bg_modifier:
         enabled: true
+      image_bg_modifier:
         weight: 56
+        enabled: true
       item:
         weight: 57
         enabled: false
@@ -122,11 +112,11 @@ settings:
         weight: 64
         enabled: false
       padding_modifier:
-        enabled: true
         weight: 65
-      parallax_bg_modifier:
         enabled: true
+      parallax_bg_modifier:
         weight: 66
+        enabled: true
       plugin_block:
         weight: 67
         enabled: false
@@ -134,8 +124,8 @@ settings:
         weight: 68
         enabled: false
       relative_height_modifier:
-        enabled: true
         weight: 69
+        enabled: true
       scroll_reveal_modifier:
         weight: 70
         enabled: false

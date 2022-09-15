@@ -31,20 +31,20 @@ bundle: charts
 mode: default
 content:
   field_chrt_colour_classes:
-    weight: 1
+    type: entity_class_formatter
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: entity_class_formatter
+    weight: 1
     region: content
   field_heading:
     type: string
-    weight: 0
-    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   field_body: true
   field_chrt_colors: true

@@ -15,22 +15,23 @@ dependencies:
     - text
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: true
+    allow_custom: false
     sections:
       -
         layout_id: layout_onecol
         layout_settings:
           label: ''
+          context_mapping: {  }
         components:
           c809f44e-f3b4-4595-b1dd-77cd758d7744:
             uuid: c809f44e-f3b4-4595-b1dd-77cd758d7744
             region: content
             configuration:
+              id: 'field_block:paragraph:timeline_item:field_timeline_item_image'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:paragraph:timeline_item:field_timeline_item_image'
               formatter:
                 type: entity_reference_entity_view
                 label: hidden
@@ -38,40 +39,40 @@ third_party_settings:
                   view_mode: default
                   link: false
                 third_party_settings: {  }
-            additional: {  }
             weight: 0
+            additional: {  }
           cf59c7ca-f585-4397-83b1-5cba161601ad:
             uuid: cf59c7ca-f585-4397-83b1-5cba161601ad
             region: content
             configuration:
+              id: 'field_block:paragraph:timeline_item:field_timeline_item_body'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:paragraph:timeline_item:field_timeline_item_body'
               formatter:
+                type: text_default
                 label: hidden
                 settings: {  }
                 third_party_settings: {  }
-                type: text_default
-            additional: {  }
             weight: 1
+            additional: {  }
           a177f0f8-986f-45ae-8da2-9fa2150dc570:
             uuid: a177f0f8-986f-45ae-8da2-9fa2150dc570
             region: content
             configuration:
+              id: 'field_block:paragraph:timeline_item:field_timeline_item_date'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:paragraph:timeline_item:field_timeline_item_date'
               formatter:
+                type: datetime_default
                 label: hidden
                 settings:
                   timezone_override: ''
                   format_type: standard
                 third_party_settings: {  }
-                type: datetime_default
-            additional: {  }
             weight: 2
+            additional: {  }
         third_party_settings: {  }
 id: paragraph.timeline_item.stack_simple
 targetEntityType: paragraph
@@ -79,29 +80,29 @@ bundle: timeline_item
 mode: stack_simple
 content:
   field_timeline_item_body:
-    weight: 2
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 2
     region: content
   field_timeline_item_date:
-    weight: 3
+    type: datetime_default
     label: hidden
     settings:
       timezone_override: ''
       format_type: standard
     third_party_settings: {  }
-    type: datetime_default
+    weight: 3
     region: content
   field_timeline_item_image:
     type: entity_reference_entity_view
-    weight: 0
     label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   field_title: true

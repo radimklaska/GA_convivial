@@ -21,13 +21,14 @@ dependencies:
     - text
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: true
+    allow_custom: false
     sections:
       -
         layout_id: search
         layout_settings:
           label: ''
+          context_mapping: {  }
         components:
           780d36c8-d952-4bc3-aa21-0f8773648c6a:
             uuid: 780d36c8-d952-4bc3-aa21-0f8773648c6a
@@ -35,53 +36,53 @@ third_party_settings:
             configuration:
               id: 'field_block:paragraph:item:field_item_info'
               label: Info
-              provider: layout_builder
               label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
               formatter:
-                label: hidden
                 type: string
+                label: hidden
                 settings:
                   link_to_entity: false
                 third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-            additional: {  }
             weight: 0
+            additional: {  }
           0d709033-c742-494f-805e-694796276067:
             uuid: 0d709033-c742-494f-805e-694796276067
             region: title
             configuration:
               id: 'field_block:paragraph:item:field_heading'
               label: Heading
-              provider: layout_builder
               label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
               formatter:
-                label: hidden
                 type: string
+                label: hidden
                 settings:
                   link_to_entity: false
                 third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-            additional: {  }
             weight: 0
+            additional: {  }
           35d15796-2a11-4937-b327-b442cac5a2e4:
             uuid: 35d15796-2a11-4937-b327-b442cac5a2e4
             region: summary
             configuration:
               id: 'field_block:paragraph:item:field_item_summary'
               label: Summary
-              provider: layout_builder
               label_display: '0'
-              formatter:
-                label: hidden
-                type: text_default
-                settings: {  }
-                third_party_settings: {  }
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
-            additional: {  }
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
             weight: 0
+            additional: {  }
         third_party_settings: {  }
 id: paragraph.item.search
 targetEntityType: paragraph
@@ -89,27 +90,27 @@ bundle: item
 mode: search
 content:
   field_heading:
-    weight: 0
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 0
     region: title
   field_item_info:
-    weight: 1
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 1
     region: info
   field_item_summary:
-    weight: 2
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 2
     region: summary
 hidden:
   field_cta: true

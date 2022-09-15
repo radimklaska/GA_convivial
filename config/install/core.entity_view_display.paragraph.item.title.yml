@@ -20,13 +20,14 @@ dependencies:
     - layout_builder
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: true
+    allow_custom: false
     sections:
       -
         layout_id: title
         layout_settings:
           label: ''
+          context_mapping: {  }
         components:
           dfdcf440-4e9e-4349-9f61-90a7c0e5cabd:
             uuid: dfdcf440-4e9e-4349-9f61-90a7c0e5cabd
@@ -34,18 +35,18 @@ third_party_settings:
             configuration:
               id: 'field_block:paragraph:item:field_heading'
               label: Heading
-              provider: layout_builder
               label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
               formatter:
-                label: hidden
                 type: string
+                label: hidden
                 settings:
                   link_to_entity: false
                 third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-            additional: {  }
             weight: 0
+            additional: {  }
         third_party_settings: {  }
 id: paragraph.item.title
 targetEntityType: paragraph
@@ -54,12 +55,12 @@ mode: title
 content:
   field_heading:
     type: string
-    weight: 0
-    region: title
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 0
+    region: title
 hidden:
   field_cta: true
   field_hide_heading: true

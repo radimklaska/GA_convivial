@@ -44,7 +44,7 @@ filters:
     status: false
     weight: -50
     settings:
-      allowed_html: '<em> <strong> <cite> <blockquote cite> <code> <li> <dl> <dt> <dd> <u> <s> <sup> <sub> <p class="text-center introduction display-xxl display-xl display-lg display-md display-sm display-xs"> <h1 class="display-xxl display-xl display-lg display-md display-sm display-xs"> <h2 id class="display-xxl display-xl display-lg display-md display-sm display-xs"> <h3 id class="display-xxl display-xl display-lg display-md display-sm display-xs"> <h4 id class="display-xxl display-xl display-lg display-md display-sm display-xs"> <h5 id class="display-xxl display-xl display-lg display-md display-sm display-xs"> <h6 id class="display-xxl display-xl display-lg display-md display-sm display-xs"> <pre> <ul type class="list--bulletless list--inline"> <ol start type class="list--bulletless list--inline"> <a href hreflang class="cta-link btn btn-primary btn-secondary btn-link display-xxl display-xl display-lg display-md display-sm display-xs"> <span class="display-xxl display-xl display-lg display-md display-sm display-xs"> <div class="display-xxl display-xl display-lg display-md display-sm display-xs"> <table class="table table-bordered table-alt-heading table-dark-heading table-dark-alt-heading table-striped table-sm"> <caption> <tbody> <thead> <tfoot> <th> <td> <tr> <img src alt data-entity-type data-entity-uuid data-align data-caption> <drupal-entity data-entity-type data-entity-uuid data-entity-embed-display data-entity-embed-display-settings data-align data-caption data-embed-button>'
+      allowed_html: '<em> <strong> <cite> <blockquote cite> <code> <li> <dl> <dt> <dd> <u> <s> <sup> <sub> <h1 class="display-xxl display-xl display-lg display-md display-sm display-xs"> <h2 id class="display-xxl display-xl display-lg display-md display-sm display-xs"> <h3 id class="display-xxl display-xl display-lg display-md display-sm display-xs"> <h4 id class="display-xxl display-xl display-lg display-md display-sm display-xs"> <h5 id class="display-xxl display-xl display-lg display-md display-sm display-xs"> <h6 id class="display-xxl display-xl display-lg display-md display-sm display-xs"> <pre> <ul type class="list--bulletless list--inline"> <ol start type class="list--bulletless list--inline"> <a href hreflang class="cta-link btn btn-primary btn-secondary btn-link display-xxl display-xl display-lg display-md display-sm display-xs"> <span class="display-xxl display-xl display-lg display-md display-sm display-xs"> <table class="table table-bordered table-alt-heading table-dark-heading table-dark-alt-heading table-striped table-sm"> <caption> <tbody> <thead> <tfoot> <th> <td> <tr> <img src alt data-entity-type data-entity-uuid data-align data-caption> <drupal-entity data-entity-type data-entity-uuid data-entity-embed-display data-entity-embed-display-settings data-align data-caption data-embed-button> <p class="text-center introduction display-xxl display-xl display-lg display-md display-sm display-xs alert alert-primary alert-secondary alert-success alert-danger alert-warning alert-info alert-light alert-dark"> <drupal-media data-entity-type data-entity-uuid data-view-mode data-align data-caption alt title> <div class="display-xxl display-xl display-lg display-md display-sm display-xs callout callout--dark callout--light">'
       filter_html_help: true
       filter_html_nofollow: false
   filter_autop:
@@ -91,12 +91,6 @@ filters:
     weight: 100
     settings:
       default_view_mode: default
-      allowed_media_types:
-        audio: audio
-        file: file
-        image: image
-        remote_video: remote_video
-        video: video
       allowed_view_modes:
         extra_small: extra_small
         half: half
@@ -107,3 +101,9 @@ filters:
         tiny: tiny
         whole: whole
         whole_wide: whole_wide
+      allowed_media_types:
+        audio: audio
+        file: file
+        image: image
+        remote_video: remote_video
+        video: video

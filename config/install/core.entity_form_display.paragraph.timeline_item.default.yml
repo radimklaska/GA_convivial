@@ -17,19 +17,19 @@ bundle: timeline_item
 mode: default
 content:
   field_timeline_item_body:
+    type: text_textarea
     weight: 1
+    region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: text_textarea
-    region: content
   field_timeline_item_date:
+    type: datetime_default
     weight: 3
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: datetime_default
-    region: content
   field_timeline_item_image:
     type: media_library_widget
     weight: 2
@@ -38,13 +38,13 @@ content:
       media_types: {  }
     third_party_settings: {  }
   field_title:
+    type: string_textfield
     weight: 0
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
 hidden:
   created: true
   status: true

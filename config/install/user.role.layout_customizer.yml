@@ -1,6 +1,20 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - core.entity_view_display.node.article.full
+    - core.entity_view_display.node.audience.full
+    - core.entity_view_display.node.decision_tree.full
+    - core.entity_view_display.node.event.full
+    - core.entity_view_display.node.page.full
+    - core.entity_view_display.node.person.full
+    - core.entity_view_display.node.place.full
+    - core.entity_view_display.node.topic.full
+  module:
+    - eu_cookie_compliance
+    - layout_builder
+    - system
+    - toolbar
 id: layout_customizer
 label: 'Layout customizer'
 weight: -2
@@ -10,15 +24,20 @@ permissions:
   - 'configure all article node layout overrides'
   - 'configure all audience node layout overrides'
   - 'configure all decision_tree node layout overrides'
+  - 'configure all event node layout overrides'
   - 'configure all page node layout overrides'
   - 'configure all person node layout overrides'
+  - 'configure all place node layout overrides'
   - 'configure all topic node layout overrides'
   - 'configure any layout'
   - 'configure editable article node layout overrides'
   - 'configure editable audience node layout overrides'
   - 'configure editable decision_tree node layout overrides'
+  - 'configure editable event node layout overrides'
   - 'configure editable page node layout overrides'
   - 'configure editable person node layout overrides'
+  - 'configure editable place node layout overrides'
   - 'configure editable topic node layout overrides'
   - 'create and edit custom blocks'
+  - 'display eu cookie compliance popup'
   - 'view the administration theme'

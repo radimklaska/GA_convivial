@@ -1,6 +1,0 @@
-name: Convivial content
-description: 'Default content for convivial profile.'
-type: module
-core_version_requirement: ^8.9 || ^9.0
-dependencies:
-  - default_content:default_content

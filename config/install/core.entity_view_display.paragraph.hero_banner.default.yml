@@ -6,6 +6,7 @@ dependencies:
     - field.field.paragraph.hero_banner.field_heading
     - field.field.paragraph.hero_banner.field_hero_banner_background
     - field.field.paragraph.hero_banner.field_hero_banner_bg_color
+    - field.field.paragraph.hero_banner.field_hero_banner_colour_classes
     - field.field.paragraph.hero_banner.field_hero_banner_link
     - field.field.paragraph.hero_banner.field_hero_banner_position
     - field.field.paragraph.hero_banner.field_hero_banner_style_classes
@@ -21,41 +22,51 @@ bundle: hero_banner
 mode: default
 content:
   field_body:
-    weight: 1
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 1
     region: content
   field_heading:
-    weight: 0
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 0
     region: content
   field_hero_banner_background:
-    weight: 2
+    type: entity_reference_entity_view
     label: hidden
     settings:
       view_mode: hero_banner
       link: false
     third_party_settings: {  }
-    type: entity_reference_entity_view
+    weight: 2
     region: content
   field_hero_banner_bg_color:
-    weight: 3
+    type: entity_class_formatter
     label: hidden
     settings:
       prefix: ''
       suffix: ''
       attr: ''
     third_party_settings: {  }
+    weight: 3
+    region: content
+  field_hero_banner_colour_classes:
     type: entity_class_formatter
+    label: hidden
+    settings:
+      prefix: ''
+      suffix: ''
+      attr: ''
+    third_party_settings: {  }
+    weight: 8
     region: content
   field_hero_banner_link:
-    weight: 4
+    type: link
     label: hidden
     settings:
       trim_length: 80
@@ -64,37 +75,37 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 4
     region: content
   field_hero_banner_position:
-    weight: 6
+    type: entity_class_formatter
     label: hidden
     settings:
       prefix: ''
       suffix: ''
       attr: ''
     third_party_settings: {  }
-    type: entity_class_formatter
+    weight: 6
     region: content
   field_hero_banner_style_classes:
-    weight: 7
+    type: entity_class_formatter
     label: hidden
     settings:
       prefix: ''
       suffix: ''
       attr: ''
     third_party_settings: {  }
-    type: entity_class_formatter
+    weight: 7
     region: content
   field_hero_banner_variant:
-    weight: 5
+    type: entity_class_formatter
     label: hidden
     settings:
       prefix: ''
       suffix: ''
       attr: ''
     third_party_settings: {  }
-    type: entity_class_formatter
+    weight: 5
     region: content
 hidden:
   search_api_excerpt: true

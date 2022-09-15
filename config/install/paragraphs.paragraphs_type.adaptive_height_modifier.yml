@@ -2,7 +2,8 @@ langcode: en
 status: true
 dependencies: {  }
 id: adaptive_height_modifier
-label: 'Adaptive Height Modifier'
+label: 'Adaptive height'
 icon_uuid: null
+icon_default: null
 description: 'Modify a the relative height so that it adapts to the viewport.'
 behavior_plugins: {  }
