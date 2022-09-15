@@ -129,7 +129,7 @@
     "drupal/unique_content_field_validation": "^1.0",
     "drupal/username_enumeration_prevention": "^1.2",
     "drupal/webform": "^6.1",
-    "drush/drush": "^11",
+    "drush/drush": "^11.1",
     "grasmash/drupal-security-warning": "dev-master",
     "kint-php/kint": "^3.3",
     "morpht/convivial_bootstrap": "^1.0",
