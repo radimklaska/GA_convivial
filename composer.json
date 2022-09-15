@@ -102,6 +102,7 @@
     "drupal/profile_switcher": "^1.0",
     "drupal/real_aes": "^2.4",
     "drupal/recaptcha": "^3.0",
+    "drupal/recombee": "^2.0",
     "drupal/redirect": "^1.8",
     "drupal/remove_http_headers": "^1.0",
     "drupal/replicate": "^1.0",
