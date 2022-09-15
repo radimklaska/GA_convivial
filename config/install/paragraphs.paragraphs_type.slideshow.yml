@@ -1,9 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-id: slideshow
-label: Slideshow
-icon_uuid: 61302299-fc24-4310-b707-94e71b18d648
-icon_default: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAg0lEQVR4AWJgKD7gCcSPGYr2/ycHg/SCzcAFkA2nyBJcAK6o4rAgA6mg4ZgQTD9hC8gFgHbrQAOgEAaj8Pu/dYphOELnF2rgwvVxsMW5fKAQAYDE9R0BKJcPdEQDKFcGmPOBd4CjZbf+2QDiumZAOTgItEnl8q8bA34uHDPXnceAlGsAhdVXE9/AY8MAAAAASUVORK5CYII='
-description: 'Display an animated slideshow of slides.'
-behavior_plugins: {  }

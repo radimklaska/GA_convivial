@@ -6,9 +6,9 @@ features:
 logo:
   use_default: 1
 favicon:
-  use_default: 1
-  path: ''
-  mimetype: image/vnd.microsoft.icon
+  use_default: 0
+  path: themes/contrib/convivial_claro/favicon.png
+  mimetype: image/png
 custom_css: 0
 content_groups: ''
-sidebar_groups: "Presentation|field_body_classes, field_hide, panelizer\r\nFunctionality|field_glossary_exclude, field_read_speaker, field_search_exclude, field_toc, field_webform"
+sidebar_groups: "Personalisation|field_goal, field_stage\r\nPresentation|field_body_classes, field_hide, panelizer\r\nFunctionality|field_glossary_exclude, field_read_speaker, field_search_exclude, field_toc, field_webform"

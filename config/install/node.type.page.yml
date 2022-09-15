@@ -3,11 +3,15 @@ status: true
 dependencies:
   module:
     - menu_ui
+    - unique_content_field_validation
 third_party_settings:
   menu_ui:
     available_menus:
       - main
     parent: 'main:'
+  unique_content_field_validation:
+    unique: false
+    unique_text: ''
 name: Page
 type: page
 description: 'Use Pages for building site structure and static content.'

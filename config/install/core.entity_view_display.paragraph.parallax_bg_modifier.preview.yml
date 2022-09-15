@@ -15,12 +15,12 @@ mode: preview
 content:
   field_mod_media_query:
     type: string
-    weight: 0
-    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   created: true
   field_mod_bgp_color_val: true

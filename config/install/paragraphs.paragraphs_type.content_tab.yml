@@ -2,7 +2,8 @@ langcode: en
 status: true
 dependencies: {  }
 id: content_tab
-label: 'Content Tab'
+label: 'Content tab'
 icon_uuid: null
-description: 'Use Content Tab to store Title and Content for a Tab.'
+icon_default: null
+description: 'An individual content item for use in Content tabs.'
 behavior_plugins: {  }

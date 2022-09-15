@@ -1,6 +1,11 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - eu_cookie_compliance
+    - system
+    - toolbar
+    - webform
 id: submission_viewer
 label: 'Submission viewer'
 weight: -3
@@ -8,5 +13,6 @@ is_admin: null
 permissions:
   - 'access toolbar'
   - 'access webform overview'
+  - 'display eu cookie compliance popup'
   - 'view any webform submission'
   - 'view the administration theme'

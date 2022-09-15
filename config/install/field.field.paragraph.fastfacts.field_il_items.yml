@@ -20,16 +20,10 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
       fastfact: fastfact
+    negate: 0
     target_bundles_drag_drop:
-      fastfacts:
-        weight: 39
-        enabled: false
-      fastfact:
-        enabled: true
-        weight: 40
       accordion:
         weight: 40
         enabled: false
@@ -71,6 +65,12 @@ settings:
         enabled: false
       dssc_modifier:
         weight: 53
+        enabled: false
+      fastfact:
+        weight: 40
+        enabled: true
+      fastfacts:
+        weight: 39
         enabled: false
       fonts_modifier:
         weight: 54

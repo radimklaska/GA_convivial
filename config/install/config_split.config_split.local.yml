@@ -4,11 +4,19 @@ dependencies: {  }
 id: local
 label: Local
 description: 'Settings for local environment, adding to or overriding general development settings.'
+weight: 5
 folder: ../config/local
-module: {  }
+module:
+  devel: 0
+  devel_php: 0
+  stage_file_proxy: 0
 theme: {  }
 blacklist: {  }
-graylist: {  }
+graylist:
+  - environment_indicator.indicator
+  - recombee.settings
+  - system.logging
+  - system.mail
+  - system.performance
 graylist_dependents: true
 graylist_skip_equal: true
-weight: 5

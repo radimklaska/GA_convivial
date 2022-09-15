@@ -9,5 +9,5 @@ third_party_settings:
     unique_text: ''
 name: Goal
 vid: goal
-description: ''
+description: 'Assigns goals to content for augmenting the profile when the content is viewed.'
 weight: 0

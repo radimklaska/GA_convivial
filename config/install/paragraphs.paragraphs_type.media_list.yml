@@ -1,9 +1,11 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  content:
+    - 'file:file:981cf21b-08a0-4ba5-bd8a-8593abf0564d'
 id: media_list
 label: 'Media list'
 icon_uuid: 981cf21b-08a0-4ba5-bd8a-8593abf0564d
 icon_default: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAA8ElEQVR4AWNgKD7gCcSPGYr2/6cmBpkJNhvZcJpYAuc0HBNioBIAmQU3F86gMhgCFpQfkQOG8W6GogOfQTSIT1ULQIaiRehuqloAcjmyBSA+/X0w8HHw/z8jQ/HBNJqlIqDhxdDwraW+BeUHdYHiPxBhvD+FehZMus0OdPUltLLlD0PJAV+CBpftNyFoAdCgXuwF2IFvQDlL7OXPCT6GooOTgRH+F78FZQccgQb9w11C7n8DxBqowXEwHKjnGUwNbgsa9gsAXfCIcFF84CFQXRcE798DEydoAVDDMgrKf8IWYFM8agHNq0yaV/o0b7YAADknydSxwHAdAAAAAElFTkSuQmCC'
-description: 'Media Lists are similar to Item Lists in structure with the difference that they reference Media entities in the site. Media Lists are simple to use and are used way to display content in varying displays and layouts across all content types. They are often used on landing pages where attactive content is needed.'
+description: 'Lists media items using a variety of displays and layouts.'
 behavior_plugins: {  }

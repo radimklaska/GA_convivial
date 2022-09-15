@@ -1,0 +1,99 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.title
+    - field.field.node.place.body
+    - field.field.node.place.field_banner_image
+    - field.field.node.place.field_banner_title
+    - field.field.node.place.field_components
+    - field.field.node.place.field_featured_links
+    - field.field.node.place.field_featured_title
+    - field.field.node.place.field_goal
+    - field.field.node.place.field_header_colour_classes
+    - field.field.node.place.field_hero_darkness
+    - field.field.node.place.field_hide
+    - field.field.node.place.field_introduction
+    - field.field.node.place.field_keywords
+    - field.field.node.place.field_meta_tags
+    - field.field.node.place.field_place_address
+    - field.field.node.place.field_place_geo
+    - field.field.node.place.field_place_telephone
+    - field.field.node.place.field_search_exclude
+    - field.field.node.place.field_stage
+    - field.field.node.place.field_thumbnail
+    - field.field.node.place.field_toc
+    - field.field.node.place.field_updated_date
+    - field.field.node.place.layout_builder__layout
+    - field.field.node.place.layout_selection
+    - node.type.place
+  module:
+    - convivial_layouts
+    - layout_builder
+    - layout_library
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: title
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          20f3b950-9cf2-47ca-ae48-56bb19404a63:
+            uuid: 20f3b950-9cf2-47ca-ae48-56bb19404a63
+            region: title
+            configuration:
+              id: 'field_block:node:place:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+  layout_library:
+    enable: false
+id: node.place.title
+targetEntityType: node
+bundle: place
+mode: title
+content: {  }
+hidden:
+  body: true
+  content_moderation_control: true
+  field_banner_image: true
+  field_banner_title: true
+  field_components: true
+  field_featured_links: true
+  field_featured_title: true
+  field_goal: true
+  field_header_colour_classes: true
+  field_hero_darkness: true
+  field_hide: true
+  field_introduction: true
+  field_keywords: true
+  field_meta_tags: true
+  field_place_address: true
+  field_place_geo: true
+  field_place_telephone: true
+  field_search_exclude: true
+  field_stage: true
+  field_thumbnail: true
+  field_toc: true
+  field_updated_date: true
+  layout_builder__layout: true
+  layout_selection: true
+  links: true
+  search_api_excerpt: true

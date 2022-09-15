@@ -20,13 +20,14 @@ dependencies:
     - layout_builder
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: true
+    allow_custom: false
     sections:
       -
         layout_id: img
         layout_settings:
           label: ''
+          context_mapping: {  }
         components:
           7dfa6a83-ea5e-4a44-b12f-2c78ebee54b5:
             uuid: 7dfa6a83-ea5e-4a44-b12f-2c78ebee54b5
@@ -34,18 +35,18 @@ third_party_settings:
             configuration:
               id: 'field_block:paragraph:item:field_item_image'
               label: Image
-              provider: layout_builder
               label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
               formatter:
-                label: hidden
                 type: entity_reference_entity_view
+                label: hidden
                 settings:
                   view_mode: landscape
                 third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-            additional: {  }
             weight: 0
+            additional: {  }
         third_party_settings: {  }
 id: paragraph.item.image
 targetEntityType: paragraph
@@ -54,12 +55,12 @@ mode: image
 content:
   field_item_image:
     type: entity_reference_entity_view
-    weight: 2
     label: hidden
     settings:
       view_mode: landscape
       link: false
     third_party_settings: {  }
+    weight: 2
     region: image
 hidden:
   field_cta: true

@@ -1,7 +1,13 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - unique_content_field_validation
+third_party_settings:
+  unique_content_field_validation:
+    unique: false
+    unique_text: ''
 name: 'Media tags'
 vid: media_tags
-description: ''
+description: 'Tags media for easier discovery in media browsers.'
 weight: 0

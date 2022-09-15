@@ -1,6 +1,8 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  content:
+    - 'file:file:611ba7f8-4273-4352-a247-2db168caed72'
 id: map
 label: Map
 icon_uuid: 611ba7f8-4273-4352-a247-2db168caed72

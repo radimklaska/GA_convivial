@@ -4,8 +4,8 @@ dependencies:
   config:
     - core.entity_view_mode.paragraph.preview
     - field.field.paragraph.content_block.field_body
+    - field.field.paragraph.content_block.field_cb_block
     - field.field.paragraph.content_block.field_cb_colour_classes
-    - field.field.paragraph.content_block.field_cb_definition
     - field.field.paragraph.content_block.field_cb_style_classes
     - field.field.paragraph.content_block.field_heading
     - field.field.paragraph.content_block.field_hide_heading
@@ -19,8 +19,8 @@ mode: preview
 content: {  }
 hidden:
   field_body: true
+  field_cb_block: true
   field_cb_colour_classes: true
-  field_cb_definition: true
   field_cb_style_classes: true
   field_heading: true
   field_hide_heading: true

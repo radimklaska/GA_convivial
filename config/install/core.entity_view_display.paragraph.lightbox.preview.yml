@@ -1,0 +1,46 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.lightbox.field_body
+    - field.field.paragraph.lightbox.field_heading
+    - field.field.paragraph.lightbox.field_hide_heading
+    - field.field.paragraph.lightbox.field_lightbox_colour_classes
+    - field.field.paragraph.lightbox.field_lightbox_media
+    - field.field.paragraph.lightbox.field_lightbox_thumbnail
+    - field.field.paragraph.lightbox.field_modifiers
+    - field.field.paragraph.lightbox.field_position
+    - field.field.paragraph.lightbox.field_read_more
+    - field.field.paragraph.lightbox.field_title
+    - paragraphs.paragraphs_type.lightbox
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.lightbox.preview
+targetEntityType: paragraph
+bundle: lightbox
+mode: preview
+content:
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_body: true
+  field_heading: true
+  field_hide_heading: true
+  field_lightbox_colour_classes: true
+  field_lightbox_media: true
+  field_lightbox_thumbnail: true
+  field_modifiers: true
+  field_position: true
+  field_read_more: true
+  search_api_excerpt: true

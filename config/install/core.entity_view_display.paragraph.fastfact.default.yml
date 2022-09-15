@@ -16,37 +16,37 @@ mode: default
 content:
   field_fastfact_prefix:
     type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
     weight: 1
     region: content
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
   field_fastfact_suffix:
     type: string
-    weight: 3
-    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 3
+    region: content
   field_fastfact_value:
     type: number_integer
-    weight: 2
-    region: content
     label: hidden
     settings:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
+    weight: 2
+    region: content
   field_heading:
     type: string
-    weight: 0
-    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   field_hide_heading: true
   field_title: true

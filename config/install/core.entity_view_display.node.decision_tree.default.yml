@@ -3,27 +3,30 @@ status: true
 dependencies:
   config:
     - field.field.node.decision_tree.body
+    - field.field.node.decision_tree.field_banner_image
+    - field.field.node.decision_tree.field_banner_title
     - field.field.node.decision_tree.field_components
     - field.field.node.decision_tree.field_decision_tree_first_step
     - field.field.node.decision_tree.field_decision_tree_info_heading
+    - field.field.node.decision_tree.field_featured_links
+    - field.field.node.decision_tree.field_featured_title
     - field.field.node.decision_tree.field_goal
     - field.field.node.decision_tree.field_header_colour_classes
-    - field.field.node.decision_tree.field_header_modifiers
     - field.field.node.decision_tree.field_hero_darkness
     - field.field.node.decision_tree.field_hide
     - field.field.node.decision_tree.field_introduction
     - field.field.node.decision_tree.field_keywords
     - field.field.node.decision_tree.field_meta_tags
     - field.field.node.decision_tree.field_search_exclude
+    - field.field.node.decision_tree.field_stage
     - field.field.node.decision_tree.field_thumbnail
     - field.field.node.decision_tree.field_toc
-    - field.field.node.decision_tree.field_updated
+    - field.field.node.decision_tree.field_updated_date
     - field.field.node.decision_tree.layout_builder__layout
     - field.field.node.decision_tree.layout_selection
     - node.type.decision_tree
   module:
     - datetime
-    - entity_reference_revisions
     - layout_paragraphs
     - metatag
     - options
@@ -45,6 +48,22 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_banner_image:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 20
+    region: content
+  field_banner_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 21
     region: content
   field_components:
     type: layout_paragraphs
@@ -71,6 +90,22 @@ content:
     third_party_settings: {  }
     weight: 16
     region: content
+  field_featured_links:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 22
+    region: content
+  field_featured_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 23
+    region: content
   field_goal:
     type: entity_reference_label
     label: above
@@ -85,15 +120,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 9
-    region: content
-  field_header_modifiers:
-    type: entity_reference_revisions_entity_view
-    label: above
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    weight: 10
     region: content
   field_hero_darkness:
     type: list_default
@@ -123,6 +149,14 @@ content:
     third_party_settings: {  }
     weight: 11
     region: content
+  field_stage:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 19
+    region: content
   field_thumbnail:
     type: entity_reference_label
     label: above
@@ -138,14 +172,14 @@ content:
     third_party_settings: {  }
     weight: 2
     region: content
-  field_updated:
+  field_updated_date:
     type: datetime_default
     label: above
     settings:
       timezone_override: ''
-      format_type: standard
+      format_type: medium
     third_party_settings: {  }
-    weight: 6
+    weight: 17
     region: content
   links:
     settings: {  }

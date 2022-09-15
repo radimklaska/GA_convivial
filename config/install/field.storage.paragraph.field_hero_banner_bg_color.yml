@@ -11,28 +11,28 @@ type: list_string
 settings:
   allowed_values:
     -
-      value: hero-banner--background-light
+      value: banner--background-light
       label: Light
     -
-      value: hero-banner--background-dark
+      value: banner--background-dark
       label: Dark
     -
-      value: hero-banner--background-primary-light
+      value: banner--background-primary-light
       label: 'Primary light'
     -
-      value: hero-banner--background-primary-dark
+      value: banner--background-primary-dark
       label: 'Primary dark'
     -
-      value: hero-banner--background-primary-light-accent
+      value: banner--background-primary-light-accent
       label: 'Primary light accent'
     -
-      value: hero-banner--background-primary-dark-accent
+      value: banner--background-primary-dark-accent
       label: 'Primary dark accent'
     -
-      value: hero-banner--background-light-accent
+      value: banner--background-light-accent
       label: 'Light accent'
     -
-      value: hero-banner--background-dark-accent
+      value: banner--background-dark-accent
       label: 'Dark accent'
   allowed_values_function: ''
 module: options

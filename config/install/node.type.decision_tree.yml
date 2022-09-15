@@ -14,7 +14,7 @@ third_party_settings:
     unique_text: ''
 name: 'Decision tree'
 type: decision_tree
-description: 'Use <em>Decision trees</em> to contain steps users select in a Journey.'
+description: 'Use Decision trees to contain steps users select in a Journey.'
 help: ''
 new_revision: true
 preview_mode: 1

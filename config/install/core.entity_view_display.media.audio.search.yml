@@ -15,13 +15,14 @@ dependencies:
     - text
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: true
+    allow_custom: false
     sections:
       -
         layout_id: search
         layout_settings:
           label: ''
+          context_mapping: {  }
         components:
           67101c8c-5b11-4f24-996c-670a8735e025:
             uuid: 67101c8c-5b11-4f24-996c-670a8735e025
@@ -29,36 +30,36 @@ third_party_settings:
             configuration:
               id: 'field_block:media:audio:name'
               label: Name
-              provider: layout_builder
               label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
               formatter:
-                label: hidden
                 type: string
+                label: hidden
                 settings:
                   link_to_entity: true
                 third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-            additional: {  }
             weight: 0
+            additional: {  }
           f7bad8e9-2aae-4a56-bdac-d4546c7003ab:
             uuid: f7bad8e9-2aae-4a56-bdac-d4546c7003ab
             region: summary
             configuration:
               id: 'field_block:media:audio:field_body'
               label: Body
-              provider: layout_builder
               label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
               formatter:
-                label: hidden
                 type: text_summary_or_trimmed
+                label: hidden
                 settings:
                   trim_length: 160
                 third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-            additional: {  }
             weight: 0
+            additional: {  }
         third_party_settings: {  }
 id: media.audio.search
 targetEntityType: media
@@ -67,20 +68,20 @@ mode: search
 content:
   field_body:
     type: text_summary_or_trimmed
-    weight: 1
-    region: summary
     label: hidden
     settings:
       trim_length: 160
     third_party_settings: {  }
+    weight: 1
+    region: summary
   name:
     type: string
-    weight: 0
-    region: title
     label: hidden
     settings:
       link_to_entity: true
     third_party_settings: {  }
+    weight: 0
+    region: title
 hidden:
   created: true
   field_media_audio_field: true

@@ -6,6 +6,8 @@ dependencies:
     - field.field.paragraph.answer.field_answer_label
     - field.field.paragraph.answer.field_answer_step
     - paragraphs.paragraphs_type.answer
+  module:
+    - chosen_field
 id: paragraph.answer.default
 targetEntityType: paragraph
 bundle: answer
@@ -28,14 +30,10 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_answer_step:
-    type: entity_reference_autocomplete
+    type: chosen_select
     weight: 2
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
 hidden:
   created: true

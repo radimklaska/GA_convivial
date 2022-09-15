@@ -1,21 +1,20 @@
 name: Convivial
 type: profile
 description: 'Convivial profile by Morpht.'
-core_version_requirement: '^8.8 || ^9'
+core_version_requirement: '^8.8 || ^9 || ^10'
 install:
+  - address
   - admin_toolbar
   - admin_toolbar_links_access_filter
   - admin_toolbar_search
   - admin_toolbar_tools
   - antibot
-  - ayrshare
-  - ayrshare_node
   - ban
   - better_exposed_filters
   - chosen
+  - chosen_field
   - chosen_lib
-  - clamav
-  - color
+  - color_field
   - components
   - config
   - config_filter
@@ -24,13 +23,10 @@ install:
   - contextual
   - convivial_breakpoints
   - convivial_core
-  - convivial_enricher
   - convivial_layouts
   - convivial_profiler
   - convivial_theme_default_render
-  - color_field
   - crop
-  - css_color_variables
   - ctools
   - ctools_block
   - datetime
@@ -43,19 +39,17 @@ install:
   - entity_clone
   - entity_reference_display
   - entity_reference_revisions
+  - environment_indicator
+  - eu_cookie_compliance
   - facets
   - facets_pretty_paths
   - field_formatter_pattern
   - field_token_value
   - field_ui
   - focal_point
-  - google_analytics
-  - google_tag
+  - geofield
   - gtranslate
   - help
-  - history
-  - inline_entity_form
-  - inline_form_errors
   - jquery_ui
   - jquery_ui_datepicker
   - jquery_ui_slider
@@ -72,9 +66,11 @@ install:
   - media_entity_file_replace
   - media_library
   - menu_block
+  - menu_link_content
   - menu_ui
   - metatag_open_graph
   - metatag_twitter_cards
+  - moderation_dashboard
   - modifiers
   - modifiers_adaptive_height
   - modifiers_bg_image
@@ -91,7 +87,6 @@ install:
   - modifiers_relative_height
   - modifiers_scroll_reveal
   - module_filter
-  - pantheon_advanced_page_cache
   - paragraphs_type_permissions
   - password_policy
   - password_policy_character_types
@@ -99,20 +94,20 @@ install:
   - password_policy_history
   - password_policy_length
   - password_policy_username
+  - pathauto
   - personified
-  - rdf
   - redirect
   - replicate
   - replicate_ui
   - rest
-  - sajari
+  - role_delegation
   - search_api
   - search_api_db
   - search_api_field_token
-  - sendgrid_integration
-  - shortcut
+  - search_api_recombee
   - simple_sitemap
   - sitemap
+  - smart_content
   - smart_trim
   - syslog
   - taxonomy
@@ -123,8 +118,6 @@ install:
   - webform
   - webform_ui
   - workflows
-  - menu_link_content
-  - pathauto
 dependencies:
   - block
   - block_content
@@ -138,7 +131,6 @@ dependencies:
   - image
   - layout_builder
   - layout_discovery
-  - machine_name_widget
   - media
   - metatag
   - microcontent
@@ -153,7 +145,6 @@ dependencies:
   - system
   - text
   - token
-  - twig_tweak
   - unique_content_field_validation
   - user
   - views

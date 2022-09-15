@@ -4,18 +4,21 @@ dependencies: {  }
 id: dev
 label: Development
 description: ''
+weight: 0
 folder: ../config/dev
 module:
+  autologout: 0
   devel: 0
   devel_php: 0
-  environment_indicator: 0
-  masquerade: 0
+  google_tag: 0
+  stage_file_proxy: 0
 theme: {  }
 blacklist: {  }
 graylist:
+  - environment_indicator.indicator
+  - recombee.settings
   - system.logging
   - system.mail
   - system.performance
 graylist_dependents: true
 graylist_skip_equal: true
-weight: 0

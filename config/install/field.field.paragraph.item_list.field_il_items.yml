@@ -20,22 +20,10 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
       item: item
+    negate: 0
     target_bundles_drag_drop:
-      content:
-        weight: 5
-        enabled: false
-      item:
-        enabled: true
-        weight: 6
-      item_list:
-        weight: 7
-        enabled: false
-      node_list:
-        weight: 8
-        enabled: false
       accordion:
         weight: 21
         enabled: false
@@ -44,6 +32,9 @@ settings:
         enabled: false
       color_background_modifier:
         weight: 24
+        enabled: false
+      content:
+        weight: 5
         enabled: false
       custom_linear_gradient_modifier:
         weight: 26
@@ -62,6 +53,15 @@ settings:
         enabled: false
       image_bg_modifier:
         weight: 31
+        enabled: false
+      item:
+        weight: 6
+        enabled: true
+      item_list:
+        weight: 7
+        enabled: false
+      node_list:
+        weight: 8
         enabled: false
       padding_modifier:
         weight: 35

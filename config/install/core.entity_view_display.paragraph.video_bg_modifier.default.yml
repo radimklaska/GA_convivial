@@ -14,35 +14,35 @@ mode: default
 content:
   field_mod_bgv_color_val:
     type: string
-    weight: 2
-    region: content
     label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 2
+    region: content
   field_mod_bgv_image:
     type: entity_reference_label
-    weight: 1
     label: inline
     settings:
       link: true
     third_party_settings: {  }
+    weight: 1
     region: content
   field_mod_media_query:
-    weight: 3
+    type: string
     label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 3
     region: content
   field_mod_video:
     type: entity_reference_label
-    weight: 0
     label: inline
     settings:
       link: true
     third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   created: true

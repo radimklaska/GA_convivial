@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_place_geo
+    - node.type.place
+  module:
+    - geofield
+id: node.place.field_place_geo
+field_name: field_place_geo
+entity_type: node
+bundle: place
+label: Geo
+description: 'The geolocation of the address.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geofield

@@ -31,6 +31,18 @@ settings:
     -
       value: 'list-layout list-layout--2-2-2-2-2-2 list-layout--row'
       label: Sixths
+    -
+      value: 'list-layout list-layout--slider-full-width'
+      label: 'Slider full width'
+    -
+      value: 'list-layout list-layout--slider-halves'
+      label: 'Slider halves'
+    -
+      value: 'list-layout list-layout--slider-thirds'
+      label: 'Slider thirds'
+    -
+      value: 'list-layout list-layout--slider-quarters'
+      label: 'Slider quarters'
   allowed_values_function: ''
 module: options
 locked: false

@@ -22,42 +22,42 @@ mode: default
 content:
   field_body:
     type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
     weight: 1
     region: content
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
   field_c_colour_classes:
     type: entity_class_formatter
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
     weight: 3
     region: content
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
   field_c_style_classes:
     type: entity_class_formatter
-    weight: 4
-    region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 4
+    region: content
   field_heading:
-    weight: 0
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 0
     region: content
   field_position:
-    weight: 5
+    type: entity_class_formatter
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: entity_class_formatter
+    weight: 5
     region: content
   field_read_more:
-    weight: 2
+    type: link
     label: hidden
     settings:
       trim_length: 80
@@ -66,7 +66,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 2
     region: content
 hidden:
   field_hide_heading: true

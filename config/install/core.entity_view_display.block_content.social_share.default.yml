@@ -21,77 +21,77 @@ mode: default
 content:
   field_social_share_alignment:
     type: entity_class_formatter
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
     weight: 4
     region: content
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
   field_social_share_colour:
-    weight: 5
+    type: entity_class_formatter
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: entity_class_formatter
+    weight: 5
     region: content
   field_social_share_email:
-    weight: 3
+    type: boolean
     label: hidden
     settings:
       format: custom
-      format_custom_true: Email
       format_custom_false: ''
+      format_custom_true: Email
     third_party_settings: {  }
-    type: boolean
+    weight: 3
     region: content
   field_social_share_facebook:
-    weight: 0
+    type: boolean
     label: hidden
     settings:
       format: custom
-      format_custom_true: Facebook
       format_custom_false: ''
+      format_custom_true: Facebook
     third_party_settings: {  }
-    type: boolean
+    weight: 0
     region: content
   field_social_share_linkedin:
-    weight: 2
+    type: boolean
     label: hidden
     settings:
       format: custom
-      format_custom_true: LinkedIn
       format_custom_false: ''
+      format_custom_true: LinkedIn
     third_party_settings: {  }
-    type: boolean
+    weight: 2
     region: content
   field_social_share_size:
-    weight: 7
+    type: entity_class_formatter
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: entity_class_formatter
+    weight: 7
     region: content
   field_social_share_style:
-    weight: 6
+    type: entity_class_formatter
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: entity_class_formatter
+    weight: 6
     region: content
   field_social_share_twitter:
-    weight: 1
+    type: boolean
     label: hidden
     settings:
       format: custom
-      format_custom_true: Twitter
       format_custom_false: ''
+      format_custom_true: Twitter
     third_party_settings: {  }
-    type: boolean
+    weight: 1
     region: content
   field_social_share_type:
-    weight: 8
+    type: entity_class_formatter
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: entity_class_formatter
+    weight: 8
     region: content
 hidden: {  }

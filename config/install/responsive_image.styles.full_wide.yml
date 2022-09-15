@@ -14,34 +14,34 @@ id: full_wide
 label: 'Full (wide)'
 image_style_mappings:
   -
-    breakpoint_id: convivial_breakpoints.large
-    multiplier: 1x
     image_mapping_type: image_style
     image_mapping: full_wide_lg
-  -
     breakpoint_id: convivial_breakpoints.large
-    multiplier: 2x
+    multiplier: 1x
+  -
     image_mapping_type: image_style
     image_mapping: full_wide_lg_hi
+    breakpoint_id: convivial_breakpoints.large
+    multiplier: 2x
   -
-    breakpoint_id: convivial_breakpoints.medium
-    multiplier: 1x
     image_mapping_type: image_style
     image_mapping: full_wide_md
-  -
     breakpoint_id: convivial_breakpoints.medium
-    multiplier: 2x
+    multiplier: 1x
+  -
     image_mapping_type: image_style
     image_mapping: full_wide_md_hi
+    breakpoint_id: convivial_breakpoints.medium
+    multiplier: 2x
   -
-    breakpoint_id: convivial_breakpoints.mobile
-    multiplier: 1x
     image_mapping_type: image_style
     image_mapping: full_wide_sm
-  -
     breakpoint_id: convivial_breakpoints.mobile
-    multiplier: 2x
+    multiplier: 1x
+  -
     image_mapping_type: image_style
     image_mapping: full_wide_sm_hi
+    breakpoint_id: convivial_breakpoints.mobile
+    multiplier: 2x
 breakpoint_group: convivial_breakpoints
 fallback_image_style: full_wide_sm

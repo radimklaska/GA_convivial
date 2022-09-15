@@ -1,6 +1,11 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - eu_cookie_compliance
+    - system
+    - toolbar
+    - webform
 id: webform_manager
 label: 'Webform manager'
 weight: -4
@@ -17,6 +22,7 @@ permissions:
   - 'create webform'
   - 'delete any webform'
   - 'delete any webform submission'
+  - 'display eu cookie compliance popup'
   - 'edit any webform'
   - 'edit webform assets'
   - 'edit webform variants'

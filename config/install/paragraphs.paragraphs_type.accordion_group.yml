@@ -1,8 +1,10 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  content:
+    - 'file:file:323b0eeb-8c53-4ca8-b89a-bb566bcc9044'
 id: accordion_group
-label: 'Accordion Group'
+label: 'Accordion group'
 icon_uuid: 323b0eeb-8c53-4ca8-b89a-bb566bcc9044
 icon_default: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAh0lEQVR4AWNgKDrQxlB84CdD0f7/lGCQGUDcygADJQedQBhkwWeIIsox2CwoAFr2FIRp7wPCYBQUH/AE4sdUi2gYKDqwlaF4/xYGmOE0swAkSFVccVgJNYgQEoI0iACEBbQyd+AtGLWAJqkIZBbMXHhGowUGmQ0vKmhhONhsQmAUjFb6BH0AAGQVRe6V1aPSAAAAAElFTkSuQmCC'
 description: 'Display a group of Accordions and control their display.'

@@ -16,32 +16,32 @@ bundle: layout
 mode: default
 content:
   field_heading:
-    weight: 0
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 0
     region: content
   field_layout_colour_palette:
-    weight: 1
+    type: entity_class_formatter
     label: hidden
     settings:
       prefix: ''
       suffix: ''
       attr: ''
     third_party_settings: {  }
-    type: entity_class_formatter
+    weight: 1
     region: content
   field_layout_styles:
-    weight: 2
+    type: entity_class_formatter
     label: hidden
     settings:
       prefix: ''
       suffix: ''
       attr: ''
     third_party_settings: {  }
-    type: entity_class_formatter
+    weight: 2
     region: content
 hidden:
   field_hide_heading: true

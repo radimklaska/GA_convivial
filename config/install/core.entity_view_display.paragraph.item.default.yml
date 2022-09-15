@@ -23,74 +23,74 @@ bundle: item
 mode: default
 content:
   field_cta:
-    weight: 8
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 8
     region: content
   field_heading:
-    weight: 0
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 0
     region: content
   field_item_icon_bg_colour:
-    weight: 5
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 5
     region: content
   field_item_icon_bg_is_dark:
-    weight: 7
+    type: boolean
     label: hidden
     settings:
       format: default
       format_custom_false: ''
       format_custom_true: ''
     third_party_settings: {  }
-    type: boolean
+    weight: 7
     region: content
   field_item_icon_image:
     type: entity_reference_entity_view
-    weight: 6
     label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: 6
     region: content
   field_item_image:
     type: entity_reference_entity_view
-    weight: 4
     label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: 4
     region: content
   field_item_info:
-    weight: 3
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 3
     region: content
   field_item_summary:
-    weight: 2
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 2
     region: content
   field_item_url:
-    weight: 1
+    type: link
     label: hidden
     settings:
       trim_length: 80
@@ -99,7 +99,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 1
     region: content
 hidden:
   field_hide_heading: true

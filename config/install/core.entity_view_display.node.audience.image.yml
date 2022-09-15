@@ -4,32 +4,35 @@ dependencies:
   config:
     - core.entity_view_mode.node.image
     - field.field.node.audience.body
+    - field.field.node.audience.field_banner_image
+    - field.field.node.audience.field_banner_title
     - field.field.node.audience.field_components
+    - field.field.node.audience.field_featured_links
+    - field.field.node.audience.field_featured_title
+    - field.field.node.audience.field_goal
     - field.field.node.audience.field_header_colour_classes
-    - field.field.node.audience.field_header_modifiers
     - field.field.node.audience.field_hero_darkness
     - field.field.node.audience.field_introduction
     - field.field.node.audience.field_key
     - field.field.node.audience.field_keywords
     - field.field.node.audience.field_meta_tags
     - field.field.node.audience.field_search_exclude
+    - field.field.node.audience.field_stage
     - field.field.node.audience.field_thumbnail
     - field.field.node.audience.field_toc
+    - field.field.node.audience.field_updated_date
     - field.field.node.audience.layout_builder__layout
     - field.field.node.audience.layout_selection
     - node.type.audience
   module:
     - convivial_layouts
-    - entity_reference_revisions
     - layout_builder
     - layout_library
-    - options
-    - text
     - user
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: true
+    allow_custom: false
     sections:
       -
         layout_id: img
@@ -43,19 +46,19 @@ third_party_settings:
             configuration:
               id: 'field_block:node:audience:field_thumbnail'
               label: Thumbnail
-              provider: layout_builder
               label_display: '0'
-              formatter:
-                label: hidden
-                type: entity_reference_entity_view
-                settings:
-                  view_mode: big_square
-                third_party_settings: {  }
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
-            additional: {  }
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: big_square
+                third_party_settings: {  }
             weight: 0
+            additional: {  }
         third_party_settings: {  }
   layout_library:
     enable: false
@@ -64,87 +67,36 @@ targetEntityType: node
 bundle: audience
 mode: image
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 101
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  content_moderation_control:
-    weight: -20
-    settings: {  }
-    third_party_settings: {  }
-    region: image
-  field_components:
-    type: entity_reference_revisions_entity_view
-    weight: 104
-    label: above
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    region: content
-  field_introduction:
-    weight: 103
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: content
-  field_keywords:
-    weight: 108
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: basic_string
-    region: content
-  field_search_exclude:
-    weight: 106
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    type: boolean
-    region: content
-  field_thumbnail:
-    type: entity_reference_entity_view
-    weight: 102
-    label: above
-    settings:
-      view_mode: default
-      link: false
-    third_party_settings: {  }
-    region: content
-  field_toc:
-    weight: 105
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
-    region: content
   field_updated:
-    weight: 107
+    type: datetime_default
     label: above
     settings:
-      format_type: medium
       timezone_override: ''
+      format_type: medium
     third_party_settings: {  }
-    type: datetime_default
-    region: content
-  links:
-    weight: 100
-    settings: {  }
-    third_party_settings: {  }
+    weight: 107
     region: content
 hidden:
+  body: true
+  content_moderation_control: true
+  field_banner_image: true
+  field_banner_title: true
+  field_components: true
+  field_featured_links: true
+  field_featured_title: true
+  field_goal: true
   field_header_colour_classes: true
-  field_header_modifiers: true
   field_hero_darkness: true
+  field_introduction: true
   field_key: true
+  field_keywords: true
   field_meta_tags: true
+  field_search_exclude: true
+  field_stage: true
+  field_thumbnail: true
+  field_toc: true
+  field_updated_date: true
   layout_builder__layout: true
   layout_selection: true
+  links: true
   search_api_excerpt: true

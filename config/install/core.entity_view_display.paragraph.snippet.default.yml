@@ -17,49 +17,49 @@ bundle: snippet
 mode: default
 content:
   field_colour_classes:
-    weight: 2
+    type: entity_class_formatter
     label: hidden
     settings:
       prefix: ''
       suffix: ''
       attr: ''
     third_party_settings: {  }
-    type: entity_class_formatter
+    weight: 2
     region: content
   field_heading:
-    weight: 0
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 0
     region: content
   field_position:
-    weight: 4
+    type: entity_class_formatter
     label: hidden
     settings:
       prefix: ''
       suffix: ''
       attr: ''
     third_party_settings: {  }
-    type: entity_class_formatter
+    weight: 4
     region: content
   field_snippet:
-    weight: 1
+    type: basic_string
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
+    weight: 1
     region: content
   field_style_classes:
-    weight: 3
+    type: entity_class_formatter
     label: hidden
     settings:
       prefix: ''
       suffix: ''
       attr: ''
     third_party_settings: {  }
-    type: entity_class_formatter
+    weight: 3
     region: content
 hidden:
   field_modifiers: true

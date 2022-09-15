@@ -8,12 +8,12 @@ dependencies:
 id: convivial_bootstrap_gtranslate
 theme: convivial_bootstrap
 region: top_bar
-weight: -14
+weight: 1
 provider: null
 plugin: gtranslate_block
 settings:
   id: gtranslate_block
   label: GTranslate
-  provider: gtranslate
   label_display: '0'
+  provider: gtranslate
 visibility: {  }

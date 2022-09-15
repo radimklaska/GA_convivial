@@ -22,39 +22,39 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_body:
+    type: text_textarea_with_summary
     weight: 29
+    region: content
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
       show_summary: false
     third_party_settings: {  }
-    type: text_textarea_with_summary
-    region: content
   field_media_file:
+    type: file_generic
     weight: 1
+    region: content
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
-    type: file_generic
-    region: content
   field_search_exclude:
+    type: boolean_checkbox
     weight: 28
+    region: content
     settings:
       display_label: true
     third_party_settings: {  }
-    type: boolean_checkbox
-    region: content
   field_tags:
+    type: entity_reference_autocomplete_tags
     weight: 26
+    region: content
     settings:
       match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
-      match_limit: 10
     third_party_settings: {  }
-    type: entity_reference_autocomplete_tags
-    region: content
   name:
     type: string_textfield
     weight: 0
@@ -76,9 +76,9 @@ content:
     region: content
     settings:
       match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
-      match_limit: 10
     third_party_settings: {  }
 hidden:
   moderation_state: true

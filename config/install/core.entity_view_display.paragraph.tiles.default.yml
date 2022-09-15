@@ -21,72 +21,72 @@ bundle: tiles
 mode: default
 content:
   field_heading:
-    weight: 0
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 0
     region: content
   field_position:
-    weight: 6
+    type: entity_class_formatter
     label: hidden
     settings:
       prefix: ''
       suffix: ''
       attr: ''
     third_party_settings: {  }
-    type: entity_class_formatter
+    weight: 6
     region: content
   field_tiles_arrangement:
-    weight: 2
+    type: entity_class_formatter
     label: hidden
     settings:
       prefix: ''
       suffix: ''
       attr: ''
     third_party_settings: {  }
-    type: entity_class_formatter
+    weight: 2
     region: content
   field_tiles_colour_classes:
-    weight: 5
+    type: entity_class_formatter
     label: hidden
     settings:
       prefix: ''
       suffix: ''
       attr: ''
     third_party_settings: {  }
-    type: entity_class_formatter
+    weight: 5
     region: content
   field_tiles_gap:
-    weight: 3
+    type: entity_class_formatter
     label: hidden
     settings:
       prefix: ''
       suffix: ''
       attr: ''
     third_party_settings: {  }
-    type: entity_class_formatter
+    weight: 3
     region: content
   field_tiles_node:
-    weight: 1
+    type: entity_reference_display_default
     label: hidden
     settings:
       view_mode: tile
       link: false
       display_field: null
     third_party_settings: {  }
-    type: entity_reference_display_default
+    weight: 1
     region: content
   field_tiles_styles:
-    weight: 4
+    type: entity_class_formatter
     label: hidden
     settings:
       prefix: ''
       suffix: ''
       attr: ''
     third_party_settings: {  }
-    type: entity_class_formatter
+    weight: 4
     region: content
 hidden:
   field_modifiers: true

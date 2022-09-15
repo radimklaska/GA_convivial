@@ -12,8 +12,8 @@ dependencies:
     - layout_builder
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: false
+    allow_custom: false
 id: paragraph.timeline_item.preview
 targetEntityType: paragraph
 bundle: timeline_item
@@ -21,13 +21,14 @@ mode: preview
 content:
   field_title:
     type: string
-    weight: 0
-    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   field_timeline_item_body: true
   field_timeline_item_date: true
   field_timeline_item_image: true
+  search_api_excerpt: true

@@ -20,41 +20,41 @@ bundle: logo
 mode: default
 content:
   field_logo_breakpoint:
-    weight: 6
+    type: number_integer
     label: above
     settings:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    type: number_integer
+    weight: 6
     region: content
   field_logo_large_default:
-    weight: 1
+    type: file_default
     label: above
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    type: file_default
+    weight: 1
     region: content
   field_logo_large_inverse:
-    weight: 2
+    type: file_default
     label: above
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    type: file_default
+    weight: 2
     region: content
   field_logo_large_width:
-    weight: 4
+    type: number_integer
     label: above
     settings:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    type: number_integer
+    weight: 4
     region: content
   field_logo_link:
-    weight: 3
+    type: link
     label: above
     settings:
       trim_length: 80
@@ -63,31 +63,31 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 3
     region: content
   field_logo_small_default:
-    weight: 0
+    type: file_default
     label: above
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    type: file_default
+    weight: 0
     region: content
   field_logo_small_inverse:
-    weight: 7
+    type: file_default
     label: above
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    type: file_default
+    weight: 7
     region: content
   field_logo_small_width:
-    weight: 5
+    type: number_integer
     label: above
     settings:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    type: number_integer
+    weight: 5
     region: content
 hidden: {  }

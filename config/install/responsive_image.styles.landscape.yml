@@ -10,19 +10,19 @@ id: landscape
 label: Landscape
 image_style_mappings:
   -
-    breakpoint_id: convivial_breakpoints.large
-    multiplier: 1x
     image_mapping_type: image_style
     image_mapping: ''
-  -
-    breakpoint_id: convivial_breakpoints.mobile
+    breakpoint_id: convivial_breakpoints.large
     multiplier: 1x
+  -
     image_mapping_type: image_style
     image_mapping: landscape
-  -
     breakpoint_id: convivial_breakpoints.mobile
-    multiplier: 2x
+    multiplier: 1x
+  -
     image_mapping_type: image_style
     image_mapping: landscape_hi
+    breakpoint_id: convivial_breakpoints.mobile
+    multiplier: 2x
 breakpoint_group: convivial_breakpoints
 fallback_image_style: landscape

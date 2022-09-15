@@ -10,12 +10,12 @@ pattern: 'about/[node:title]'
 selection_criteria:
   29a8792d-602f-486d-bbb3-3b19b613c604:
     id: node_type
-    bundles:
-      person: person
     negate: false
+    uuid: 29a8792d-602f-486d-bbb3-3b19b613c604
     context_mapping:
       node: node
-    uuid: 29a8792d-602f-486d-bbb3-3b19b613c604
+    bundles:
+      person: person
 selection_logic: and
 weight: -5
 relationships: {  }

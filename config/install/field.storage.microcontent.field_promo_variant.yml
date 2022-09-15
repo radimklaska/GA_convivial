@@ -11,23 +11,14 @@ type: list_string
 settings:
   allowed_values:
     -
-      value: hero-banner--plain-light
-      label: 'Plain light'
+      value: banner--plain
+      label: Plain
     -
-      value: hero-banner--plain-dark
-      label: 'Plain dark'
+      value: banner--box
+      label: Box
     -
-      value: hero-banner--box-light
-      label: 'Box light'
-    -
-      value: hero-banner--box-dark
-      label: 'Box dark'
-    -
-      value: hero-banner--glass-light
-      label: 'Glass light'
-    -
-      value: hero-banner--glass-dark
-      label: 'Glass dark'
+      value: banner--glass
+      label: Glass
   allowed_values_function: ''
 module: options
 locked: false

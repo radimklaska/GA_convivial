@@ -71,6 +71,14 @@ field_settings:
     dependencies:
       module:
         - node
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: string
+    dependencies:
+      module:
+        - node
   type:
     label: 'Content type'
     datasource_id: 'entity:node'
@@ -105,6 +113,9 @@ processor_settings:
       preprocess_query: -30
   entity_status: {  }
   html_filter:
+    weights:
+      preprocess_index: -15
+      preprocess_query: -15
     all_fields: false
     fields:
       - rendered_item
@@ -118,42 +129,42 @@ processor_settings:
       h3: 2
       strong: 2
       u: 1
-    weights:
-      preprocess_index: -15
-      preprocess_query: -15
   ignorecase:
-    all_fields: true
-    fields:
-      - rendered_item
-      - type
     weights:
       preprocess_index: -20
       preprocess_query: -20
+    all_fields: true
+    fields:
+      - rendered_item
+      - title
+      - type
   language_with_fallback: {  }
   rendered_item: {  }
   tokenizer:
-    all_fields: true
-    fields:
-      - rendered_item
-    ignored: ._-
-    spaces: ''
-    overlap_cjk: 1
-    minimum_word_size: '3'
     weights:
       preprocess_index: -6
       preprocess_query: -6
-  transliteration:
     all_fields: true
     fields:
       - rendered_item
-      - type
+    spaces: ''
+    ignored: ._-
+    overlap_cjk: 1
+    minimum_word_size: '3'
+  transliteration:
     weights:
       preprocess_index: -20
       preprocess_query: -20
+    all_fields: true
+    fields:
+      - rendered_item
+      - title
+      - type
 tracker_settings:
   default:
     indexing_order: fifo
 options:
-  index_directly: true
   cron_limit: 50
+  index_directly: true
+  track_changes_in_references: true
 server: database_search

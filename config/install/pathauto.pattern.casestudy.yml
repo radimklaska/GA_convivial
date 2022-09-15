@@ -8,14 +8,14 @@ label: 'Case study'
 type: 'canonical_entities:node'
 pattern: 'case-studies/[node:title]'
 selection_criteria:
-  3f09080d-a7b9-41ea-8d8c-bdee1225efdd:
+  e04e963c-0efe-4879-b9cc-b8d2781b8cfc:
     id: node_type
-    bundles:
-      casestudy: casestudy
     negate: false
+    uuid: e04e963c-0efe-4879-b9cc-b8d2781b8cfc
     context_mapping:
       node: node
-    uuid: 3f09080d-a7b9-41ea-8d8c-bdee1225efdd
+    bundles:
+      casestudy: casestudy
 selection_logic: and
 weight: -5
 relationships: {  }

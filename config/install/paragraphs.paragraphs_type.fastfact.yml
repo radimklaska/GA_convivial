@@ -2,7 +2,8 @@ langcode: en
 status: true
 dependencies: {  }
 id: fastfact
-label: Fastfact
+label: 'Fast fact'
 icon_uuid: null
-description: ''
+icon_default: null
+description: 'An individual fact (number and title) for display in Fast facts.'
 behavior_plugins: {  }

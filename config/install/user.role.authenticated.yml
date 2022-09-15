@@ -1,6 +1,12 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - eu_cookie_compliance
+    - media
+    - paragraphs_type_permissions
+    - system
+    - webform
 id: authenticated
 label: 'Authenticated user'
 weight: -9
@@ -18,6 +24,7 @@ permissions:
   - 'create paragraph content content_tabs'
   - 'create paragraph content fastfact'
   - 'create paragraph content fastfacts'
+  - 'create paragraph content gallery'
   - 'create paragraph content geochart'
   - 'create paragraph content hero_banner'
   - 'create paragraph content hide_modifier'
@@ -25,6 +32,7 @@ permissions:
   - 'create paragraph content item'
   - 'create paragraph content item_list'
   - 'create paragraph content layout'
+  - 'create paragraph content lightbox'
   - 'create paragraph content map'
   - 'create paragraph content media_list'
   - 'create paragraph content node_list'
@@ -53,6 +61,7 @@ permissions:
   - 'delete paragraph content content_tabs'
   - 'delete paragraph content fastfact'
   - 'delete paragraph content fastfacts'
+  - 'delete paragraph content gallery'
   - 'delete paragraph content geochart'
   - 'delete paragraph content hero_banner'
   - 'delete paragraph content hide_modifier'
@@ -60,6 +69,7 @@ permissions:
   - 'delete paragraph content item'
   - 'delete paragraph content item_list'
   - 'delete paragraph content layout'
+  - 'delete paragraph content lightbox'
   - 'delete paragraph content map'
   - 'delete paragraph content media_list'
   - 'delete paragraph content node_list'
@@ -76,6 +86,7 @@ permissions:
   - 'delete paragraph content video_bg_modifier'
   - 'delete paragraph content view'
   - 'delete paragraph content webform'
+  - 'display eu cookie compliance popup'
   - 'edit own webform submission'
   - 'update paragraph content accordion'
   - 'update paragraph content accordion_group'
@@ -88,6 +99,7 @@ permissions:
   - 'update paragraph content content_tabs'
   - 'update paragraph content fastfact'
   - 'update paragraph content fastfacts'
+  - 'update paragraph content gallery'
   - 'update paragraph content geochart'
   - 'update paragraph content hero_banner'
   - 'update paragraph content hide_modifier'
@@ -95,6 +107,7 @@ permissions:
   - 'update paragraph content item'
   - 'update paragraph content item_list'
   - 'update paragraph content layout'
+  - 'update paragraph content lightbox'
   - 'update paragraph content map'
   - 'update paragraph content media_list'
   - 'update paragraph content node_list'
@@ -124,6 +137,7 @@ permissions:
   - 'view paragraph content content_tabs'
   - 'view paragraph content fastfact'
   - 'view paragraph content fastfacts'
+  - 'view paragraph content gallery'
   - 'view paragraph content geochart'
   - 'view paragraph content hero_banner'
   - 'view paragraph content hide_modifier'
@@ -131,6 +145,7 @@ permissions:
   - 'view paragraph content item'
   - 'view paragraph content item_list'
   - 'view paragraph content layout'
+  - 'view paragraph content lightbox'
   - 'view paragraph content map'
   - 'view paragraph content media_list'
   - 'view paragraph content node_list'

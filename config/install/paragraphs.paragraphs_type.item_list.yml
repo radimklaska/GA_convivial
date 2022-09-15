@@ -1,9 +1,11 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  content:
+    - 'file:file:451f303a-9144-43e7-9732-5240863c5263'
 id: item_list
-label: 'Item List'
+label: 'Item list'
 icon_uuid: 451f303a-9144-43e7-9732-5240863c5263
 icon_default: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAR0lEQVR4AWNgKD7gCcSPGYr2/6cmBpkJNhvZcJpYAuc0HBNioBIAmQUzl+YW0DyIaB/JhMAoGBIZbTSjjWa00Yw2mtFGMxoA6e+v38vQNmYAAAAASUVORK5CYII='
-description: 'Item List paragraph bundle contains a list of Items which can model any object. They are helpful when the item is not represented by a Node in the current site, which is helpful for external links. Item Lists also have custom images and support for icons, making them more flexible than Node Lists.'
+description: 'Lists custom items using a variety of displays and layouts.'
 behavior_plugins: {  }

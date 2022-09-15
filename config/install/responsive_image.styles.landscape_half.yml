@@ -16,44 +16,44 @@ id: landscape_half
 label: 'Landscape half'
 image_style_mappings:
   -
-    breakpoint_id: convivial_breakpoints.large
-    multiplier: 1x
     image_mapping_type: image_style
     image_mapping: landscape_half_lg
-  -
     breakpoint_id: convivial_breakpoints.large
-    multiplier: 2x
+    multiplier: 1x
+  -
     image_mapping_type: image_style
     image_mapping: landscape_half_lg_hi
+    breakpoint_id: convivial_breakpoints.large
+    multiplier: 2x
   -
-    breakpoint_id: convivial_breakpoints.medium
-    multiplier: 1x
     image_mapping_type: image_style
     image_mapping: landscape_half_md
-  -
     breakpoint_id: convivial_breakpoints.medium
-    multiplier: 2x
+    multiplier: 1x
+  -
     image_mapping_type: image_style
     image_mapping: landscape_half_md_hi
+    breakpoint_id: convivial_breakpoints.medium
+    multiplier: 2x
   -
-    breakpoint_id: convivial_breakpoints.small
-    multiplier: 1x
     image_mapping_type: image_style
     image_mapping: landscape_half_sm
-  -
     breakpoint_id: convivial_breakpoints.small
-    multiplier: 2x
+    multiplier: 1x
+  -
     image_mapping_type: image_style
     image_mapping: landscape_half_sm_hi
+    breakpoint_id: convivial_breakpoints.small
+    multiplier: 2x
   -
-    breakpoint_id: convivial_breakpoints.mobile
-    multiplier: 1x
     image_mapping_type: image_style
     image_mapping: landscape_half_xs
-  -
     breakpoint_id: convivial_breakpoints.mobile
-    multiplier: 2x
+    multiplier: 1x
+  -
     image_mapping_type: image_style
     image_mapping: landscape_half_xs_hi
+    breakpoint_id: convivial_breakpoints.mobile
+    multiplier: 2x
 breakpoint_group: convivial_breakpoints
 fallback_image_style: landscape_half_xs

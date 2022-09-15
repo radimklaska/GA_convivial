@@ -18,15 +18,14 @@ bundle: audio
 mode: full
 content:
   field_body:
-    weight: 1
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 1
     region: content
   field_media_audio_file:
     type: file_audio
-    weight: 2
     label: hidden
     settings:
       controls: true
@@ -34,13 +33,14 @@ content:
       loop: false
       multiple_file_display_type: tags
     third_party_settings: {  }
+    weight: 2
     region: content
   field_transcript:
-    weight: 3
+    type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 3
     region: content
 hidden:
   created: true

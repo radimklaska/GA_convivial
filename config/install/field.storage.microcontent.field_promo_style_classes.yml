@@ -13,6 +13,9 @@ settings:
     -
       value: header
       label: 'Is header'
+    -
+      value: vertical-center
+      label: 'Vertical center'
   allowed_values_function: ''
 module: options
 locked: false

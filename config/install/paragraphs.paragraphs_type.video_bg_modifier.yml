@@ -2,7 +2,8 @@ langcode: en
 status: true
 dependencies: {  }
 id: video_bg_modifier
-label: 'Video Background Modifier'
+label: 'Video background'
 icon_uuid: null
+icon_default: null
 description: 'Modify the content to have background video which plays automatically.'
 behavior_plugins: {  }
