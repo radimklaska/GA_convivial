@@ -160,9 +160,6 @@
       "drupal/default_content": {
         "Add a Normalizer and Denormalizer to support Layout Builder": "https://www.drupal.org/files/issues/2020-08-24/default_content-add-normalizer-denormalizer-for-layout-builder-3160146-25.patch"
       },
-      "drupal/layout_paragraphs": {
-        "3183204 - Permissions for paragraphs types ignored": "https://www.drupal.org/files/issues/2021-06-29/layout_paragraphs-permissions_for_paragraphs_types_ignored-3183204-7.patch"
-      },
       "drupal/redirect": {
         "3037259 - Endless Redirection loop when using Domain access": "https://git.drupalcode.org/project/redirect/-/merge_requests/31.patch"
       }
