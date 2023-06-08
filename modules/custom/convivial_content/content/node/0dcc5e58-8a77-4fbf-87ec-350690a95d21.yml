@@ -1,0 +1,261 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 0dcc5e58-8a77-4fbf-87ec-350690a95d21
+  bundle: page
+  default_langcode: en
+  depends:
+    8c82501d-58fc-4faa-a1cf-dccd09cbd483: media
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Colour Palettes'
+  created:
+    -
+      value: 1618254063
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /test/colour-palettes
+      langcode: en
+      pathauto: 1
+  morpht_computed_field_type_label:
+    -
+      value: Page
+  body:
+    -
+      value: ''
+      format: rich_text
+      summary: 'Arrangements and Colour Palettes demo page.'
+  field_components:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: a0d64145-7fdd-484e-88d4-bc4e6ab7cb64
+          bundle: content
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1618254100
+          behavior_settings:
+            -
+              value:
+                layout_paragraphs:
+                  region: ''
+                  parent_uuid: ''
+                  layout: ''
+                  config: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_body:
+            -
+              value: "<p>Paragraph text. Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo.</p>\r\n\r\n<p><a href=\"#\">Link</a></p>\r\n\r\n<p><a class=\"btn btn-primary\" href=\"#\">Button Primary</a> <a class=\"btn btn-secondary\" href=\"#\">Button Secondary</a></p>\r\n"
+              format: rich_text
+          field_c_colour_classes:
+            -
+              value: 'cp cp--standard'
+          field_heading:
+            -
+              value: 'Standard Colour Palette'
+          field_hide_heading:
+            -
+              value: false
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 8fa89b2f-5b11-4c58-bb57-b2b670c03ac8
+          bundle: content
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1618254242
+          behavior_settings:
+            -
+              value:
+                layout_paragraphs:
+                  region: ''
+                  parent_uuid: ''
+                  layout: ''
+                  config: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_body:
+            -
+              value: "<p>Paragraph text. Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo.</p>\r\n\r\n<p><a href=\"#\">Link</a></p>\r\n\r\n<p><a class=\"btn btn-primary\" href=\"#\">Button Primary</a> <a class=\"btn btn-secondary\" href=\"#\">Button Secondary</a></p>\r\n"
+              format: rich_text
+          field_c_colour_classes:
+            -
+              value: 'cp cp--light'
+          field_heading:
+            -
+              value: 'Light Colour Palette'
+          field_hide_heading:
+            -
+              value: false
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: b855f245-2101-41f8-afb9-486091406ecd
+          bundle: content
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1618254262
+          behavior_settings:
+            -
+              value:
+                layout_paragraphs:
+                  region: ''
+                  parent_uuid: ''
+                  layout: ''
+                  config: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_body:
+            -
+              value: "<p>Paragraph text. Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo.</p>\r\n\r\n<p><a href=\"#\">Link</a></p>\r\n\r\n<p><a class=\"btn btn-primary\" href=\"#\">Button Primary</a> <a class=\"btn btn-secondary\" href=\"#\">Button Secondary</a></p>\r\n"
+              format: rich_text
+          field_c_colour_classes:
+            -
+              value: 'cp cp--dark'
+          field_heading:
+            -
+              value: 'Dark Colour Palette'
+          field_hide_heading:
+            -
+              value: false
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 598e8120-6068-4f0c-bf5e-f57f5d285391
+          bundle: content
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1618254283
+          behavior_settings:
+            -
+              value:
+                layout_paragraphs:
+                  region: ''
+                  parent_uuid: ''
+                  layout: ''
+                  config: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_body:
+            -
+              value: "<p>Paragraph text. Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo.</p>\r\n\r\n<p><a href=\"#\">Link</a></p>\r\n\r\n<p><a class=\"btn btn-primary\" href=\"#\">Button Primary</a> <a class=\"btn btn-secondary\" href=\"#\">Button Secondary</a></p>\r\n"
+              format: rich_text
+          field_c_colour_classes:
+            -
+              value: 'cp cp--primary'
+          field_heading:
+            -
+              value: 'Primary Colour Palette'
+          field_hide_heading:
+            -
+              value: false
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 236db3fe-3d78-4a9a-b3e1-3cb3581d5133
+          bundle: content
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1618254312
+          behavior_settings:
+            -
+              value:
+                layout_paragraphs:
+                  region: ''
+                  parent_uuid: ''
+                  layout: ''
+                  config: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_body:
+            -
+              value: "<p>Paragraph text. Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo.</p>\r\n\r\n<p><a href=\"#\">Link</a></p>\r\n\r\n<p><a class=\"btn btn-primary\" href=\"#\">Button Primary</a> <a class=\"btn btn-secondary\" href=\"#\">Button Secondary</a></p>\r\n"
+              format: rich_text
+          field_c_colour_classes:
+            -
+              value: 'cp cp--primary-dark'
+          field_heading:
+            -
+              value: 'Primary Dark Colour Palette'
+          field_hide_heading:
+            -
+              value: false
+  field_introduction:
+    -
+      value: "<p class=\"introduction\">Different designs need different colour palettes.</p>\r\n"
+      format: rich_text
+  field_search_exclude:
+    -
+      value: false
+  field_thumbnail:
+    -
+      entity: 8c82501d-58fc-4faa-a1cf-dccd09cbd483
+  field_updated:
+    -
+      value: '2021-04-12'
+  layout_selection:
+    -
+      target_id: page_landing

@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 5e2ddb33-562e-45aa-93af-525f31f06db5
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: leaves.jpg
+  uri:
+    -
+      value: 'public://2019-05/leaves.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 1173747
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1557659612

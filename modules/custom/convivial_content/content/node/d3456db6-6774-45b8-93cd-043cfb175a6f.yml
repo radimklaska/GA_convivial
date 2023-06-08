@@ -1,0 +1,66 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: d3456db6-6774-45b8-93cd-043cfb175a6f
+  bundle: article
+  default_langcode: en
+  depends:
+    a5a73656-ec34-4210-a3f3-ef5384879fad: node
+    0a337582-d85b-46ed-af96-cc43980c6056: node
+    a9c8ecfb-42da-4f05-8532-9a0d47963203: node
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Lion of Mars'
+  created:
+    -
+      value: 1611315792
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /news/lion-mars
+      langcode: en
+      pathauto: 1
+  morpht_computed_field_type_label:
+    -
+      value: Article
+  body:
+    -
+      value: "<p>Blast off with New York Times bestselling and Newbery Honor-winning Jennifer L. Holm’s out-of-this-world new novel about a kid raised on Mars who learns that he can’t be held back by the fears of the grown-ups around him.</p>\r\n"
+      format: rich_text
+      summary: "Blast off with\_New York Times\_bestselling and Newbery Honor-winning Jennifer L. Holm’s out-of-this-world new novel about a kid raised on Mars who learns that he can’t be held back by the fears of the grown-ups around him."
+  field_about:
+    -
+      entity: a5a73656-ec34-4210-a3f3-ef5384879fad
+  field_authored_by:
+    -
+      entity: 0a337582-d85b-46ed-af96-cc43980c6056
+  field_published:
+    -
+      value: '2021-01-22'
+  field_search_exclude:
+    -
+      value: false
+  field_suitable_for:
+    -
+      entity: a9c8ecfb-42da-4f05-8532-9a0d47963203

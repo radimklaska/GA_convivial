@@ -1,0 +1,39 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: d7e283c5-88a3-461e-a9a1-a99f5252b769
+  bundle: image
+  default_langcode: en
+  depends:
+    e63ef9df-a500-43ef-8186-99b07572b721: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Icon - Typography'
+  created:
+    -
+      value: 1618321178
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: e63ef9df-a500-43ef-8186-99b07572b721
+      alt: 'Typography icon'
+      title: ''
+      width: 732
+      height: 518
+  field_search_exclude:
+    -
+      value: false

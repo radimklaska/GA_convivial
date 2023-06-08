@@ -1,0 +1,81 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 21d9c9e6-eddc-4d7b-87ed-f056e7fc661c
+  bundle: article
+  default_langcode: en
+  depends:
+    ff55761f-f9e0-4878-8d55-1a819ef3b499: node
+    cba6abbb-1f75-42ba-a6ca-31939fe18e8a: node
+    647de7eb-e38b-444a-9c0f-38ef1c9ff953: node
+    3a833242-f5a7-4234-85b7-b6895121c9bc: media
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Test Article'
+  created:
+    -
+      value: 1602160752
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /news/test-article
+      langcode: en
+      pathauto: 1
+  morpht_computed_field_type_label:
+    -
+      value: Article
+  body:
+    -
+      value: "<h2>Heading 1</h2>\r\n\r\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Leo duis ut diam quam nulla porttitor. Lacus suspendisse faucibus interdum posuere. In aliquam sem fringilla ut morbi tincidunt augue interdum. Viverra suspendisse potenti nullam ac tortor vitae. Hendrerit gravida rutrum quisque non tellus. Nisl tincidunt eget nullam non nisi est. Mollis aliquam ut porttitor leo a diam sollicitudin. Diam quam nulla porttitor massa id. Adipiscing enim eu turpis egestas pretium aenean pharetra magna ac. Est sit amet facilisis magna. At in tellus integer feugiat. In pellentesque massa placerat duis ultricies lacus. Massa placerat duis ultricies lacus. Elementum sagittis vitae et leo duis. Cursus risus at ultrices mi tempus imperdiet nulla malesuada.</p>\r\n\r\n<p>Lectus magna fringilla urna porttitor rhoncus dolor purus non. Feugiat vivamus at augue eget arcu dictum. Pretium quam vulputate dignissim suspendisse in. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque. Id ornare arcu odio ut. Vitae sapien pellentesque habitant morbi tristique senectus. Pretium fusce id velit ut tortor pretium viverra suspendisse potenti. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque. Rhoncus mattis rhoncus urna neque viverra justo nec ultrices. Ut etiam sit amet nisl. Donec enim diam vulputate ut pharetra sit amet aliquam id. Dis parturient montes nascetur ridiculus mus mauris vitae ultricies. Varius vel pharetra vel turpis nunc eget. At volutpat diam ut venenatis tellus in metus vulputate. Gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim. Pellentesque adipiscing commodo elit at imperdiet. Cursus mattis molestie a iaculis at erat pellentesque adipiscing. Phasellus faucibus scelerisque eleifend donec pretium. Nibh nisl condimentum id venenatis a condimentum vitae sapien.</p>\r\n\r\n<p>At urna condimentum mattis pellentesque. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare. Magna eget est lorem ipsum. Sit amet facilisis magna etiam. Eget gravida cum sociis natoque penatibus et magnis. Vulputate eu scelerisque felis imperdiet proin fermentum leo vel. Volutpat blandit aliquam etiam erat velit scelerisque in dictum non. Nibh tellus molestie nunc non blandit massa enim nec. Eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar. Amet consectetur adipiscing elit duis tristique sollicitudin nibh sit amet. Consectetur a erat nam at lectus urna duis. Amet tellus cras adipiscing enim eu turpis egestas pretium aenean. In hac habitasse platea dictumst quisque sagittis. Mauris ultrices eros in cursus turpis massa tincidunt dui ut. Amet tellus cras adipiscing enim eu turpis egestas. Tellus rutrum tellus pellentesque eu. Nunc congue nisi vitae suscipit tellus mauris a. Donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum.</p>\r\n\r\n<h2>Heading 2</h2>\r\n\r\n<p>Egestas integer eget aliquet nibh. Tellus id interdum velit laoreet id donec ultrices tincidunt arcu. Enim neque volutpat ac tincidunt vitae semper quis. Eu augue ut lectus arcu bibendum at. Et leo duis ut diam. Purus semper eget duis at tellus at urna condimentum. Feugiat in fermentum posuere urna nec. Enim neque volutpat ac tincidunt. Amet est placerat in egestas. Rhoncus aenean vel elit scelerisque mauris. Nunc vel risus commodo viverra maecenas accumsan lacus vel. Sollicitudin nibh sit amet commodo nulla facilisi nullam. Dictum fusce ut placerat orci nulla pellentesque. Euismod in pellentesque massa placerat duis ultricies. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum. Nec dui nunc mattis enim ut tellus.</p>\r\n\r\n<p>Enim tortor at auctor urna nunc id cursus metus. Amet dictum sit amet justo donec enim diam vulputate. Eget gravida cum sociis natoque. Ultrices eros in cursus turpis. Mauris in aliquam sem fringilla ut. Id diam maecenas ultricies mi eget mauris. Sapien faucibus et molestie ac feugiat sed lectus. Morbi quis commodo odio aenean sed adipiscing. Libero enim sed faucibus turpis in eu mi bibendum neque. Quisque non tellus orci ac auctor augue mauris augue. Id velit ut tortor pretium viverra suspendisse. Augue lacus viverra vitae congue eu consequat ac felis donec. Bibendum at varius vel pharetra vel turpis nunc eget lorem. Tellus molestie nunc non blandit massa enim nec. Vitae elementum curabitur vitae nunc sed velit dignissim sodales ut. Tellus mauris a diam maecenas sed enim. Cum sociis natoque penatibus et. Eu volutpat odio facilisis mauris sit amet massa.</p>\r\n"
+      format: rich_text
+      summary: 'Test article.'
+  field_about:
+    -
+      entity: ff55761f-f9e0-4878-8d55-1a819ef3b499
+  field_authored_by:
+    -
+      entity: cba6abbb-1f75-42ba-a6ca-31939fe18e8a
+  field_introduction:
+    -
+      value: "<p class=\"introduction\">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&nbsp;</p>\r\n"
+      format: rich_text
+  field_meta_tags:
+    -
+      value:
+        robots: 'noindex, nofollow, noarchive, nosnippet, noodp, noydir, noimageindex'
+  field_published:
+    -
+      value: '2020-10-08'
+  field_search_exclude:
+    -
+      value: true
+  field_suitable_for:
+    -
+      entity: 647de7eb-e38b-444a-9c0f-38ef1c9ff953
+  field_thumbnail:
+    -
+      entity: 3a833242-f5a7-4234-85b7-b6895121c9bc
+  field_toc:
+    -
+      value: toc--standard

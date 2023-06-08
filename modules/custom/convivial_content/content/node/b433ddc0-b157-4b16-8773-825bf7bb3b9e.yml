@@ -1,0 +1,66 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: b433ddc0-b157-4b16-8773-825bf7bb3b9e
+  bundle: article
+  default_langcode: en
+  depends:
+    dd9c54ba-97fa-4a4f-8a89-9f8ab7236d10: node
+    c9fbcf54-5c61-4a57-8cb6-57b8ce79bddf: node
+    4942adbd-40e1-4c76-acf3-d4c25e73fd38: node
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Jonathan Strange and Mr. Norrell'
+  created:
+    -
+      value: 1611316030
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /news/jonathan-strange-and-mr-norrell
+      langcode: en
+      pathauto: 1
+  morpht_computed_field_type_label:
+    -
+      value: Article
+  body:
+    -
+      value: "<p>Jonathan Strange &amp; Mr Norrell&nbsp;is the&nbsp;debut novel&nbsp;by British writer&nbsp;Susanna Clarke. Published in 2004, it is an&nbsp;alternative history&nbsp;set in 19th-century England around the time of the&nbsp;Napoleonic Wars. Its premise is that magic once existed in England and has returned with two men: Gilbert Norrell and Jonathan Strange. Centred on the relationship between these two men, the novel investigates the nature of \"Englishness\" and the boundaries between reason and unreason,&nbsp;Anglo-Saxon&nbsp;and&nbsp;Anglo-Dane, and Northern and Southern English cultural tropes/stereotypes. It has been described as a&nbsp;fantasy&nbsp;novel, an alternative history, and a historical novel. It inverts the&nbsp;Industrial Revolution&nbsp;conception of the&nbsp;North–South divide in England: in this book the North is romantic and magical, rather than rational and concrete.</p>\r\n\r\n<p>The narrative draws on various&nbsp;Romantic&nbsp;literary traditions, such as the&nbsp;comedy of manners, the&nbsp;Gothic tale, and the&nbsp;Byronic hero. The novel's language is a&nbsp;pastiche&nbsp;of 19th-century writing styles, such as those of&nbsp;Jane Austen&nbsp;and&nbsp;Charles Dickens. Clarke describes the supernatural with careful detail. She supplements the text with almost 200 footnotes, outlining the backstory and an entire fictional corpus of magical scholarship.</p>\r\n\r\n<p>Clarke began writing&nbsp;Jonathan Strange &amp; Mr Norrell&nbsp;in 1992; ten years later she submitted the manuscript for publication. It was accepted by&nbsp;Bloomsbury&nbsp;and published in September 2004, with illustrations by Portia Rosenberg. Bloomsbury were so sure of its success that they printed 250,000 hardcover copies. The novel was well received by critics and reached number three on the&nbsp;New York Times&nbsp;best-seller list. It was longlisted for the 2004&nbsp;Man Booker Prize&nbsp;and won the 2005&nbsp;Hugo Award for Best Novel.</p>\r\n"
+      format: rich_text
+      summary: "Jonathan Strange & Mr Norrell\_is the\_debut novel\_by British writer\_Susanna Clarke."
+  field_about:
+    -
+      entity: dd9c54ba-97fa-4a4f-8a89-9f8ab7236d10
+  field_authored_by:
+    -
+      entity: c9fbcf54-5c61-4a57-8cb6-57b8ce79bddf
+  field_published:
+    -
+      value: '2021-01-22'
+  field_search_exclude:
+    -
+      value: false
+  field_suitable_for:
+    -
+      entity: 4942adbd-40e1-4c76-acf3-d4c25e73fd38

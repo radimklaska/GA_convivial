@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 68f5f68e-ade9-4ca3-9422-b7e40097b18f
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: beautiful-bloom-blooming.jpg
+  uri:
+    -
+      value: 'public://2019-05/beautiful-bloom-blooming.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 130747
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1557659755

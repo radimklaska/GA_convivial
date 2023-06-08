@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: fb830f34-0614-4290-8058-490ded51ec2a
+  bundle: image
+  default_langcode: en
+  depends:
+    01c90b8a-beea-43bf-bfbf-379145904df4: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Hero - Canberra Hot Air Balloons - BG'
+  created:
+    -
+      value: 1551403005
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: 01c90b8a-beea-43bf-bfbf-379145904df4
+      alt: 'Canberra Hot Air Balloons'
+      title: ''
+      width: 2048
+      height: 1367

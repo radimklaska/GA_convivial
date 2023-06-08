@@ -1,0 +1,47 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 495c4287-d912-4107-8314-abbe6afd9d55
+  bundle: menu_link_content
+  default_langcode: en
+  depends:
+    6c18f64f-57c1-4e54-8611-5f25c155bf2d: menu_link_content
+    a87b8e24-83ed-4cc4-b11e-182746c7a0fe: node
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: 'View Modes'
+  menu_name:
+    -
+      value: main
+  link:
+    -
+      target_uuid: a87b8e24-83ed-4cc4-b11e-182746c7a0fe
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: 0
+  expanded:
+    -
+      value: false
+  parent:
+    -
+      value: 'menu_link_content:6c18f64f-57c1-4e54-8611-5f25c155bf2d'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

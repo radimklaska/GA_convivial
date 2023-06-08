@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 3a833242-f5a7-4234-85b7-b6895121c9bc
+  bundle: image
+  default_langcode: en
+  depends:
+    68f5f68e-ade9-4ca3-9422-b7e40097b18f: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Bloom blooming'
+  created:
+    -
+      value: 1557659755
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: 68f5f68e-ade9-4ca3-9422-b7e40097b18f
+      alt: 'Bloom blooming'
+      title: ''
+      width: 4104
+      height: 2736

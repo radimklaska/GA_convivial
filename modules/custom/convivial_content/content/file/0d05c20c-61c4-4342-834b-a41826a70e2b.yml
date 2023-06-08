@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 0d05c20c-61c4-4342-834b-a41826a70e2b
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: blooming-blur-close-up.jpg
+  uri:
+    -
+      value: 'public://2019-05/blooming-blur-close-up.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 106449
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1557659708

@@ -1,0 +1,39 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 1779b00a-cc0d-4c20-9c11-83625171e040
+  bundle: image
+  default_langcode: en
+  depends:
+    efa5f5d0-229b-45e0-bc73-ec35b14b2346: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Season - none'
+  created:
+    -
+      value: 1619773801
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: efa5f5d0-229b-45e0-bc73-ec35b14b2346
+      alt: Dandilion
+      title: ''
+      width: 3421
+      height: 2138
+  field_search_exclude:
+    -
+      value: false

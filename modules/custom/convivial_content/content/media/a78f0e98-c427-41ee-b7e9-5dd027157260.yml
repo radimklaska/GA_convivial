@@ -1,0 +1,39 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: a78f0e98-c427-41ee-b7e9-5dd027157260
+  bundle: image
+  default_langcode: en
+  depends:
+    d248061b-1b69-4de0-9fa0-b1c72ac4d599: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Season - Summer'
+  created:
+    -
+      value: 1619773899
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: d248061b-1b69-4de0-9fa0-b1c72ac4d599
+      alt: 'Summer beach'
+      title: ''
+      width: 2078
+      height: 1299
+  field_search_exclude:
+    -
+      value: false

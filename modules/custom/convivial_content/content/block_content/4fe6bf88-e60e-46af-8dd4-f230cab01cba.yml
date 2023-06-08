@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 4fe6bf88-e60e-46af-8dd4-f230cab01cba
+  bundle: search
+  default_langcode: en
+default:
+  revision_user:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Search form (sitewide)'
+  reusable:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  body:
+    -
+      value: "<form accept-charset=\"UTF-8\" action=\"/search\" class=\"searchform\" method=\"get\"><input aria-label=\"What are you looking for?\" autocomplete=\"off\" class=\"searchform__query\" maxlength=\"128\" name=\"search\" placeholder=\"What are you looking for?\" type=\"text\" /><button class=\"btn searchform__button\" type=\"submit\" value=\"Search\">Search</button></form>\r\n"
+      format: unrestricted_text
+      summary: ''
