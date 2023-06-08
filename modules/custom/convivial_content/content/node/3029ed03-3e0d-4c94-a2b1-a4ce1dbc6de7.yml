@@ -1,0 +1,57 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 3029ed03-3e0d-4c94-a2b1-a4ce1dbc6de7
+  bundle: person
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'H G Wells'
+  created:
+    -
+      value: 1611315082
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /about/h-g-wells
+      langcode: en
+      pathauto: 1
+  morpht_computed_field_type_label:
+    -
+      value: Person
+  field_key:
+    -
+      value: 'person:h-g-wells'
+  body:
+    -
+      value: "<p>Prolific in many genres, he wrote dozens of novels, short stories, and works of social commentary, history, satire, biography and autobiography. His work also included two books on recreational&nbsp;war games. Wells is now best remembered for his&nbsp;science fiction&nbsp;novels and is often called the \"father of science fiction\", along with&nbsp;Jules Verne&nbsp;and the publisher&nbsp;Hugo Gernsback.</p>\r\n\r\n<p>During his own lifetime, however, he was most prominent as a forward-looking, even prophetic social critic who devoted his literary talents to the development of a progressive vision on a global scale. A&nbsp;futurist, he wrote a number of utopian works and foresaw the advent of aircraft, tanks, space travel, nuclear weapons, satellite television and something resembling the&nbsp;World Wide Web. His science fiction imagined&nbsp;time travel,&nbsp;alien invasion,&nbsp;invisibility, and&nbsp;biological engineering.&nbsp;Brian Aldiss&nbsp;referred to Wells as the \"Shakespeare of science fiction\".</p>\r\n\r\n<p>Wells rendered his works convincing by instilling commonplace detail alongside a single extraordinary assumption – dubbed “Wells's law” – leading&nbsp;Joseph Conrad&nbsp;to hail him in 1898 as \"O Realist of the Fantastic!\". His most notable science fiction works include&nbsp;The Time Machine&nbsp;(1895),&nbsp;The Island of Doctor Moreau&nbsp;(1896),&nbsp;The Invisible Man&nbsp;(1897),&nbsp;The War of the Worlds&nbsp;(1898) and the military science fiction&nbsp;The War in the Air&nbsp;(1907). Wells was nominated for the&nbsp;Nobel Prize in Literature&nbsp;four times.</p>\r\n\r\n<p>Wells's earliest specialised training was in&nbsp;biology, and his thinking on ethical matters took place in a specifically and fundamentally&nbsp;Darwinian&nbsp;context. He was also from an early date an outspoken&nbsp;socialist, often (but not always, as at the beginning of the&nbsp;First World War) sympathising with&nbsp;pacifist&nbsp;views. His later works became increasingly political and&nbsp;didactic, and he wrote little science fiction, while he sometimes indicated on official documents that his profession was that of journalist. Novels such as&nbsp;Kipps&nbsp;and&nbsp;The History of Mr Polly, which describe lower-middle-class life, led to the suggestion that he was a worthy successor to&nbsp;Charles Dickens, but Wells described a range of social strata and even attempted, in&nbsp;Tono-Bungay&nbsp;(1909), a diagnosis of&nbsp;English society&nbsp;as a whole. Wells was a&nbsp;diabetic&nbsp;and co-founded the charity The Diabetic Association (known today as&nbsp;Diabetes UK) in 1934.</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+      format: rich_text
+      summary: "Herbert George Wells\_(21 September 1866\_– 13 August 1946) was an English writer. Prolific in many genres, he wrote dozens of novels, short stories, and works of social commentary, history, satire, biography and autobiography."
+  field_introduction:
+    -
+      value: "<p class=\"introduction\">Herbert George Wells (21 September 1866&nbsp;– 13 August 1946) was an English writer.</p>\r\n"
+      format: rich_text
+  field_search_exclude:
+    -
+      value: false

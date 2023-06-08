@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 5548bc9b-e333-40c6-ad2a-b8679c3f876a
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: foi-image.png
+  uri:
+    -
+      value: 'public://2019-01/foi-image.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 61287
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1547555281

@@ -1,10 +1,10 @@
 {
-  "name": "morpht/convivial",
+  "name": "morpht/convivial-profile",
   "description": "Drupal personalized installation profile created by Morpht.",
   "minimum-stability": "dev",
   "license": "proprietary",
   "type": "drupal-profile",
-  "version": "v1",
+  "version": "",
   "authors": [
     {
       "name": "Morpht",
@@ -26,6 +26,7 @@
     "drupal/chosen": "^3.0",
     "drupal/ckeditor": "^1.0",
     "drupal/clamav": "^2.0",
+    "drupal/color_field": "^3.0",
     "drupal/components": "^3.0@beta",
     "drupal/config_filter": "^2.4",
     "drupal/config_ignore": "^3.0@beta",

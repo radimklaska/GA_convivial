@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: c9e54bea-8792-4eda-b56b-fca65d14ea0c
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: beautiful-bee-bloom.jpg
+  uri:
+    -
+      value: 'public://2019-05/beautiful-bee-bloom.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 790814
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1557659482

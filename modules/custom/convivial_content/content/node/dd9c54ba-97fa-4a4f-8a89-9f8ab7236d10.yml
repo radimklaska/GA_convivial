@@ -1,0 +1,57 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: dd9c54ba-97fa-4a4f-8a89-9f8ab7236d10
+  bundle: topic
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: Fantasy
+  created:
+    -
+      value: 1611314237
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /topics/fantasy
+      langcode: en
+      pathauto: 1
+  morpht_computed_field_type_label:
+    -
+      value: Topic
+  field_key:
+    -
+      value: 'topic:fantasy'
+  body:
+    -
+      value: "<p>Fantasy is distinguished from the genres of&nbsp;science fiction&nbsp;and&nbsp;horror&nbsp;by the respective absence of scientific or macabre themes, though these genres overlap. In&nbsp;popular culture, the fantasy genre predominantly features settings of a&nbsp;medieval&nbsp;nature. In its broadest sense, however, fantasy consists of works by many writers, artists, filmmakers, and musicians from ancient&nbsp;myths&nbsp;and&nbsp;legends&nbsp;to many recent and popular works.</p>\r\n"
+      format: rich_text
+      summary: "Fantasy\_is a\_genre\_of\_speculative fiction\_set in a\_fictional universe, often inspired by real world\_myth\_and\_folklore."
+  field_introduction:
+    -
+      value: "<p class=\"introduction\">Fantasy&nbsp;is a&nbsp;genre&nbsp;of&nbsp;speculative fiction&nbsp;set in a&nbsp;fictional universe, often inspired by real world&nbsp;myth&nbsp;and&nbsp;folklore. Its roots are in oral traditions, which then became&nbsp;fantasy literature&nbsp;and drama. From the twentieth century it has expanded further into various media, including film, television, graphic novels,&nbsp;manga, animated movies and video games.</p>\r\n"
+      format: rich_text
+  field_search_exclude:
+    -
+      value: false

@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 7bf7a275-005b-44c3-824e-c6518021f7ed
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: experience-medium-bg_0.jpg
+  uri:
+    -
+      value: 'public://2021-05/experience-medium-bg_0.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 6273139
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1620000277

@@ -1,0 +1,66 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: b51b8ea6-4673-4b0f-bd64-ff25ddbd4f29
+  bundle: article
+  default_langcode: en
+  depends:
+    a5a73656-ec34-4210-a3f3-ef5384879fad: node
+    3029ed03-3e0d-4c94-a2b1-a4ce1dbc6de7: node
+    4942adbd-40e1-4c76-acf3-d4c25e73fd38: node
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'The War of the Worlds'
+  created:
+    -
+      value: 1611316521
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /news/war-worlds
+      langcode: en
+      pathauto: 1
+  morpht_computed_field_type_label:
+    -
+      value: Article
+  body:
+    -
+      value: "<p>The War of the Worlds&nbsp;is a&nbsp;science fiction&nbsp;novel by English author&nbsp;H. G. Wells, first serialised in 1897 by&nbsp;Pearson's Magazine&nbsp;in the UK and by&nbsp;Cosmopolitan&nbsp;magazine in the US. The novel's first appearance in hardcover was in 1898 from publisher&nbsp;William Heinemann&nbsp;of London. Written between 1895 and 1897, it is one of the earliest stories to detail a conflict between mankind and an&nbsp;extra-terrestrial&nbsp;race. The novel is the&nbsp;first-person narrative&nbsp;of both an unnamed&nbsp;protagonist&nbsp;in Surrey and of his younger brother in London as southern England is invaded by&nbsp;Martians. The novel is one of the most commented-on works in the science fiction&nbsp;canon.</p>\r\n\r\n<p>The plot has been related to&nbsp;invasion literature&nbsp;of the time. The novel has been variously interpreted as a commentary on evolutionary theory,&nbsp;British imperialism, and generally Victorian superstitions, fears, and prejudices. Wells said that the plot arose from a discussion with his brother Frank about the catastrophic effect of the British on&nbsp;indigenous Tasmanians. What would happen, he wondered, if Martians did to Britain what the British had done to the Tasmanians? At the time of publication, it was classified as a&nbsp;scientific romance, like Wells's earlier novel&nbsp;The Time Machine.</p>\r\n\r\n<p>The War of the Worlds&nbsp;has been both popular (having never been out of print) and influential, spawning half a dozen feature films, radio dramas, a record album, various comic book adaptations, a number of television series, and sequels or parallel stories by other authors. It was most memorably dramatised in a&nbsp;1938 radio programme&nbsp;directed by and starring&nbsp;Orson Welles&nbsp;that allegedly caused public panic among listeners who did not know the Martian invasion was fictional. The novel has even influenced the work of scientists, notably&nbsp;Robert H. Goddard, who, inspired by the book, helped develop both the&nbsp;liquid-fuelled rocket&nbsp;and&nbsp;multistage rocket, which resulted in the&nbsp;Apollo 11&nbsp;Moon landing&nbsp;71 years later.</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+      format: rich_text
+      summary: "The War of the Worlds\_is a\_science fiction\_novel by English author\_H. G. Wells, first serialised in 1897 by\_Pearson's Magazine\_in the UK and by\_Cosmopolitan\_magazine in the US."
+  field_about:
+    -
+      entity: a5a73656-ec34-4210-a3f3-ef5384879fad
+  field_authored_by:
+    -
+      entity: 3029ed03-3e0d-4c94-a2b1-a4ce1dbc6de7
+  field_published:
+    -
+      value: '2021-01-22'
+  field_search_exclude:
+    -
+      value: false
+  field_suitable_for:
+    -
+      entity: 4942adbd-40e1-4c76-acf3-d4c25e73fd38

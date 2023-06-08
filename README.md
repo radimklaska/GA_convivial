@@ -43,6 +43,10 @@ This profile is meant to be used in conjunction with `convivial-template` projec
 
 ## Updating
 
+To add content to default content provided by the profile, you should export it by drush `drush dcer node 123 --folder=profiles/contrib/convivial-profile/modules/custom/convivial_content/content/`
+
+[Detailed guide to using Default content](https://www.drupal.org/docs/8/modules/default-content-for-d8/overview)
+
 To update configuration, one needs to manually copy new/updated configuration files to convivial-profile/config/install folder and remove uuid and _core: default_hash items there.
 
 [How to write an installation profile](https://www.drupal.org/docs/distributions/creating-distributions/how-to-write-a-drupal-installation-profile)

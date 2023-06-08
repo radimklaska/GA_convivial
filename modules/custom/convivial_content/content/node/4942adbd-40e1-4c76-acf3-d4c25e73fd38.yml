@@ -1,0 +1,57 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 4942adbd-40e1-4c76-acf3-d4c25e73fd38
+  bundle: audience
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: Adult
+  created:
+    -
+      value: 1611314289
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /adult
+      langcode: en
+      pathauto: 1
+  morpht_computed_field_type_label:
+    -
+      value: Audience
+  field_key:
+    -
+      value: 'audience:adult'
+  body:
+    -
+      value: ''
+      format: rich_text
+      summary: 'Content suitable for adult people.'
+  field_introduction:
+    -
+      value: "<p class=\"introduction\">Content suitable for adult people.</p>\r\n"
+      format: rich_text
+  field_search_exclude:
+    -
+      value: false

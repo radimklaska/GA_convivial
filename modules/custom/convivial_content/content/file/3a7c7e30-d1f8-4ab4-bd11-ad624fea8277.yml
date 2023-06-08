@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 3a7c7e30-d1f8-4ab4-bd11-ad624fea8277
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: event-future-image.png
+  uri:
+    -
+      value: 'public://2019-01/event-future-image.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 53642
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1547554780

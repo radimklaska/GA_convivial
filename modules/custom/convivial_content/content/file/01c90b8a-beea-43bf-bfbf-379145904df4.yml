@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 01c90b8a-beea-43bf-bfbf-379145904df4
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: hero-convivial-govcms-bg.jpg
+  uri:
+    -
+      value: 'public://2019-03/hero-convivial-govcms-bg.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 491307
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1551403005

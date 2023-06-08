@@ -1,0 +1,69 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: fb515ff3-b6ce-4e40-9422-c478d78bd6f0
+  bundle: article
+  default_langcode: en
+  depends:
+    a5a73656-ec34-4210-a3f3-ef5384879fad: node
+    1600d089-f743-4c13-aed0-07dd967df493: node
+    a9c8ecfb-42da-4f05-8532-9a0d47963203: node
+    4942adbd-40e1-4c76-acf3-d4c25e73fd38: node
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Ender''s Game'
+  created:
+    -
+      value: 1611316599
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /news/enders-game
+      langcode: en
+      pathauto: 1
+  morpht_computed_field_type_label:
+    -
+      value: Article
+  body:
+    -
+      value: "<p>Ender's Game&nbsp;is a 1985&nbsp;military science fiction&nbsp;novel by American author&nbsp;Orson Scott Card. Set at an unspecified date in Earth's future, the novel presents an imperiled humankind after two conflicts with the Formics, an&nbsp;insectoid&nbsp;alien species&nbsp;they dub the \"buggers\". In preparation for an anticipated third invasion, children, including the novel's protagonist,&nbsp;Andrew \"Ender\" Wiggin, are trained from a very young age by putting them through increasingly difficult games, including some in&nbsp;zero gravity, where Ender's&nbsp;tactical&nbsp;genius&nbsp;is revealed.</p>\r\n\r\n<p>The book originated as a short story&nbsp;of the same name, published in the August 1977 issue of&nbsp;Analog Science Fiction and Fact. The novel was published on January 15, 1985. Later, by elaborating on characters and plotlines depicted in the novel, Card was able to write additional books in the&nbsp;Ender's Game&nbsp;series. Card also released an updated version of&nbsp;Ender's Game&nbsp;in 1991, changing some political facts to reflect the times more accurately (e.g., to include the recent collapse of the&nbsp;Soviet Union&nbsp;and the end of the&nbsp;Cold War). The novel has been translated into 34 languages.</p>\r\n\r\n<p>Reception of the book has been mostly positive, but many people have criticized its politics. It has become suggested reading for many military organizations, including the&nbsp;United States Marine Corps. Ender's Game&nbsp;was recognized as \"best novel\" by the 1985&nbsp;Nebula Award and the 1986&nbsp;Hugo Award Dead&nbsp;(1986),&nbsp;Xenocide&nbsp;(1991),&nbsp;Children of the Mind&nbsp;(1996),&nbsp;and&nbsp;Ender in Exile&nbsp;(2008)—follow Ender's subsequent travels to many different worlds in the galaxy. In addition, the later novella&nbsp;A War of Gifts&nbsp;(2007) and novel&nbsp;Ender's Shadow&nbsp;(1999), plus other novels in the&nbsp;Shadow&nbsp;saga, take place during the same time period as the original.</p>\r\n\r\n<p>A&nbsp;film adaptation of the same name, written for the screen and directed by&nbsp;Gavin Hood, and starring&nbsp;Asa Butterfield&nbsp;as Ender, was released in October 2013. Card co-produced the film.&nbsp;The novel has also been adapted into&nbsp;two comic book series.s</p>\r\n"
+      format: rich_text
+      summary: "Ender's Game\_is a 1985\_military science fiction\_novel by American author\_Orson Scott Card."
+  field_about:
+    -
+      entity: a5a73656-ec34-4210-a3f3-ef5384879fad
+  field_authored_by:
+    -
+      entity: 1600d089-f743-4c13-aed0-07dd967df493
+  field_published:
+    -
+      value: '2021-01-22'
+  field_search_exclude:
+    -
+      value: false
+  field_suitable_for:
+    -
+      entity: a9c8ecfb-42da-4f05-8532-9a0d47963203
+    -
+      entity: 4942adbd-40e1-4c76-acf3-d4c25e73fd38

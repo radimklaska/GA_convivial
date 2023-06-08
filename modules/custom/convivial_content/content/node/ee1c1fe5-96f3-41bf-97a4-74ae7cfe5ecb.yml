@@ -1,0 +1,66 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: ee1c1fe5-96f3-41bf-97a4-74ae7cfe5ecb
+  bundle: article
+  default_langcode: en
+  depends:
+    143fe003-340a-48e1-bb9f-f1ddfbc5cb15: node
+    3c3a7511-a26a-45b5-bff1-8597fe32e5f1: node
+    4942adbd-40e1-4c76-acf3-d4c25e73fd38: node
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Thank You, Jeeves'
+  created:
+    -
+      value: 1611315561
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /news/thank-you-jeeves
+      langcode: en
+      pathauto: 1
+  morpht_computed_field_type_label:
+    -
+      value: Article
+  body:
+    -
+      value: "<p>Thank You, Jeeves&nbsp;is a&nbsp;Jeeves&nbsp;comic novel&nbsp;by&nbsp;P.G. Wodehouse, first published in the United Kingdom on 16 March 1934 by&nbsp;Herbert Jenkins, London, and in the United States on 23 April 1934 by&nbsp;Little, Brown and Company, New York.</p>\r\n\r\n<p>The story had previously been serialised, in the&nbsp;Strand Magazine&nbsp;in the UK from August 1933 to February 1934, and in the US in&nbsp;Cosmopolitan Magazine&nbsp;from January to June 1934.</p>\r\n\r\n<p>Thank You, Jeeves&nbsp;is the first full-length novel in the series of stories following narrator&nbsp;Bertie Wooster&nbsp;and his valet Jeeves, though Jeeves leaves Bertie's employment for most of this story. The novel largely takes place around&nbsp;Chuffnell Hall, the home of Bertie's friend&nbsp;Lord \"Chuffy\" Chuffnell, who hopes to sell the house to the wealthy&nbsp;J. Washburn Stoker&nbsp;and is in love with Stoker's daughter Pauline.</p>\r\n"
+      format: rich_text
+      summary: "Thank You, Jeeves\_is a\_Jeeves\_comic novel\_by\_P.G. Wodehouse, first published in the United Kingdom on 16 March 1934 by\_Herbert Jenkins, London, and in the United States on 23 April 1934 by\_Little, Brown and Company, New York."
+  field_about:
+    -
+      entity: 143fe003-340a-48e1-bb9f-f1ddfbc5cb15
+  field_authored_by:
+    -
+      entity: 3c3a7511-a26a-45b5-bff1-8597fe32e5f1
+  field_published:
+    -
+      value: '2021-01-22'
+  field_search_exclude:
+    -
+      value: false
+  field_suitable_for:
+    -
+      entity: 4942adbd-40e1-4c76-acf3-d4c25e73fd38

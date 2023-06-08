@@ -1,0 +1,66 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: ca34e365-7b5d-4f0c-b17b-65fffa1e5919
+  bundle: article
+  default_langcode: en
+  depends:
+    143fe003-340a-48e1-bb9f-f1ddfbc5cb15: node
+    be90b338-31ea-4006-8958-199223fdd37b: node
+    4942adbd-40e1-4c76-acf3-d4c25e73fd38: node
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Bridget Jones'' Diary'
+  created:
+    -
+      value: 1611315610
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /news/bridget-jones-diary
+      langcode: en
+      pathauto: 1
+  morpht_computed_field_type_label:
+    -
+      value: Article
+  body:
+    -
+      value: "<p>Bridget Jones's Diary&nbsp;is a&nbsp;1996 novel&nbsp;by&nbsp;Helen Fielding. Written in the form of a personal diary, the novel chronicles a year in the life of&nbsp;Bridget Jones, a thirty-something&nbsp;single&nbsp;working woman living in London. She writes about her career, self-image, vices, family, friends, and romantic relationships.</p>\r\n\r\n<p>By 2006, the book had sold over two million copies worldwide. Critics have credited Fielding's novel as the \"ur-text\" of the contemporary&nbsp;chick lit&nbsp;movement. A sequel,&nbsp;Bridget Jones: The Edge of Reason, was published in 1999.</p>\r\n"
+      format: rich_text
+      summary: "Bridget Jones's Diary\_is a\_1996 novel\_by\_Helen Fielding."
+  field_about:
+    -
+      entity: 143fe003-340a-48e1-bb9f-f1ddfbc5cb15
+  field_authored_by:
+    -
+      entity: be90b338-31ea-4006-8958-199223fdd37b
+  field_published:
+    -
+      value: '2021-01-22'
+  field_search_exclude:
+    -
+      value: false
+  field_suitable_for:
+    -
+      entity: 4942adbd-40e1-4c76-acf3-d4c25e73fd38

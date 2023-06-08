@@ -1,0 +1,46 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 4df9694c-3eb9-4d40-b426-e7de38f1f2ee
+  bundle: social_share
+  default_langcode: en
+default:
+  revision_user:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Social share icons - pills - small'
+  reusable:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  field_social_share_alignment:
+    -
+      value: social-share--row
+  field_social_share_colour:
+    -
+      value: social-share--branded
+  field_social_share_email:
+    -
+      value: true
+  field_social_share_facebook:
+    -
+      value: true
+  field_social_share_linkedin:
+    -
+      value: true
+  field_social_share_size:
+    -
+      value: social-share--small
+  field_social_share_style:
+    -
+      value: social-share--pill
+  field_social_share_twitter:
+    -
+      value: true

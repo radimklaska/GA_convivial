@@ -1,0 +1,41 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 18dec950-3067-4f27-9a56-86fbfb2bf68b
+  bundle: promotion
+  default_langcode: en
+  depends:
+    d06fd46b-2db3-43d8-8f7c-92cc5bb9e213: taxonomy_term
+default:
+  revision_user:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Audience: None'
+  reusable:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  body:
+    -
+      value: "<p><a data-bs-toggle=\"tooltip\" title=\"This is a Personified Data block. You are seeing this personalised promotion because you have no current topic affinity. ie. You have not viewed content for any audience as yet.\"><svg class=\"bi bi-info-circle-fill\" fill=\"white\" height=\"16\" viewbox=\"0 0 16 16\" width=\"16\" xmlns=\"http://www.w3.org/2000/svg\"> <path d=\"M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z\"></path> </svg> Personalisation</a></p>\r\n\r\n<h2>Looking for yourself or someone else?</h2>\r\n\r\n<p>We have both kinds of books!</p>\r\n\r\n<p><a class=\"btn btn-primary\" href=\"/node/21\">Youth</a> <a class=\"btn btn-primary\" href=\"/node/22\">Adult</a></p>\r\n"
+      format: rich_text
+      summary: ''
+  field_promo_attributes:
+    -
+      entity: d06fd46b-2db3-43d8-8f7c-92cc5bb9e213
+  field_promo_expires:
+    -
+      value: '2031-04-21'
+  field_promo_position:
+    -
+      value: hero-banner--content-left
+  field_promo_published:
+    -
+      value: '2021-04-21'

@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 11110a73-ba69-462b-88b1-1aba6efdc163
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: season-spring-bg.jpg
+  uri:
+    -
+      value: 'public://2021-04/season-spring-bg.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 7342511
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1619773977

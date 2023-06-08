@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 14b9fedc-c591-418e-8a9c-9a424de5cbe2
+  bundle: attribute
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: 'Topic: Comedic Fiction'
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_attribute_key:
+    -
+      value: topic-affinity
+  field_attribute_value:
+    -
+      value: 'topic:comedic-fiction'
