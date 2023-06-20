@@ -1,2 +1,3 @@
 interface:
-  default: devel_mail_log
+  default: php_mail
+  webform: webform_php_mail
