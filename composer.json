@@ -1,10 +1,10 @@
 {
-  "name": "morpht/convivial-profile",
+  "name": "morpht/convivial",
   "description": "Drupal personalized installation profile created by Morpht.",
   "minimum-stability": "dev",
   "license": "proprietary",
   "type": "drupal-profile",
-  "version": "",
+  "version": "v1",
   "authors": [
     {
       "name": "Morpht",
@@ -17,6 +17,7 @@
     "bower-asset/popper.js": "^2.4",
     "bower-asset/videojs-youtube": "^2.6",
     "cweagans/composer-patches": "^1.7",
+    "drupal/address": "^1.10",
     "drupal/admin_toolbar": "^3.1",
     "drupal/antibot": "^2.0",
     "drupal/autologout": "^1.3",
@@ -26,7 +27,6 @@
     "drupal/chosen": "^3.0",
     "drupal/ckeditor": "^1.0",
     "drupal/clamav": "^2.0",
-    "drupal/color_field": "^3.0",
     "drupal/components": "^3.0@beta",
     "drupal/config_filter": "^2.4",
     "drupal/config_ignore": "^3.0@beta",
@@ -61,7 +61,8 @@
     "drupal/flood_control": "^2.3",
     "drupal/focal_point": "^2.0",
     "drupal/geocoder": "^4.9",
-    "drupal/geofield": "^1.38",
+    "drupal/geofield": "^1.47",
+    "drupal/geofield_map": "^3.0",
     "drupal/google_analytics": "^4.0",
     "drupal/google_tag": "^1.4",
     "drupal/gtranslate": "^3.0",
@@ -88,6 +89,7 @@
     "drupal/migrate_plus": "^6.0",
     "drupal/migrate_source_csv": "^3.4",
     "drupal/migrate_tools": "^6.0",
+    "drupal/moderation_dashboard": "^2.1",
     "drupal/moderation_sidebar": "^1.4",
     "drupal/modifiers": "^1.5",
     "drupal/modifiers_pack": "^2.1",
@@ -108,7 +110,7 @@
     "drupal/role_delegation": "^1.2",
     "drupal/sajari": "^1.0",
     "drupal/schema_metatag": "^2.2",
-    "drupal/search_api": "^1.23",
+    "drupal/search_api": "^1.27",
     "drupal/search_api_autocomplete": "^1.5",
     "drupal/search_api_field_token": "^1.0",
     "drupal/search_api_recombee": "^4.0",
@@ -132,6 +134,7 @@
     "kint-php/kint": "^3.3",
     "morpht/convivial_bootstrap": "^1.0",
     "morpht/convivial_claro": "^1.0",
+    "morpht/mdt": "dev-main",
     "npm-asset/datatables": "^1.10.19",
     "npm-asset/handlebars": "^4.7",
     "npm-asset/jarallax": "^1.12.4",
@@ -141,7 +144,7 @@
     "npm-asset/scrollreveal": "^4.0.7",
     "npm-asset/videojs-background": "^1.0",
     "oomphinc/composer-installers-extender": "^2.0",
-    "pantheon-systems/drupal-integrations": "^9.0",
+    "pantheon-systems/drupal-integrations": "^10",
     "pantheon-systems/quicksilver-pushback": "^2",
     "pear/archive_tar": "^1.4"
   },
@@ -165,47 +168,6 @@
       },
       "drupal/redirect": {
         "3037259 - Endless Redirection loop when using Domain access": "https://www.drupal.org/files/issues/2022-09-13/3037259-28.patch"
-      }
-    },
-    "drupal-scaffold": {
-      "file-mapping": {
-        "[web-root]/sites/default/settings.php": {
-          "path": "assets/settings.php",
-          "overwrite": false
-        },
-        "[web-root]/sites/default/settings/settings.main.php": "assets/settings/settings.main.php",
-        "[web-root]/sites/default/settings/settings.dev.php": "assets/settings/settings.dev.php",
-        "[web-root]/sites/default/settings/settings.lando.php": "assets/settings/settings.lando.php",
-        "[web-root]/sites/default/settings/settings.live.php": "assets/settings/settings.live.php",
-        "[web-root]/sites/default/settings/settings.local.php": {
-          "path": "assets/settings/settings.local.php",
-          "overwrite": false
-        },
-        "[web-root]/sites/default/settings/settings.pantheon.php": "assets/settings/settings.pantheon.php",
-        "[web-root]/sites/default/settings/settings.test.php": "assets/settings/settings.test.php",
-        ".github/scripts/build.sh": "assets/.github/scripts/build.sh",
-        ".github/scripts/synctags.sh": "assets/.github/scripts/synctags.sh",
-        ".github/workflows/pantheon_deploy.yml": "assets/.github/workflows/pantheon_deploy.yml",
-        ".github/workflows/synctags.yml": "assets/.github/workflows/synctags.yml",
-        "[web-root]/sites/aliases.php": {
-          "path": "assets/aliases.php",
-          "overwrite": false
-        },
-        "[web-root]/sites/development.services.yml": "assets/development.services.yml",
-        ".lando/artefact.sh": "assets/.lando/artefact.sh",
-        ".lando/fresh-install.sh": "assets/.lando/fresh-install.sh",
-        ".lando/setup_terminus.sh": "assets/.lando/setup_terminus.sh",
-        ".lando/verify_mac_ssh_socket.sh": "assets/.lando/verify_mac_ssh_socket.sh",
-        ".gitignore": "assets/gitignore",
-        "pantheon.upstream.yml": {
-          "path": "assets/pantheon.upstream.yml",
-          "overwrite": false
-        },
-        "pantheon.yml": {
-          "path": "assets/pantheon.yml",
-          "overwrite": false
-        },
-        "[web-root]/private/scripts/deploy_after.php": "assets/deploy_after.php"
       }
     }
   },
