@@ -50,3 +50,4 @@ To add content to default content provided by the profile, you should export it 
 To update configuration, one needs to manually copy new/updated configuration files to convivial-profile/config/install folder and remove uuid and _core: default_hash items there.
 
 [How to write an installation profile](https://www.drupal.org/docs/distributions/creating-distributions/how-to-write-a-drupal-installation-profile)
+94178ec9972993f808943c23359074648b9d591d4fb44e6a5d547343e418c1b8
