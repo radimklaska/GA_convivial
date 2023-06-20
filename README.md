@@ -46,3 +46,5 @@ This profile is meant to be used in conjunction with `convivial-recommended` pro
 To update configuration, one needs to manually copy new/updated configuration files to convivial/config/install folder and remove uuid and _core: default_hash items there.
 
 [How to write an installation profile](https://www.drupal.org/docs/distributions/creating-distributions/how-to-write-a-drupal-installation-profile)
+ffcdc9c0b44d0b76f5c14075081838ef7afe6b85f9e0672a6134580777c0519b
+0b8579d3d41d9bbba0d7b7d019294b864067333cdf259827f32a9e38c79df803
