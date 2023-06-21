@@ -48,3 +48,5 @@ To update configuration, one needs to manually copy new/updated configuration fi
 [How to write an installation profile](https://www.drupal.org/docs/distributions/creating-distributions/how-to-write-a-drupal-installation-profile)
 ffcdc9c0b44d0b76f5c14075081838ef7afe6b85f9e0672a6134580777c0519b
 0b8579d3d41d9bbba0d7b7d019294b864067333cdf259827f32a9e38c79df803
+79fc84df178c6414dfc763220d02706fbdc02b162ab5605d5d48451b8b83cc42
+dfebe2a3a5b3c0a9668306ef79878ee0c77701029d8df62a5a3d27baa3d939b8
